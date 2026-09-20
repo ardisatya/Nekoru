@@ -5,7 +5,7 @@
 ## Hasil yang Bisa Diperiksa
 
 - Prototype learner memiliki 20 state `P-M1-01` sampai `P-M1-20` pada `/prototype/u01-l1`.
-- U01-L1 tersedia sebagai seed `draft`, tidak `runtime_eligible`, dengan 43 activity definition dan metadata 26 draft audio asset ber-checksum; binary audio dibuat local-only dan metadata/rights/review tetap pending.
+- U01-L1 tersedia sebagai seed `draft`, tidak `runtime_eligible`, dengan 43 activity definition dan metadata 26 draft audio asset ber-checksum dari VOICEVOX Nemo Engine `0.24.0`; binary audio dibuat local-only dan metadata/rights/review tetap pending.
 - Health API berjalan; route Milestone 1 lain hanya tercatat sebagai `contract_only` dan belum mempunyai business behavior.
 - AI evaluation, assessment/readiness, offline runtime, optional product analytics, dan production exposure tetap disabled.
 - Prototype tidak menghitung correctness, evidence, mastery, review schedule, atau readiness di browser.
@@ -25,23 +25,24 @@
 
 ## Artefak Exact-Version
 
-| Artefak                       | Lokasi                                                          | Status                                                                                                |
-| ----------------------------- | --------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
-| OpenAPI 3.1                   | `packages/contracts/generated/openapi.json`                     | Health implemented; route Milestone 1 `contract_only`                                                 |
-| JSON Schema bundle            | `packages/contracts/generated/schemas.json`                     | Owner-attested approved Phase 0 contract; runtime route tetap `contract_only`                         |
-| Event catalog                 | `packages/contracts/generated/event-catalog.json`               | 19 event Milestone 1; all `contract_only`                                                             |
-| Golden API fixture            | `content/fixtures/golden/api.json`                              | Health/problem/contract-only wiring tervalidasi                                                       |
-| Security gate                 | `tooling/security/check.ts`                                     | Secret/config/exact-dependency check; bukan full audit                                                |
-| Database migration            | `packages/persistence/migrations/manifest.json`                 | Migration kosong lulus pada PostgreSQL 18.6 lokal; tidak diterapkan ke shared environment             |
-| Database evidence             | `docs/implementation/database-integration-evidence.json`        | Tiga integration test dan hosted gate lulus; approval scope dikonfirmasi owner                        |
-| Approval record               | `docs/implementation/phase-0-approval-record.json`              | Owner attestation untuk scope P0.1–P0.4; individual receipts belum dilampirkan                        |
-| U01-L1 seed                   | `content/source/u01-l1/seed.json`                               | `draft`, `runtime_eligible: false`                                                                    |
-| Audio plan                    | `content/source/u01-l1/audio-plan.json`                         | 26 candidate recordings; TTS voice rights dan review tetap pending                                    |
-| Audio draft pack              | `content/manifests/u01-l1.audio-draft.json`                     | Metadata 26 master/delivery WAV; binary hanya local-only, tidak dilacak Git, belum device-QA/approved |
-| Audio rights decision         | `docs/implementation/u01-l1-audio-rights-decision.json`         | Scope `local_only` proposed; EULA/rights receipt dan approval masih pending                           |
-| Audio rights receipt template | `docs/implementation/u01-l1-audio-rights-receipt.template.json` | Template untuk 26 asset; harus diisi dengan rekaman/release nyata, bukan placeholder                  |
-| Design system                 | `DESIGN.md` dan `.impeccable/design.json`                       | Internal reference; bukan approval whole-surface                                                      |
-| Milestone registry            | `docs/implementation/phase-0-status.json`                       | Source untuk indikator Markdown dan HTML                                                              |
+| Artefak                       | Lokasi                                                          | Status                                                                                                              |
+| ----------------------------- | --------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| OpenAPI 3.1                   | `packages/contracts/generated/openapi.json`                     | Health implemented; route Milestone 1 `contract_only`                                                               |
+| JSON Schema bundle            | `packages/contracts/generated/schemas.json`                     | Owner-attested approved Phase 0 contract; runtime route tetap `contract_only`                                       |
+| Event catalog                 | `packages/contracts/generated/event-catalog.json`               | 19 event Milestone 1; all `contract_only`                                                                           |
+| Golden API fixture            | `content/fixtures/golden/api.json`                              | Health/problem/contract-only wiring tervalidasi                                                                     |
+| Security gate                 | `tooling/security/check.ts`                                     | Secret/config/exact-dependency check; bukan full audit                                                              |
+| Database migration            | `packages/persistence/migrations/manifest.json`                 | Migration kosong lulus pada PostgreSQL 18.6 lokal; tidak diterapkan ke shared environment                           |
+| Database evidence             | `docs/implementation/database-integration-evidence.json`        | Tiga integration test dan hosted gate lulus; approval scope dikonfirmasi owner                                      |
+| Approval record               | `docs/implementation/phase-0-approval-record.json`              | Owner attestation untuk scope P0.1–P0.4; individual receipts belum dilampirkan                                      |
+| U01-L1 seed                   | `content/source/u01-l1/seed.json`                               | `draft`, `runtime_eligible: false`                                                                                  |
+| Audio plan                    | `content/source/u01-l1/audio-plan.json`                         | 26 candidate recordings; VOICEVOX Nemo `0.24.0`, style `10005`/`10001`, terms/rights dan review tetap pending       |
+| Audio draft pack              | `content/manifests/u01-l1.audio-draft.json`                     | Metadata 26 master/delivery WAV dari VOICEVOX; binary hanya local-only, tidak dilacak Git, belum device-QA/approved |
+| Audio rights decision         | `docs/implementation/u01-l1-audio-rights-decision.json`         | Scope `local_only` proposed; VOICEVOX Nemo Terms, exact hash receipt dan approval masih pending                     |
+| Audio rights receipt template | `docs/implementation/u01-l1-audio-rights-receipt.template.json` | Template 26 asset untuk engine/speaker/terms/hash VOICEVOX; reviewer masih harus mengisi receipt final              |
+| VOICEVOX engine evidence      | `docs/implementation/u01-l1-voicevox-engine-evidence.json`      | Exact release URL, package SHA-256, engine API, speaker snapshot, attribution; review masih pending                 |
+| Design system                 | `DESIGN.md` dan `.impeccable/design.json`                       | Internal reference; bukan approval whole-surface                                                                    |
+| Milestone registry            | `docs/implementation/phase-0-status.json`                       | Source untuk indikator Markdown dan HTML                                                                            |
 
 ## Cara Menjalankan Pemeriksaan Internal
 
@@ -59,7 +60,7 @@ Untuk gate database, siapkan PostgreSQL 18 ephemeral melalui `docker compose up 
 
 - Individual approval receipts/nama reviewer belum dilampirkan; status scoped approval dicatat berdasarkan owner attestation.
 - Live Clerk development credentials dan smoke test.
-- Audio draft dua speaker memiliki master/delivery checksum secara local-only; loudness, device playback QA, EULA/rights receipt, dan approval masih pending.
+- Audio draft dua speaker VOICEVOX Nemo memiliki master/delivery checksum secara local-only; loudness, device playback QA, Terms/rights receipt, dan approval masih pending.
 - Binary audio dari commit publik sebelumnya belum dibersihkan dari Git history; jangan menganggap `.gitignore` menghapus exposure historis.
 - Review akademik/linguistik/content/accessibility, usability research, dan assistive-technology physical-device evidence.
 

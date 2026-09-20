@@ -11,11 +11,25 @@
     "sha256_must_match_manifest": true
   },
   "source": {
-    "source_type": "human_owned_recording",
-    "performer_name": null,
-    "performer_is_rights_owner": null,
-    "ownership_statement_ref": null,
-    "consent_release_ref": null
+    "source_type": "voicevox_generated_audio",
+    "provider": "VOICEVOX Nemo",
+    "engine_version": "0.24.0",
+    "engine_release_ref": "https://github.com/VOICEVOX/voicevox_nemo_engine/releases/tag/0.24.0",
+    "voice_library_terms_ref": "https://voicevox.hiroshiba.jp/nemo/term/",
+    "speaker_styles": {
+      "a": {
+        "speaker_id": 10005,
+        "speaker_uuid": "abccafa5-174f-44d8-b70c-c41eebb3061c",
+        "speaker_name": "女声1",
+        "style_name": "ノーマル"
+      },
+      "b": {
+        "speaker_id": 10001,
+        "speaker_uuid": "2171909e-d2d1-4bbb-aa45-442c12732665",
+        "speaker_name": "男声1",
+        "style_name": "ノーマル"
+      }
+    }
   },
   "use_scope": {
     "allowed_use": "local_only",
@@ -26,10 +40,10 @@
     "expiry": null
   },
   "evidence": {
-    "license_or_release_ref": null,
-    "terms_version_or_recording_date": null,
+    "license_or_release_ref": "https://voicevox.hiroshiba.jp/nemo/term/",
+    "terms_version_or_recording_date": "VOICEVOX Nemo Terms; checked 2026-09-20",
     "evidence_snapshot_ref": null,
-    "attribution_text": null
+    "attribution_text": "VOICEVOX: Nemo"
   },
   "review": {
     "reviewer_id": null,
@@ -38,9 +52,9 @@
     "notes": null
   },
   "completion_instructions": [
-    "Ganti source_type hanya jika sumber nyata berbeda dan bukti lisensinya tersedia.",
+    "Pertahankan source_type voicevox_generated_audio dan cocokkan engine/speaker metadata dengan manifest exact version.",
     "Isi receipt_id yang immutable; jangan memakai placeholder pada receipt final.",
-    "Lampirkan rekaman/release untuk performer serta bukti bahwa 26 asset tercakup.",
+    "Lampirkan snapshot terms/release reference dan bukti bahwa 26 asset tercakup.",
     "Validasi semua asset_id dan SHA-256 terhadap audio manifest exact version.",
     "Rights reviewer mengisi decision verified_local_only hanya setelah bukti diperiksa.",
     "Jangan ubah seed menjadi approved atau runtime_eligible hanya karena receipt rights sudah verified."

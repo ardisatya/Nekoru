@@ -4,7 +4,7 @@
   "title": "Fondasi yang bisa dijalankan",
   "overall_status": "internal_ready",
   "plain_summary": "Fondasi teknis dan contoh alur belajar sudah siap diperiksa tim internal. Ini belum merupakan produk jadi atau approval Phase 0.",
-  "updated_at": "2026-09-20T15:41:59+07:00",
+  "updated_at": "2026-09-20T18:57:42+07:00",
   "milestones": [
     {
       "id": "P0.1",
@@ -71,7 +71,7 @@
       "id": "P0.5",
       "title": "Contoh belajar siap diperiksa",
       "status": "internal_ready",
-      "result": "Prototype 20 state, seed draft U01-L1, metadata 26 draft audio asset dengan checksum, dan generator audio local-only siap diuji tim internal.",
+      "result": "Prototype 20 state, seed draft U01-L1, serta 26 draft audio asset dengan checksum dari VOICEVOX Nemo Engine 0.24.0 siap diuji tim internal.",
       "evidence_refs": [
         "apps/learner-web",
         "content/source/u01-l1",
@@ -80,13 +80,14 @@
         ".gitignore",
         "docs/implementation/u01-l1-audio-rights-decision.json",
         "docs/implementation/u01-l1-audio-rights-receipt.template.json",
+        "docs/implementation/u01-l1-voicevox-engine-evidence.json",
         "tooling/content/generate-u01-audio-draft.ps1",
         "DESIGN.md",
         ".impeccable/design.json",
         "docs/implementation/phase-0-handoff.md"
       ],
       "blockers": [
-        "Audio binary hanya local-only dan tidak dilacak Git; bukti EULA/rights, audio QA, dan review akademik belum selesai.",
+        "Audio binary hanya local-only dan tidak dilacak Git; receipt terms/rights exact hash, audio QA, dan review akademik belum selesai.",
         "Commit publik sebelumnya masih dapat memuat binary audio; history cleanup atau private repository belum dilakukan.",
         "Usability research dan uji assistive technology pada perangkat fisik belum dilakukan.",
         "Live Clerk environment smoke belum dapat dilakukan tanpa credentials."

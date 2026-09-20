@@ -5,14 +5,16 @@
   "runtime_eligible": false,
   "source_plan": "content/source/u01-l1/audio-plan.json",
   "source_seed_version": "0.1.0",
-  "source_seed_commit": "dbed82e1c49e914c5c32fa0eb695819ccbfbef1b",
-  "generated_at": "2026-09-20T16:39:56.5317625+07:00",
+  "source_seed_commit": "39eb66173b32e823de847cb4bbbe7265e478c954",
+  "generated_at": "2026-09-20T18:56:24.5066650+07:00",
   "distribution_scope": "local_only",
   "binary_policy": "never_commit_or_redistribute",
   "generation_environment": {
     "os": "Microsoft Windows NT 10.0.22631.0",
     "powershell": "7.6.5",
-    "ffmpeg": "9.0-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers"
+    "ffmpeg": "9.0-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers",
+    "voicevox_engine": "0.24.0",
+    "voicevox_api_base_url": "http://127.0.0.1:50021"
   },
   "records": [
     {
@@ -23,45 +25,48 @@
       "japanese_text": "あ",
       "transcript_internal": "あ",
       "evidence_policy": "direct",
-      "source_type": "local_system_tts",
-      "generation_tool": "System.Speech",
-      "voice_provider": "Microsoft Windows installed voice",
-      "voice_id": "MSTTS_V110_jaJP_AyumiM",
-      "voice_name": "Microsoft Ayumi",
+      "source_type": "voicevox_generated_audio",
+      "generation_tool": "VOICEVOX Engine HTTP API",
+      "voice_provider": "VOICEVOX Nemo",
+      "engine_version": "0.24.0",
+      "voice_id": 10005,
+      "voice_name": "女声1",
+      "speaker_uuid": "abccafa5-174f-44d8-b70c-c41eebb3061c",
+      "style_name": "ノーマル",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T16:39:56.5317625+07:00",
+      "generated_at": "2026-09-20T18:56:24.5066650+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.vowel.a.001.wav",
-        "sha256": "sha256:badad8b99cd3504d85d4df7fd10d1431a9029c3c9f04602df3970051769f909e",
+        "sha256": "sha256:200ca98616d05ca95d63b6e5adfff5e3a32331d0d88e29fb61bbe60bd9887cd4",
         "format": {
           "codec": "pcm_s24le",
           "sample_rate_hz": 48000,
           "bits_per_sample": 24,
           "channels": 1,
-          "duration_seconds": 1.014
+          "duration_seconds": 0.341
         }
       },
       "delivery_file": {
         "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.vowel.a.001.wav",
-        "sha256": "sha256:c567805afc03ccba7738f3438c00d6d8aa4db143dae037261f3c931c3e8af9aa",
+        "sha256": "sha256:bc8e0291e2451eccfe786982b436aff72b63fb0541fdef98a60eb69cf47edad6",
         "format": {
           "codec": "pcm_s16le",
           "sample_rate_hz": 48000,
           "bits_per_sample": 16,
           "channels": 1,
-          "duration_seconds": 1.014
+          "duration_seconds": 0.341
         }
       },
       "audio_qa": {
         "status": "automated_measurement_only",
-        "loudness_lufs": -29.5,
-        "true_peak_dbtp": -9.0,
+        "loudness_lufs": -70.0,
+        "true_peak_dbtp": -4.6,
         "clipping_check": "not_tested",
         "noise_check": "not_tested",
         "device_playback_check": "not_tested"
       },
       "accessibility": {
-        "accessible_label": "Audio target U01-L1, speaker a, belum diputar",
+        "accessible_label": "Audio target U01-L1, 女声1 / ノーマル, belum diputar",
         "transcript_release": "after_submission_or_feedback",
         "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
         "alternative_classification": "support_adjusted",
@@ -73,8 +78,9 @@
         "redistribution": "prohibited",
         "rights_receipt_id": null,
         "consent_release_ref": null,
-        "license_ref": null,
-        "attribution": "Microsoft Windows installed voice; local-only scope pending EULA review"
+        "license_ref": "https://voicevox.hiroshiba.jp/nemo/term/",
+        "attribution": "VOICEVOX: Nemo",
+        "evidence_note": "VOICEVOX Nemo Terms berlaku sebagai source reference; exact hash receipt dan review masih pending."
       },
       "review": {
         "academic": "pending",
@@ -93,45 +99,48 @@
       "japanese_text": "あ",
       "transcript_internal": "あ",
       "evidence_policy": "direct",
-      "source_type": "local_system_tts",
-      "generation_tool": "System.Speech",
-      "voice_provider": "Microsoft Windows installed voice",
-      "voice_id": "MSTTS_V110_jaJP_IchiroM",
-      "voice_name": "Microsoft Ichiro",
+      "source_type": "voicevox_generated_audio",
+      "generation_tool": "VOICEVOX Engine HTTP API",
+      "voice_provider": "VOICEVOX Nemo",
+      "engine_version": "0.24.0",
+      "voice_id": 10001,
+      "voice_name": "男声1",
+      "speaker_uuid": "2171909e-d2d1-4bbb-aa45-442c12732665",
+      "style_name": "ノーマル",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T16:39:56.5317625+07:00",
+      "generated_at": "2026-09-20T18:56:24.5066650+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.vowel.a.002.wav",
-        "sha256": "sha256:09ebeb170d78bb56e825192fe86a9535681841e1e220db8bcb750f3c7a84986d",
+        "sha256": "sha256:3e2c55abc4eb178f1be7925b6d288b0d56ca6dcabbe3d534865d40b659a59a02",
         "format": {
           "codec": "pcm_s24le",
           "sample_rate_hz": 48000,
           "bits_per_sample": 24,
           "channels": 1,
-          "duration_seconds": 1.094
+          "duration_seconds": 0.299
         }
       },
       "delivery_file": {
         "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.vowel.a.002.wav",
-        "sha256": "sha256:456dd3499daf47d5bc7a3c1f278eb46dc13dd2e9263de724ffe42345fd6c3ce6",
+        "sha256": "sha256:3bbd1747f16aacb8f88e689ed1b267c1d7e27cb55911d2d128607d3106598bb4",
         "format": {
           "codec": "pcm_s16le",
           "sample_rate_hz": 48000,
           "bits_per_sample": 16,
           "channels": 1,
-          "duration_seconds": 1.094
+          "duration_seconds": 0.299
         }
       },
       "audio_qa": {
         "status": "automated_measurement_only",
-        "loudness_lufs": -38.2,
-        "true_peak_dbtp": -14.4,
+        "loudness_lufs": -70.0,
+        "true_peak_dbtp": -17.2,
         "clipping_check": "not_tested",
         "noise_check": "not_tested",
         "device_playback_check": "not_tested"
       },
       "accessibility": {
-        "accessible_label": "Audio target U01-L1, speaker b, belum diputar",
+        "accessible_label": "Audio target U01-L1, 男声1 / ノーマル, belum diputar",
         "transcript_release": "after_submission_or_feedback",
         "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
         "alternative_classification": "support_adjusted",
@@ -143,8 +152,9 @@
         "redistribution": "prohibited",
         "rights_receipt_id": null,
         "consent_release_ref": null,
-        "license_ref": null,
-        "attribution": "Microsoft Windows installed voice; local-only scope pending EULA review"
+        "license_ref": "https://voicevox.hiroshiba.jp/nemo/term/",
+        "attribution": "VOICEVOX: Nemo",
+        "evidence_note": "VOICEVOX Nemo Terms berlaku sebagai source reference; exact hash receipt dan review masih pending."
       },
       "review": {
         "academic": "pending",
@@ -163,45 +173,48 @@
       "japanese_text": "い",
       "transcript_internal": "い",
       "evidence_policy": "direct",
-      "source_type": "local_system_tts",
-      "generation_tool": "System.Speech",
-      "voice_provider": "Microsoft Windows installed voice",
-      "voice_id": "MSTTS_V110_jaJP_AyumiM",
-      "voice_name": "Microsoft Ayumi",
+      "source_type": "voicevox_generated_audio",
+      "generation_tool": "VOICEVOX Engine HTTP API",
+      "voice_provider": "VOICEVOX Nemo",
+      "engine_version": "0.24.0",
+      "voice_id": 10005,
+      "voice_name": "女声1",
+      "speaker_uuid": "abccafa5-174f-44d8-b70c-c41eebb3061c",
+      "style_name": "ノーマル",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T16:39:56.5317625+07:00",
+      "generated_at": "2026-09-20T18:56:24.5066650+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.vowel.i.001.wav",
-        "sha256": "sha256:84972299dd5846ea999f29ad72ce43a6a2eaa51dceb3e3876c01b5df864d3b61",
+        "sha256": "sha256:446738b093ed1c6421011f1f5962a13fb81f40b49d91033df501d8109081ccda",
         "format": {
           "codec": "pcm_s24le",
           "sample_rate_hz": 48000,
           "bits_per_sample": 24,
           "channels": 1,
-          "duration_seconds": 1.02
+          "duration_seconds": 0.352
         }
       },
       "delivery_file": {
         "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.vowel.i.001.wav",
-        "sha256": "sha256:4562e64f2d692495ec9979094a65bd551be0092903b7ad7c8e9880225ff13d0c",
+        "sha256": "sha256:e91aa94af6e9ba374db2ca32c9737b4f301c84692cad04b4ed50a0318b711f02",
         "format": {
           "codec": "pcm_s16le",
           "sample_rate_hz": 48000,
           "bits_per_sample": 16,
           "channels": 1,
-          "duration_seconds": 1.02
+          "duration_seconds": 0.352
         }
       },
       "audio_qa": {
         "status": "automated_measurement_only",
-        "loudness_lufs": -36.4,
-        "true_peak_dbtp": -20.1,
+        "loudness_lufs": -70.0,
+        "true_peak_dbtp": -9.9,
         "clipping_check": "not_tested",
         "noise_check": "not_tested",
         "device_playback_check": "not_tested"
       },
       "accessibility": {
-        "accessible_label": "Audio target U01-L1, speaker a, belum diputar",
+        "accessible_label": "Audio target U01-L1, 女声1 / ノーマル, belum diputar",
         "transcript_release": "after_submission_or_feedback",
         "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
         "alternative_classification": "support_adjusted",
@@ -213,8 +226,9 @@
         "redistribution": "prohibited",
         "rights_receipt_id": null,
         "consent_release_ref": null,
-        "license_ref": null,
-        "attribution": "Microsoft Windows installed voice; local-only scope pending EULA review"
+        "license_ref": "https://voicevox.hiroshiba.jp/nemo/term/",
+        "attribution": "VOICEVOX: Nemo",
+        "evidence_note": "VOICEVOX Nemo Terms berlaku sebagai source reference; exact hash receipt dan review masih pending."
       },
       "review": {
         "academic": "pending",
@@ -233,45 +247,48 @@
       "japanese_text": "い",
       "transcript_internal": "い",
       "evidence_policy": "direct",
-      "source_type": "local_system_tts",
-      "generation_tool": "System.Speech",
-      "voice_provider": "Microsoft Windows installed voice",
-      "voice_id": "MSTTS_V110_jaJP_IchiroM",
-      "voice_name": "Microsoft Ichiro",
+      "source_type": "voicevox_generated_audio",
+      "generation_tool": "VOICEVOX Engine HTTP API",
+      "voice_provider": "VOICEVOX Nemo",
+      "engine_version": "0.24.0",
+      "voice_id": 10001,
+      "voice_name": "男声1",
+      "speaker_uuid": "2171909e-d2d1-4bbb-aa45-442c12732665",
+      "style_name": "ノーマル",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T16:39:56.5317625+07:00",
+      "generated_at": "2026-09-20T18:56:24.5066650+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.vowel.i.002.wav",
-        "sha256": "sha256:bdf32de58ef54ea01857e91910c30eb551112de24a02ba23f1446aa913a7e39f",
+        "sha256": "sha256:30fad2307c70a0b51a9613edb9accf588750fa1ed1bfb9c55b3da4f9708d7b4b",
         "format": {
           "codec": "pcm_s24le",
           "sample_rate_hz": 48000,
           "bits_per_sample": 24,
           "channels": 1,
-          "duration_seconds": 1.096
+          "duration_seconds": 0.277
         }
       },
       "delivery_file": {
         "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.vowel.i.002.wav",
-        "sha256": "sha256:1553ebe1f8a01f60fdc159af880df4672a234dbe02dd74932e3bff726503fbe3",
+        "sha256": "sha256:4e282671d910832711ced8f47afa7377fd630c6f1f91eb5222df2d044de78073",
         "format": {
           "codec": "pcm_s16le",
           "sample_rate_hz": 48000,
           "bits_per_sample": 16,
           "channels": 1,
-          "duration_seconds": 1.096
+          "duration_seconds": 0.277
         }
       },
       "audio_qa": {
         "status": "automated_measurement_only",
-        "loudness_lufs": -34.7,
-        "true_peak_dbtp": -14.6,
+        "loudness_lufs": -70.0,
+        "true_peak_dbtp": -20.3,
         "clipping_check": "not_tested",
         "noise_check": "not_tested",
         "device_playback_check": "not_tested"
       },
       "accessibility": {
-        "accessible_label": "Audio target U01-L1, speaker b, belum diputar",
+        "accessible_label": "Audio target U01-L1, 男声1 / ノーマル, belum diputar",
         "transcript_release": "after_submission_or_feedback",
         "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
         "alternative_classification": "support_adjusted",
@@ -283,8 +300,9 @@
         "redistribution": "prohibited",
         "rights_receipt_id": null,
         "consent_release_ref": null,
-        "license_ref": null,
-        "attribution": "Microsoft Windows installed voice; local-only scope pending EULA review"
+        "license_ref": "https://voicevox.hiroshiba.jp/nemo/term/",
+        "attribution": "VOICEVOX: Nemo",
+        "evidence_note": "VOICEVOX Nemo Terms berlaku sebagai source reference; exact hash receipt dan review masih pending."
       },
       "review": {
         "academic": "pending",
@@ -303,45 +321,48 @@
       "japanese_text": "う",
       "transcript_internal": "う",
       "evidence_policy": "direct",
-      "source_type": "local_system_tts",
-      "generation_tool": "System.Speech",
-      "voice_provider": "Microsoft Windows installed voice",
-      "voice_id": "MSTTS_V110_jaJP_AyumiM",
-      "voice_name": "Microsoft Ayumi",
+      "source_type": "voicevox_generated_audio",
+      "generation_tool": "VOICEVOX Engine HTTP API",
+      "voice_provider": "VOICEVOX Nemo",
+      "engine_version": "0.24.0",
+      "voice_id": 10005,
+      "voice_name": "女声1",
+      "speaker_uuid": "abccafa5-174f-44d8-b70c-c41eebb3061c",
+      "style_name": "ノーマル",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T16:39:56.5317625+07:00",
+      "generated_at": "2026-09-20T18:56:24.5066650+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.vowel.u.001.wav",
-        "sha256": "sha256:3c56e4ad8542a629678a18c865d763cab5ce23e7620820b9354cf2eb3d1f1742",
+        "sha256": "sha256:c5a867c02594953545a091b077bd260bb5f17011551715f9e251b95181c6fc19",
         "format": {
           "codec": "pcm_s24le",
           "sample_rate_hz": 48000,
           "bits_per_sample": 24,
           "channels": 1,
-          "duration_seconds": 1.054
+          "duration_seconds": 0.309
         }
       },
       "delivery_file": {
         "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.vowel.u.001.wav",
-        "sha256": "sha256:f0d2d0b7c13dbc5b35bdc4b8a2e47a0c0a2827b12ede62c04ccdedd92e3f2086",
+        "sha256": "sha256:497003b2975a1378b917205ea131590c67e71b6e1ee944e73b9d3777fe99b544",
         "format": {
           "codec": "pcm_s16le",
           "sample_rate_hz": 48000,
           "bits_per_sample": 16,
           "channels": 1,
-          "duration_seconds": 1.054
+          "duration_seconds": 0.309
         }
       },
       "audio_qa": {
         "status": "automated_measurement_only",
-        "loudness_lufs": -34.1,
-        "true_peak_dbtp": -14.8,
+        "loudness_lufs": -70.0,
+        "true_peak_dbtp": -11.0,
         "clipping_check": "not_tested",
         "noise_check": "not_tested",
         "device_playback_check": "not_tested"
       },
       "accessibility": {
-        "accessible_label": "Audio target U01-L1, speaker a, belum diputar",
+        "accessible_label": "Audio target U01-L1, 女声1 / ノーマル, belum diputar",
         "transcript_release": "after_submission_or_feedback",
         "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
         "alternative_classification": "support_adjusted",
@@ -353,8 +374,9 @@
         "redistribution": "prohibited",
         "rights_receipt_id": null,
         "consent_release_ref": null,
-        "license_ref": null,
-        "attribution": "Microsoft Windows installed voice; local-only scope pending EULA review"
+        "license_ref": "https://voicevox.hiroshiba.jp/nemo/term/",
+        "attribution": "VOICEVOX: Nemo",
+        "evidence_note": "VOICEVOX Nemo Terms berlaku sebagai source reference; exact hash receipt dan review masih pending."
       },
       "review": {
         "academic": "pending",
@@ -373,45 +395,48 @@
       "japanese_text": "う",
       "transcript_internal": "う",
       "evidence_policy": "direct",
-      "source_type": "local_system_tts",
-      "generation_tool": "System.Speech",
-      "voice_provider": "Microsoft Windows installed voice",
-      "voice_id": "MSTTS_V110_jaJP_IchiroM",
-      "voice_name": "Microsoft Ichiro",
+      "source_type": "voicevox_generated_audio",
+      "generation_tool": "VOICEVOX Engine HTTP API",
+      "voice_provider": "VOICEVOX Nemo",
+      "engine_version": "0.24.0",
+      "voice_id": 10001,
+      "voice_name": "男声1",
+      "speaker_uuid": "2171909e-d2d1-4bbb-aa45-442c12732665",
+      "style_name": "ノーマル",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T16:39:56.5317625+07:00",
+      "generated_at": "2026-09-20T18:56:24.5066650+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.vowel.u.002.wav",
-        "sha256": "sha256:bfa6fb8046883d903f929bf192a69ef6dc915d4cb277d467ed84439c1d682ee3",
+        "sha256": "sha256:2333257a7ffbb0b14b0ce89b8d237bc404af6a48317958f7c144cb626502fd14",
         "format": {
           "codec": "pcm_s24le",
           "sample_rate_hz": 48000,
           "bits_per_sample": 24,
           "channels": 1,
-          "duration_seconds": 1.13
+          "duration_seconds": 0.299
         }
       },
       "delivery_file": {
         "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.vowel.u.002.wav",
-        "sha256": "sha256:2760594d16be80495359f797e9a225034a9ca4da31517245919b9f94b1036505",
+        "sha256": "sha256:eae9e39c09e3d6774c16e34449ea225a702c16ab4fcb79069ebcbf1538411bb4",
         "format": {
           "codec": "pcm_s16le",
           "sample_rate_hz": 48000,
           "bits_per_sample": 16,
           "channels": 1,
-          "duration_seconds": 1.13
+          "duration_seconds": 0.299
         }
       },
       "audio_qa": {
         "status": "automated_measurement_only",
-        "loudness_lufs": -35.3,
-        "true_peak_dbtp": -13.9,
+        "loudness_lufs": -70.0,
+        "true_peak_dbtp": -19.3,
         "clipping_check": "not_tested",
         "noise_check": "not_tested",
         "device_playback_check": "not_tested"
       },
       "accessibility": {
-        "accessible_label": "Audio target U01-L1, speaker b, belum diputar",
+        "accessible_label": "Audio target U01-L1, 男声1 / ノーマル, belum diputar",
         "transcript_release": "after_submission_or_feedback",
         "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
         "alternative_classification": "support_adjusted",
@@ -423,8 +448,9 @@
         "redistribution": "prohibited",
         "rights_receipt_id": null,
         "consent_release_ref": null,
-        "license_ref": null,
-        "attribution": "Microsoft Windows installed voice; local-only scope pending EULA review"
+        "license_ref": "https://voicevox.hiroshiba.jp/nemo/term/",
+        "attribution": "VOICEVOX: Nemo",
+        "evidence_note": "VOICEVOX Nemo Terms berlaku sebagai source reference; exact hash receipt dan review masih pending."
       },
       "review": {
         "academic": "pending",
@@ -443,45 +469,48 @@
       "japanese_text": "え",
       "transcript_internal": "え",
       "evidence_policy": "direct",
-      "source_type": "local_system_tts",
-      "generation_tool": "System.Speech",
-      "voice_provider": "Microsoft Windows installed voice",
-      "voice_id": "MSTTS_V110_jaJP_AyumiM",
-      "voice_name": "Microsoft Ayumi",
+      "source_type": "voicevox_generated_audio",
+      "generation_tool": "VOICEVOX Engine HTTP API",
+      "voice_provider": "VOICEVOX Nemo",
+      "engine_version": "0.24.0",
+      "voice_id": 10005,
+      "voice_name": "女声1",
+      "speaker_uuid": "abccafa5-174f-44d8-b70c-c41eebb3061c",
+      "style_name": "ノーマル",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T16:39:56.5317625+07:00",
+      "generated_at": "2026-09-20T18:56:24.5066650+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.vowel.e.001.wav",
-        "sha256": "sha256:33f1a9a4561673d51bc6de92b8591190799a1e8164fe017b2c17551133aa3631",
+        "sha256": "sha256:2b40e95be928116beb558ce7b9129ca066552f569de81ac5c7c37cf421fc1f9e",
         "format": {
           "codec": "pcm_s24le",
           "sample_rate_hz": 48000,
           "bits_per_sample": 24,
           "channels": 1,
-          "duration_seconds": 1.02
+          "duration_seconds": 0.395
         }
       },
       "delivery_file": {
         "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.vowel.e.001.wav",
-        "sha256": "sha256:a42c1afbeaed87bacc76c8af839eef9d35e34c3597fe157e59910374be744c05",
+        "sha256": "sha256:b49ab87a06ab5988425b49dd69edd2c42f6d0f93a1638285343cbcefb9e548d3",
         "format": {
           "codec": "pcm_s16le",
           "sample_rate_hz": 48000,
           "bits_per_sample": 16,
           "channels": 1,
-          "duration_seconds": 1.02
+          "duration_seconds": 0.395
         }
       },
       "audio_qa": {
         "status": "automated_measurement_only",
-        "loudness_lufs": -28.1,
-        "true_peak_dbtp": -8.5,
+        "loudness_lufs": -70.0,
+        "true_peak_dbtp": -6.5,
         "clipping_check": "not_tested",
         "noise_check": "not_tested",
         "device_playback_check": "not_tested"
       },
       "accessibility": {
-        "accessible_label": "Audio target U01-L1, speaker a, belum diputar",
+        "accessible_label": "Audio target U01-L1, 女声1 / ノーマル, belum diputar",
         "transcript_release": "after_submission_or_feedback",
         "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
         "alternative_classification": "support_adjusted",
@@ -493,8 +522,9 @@
         "redistribution": "prohibited",
         "rights_receipt_id": null,
         "consent_release_ref": null,
-        "license_ref": null,
-        "attribution": "Microsoft Windows installed voice; local-only scope pending EULA review"
+        "license_ref": "https://voicevox.hiroshiba.jp/nemo/term/",
+        "attribution": "VOICEVOX: Nemo",
+        "evidence_note": "VOICEVOX Nemo Terms berlaku sebagai source reference; exact hash receipt dan review masih pending."
       },
       "review": {
         "academic": "pending",
@@ -513,45 +543,48 @@
       "japanese_text": "え",
       "transcript_internal": "え",
       "evidence_policy": "direct",
-      "source_type": "local_system_tts",
-      "generation_tool": "System.Speech",
-      "voice_provider": "Microsoft Windows installed voice",
-      "voice_id": "MSTTS_V110_jaJP_IchiroM",
-      "voice_name": "Microsoft Ichiro",
+      "source_type": "voicevox_generated_audio",
+      "generation_tool": "VOICEVOX Engine HTTP API",
+      "voice_provider": "VOICEVOX Nemo",
+      "engine_version": "0.24.0",
+      "voice_id": 10001,
+      "voice_name": "男声1",
+      "speaker_uuid": "2171909e-d2d1-4bbb-aa45-442c12732665",
+      "style_name": "ノーマル",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T16:39:56.5317625+07:00",
+      "generated_at": "2026-09-20T18:56:24.5066650+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.vowel.e.002.wav",
-        "sha256": "sha256:f5c502fe73caebec496f64a0912f3e737614e9e47bd385952b535e65625aa015",
+        "sha256": "sha256:5c0f13a5a0def5a87f450c4a43cbfb0b6c7aff5aecd95e292bd52e1a68561cb6",
         "format": {
           "codec": "pcm_s24le",
           "sample_rate_hz": 48000,
           "bits_per_sample": 24,
           "channels": 1,
-          "duration_seconds": 1.092
+          "duration_seconds": 0.309
         }
       },
       "delivery_file": {
         "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.vowel.e.002.wav",
-        "sha256": "sha256:b3459af357f43200b70d56324cf243b1578fd6ba6890e1acca6dab02a4d2c712",
+        "sha256": "sha256:e891a163894545549cf22e46e52035e91abd83d64a091ab2a0f178e0825fd620",
         "format": {
           "codec": "pcm_s16le",
           "sample_rate_hz": 48000,
           "bits_per_sample": 16,
           "channels": 1,
-          "duration_seconds": 1.092
+          "duration_seconds": 0.309
         }
       },
       "audio_qa": {
         "status": "automated_measurement_only",
-        "loudness_lufs": -37.0,
-        "true_peak_dbtp": -15.6,
+        "loudness_lufs": -70.0,
+        "true_peak_dbtp": -16.7,
         "clipping_check": "not_tested",
         "noise_check": "not_tested",
         "device_playback_check": "not_tested"
       },
       "accessibility": {
-        "accessible_label": "Audio target U01-L1, speaker b, belum diputar",
+        "accessible_label": "Audio target U01-L1, 男声1 / ノーマル, belum diputar",
         "transcript_release": "after_submission_or_feedback",
         "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
         "alternative_classification": "support_adjusted",
@@ -563,8 +596,9 @@
         "redistribution": "prohibited",
         "rights_receipt_id": null,
         "consent_release_ref": null,
-        "license_ref": null,
-        "attribution": "Microsoft Windows installed voice; local-only scope pending EULA review"
+        "license_ref": "https://voicevox.hiroshiba.jp/nemo/term/",
+        "attribution": "VOICEVOX: Nemo",
+        "evidence_note": "VOICEVOX Nemo Terms berlaku sebagai source reference; exact hash receipt dan review masih pending."
       },
       "review": {
         "academic": "pending",
@@ -583,45 +617,48 @@
       "japanese_text": "お",
       "transcript_internal": "お",
       "evidence_policy": "direct",
-      "source_type": "local_system_tts",
-      "generation_tool": "System.Speech",
-      "voice_provider": "Microsoft Windows installed voice",
-      "voice_id": "MSTTS_V110_jaJP_AyumiM",
-      "voice_name": "Microsoft Ayumi",
+      "source_type": "voicevox_generated_audio",
+      "generation_tool": "VOICEVOX Engine HTTP API",
+      "voice_provider": "VOICEVOX Nemo",
+      "engine_version": "0.24.0",
+      "voice_id": 10005,
+      "voice_name": "女声1",
+      "speaker_uuid": "abccafa5-174f-44d8-b70c-c41eebb3061c",
+      "style_name": "ノーマル",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T16:39:56.5317625+07:00",
+      "generated_at": "2026-09-20T18:56:24.5066650+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.vowel.o.001.wav",
-        "sha256": "sha256:d23c154fc18db0c4a83cf4525a31ed6662b25bfdc2bf03dfe00bb2ee1312cf05",
+        "sha256": "sha256:1ddc5e9ecf9db55fe431751b0745f16536609eb4d65ee3fa4df1ecf0b68ed105",
         "format": {
           "codec": "pcm_s24le",
           "sample_rate_hz": 48000,
           "bits_per_sample": 24,
           "channels": 1,
-          "duration_seconds": 1.014
+          "duration_seconds": 0.32
         }
       },
       "delivery_file": {
         "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.vowel.o.001.wav",
-        "sha256": "sha256:f730aa08b79547c0733303f176c27ed9c92e64f3bbd6995a831b0ada4624b659",
+        "sha256": "sha256:842bf40bd3601a8d8c132bb995b9d3cbdf03308e0a61769dfcd596019309a97a",
         "format": {
           "codec": "pcm_s16le",
           "sample_rate_hz": 48000,
           "bits_per_sample": 16,
           "channels": 1,
-          "duration_seconds": 1.014
+          "duration_seconds": 0.32
         }
       },
       "audio_qa": {
         "status": "automated_measurement_only",
-        "loudness_lufs": -28.7,
-        "true_peak_dbtp": -9.3,
+        "loudness_lufs": -70.0,
+        "true_peak_dbtp": -9.9,
         "clipping_check": "not_tested",
         "noise_check": "not_tested",
         "device_playback_check": "not_tested"
       },
       "accessibility": {
-        "accessible_label": "Audio target U01-L1, speaker a, belum diputar",
+        "accessible_label": "Audio target U01-L1, 女声1 / ノーマル, belum diputar",
         "transcript_release": "after_submission_or_feedback",
         "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
         "alternative_classification": "support_adjusted",
@@ -633,8 +670,9 @@
         "redistribution": "prohibited",
         "rights_receipt_id": null,
         "consent_release_ref": null,
-        "license_ref": null,
-        "attribution": "Microsoft Windows installed voice; local-only scope pending EULA review"
+        "license_ref": "https://voicevox.hiroshiba.jp/nemo/term/",
+        "attribution": "VOICEVOX: Nemo",
+        "evidence_note": "VOICEVOX Nemo Terms berlaku sebagai source reference; exact hash receipt dan review masih pending."
       },
       "review": {
         "academic": "pending",
@@ -653,45 +691,48 @@
       "japanese_text": "お",
       "transcript_internal": "お",
       "evidence_policy": "direct",
-      "source_type": "local_system_tts",
-      "generation_tool": "System.Speech",
-      "voice_provider": "Microsoft Windows installed voice",
-      "voice_id": "MSTTS_V110_jaJP_IchiroM",
-      "voice_name": "Microsoft Ichiro",
+      "source_type": "voicevox_generated_audio",
+      "generation_tool": "VOICEVOX Engine HTTP API",
+      "voice_provider": "VOICEVOX Nemo",
+      "engine_version": "0.24.0",
+      "voice_id": 10001,
+      "voice_name": "男声1",
+      "speaker_uuid": "2171909e-d2d1-4bbb-aa45-442c12732665",
+      "style_name": "ノーマル",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T16:39:56.5317625+07:00",
+      "generated_at": "2026-09-20T18:56:24.5066650+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.vowel.o.002.wav",
-        "sha256": "sha256:677e9ef92eba2a7b9d28a1aef358d6df0921892ecd83b6191a3b9418b99f2914",
+        "sha256": "sha256:327a11c3c3c589ec777115c5224566cea2216095944fad156dd487acb446db90",
         "format": {
           "codec": "pcm_s24le",
           "sample_rate_hz": 48000,
           "bits_per_sample": 24,
           "channels": 1,
-          "duration_seconds": 1.094
+          "duration_seconds": 0.299
         }
       },
       "delivery_file": {
         "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.vowel.o.002.wav",
-        "sha256": "sha256:8178fdba96c218ba684ec62156b066cf4e546bae21a6fb5d799470bcc7dcae32",
+        "sha256": "sha256:9f33d1799f9789a866a88550450dc85909d69a99e19f0634b31ba6f4939c63cd",
         "format": {
           "codec": "pcm_s16le",
           "sample_rate_hz": 48000,
           "bits_per_sample": 16,
           "channels": 1,
-          "duration_seconds": 1.094
+          "duration_seconds": 0.299
         }
       },
       "audio_qa": {
         "status": "automated_measurement_only",
-        "loudness_lufs": -29.5,
-        "true_peak_dbtp": -6.8,
+        "loudness_lufs": -70.0,
+        "true_peak_dbtp": -20.4,
         "clipping_check": "not_tested",
         "noise_check": "not_tested",
         "device_playback_check": "not_tested"
       },
       "accessibility": {
-        "accessible_label": "Audio target U01-L1, speaker b, belum diputar",
+        "accessible_label": "Audio target U01-L1, 男声1 / ノーマル, belum diputar",
         "transcript_release": "after_submission_or_feedback",
         "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
         "alternative_classification": "support_adjusted",
@@ -703,8 +744,9 @@
         "redistribution": "prohibited",
         "rights_receipt_id": null,
         "consent_release_ref": null,
-        "license_ref": null,
-        "attribution": "Microsoft Windows installed voice; local-only scope pending EULA review"
+        "license_ref": "https://voicevox.hiroshiba.jp/nemo/term/",
+        "attribution": "VOICEVOX: Nemo",
+        "evidence_note": "VOICEVOX Nemo Terms berlaku sebagai source reference; exact hash receipt dan review masih pending."
       },
       "review": {
         "academic": "pending",
@@ -723,45 +765,48 @@
       "japanese_text": "おはようございます",
       "transcript_internal": "おはようございます",
       "evidence_policy": "applied",
-      "source_type": "local_system_tts",
-      "generation_tool": "System.Speech",
-      "voice_provider": "Microsoft Windows installed voice",
-      "voice_id": "MSTTS_V110_jaJP_AyumiM",
-      "voice_name": "Microsoft Ayumi",
+      "source_type": "voicevox_generated_audio",
+      "generation_tool": "VOICEVOX Engine HTTP API",
+      "voice_provider": "VOICEVOX Nemo",
+      "engine_version": "0.24.0",
+      "voice_id": 10005,
+      "voice_name": "女声1",
+      "speaker_uuid": "abccafa5-174f-44d8-b70c-c41eebb3061c",
+      "style_name": "ノーマル",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T16:39:56.5317625+07:00",
+      "generated_at": "2026-09-20T18:56:24.5066650+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.greeting.ohayou_gozaimasu.001.wav",
-        "sha256": "sha256:c9b3192d7e98961ae1b6e7108acfb4eef2201f51b3efcfe34deb1ab5b506ae20",
+        "sha256": "sha256:67b592c578b16bdcc66b7c79fc6aad1d28afd0d044d797f1bdf72c6cd5216ab4",
         "format": {
           "codec": "pcm_s24le",
           "sample_rate_hz": 48000,
           "bits_per_sample": 24,
           "channels": 1,
-          "duration_seconds": 2.26
+          "duration_seconds": 1.269
         }
       },
       "delivery_file": {
         "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.greeting.ohayou_gozaimasu.001.wav",
-        "sha256": "sha256:098596df1700ccfe58616e32619bd877c458cefa556bd3fc066b267737769a4b",
+        "sha256": "sha256:83adad975cc6757191586fb86402ec55e26c28274487b41b4c61cd1b686735ca",
         "format": {
           "codec": "pcm_s16le",
           "sample_rate_hz": 48000,
           "bits_per_sample": 16,
           "channels": 1,
-          "duration_seconds": 2.26
+          "duration_seconds": 1.269
         }
       },
       "audio_qa": {
         "status": "automated_measurement_only",
-        "loudness_lufs": -19.4,
-        "true_peak_dbtp": -5.0,
+        "loudness_lufs": -21.3,
+        "true_peak_dbtp": -8.2,
         "clipping_check": "not_tested",
         "noise_check": "not_tested",
         "device_playback_check": "not_tested"
       },
       "accessibility": {
-        "accessible_label": "Audio target U01-L1, speaker a, belum diputar",
+        "accessible_label": "Audio target U01-L1, 女声1 / ノーマル, belum diputar",
         "transcript_release": "after_submission_or_feedback",
         "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
         "alternative_classification": "support_adjusted",
@@ -773,8 +818,9 @@
         "redistribution": "prohibited",
         "rights_receipt_id": null,
         "consent_release_ref": null,
-        "license_ref": null,
-        "attribution": "Microsoft Windows installed voice; local-only scope pending EULA review"
+        "license_ref": "https://voicevox.hiroshiba.jp/nemo/term/",
+        "attribution": "VOICEVOX: Nemo",
+        "evidence_note": "VOICEVOX Nemo Terms berlaku sebagai source reference; exact hash receipt dan review masih pending."
       },
       "review": {
         "academic": "pending",
@@ -793,45 +839,48 @@
       "japanese_text": "おはようございます",
       "transcript_internal": "おはようございます",
       "evidence_policy": "applied",
-      "source_type": "local_system_tts",
-      "generation_tool": "System.Speech",
-      "voice_provider": "Microsoft Windows installed voice",
-      "voice_id": "MSTTS_V110_jaJP_IchiroM",
-      "voice_name": "Microsoft Ichiro",
+      "source_type": "voicevox_generated_audio",
+      "generation_tool": "VOICEVOX Engine HTTP API",
+      "voice_provider": "VOICEVOX Nemo",
+      "engine_version": "0.24.0",
+      "voice_id": 10001,
+      "voice_name": "男声1",
+      "speaker_uuid": "2171909e-d2d1-4bbb-aa45-442c12732665",
+      "style_name": "ノーマル",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T16:39:56.5317625+07:00",
+      "generated_at": "2026-09-20T18:56:24.5066650+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.greeting.ohayou_gozaimasu.002.wav",
-        "sha256": "sha256:ea4c1996d630f11dae56f5a6b2b1ca8fcd7c7556080ff4454b3fc83fce2d3455",
+        "sha256": "sha256:3a0caa70e98a7fac05a3a3d78f6f856bc3a6847e81adc3406d7fab5277b7f644",
         "format": {
           "codec": "pcm_s24le",
           "sample_rate_hz": 48000,
           "bits_per_sample": 24,
           "channels": 1,
-          "duration_seconds": 2.252
+          "duration_seconds": 1.056
         }
       },
       "delivery_file": {
         "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.greeting.ohayou_gozaimasu.002.wav",
-        "sha256": "sha256:48e0d8d2bdcd771a1e16ba81912783a3f7cb3acfcdfc875ac0b19bdc1a0a268e",
+        "sha256": "sha256:98eb96ac495dfb2c97b6768ee659863207186cb9886dcef1fc67997662efbea6",
         "format": {
           "codec": "pcm_s16le",
           "sample_rate_hz": 48000,
           "bits_per_sample": 16,
           "channels": 1,
-          "duration_seconds": 2.252
+          "duration_seconds": 1.056
         }
       },
       "audio_qa": {
         "status": "automated_measurement_only",
-        "loudness_lufs": -21.3,
-        "true_peak_dbtp": -5.7,
+        "loudness_lufs": -22.3,
+        "true_peak_dbtp": -6.7,
         "clipping_check": "not_tested",
         "noise_check": "not_tested",
         "device_playback_check": "not_tested"
       },
       "accessibility": {
-        "accessible_label": "Audio target U01-L1, speaker b, belum diputar",
+        "accessible_label": "Audio target U01-L1, 男声1 / ノーマル, belum diputar",
         "transcript_release": "after_submission_or_feedback",
         "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
         "alternative_classification": "support_adjusted",
@@ -843,8 +892,9 @@
         "redistribution": "prohibited",
         "rights_receipt_id": null,
         "consent_release_ref": null,
-        "license_ref": null,
-        "attribution": "Microsoft Windows installed voice; local-only scope pending EULA review"
+        "license_ref": "https://voicevox.hiroshiba.jp/nemo/term/",
+        "attribution": "VOICEVOX: Nemo",
+        "evidence_note": "VOICEVOX Nemo Terms berlaku sebagai source reference; exact hash receipt dan review masih pending."
       },
       "review": {
         "academic": "pending",
@@ -863,45 +913,48 @@
       "japanese_text": "こんにちは",
       "transcript_internal": "こんにちは",
       "evidence_policy": "applied",
-      "source_type": "local_system_tts",
-      "generation_tool": "System.Speech",
-      "voice_provider": "Microsoft Windows installed voice",
-      "voice_id": "MSTTS_V110_jaJP_AyumiM",
-      "voice_name": "Microsoft Ayumi",
+      "source_type": "voicevox_generated_audio",
+      "generation_tool": "VOICEVOX Engine HTTP API",
+      "voice_provider": "VOICEVOX Nemo",
+      "engine_version": "0.24.0",
+      "voice_id": 10005,
+      "voice_name": "女声1",
+      "speaker_uuid": "abccafa5-174f-44d8-b70c-c41eebb3061c",
+      "style_name": "ノーマル",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T16:39:56.5317625+07:00",
+      "generated_at": "2026-09-20T18:56:24.5066650+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.greeting.konnichiwa.001.wav",
-        "sha256": "sha256:be3e82932de616282e786494d3eac8b44a6b35a9812f6d2e404ab485a408cb26",
+        "sha256": "sha256:f08135bd0f81d14e3cf58847ab7b2d7dfbcc7c55078beef8970d4ef5ede41727",
         "format": {
           "codec": "pcm_s24le",
           "sample_rate_hz": 48000,
           "bits_per_sample": 24,
           "channels": 1,
-          "duration_seconds": 1.62
+          "duration_seconds": 0.875
         }
       },
       "delivery_file": {
         "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.greeting.konnichiwa.001.wav",
-        "sha256": "sha256:be5ea027fa508dc4da93eade52d6e000fcfea94763b5be806bdb54e3c22db8ec",
+        "sha256": "sha256:6fbb3dd69ab4cf0c9b1aa02833b06346f8676c2b8f45b34bbbdf7825e23835fe",
         "format": {
           "codec": "pcm_s16le",
           "sample_rate_hz": 48000,
           "bits_per_sample": 16,
           "channels": 1,
-          "duration_seconds": 1.62
+          "duration_seconds": 0.875
         }
       },
       "audio_qa": {
         "status": "automated_measurement_only",
-        "loudness_lufs": -21.4,
-        "true_peak_dbtp": -7.8,
+        "loudness_lufs": -20.2,
+        "true_peak_dbtp": -5.3,
         "clipping_check": "not_tested",
         "noise_check": "not_tested",
         "device_playback_check": "not_tested"
       },
       "accessibility": {
-        "accessible_label": "Audio target U01-L1, speaker a, belum diputar",
+        "accessible_label": "Audio target U01-L1, 女声1 / ノーマル, belum diputar",
         "transcript_release": "after_submission_or_feedback",
         "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
         "alternative_classification": "support_adjusted",
@@ -913,8 +966,9 @@
         "redistribution": "prohibited",
         "rights_receipt_id": null,
         "consent_release_ref": null,
-        "license_ref": null,
-        "attribution": "Microsoft Windows installed voice; local-only scope pending EULA review"
+        "license_ref": "https://voicevox.hiroshiba.jp/nemo/term/",
+        "attribution": "VOICEVOX: Nemo",
+        "evidence_note": "VOICEVOX Nemo Terms berlaku sebagai source reference; exact hash receipt dan review masih pending."
       },
       "review": {
         "academic": "pending",
@@ -933,45 +987,48 @@
       "japanese_text": "こんにちは",
       "transcript_internal": "こんにちは",
       "evidence_policy": "applied",
-      "source_type": "local_system_tts",
-      "generation_tool": "System.Speech",
-      "voice_provider": "Microsoft Windows installed voice",
-      "voice_id": "MSTTS_V110_jaJP_IchiroM",
-      "voice_name": "Microsoft Ichiro",
+      "source_type": "voicevox_generated_audio",
+      "generation_tool": "VOICEVOX Engine HTTP API",
+      "voice_provider": "VOICEVOX Nemo",
+      "engine_version": "0.24.0",
+      "voice_id": 10001,
+      "voice_name": "男声1",
+      "speaker_uuid": "2171909e-d2d1-4bbb-aa45-442c12732665",
+      "style_name": "ノーマル",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T16:39:56.5317625+07:00",
+      "generated_at": "2026-09-20T18:56:24.5066650+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.greeting.konnichiwa.002.wav",
-        "sha256": "sha256:061fa63fafffc27f3860d495caf042f8ccb51ff5a6d18c5b78d155736d51ac53",
+        "sha256": "sha256:2abecdc15ddf687c5ab4a3bd1a11e180ebaf7ebf7268ec5cf4b856a579bc6653",
         "format": {
           "codec": "pcm_s24le",
           "sample_rate_hz": 48000,
           "bits_per_sample": 24,
           "channels": 1,
-          "duration_seconds": 1.656
+          "duration_seconds": 0.725
         }
       },
       "delivery_file": {
         "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.greeting.konnichiwa.002.wav",
-        "sha256": "sha256:fddb44b9601001566c7861777789310dbb0c6a0f4559727e1d132c9b8b283c0e",
+        "sha256": "sha256:10cb7ad4c652962506cae36aa138adb5bb376b2d4e7a7afbf2006488867332a1",
         "format": {
           "codec": "pcm_s16le",
           "sample_rate_hz": 48000,
           "bits_per_sample": 16,
           "channels": 1,
-          "duration_seconds": 1.656
+          "duration_seconds": 0.725
         }
       },
       "audio_qa": {
         "status": "automated_measurement_only",
-        "loudness_lufs": -22.8,
-        "true_peak_dbtp": -5.1,
+        "loudness_lufs": -22.4,
+        "true_peak_dbtp": -8.9,
         "clipping_check": "not_tested",
         "noise_check": "not_tested",
         "device_playback_check": "not_tested"
       },
       "accessibility": {
-        "accessible_label": "Audio target U01-L1, speaker b, belum diputar",
+        "accessible_label": "Audio target U01-L1, 男声1 / ノーマル, belum diputar",
         "transcript_release": "after_submission_or_feedback",
         "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
         "alternative_classification": "support_adjusted",
@@ -983,8 +1040,9 @@
         "redistribution": "prohibited",
         "rights_receipt_id": null,
         "consent_release_ref": null,
-        "license_ref": null,
-        "attribution": "Microsoft Windows installed voice; local-only scope pending EULA review"
+        "license_ref": "https://voicevox.hiroshiba.jp/nemo/term/",
+        "attribution": "VOICEVOX: Nemo",
+        "evidence_note": "VOICEVOX Nemo Terms berlaku sebagai source reference; exact hash receipt dan review masih pending."
       },
       "review": {
         "academic": "pending",
@@ -1003,45 +1061,48 @@
       "japanese_text": "こんばんは",
       "transcript_internal": "こんばんは",
       "evidence_policy": "applied",
-      "source_type": "local_system_tts",
-      "generation_tool": "System.Speech",
-      "voice_provider": "Microsoft Windows installed voice",
-      "voice_id": "MSTTS_V110_jaJP_AyumiM",
-      "voice_name": "Microsoft Ayumi",
+      "source_type": "voicevox_generated_audio",
+      "generation_tool": "VOICEVOX Engine HTTP API",
+      "voice_provider": "VOICEVOX Nemo",
+      "engine_version": "0.24.0",
+      "voice_id": 10005,
+      "voice_name": "女声1",
+      "speaker_uuid": "abccafa5-174f-44d8-b70c-c41eebb3061c",
+      "style_name": "ノーマル",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T16:39:56.5317625+07:00",
+      "generated_at": "2026-09-20T18:56:24.5066650+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.greeting.konbanwa.001.wav",
-        "sha256": "sha256:a7f66f3184f8abcc0024f2fb6a537a3b3980a4165b5792afe8774dbc441b7217",
+        "sha256": "sha256:71792b38e08738be495b8deee9b36975d4bff975b4114a7e3d741a21dd0b92c1",
         "format": {
           "codec": "pcm_s24le",
           "sample_rate_hz": 48000,
           "bits_per_sample": 24,
           "channels": 1,
-          "duration_seconds": 1.604
+          "duration_seconds": 0.8
         }
       },
       "delivery_file": {
         "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.greeting.konbanwa.001.wav",
-        "sha256": "sha256:0c82b48e0832dc5445370f0da4cffd919ce02eeafb64136b50664ad78ace01af",
+        "sha256": "sha256:a37ce2d4b6b0be03f702a5f10d2b5d97d6b588e50f9bfe5754539abd73d96729",
         "format": {
           "codec": "pcm_s16le",
           "sample_rate_hz": 48000,
           "bits_per_sample": 16,
           "channels": 1,
-          "duration_seconds": 1.604
+          "duration_seconds": 0.8
         }
       },
       "audio_qa": {
         "status": "automated_measurement_only",
-        "loudness_lufs": -21.0,
-        "true_peak_dbtp": -7.2,
+        "loudness_lufs": -20.1,
+        "true_peak_dbtp": -5.7,
         "clipping_check": "not_tested",
         "noise_check": "not_tested",
         "device_playback_check": "not_tested"
       },
       "accessibility": {
-        "accessible_label": "Audio target U01-L1, speaker a, belum diputar",
+        "accessible_label": "Audio target U01-L1, 女声1 / ノーマル, belum diputar",
         "transcript_release": "after_submission_or_feedback",
         "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
         "alternative_classification": "support_adjusted",
@@ -1053,8 +1114,9 @@
         "redistribution": "prohibited",
         "rights_receipt_id": null,
         "consent_release_ref": null,
-        "license_ref": null,
-        "attribution": "Microsoft Windows installed voice; local-only scope pending EULA review"
+        "license_ref": "https://voicevox.hiroshiba.jp/nemo/term/",
+        "attribution": "VOICEVOX: Nemo",
+        "evidence_note": "VOICEVOX Nemo Terms berlaku sebagai source reference; exact hash receipt dan review masih pending."
       },
       "review": {
         "academic": "pending",
@@ -1073,45 +1135,48 @@
       "japanese_text": "こんばんは",
       "transcript_internal": "こんばんは",
       "evidence_policy": "applied",
-      "source_type": "local_system_tts",
-      "generation_tool": "System.Speech",
-      "voice_provider": "Microsoft Windows installed voice",
-      "voice_id": "MSTTS_V110_jaJP_IchiroM",
-      "voice_name": "Microsoft Ichiro",
+      "source_type": "voicevox_generated_audio",
+      "generation_tool": "VOICEVOX Engine HTTP API",
+      "voice_provider": "VOICEVOX Nemo",
+      "engine_version": "0.24.0",
+      "voice_id": 10001,
+      "voice_name": "男声1",
+      "speaker_uuid": "2171909e-d2d1-4bbb-aa45-442c12732665",
+      "style_name": "ノーマル",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T16:39:56.5317625+07:00",
+      "generated_at": "2026-09-20T18:56:24.5066650+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.greeting.konbanwa.002.wav",
-        "sha256": "sha256:99b1d3642a252b27613f2fae4d1a397e93e9abe20f54f7be0d4bed7f83fb3911",
+        "sha256": "sha256:9bd623d9de37d84e48aeac78dd164796dd4c3795c3886b89b16bb6b8e12c0c46",
         "format": {
           "codec": "pcm_s24le",
           "sample_rate_hz": 48000,
           "bits_per_sample": 24,
           "channels": 1,
-          "duration_seconds": 1.634
+          "duration_seconds": 0.683
         }
       },
       "delivery_file": {
         "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.greeting.konbanwa.002.wav",
-        "sha256": "sha256:1511bb618477deedf37d86ea1869defb4466385af14a039d617f767e4341d1ce",
+        "sha256": "sha256:c5a7f7167ddf47088b11da33debb80bd038571c9461fbdb1a36855a567291d2f",
         "format": {
           "codec": "pcm_s16le",
           "sample_rate_hz": 48000,
           "bits_per_sample": 16,
           "channels": 1,
-          "duration_seconds": 1.634
+          "duration_seconds": 0.683
         }
       },
       "audio_qa": {
         "status": "automated_measurement_only",
-        "loudness_lufs": -21.8,
-        "true_peak_dbtp": -4.7,
+        "loudness_lufs": -21.2,
+        "true_peak_dbtp": -7.5,
         "clipping_check": "not_tested",
         "noise_check": "not_tested",
         "device_playback_check": "not_tested"
       },
       "accessibility": {
-        "accessible_label": "Audio target U01-L1, speaker b, belum diputar",
+        "accessible_label": "Audio target U01-L1, 男声1 / ノーマル, belum diputar",
         "transcript_release": "after_submission_or_feedback",
         "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
         "alternative_classification": "support_adjusted",
@@ -1123,8 +1188,9 @@
         "redistribution": "prohibited",
         "rights_receipt_id": null,
         "consent_release_ref": null,
-        "license_ref": null,
-        "attribution": "Microsoft Windows installed voice; local-only scope pending EULA review"
+        "license_ref": "https://voicevox.hiroshiba.jp/nemo/term/",
+        "attribution": "VOICEVOX: Nemo",
+        "evidence_note": "VOICEVOX Nemo Terms berlaku sebagai source reference; exact hash receipt dan review masih pending."
       },
       "review": {
         "academic": "pending",
@@ -1143,45 +1209,48 @@
       "japanese_text": "さようなら",
       "transcript_internal": "さようなら",
       "evidence_policy": "applied",
-      "source_type": "local_system_tts",
-      "generation_tool": "System.Speech",
-      "voice_provider": "Microsoft Windows installed voice",
-      "voice_id": "MSTTS_V110_jaJP_AyumiM",
-      "voice_name": "Microsoft Ayumi",
+      "source_type": "voicevox_generated_audio",
+      "generation_tool": "VOICEVOX Engine HTTP API",
+      "voice_provider": "VOICEVOX Nemo",
+      "engine_version": "0.24.0",
+      "voice_id": 10005,
+      "voice_name": "女声1",
+      "speaker_uuid": "abccafa5-174f-44d8-b70c-c41eebb3061c",
+      "style_name": "ノーマル",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T16:39:56.5317625+07:00",
+      "generated_at": "2026-09-20T18:56:24.5066650+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.greeting.sayounara.001.wav",
-        "sha256": "sha256:c916bafd65e4f0ebf46dad030de66e78df9d5b47d3328b7dc047c48824e73373",
+        "sha256": "sha256:344030f8d02c9a726f1dfecb76de38a4da246c002c515d8e342a524de310949c",
         "format": {
           "codec": "pcm_s24le",
           "sample_rate_hz": 48000,
           "bits_per_sample": 24,
           "channels": 1,
-          "duration_seconds": 1.644
+          "duration_seconds": 0.864
         }
       },
       "delivery_file": {
         "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.greeting.sayounara.001.wav",
-        "sha256": "sha256:d58a26a678e3f655fba65169b007571140ae9f9439628bc47dfcd0b9b80eea2c",
+        "sha256": "sha256:2cc9edb298bfda874271e3b84b3b0f70fbe0367b07e5f96efa22cdfa23d60eed",
         "format": {
           "codec": "pcm_s16le",
           "sample_rate_hz": 48000,
           "bits_per_sample": 16,
           "channels": 1,
-          "duration_seconds": 1.644
+          "duration_seconds": 0.864
         }
       },
       "audio_qa": {
         "status": "automated_measurement_only",
-        "loudness_lufs": -20.0,
-        "true_peak_dbtp": -7.0,
+        "loudness_lufs": -22.2,
+        "true_peak_dbtp": -6.9,
         "clipping_check": "not_tested",
         "noise_check": "not_tested",
         "device_playback_check": "not_tested"
       },
       "accessibility": {
-        "accessible_label": "Audio target U01-L1, speaker a, belum diputar",
+        "accessible_label": "Audio target U01-L1, 女声1 / ノーマル, belum diputar",
         "transcript_release": "after_submission_or_feedback",
         "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
         "alternative_classification": "support_adjusted",
@@ -1193,8 +1262,9 @@
         "redistribution": "prohibited",
         "rights_receipt_id": null,
         "consent_release_ref": null,
-        "license_ref": null,
-        "attribution": "Microsoft Windows installed voice; local-only scope pending EULA review"
+        "license_ref": "https://voicevox.hiroshiba.jp/nemo/term/",
+        "attribution": "VOICEVOX: Nemo",
+        "evidence_note": "VOICEVOX Nemo Terms berlaku sebagai source reference; exact hash receipt dan review masih pending."
       },
       "review": {
         "academic": "pending",
@@ -1213,45 +1283,48 @@
       "japanese_text": "さようなら",
       "transcript_internal": "さようなら",
       "evidence_policy": "applied",
-      "source_type": "local_system_tts",
-      "generation_tool": "System.Speech",
-      "voice_provider": "Microsoft Windows installed voice",
-      "voice_id": "MSTTS_V110_jaJP_IchiroM",
-      "voice_name": "Microsoft Ichiro",
+      "source_type": "voicevox_generated_audio",
+      "generation_tool": "VOICEVOX Engine HTTP API",
+      "voice_provider": "VOICEVOX Nemo",
+      "engine_version": "0.24.0",
+      "voice_id": 10001,
+      "voice_name": "男声1",
+      "speaker_uuid": "2171909e-d2d1-4bbb-aa45-442c12732665",
+      "style_name": "ノーマル",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T16:39:56.5317625+07:00",
+      "generated_at": "2026-09-20T18:56:24.5066650+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.greeting.sayounara.002.wav",
-        "sha256": "sha256:c70cc9333863a8aad74e89af84e2fb87739e573b0f21ed90c3dd3ca54da008ef",
+        "sha256": "sha256:33eef3407749704d19105ffb282eed0afced3916040c472758c9f99fa94a3aca",
         "format": {
           "codec": "pcm_s24le",
           "sample_rate_hz": 48000,
           "bits_per_sample": 24,
           "channels": 1,
-          "duration_seconds": 1.664
+          "duration_seconds": 0.747
         }
       },
       "delivery_file": {
         "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.greeting.sayounara.002.wav",
-        "sha256": "sha256:d66d42a89bae26a44d9aa09aedbf4a912532480ff07758e783ae4fbfa7476fb2",
+        "sha256": "sha256:76e8d24795f6c18ab3d0cf81783d1c379c005442a3cf9fbd537314fae5e9e36a",
         "format": {
           "codec": "pcm_s16le",
           "sample_rate_hz": 48000,
           "bits_per_sample": 16,
           "channels": 1,
-          "duration_seconds": 1.664
+          "duration_seconds": 0.747
         }
       },
       "audio_qa": {
         "status": "automated_measurement_only",
-        "loudness_lufs": -21.5,
-        "true_peak_dbtp": -5.9,
+        "loudness_lufs": -21.8,
+        "true_peak_dbtp": -8.3,
         "clipping_check": "not_tested",
         "noise_check": "not_tested",
         "device_playback_check": "not_tested"
       },
       "accessibility": {
-        "accessible_label": "Audio target U01-L1, speaker b, belum diputar",
+        "accessible_label": "Audio target U01-L1, 男声1 / ノーマル, belum diputar",
         "transcript_release": "after_submission_or_feedback",
         "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
         "alternative_classification": "support_adjusted",
@@ -1263,8 +1336,9 @@
         "redistribution": "prohibited",
         "rights_receipt_id": null,
         "consent_release_ref": null,
-        "license_ref": null,
-        "attribution": "Microsoft Windows installed voice; local-only scope pending EULA review"
+        "license_ref": "https://voicevox.hiroshiba.jp/nemo/term/",
+        "attribution": "VOICEVOX: Nemo",
+        "evidence_note": "VOICEVOX Nemo Terms berlaku sebagai source reference; exact hash receipt dan review masih pending."
       },
       "review": {
         "academic": "pending",
@@ -1283,45 +1357,48 @@
       "japanese_text": "か",
       "transcript_internal": "か",
       "evidence_policy": "applied",
-      "source_type": "local_system_tts",
-      "generation_tool": "System.Speech",
-      "voice_provider": "Microsoft Windows installed voice",
-      "voice_id": "MSTTS_V110_jaJP_AyumiM",
-      "voice_name": "Microsoft Ayumi",
+      "source_type": "voicevox_generated_audio",
+      "generation_tool": "VOICEVOX Engine HTTP API",
+      "voice_provider": "VOICEVOX Nemo",
+      "engine_version": "0.24.0",
+      "voice_id": 10005,
+      "voice_name": "女声1",
+      "speaker_uuid": "abccafa5-174f-44d8-b70c-c41eebb3061c",
+      "style_name": "ノーマル",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T16:39:56.5317625+07:00",
+      "generated_at": "2026-09-20T18:56:24.5066650+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.mora.one_ka.001.wav",
-        "sha256": "sha256:df0f63c45c7df5b31d8700e06d6f108963f15577abe342777f0bcc919d7c9c48",
+        "sha256": "sha256:d383662a30b21e0c9e38140345a5e99feb352927a726f527986532092719e5ff",
         "format": {
           "codec": "pcm_s24le",
           "sample_rate_hz": 48000,
           "bits_per_sample": 24,
           "channels": 1,
-          "duration_seconds": 1.02
+          "duration_seconds": 0.416
         }
       },
       "delivery_file": {
         "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.mora.one_ka.001.wav",
-        "sha256": "sha256:b0129b0c4a8102c3ada82bce185e7c39e2dfe4ac4693d9c9a2db7bca71615243",
+        "sha256": "sha256:6e60610adbc32489b137075c4976ae7265726092ebc6ac780ead643b03513e1b",
         "format": {
           "codec": "pcm_s16le",
           "sample_rate_hz": 48000,
           "bits_per_sample": 16,
           "channels": 1,
-          "duration_seconds": 1.02
+          "duration_seconds": 0.416
         }
       },
       "audio_qa": {
         "status": "automated_measurement_only",
-        "loudness_lufs": -31.3,
-        "true_peak_dbtp": -11.5,
+        "loudness_lufs": -23.8,
+        "true_peak_dbtp": -5.4,
         "clipping_check": "not_tested",
         "noise_check": "not_tested",
         "device_playback_check": "not_tested"
       },
       "accessibility": {
-        "accessible_label": "Audio target U01-L1, speaker a, belum diputar",
+        "accessible_label": "Audio target U01-L1, 女声1 / ノーマル, belum diputar",
         "transcript_release": "after_submission_or_feedback",
         "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
         "alternative_classification": "support_adjusted",
@@ -1333,8 +1410,9 @@
         "redistribution": "prohibited",
         "rights_receipt_id": null,
         "consent_release_ref": null,
-        "license_ref": null,
-        "attribution": "Microsoft Windows installed voice; local-only scope pending EULA review"
+        "license_ref": "https://voicevox.hiroshiba.jp/nemo/term/",
+        "attribution": "VOICEVOX: Nemo",
+        "evidence_note": "VOICEVOX Nemo Terms berlaku sebagai source reference; exact hash receipt dan review masih pending."
       },
       "review": {
         "academic": "pending",
@@ -1353,45 +1431,48 @@
       "japanese_text": "か",
       "transcript_internal": "か",
       "evidence_policy": "applied",
-      "source_type": "local_system_tts",
-      "generation_tool": "System.Speech",
-      "voice_provider": "Microsoft Windows installed voice",
-      "voice_id": "MSTTS_V110_jaJP_IchiroM",
-      "voice_name": "Microsoft Ichiro",
+      "source_type": "voicevox_generated_audio",
+      "generation_tool": "VOICEVOX Engine HTTP API",
+      "voice_provider": "VOICEVOX Nemo",
+      "engine_version": "0.24.0",
+      "voice_id": 10001,
+      "voice_name": "男声1",
+      "speaker_uuid": "2171909e-d2d1-4bbb-aa45-442c12732665",
+      "style_name": "ノーマル",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T16:39:56.5317625+07:00",
+      "generated_at": "2026-09-20T18:56:24.5066650+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.mora.one_ka.002.wav",
-        "sha256": "sha256:ebd2c43a8eb57b908bedf949338d380bf4569649a968d3fb94d1e0328b81b4e0",
+        "sha256": "sha256:6a1b5331d5ea54901efabcee17e8c66f3773af15a1d61f1deb7beec4d7e8580e",
         "format": {
           "codec": "pcm_s24le",
           "sample_rate_hz": 48000,
           "bits_per_sample": 24,
           "channels": 1,
-          "duration_seconds": 1.096
+          "duration_seconds": 0.384
         }
       },
       "delivery_file": {
         "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.mora.one_ka.002.wav",
-        "sha256": "sha256:e7126b122261f8ae8cc667e7d65d6e388b169668cd329c21d33bb26ceb4fadf6",
+        "sha256": "sha256:e7475546ee30ea0e9972eca6b758786b4bcf89cfe95ee2ee0093b3725a3c603c",
         "format": {
           "codec": "pcm_s16le",
           "sample_rate_hz": 48000,
           "bits_per_sample": 16,
           "channels": 1,
-          "duration_seconds": 1.096
+          "duration_seconds": 0.384
         }
       },
       "audio_qa": {
         "status": "automated_measurement_only",
-        "loudness_lufs": -37.8,
-        "true_peak_dbtp": -15.4,
+        "loudness_lufs": -70.0,
+        "true_peak_dbtp": -15.0,
         "clipping_check": "not_tested",
         "noise_check": "not_tested",
         "device_playback_check": "not_tested"
       },
       "accessibility": {
-        "accessible_label": "Audio target U01-L1, speaker b, belum diputar",
+        "accessible_label": "Audio target U01-L1, 男声1 / ノーマル, belum diputar",
         "transcript_release": "after_submission_or_feedback",
         "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
         "alternative_classification": "support_adjusted",
@@ -1403,8 +1484,9 @@
         "redistribution": "prohibited",
         "rights_receipt_id": null,
         "consent_release_ref": null,
-        "license_ref": null,
-        "attribution": "Microsoft Windows installed voice; local-only scope pending EULA review"
+        "license_ref": "https://voicevox.hiroshiba.jp/nemo/term/",
+        "attribution": "VOICEVOX: Nemo",
+        "evidence_note": "VOICEVOX Nemo Terms berlaku sebagai source reference; exact hash receipt dan review masih pending."
       },
       "review": {
         "academic": "pending",
@@ -1423,45 +1505,48 @@
       "japanese_text": "すし",
       "transcript_internal": "すし",
       "evidence_policy": "applied",
-      "source_type": "local_system_tts",
-      "generation_tool": "System.Speech",
-      "voice_provider": "Microsoft Windows installed voice",
-      "voice_id": "MSTTS_V110_jaJP_AyumiM",
-      "voice_name": "Microsoft Ayumi",
+      "source_type": "voicevox_generated_audio",
+      "generation_tool": "VOICEVOX Engine HTTP API",
+      "voice_provider": "VOICEVOX Nemo",
+      "engine_version": "0.24.0",
+      "voice_id": 10005,
+      "voice_name": "女声1",
+      "speaker_uuid": "abccafa5-174f-44d8-b70c-c41eebb3061c",
+      "style_name": "ノーマル",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T16:39:56.5317625+07:00",
+      "generated_at": "2026-09-20T18:56:24.5066650+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.mora.two_sushi.001.wav",
-        "sha256": "sha256:405dd7dcd363f6bfabcc5b13b44b6b9418fca04f346586ab2a11f55a1340c746",
+        "sha256": "sha256:b6acf112a8a46cd4d7e4f18ae9034c4648fa7e16cad8b550aab861aeda2432ba",
         "format": {
           "codec": "pcm_s24le",
           "sample_rate_hz": 48000,
           "bits_per_sample": 24,
           "channels": 1,
-          "duration_seconds": 1.37
+          "duration_seconds": 0.629
         }
       },
       "delivery_file": {
         "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.mora.two_sushi.001.wav",
-        "sha256": "sha256:5a768d77ddcbd37cb5c863a2ae680a7b9ca55692e7ae1d8317c6bbb85662fea7",
+        "sha256": "sha256:a8761111d4e040cca14562ba6e8524420214e5d472ae714641f48e4ad862a1d4",
         "format": {
           "codec": "pcm_s16le",
           "sample_rate_hz": 48000,
           "bits_per_sample": 16,
           "channels": 1,
-          "duration_seconds": 1.37
+          "duration_seconds": 0.629
         }
       },
       "audio_qa": {
         "status": "automated_measurement_only",
-        "loudness_lufs": -30.0,
-        "true_peak_dbtp": -15.7,
+        "loudness_lufs": -23.4,
+        "true_peak_dbtp": -8.5,
         "clipping_check": "not_tested",
         "noise_check": "not_tested",
         "device_playback_check": "not_tested"
       },
       "accessibility": {
-        "accessible_label": "Audio target U01-L1, speaker a, belum diputar",
+        "accessible_label": "Audio target U01-L1, 女声1 / ノーマル, belum diputar",
         "transcript_release": "after_submission_or_feedback",
         "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
         "alternative_classification": "support_adjusted",
@@ -1473,8 +1558,9 @@
         "redistribution": "prohibited",
         "rights_receipt_id": null,
         "consent_release_ref": null,
-        "license_ref": null,
-        "attribution": "Microsoft Windows installed voice; local-only scope pending EULA review"
+        "license_ref": "https://voicevox.hiroshiba.jp/nemo/term/",
+        "attribution": "VOICEVOX: Nemo",
+        "evidence_note": "VOICEVOX Nemo Terms berlaku sebagai source reference; exact hash receipt dan review masih pending."
       },
       "review": {
         "academic": "pending",
@@ -1493,45 +1579,48 @@
       "japanese_text": "すし",
       "transcript_internal": "すし",
       "evidence_policy": "applied",
-      "source_type": "local_system_tts",
-      "generation_tool": "System.Speech",
-      "voice_provider": "Microsoft Windows installed voice",
-      "voice_id": "MSTTS_V110_jaJP_IchiroM",
-      "voice_name": "Microsoft Ichiro",
+      "source_type": "voicevox_generated_audio",
+      "generation_tool": "VOICEVOX Engine HTTP API",
+      "voice_provider": "VOICEVOX Nemo",
+      "engine_version": "0.24.0",
+      "voice_id": 10001,
+      "voice_name": "男声1",
+      "speaker_uuid": "2171909e-d2d1-4bbb-aa45-442c12732665",
+      "style_name": "ノーマル",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T16:39:56.5317625+07:00",
+      "generated_at": "2026-09-20T18:56:24.5066650+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.mora.two_sushi.002.wav",
-        "sha256": "sha256:8240d0af9d79ea0662a0eca72d1137ec1ac5ce6f2e0ce2b0d6c360f05b675dcf",
+        "sha256": "sha256:0a8efc641a2d29e2867c5371acfe7595ba020572442a2f4d9d3434062f7b1c73",
         "format": {
           "codec": "pcm_s24le",
           "sample_rate_hz": 48000,
           "bits_per_sample": 24,
           "channels": 1,
-          "duration_seconds": 1.386
+          "duration_seconds": 0.555
         }
       },
       "delivery_file": {
         "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.mora.two_sushi.002.wav",
-        "sha256": "sha256:5cd3b1a97cc79910d713d4a95c7598992f963daa083f2f9a6f3bb8f1f74a9dd2",
+        "sha256": "sha256:423584e26acf56363713ea6b264673347c1e9f3bac137952c8e6c692301fea14",
         "format": {
           "codec": "pcm_s16le",
           "sample_rate_hz": 48000,
           "bits_per_sample": 16,
           "channels": 1,
-          "duration_seconds": 1.386
+          "duration_seconds": 0.555
         }
       },
       "audio_qa": {
         "status": "automated_measurement_only",
-        "loudness_lufs": -29.8,
-        "true_peak_dbtp": -17.2,
+        "loudness_lufs": -27.7,
+        "true_peak_dbtp": -12.5,
         "clipping_check": "not_tested",
         "noise_check": "not_tested",
         "device_playback_check": "not_tested"
       },
       "accessibility": {
-        "accessible_label": "Audio target U01-L1, speaker b, belum diputar",
+        "accessible_label": "Audio target U01-L1, 男声1 / ノーマル, belum diputar",
         "transcript_release": "after_submission_or_feedback",
         "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
         "alternative_classification": "support_adjusted",
@@ -1543,8 +1632,9 @@
         "redistribution": "prohibited",
         "rights_receipt_id": null,
         "consent_release_ref": null,
-        "license_ref": null,
-        "attribution": "Microsoft Windows installed voice; local-only scope pending EULA review"
+        "license_ref": "https://voicevox.hiroshiba.jp/nemo/term/",
+        "attribution": "VOICEVOX: Nemo",
+        "evidence_note": "VOICEVOX Nemo Terms berlaku sebagai source reference; exact hash receipt dan review masih pending."
       },
       "review": {
         "academic": "pending",
@@ -1563,45 +1653,48 @@
       "japanese_text": "さくら",
       "transcript_internal": "さくら",
       "evidence_policy": "applied",
-      "source_type": "local_system_tts",
-      "generation_tool": "System.Speech",
-      "voice_provider": "Microsoft Windows installed voice",
-      "voice_id": "MSTTS_V110_jaJP_AyumiM",
-      "voice_name": "Microsoft Ayumi",
+      "source_type": "voicevox_generated_audio",
+      "generation_tool": "VOICEVOX Engine HTTP API",
+      "voice_provider": "VOICEVOX Nemo",
+      "engine_version": "0.24.0",
+      "voice_id": 10005,
+      "voice_name": "女声1",
+      "speaker_uuid": "abccafa5-174f-44d8-b70c-c41eebb3061c",
+      "style_name": "ノーマル",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T16:39:56.5317625+07:00",
+      "generated_at": "2026-09-20T18:56:24.5066650+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.mora.three_sakura.001.wav",
-        "sha256": "sha256:cd610e037190c088dd6504bcf728c3f3412bb2b3865cc3d4dc9ec34310342b9a",
+        "sha256": "sha256:2a7842aa62ddb8dc939e2d45a469780e65769231118db8960d2fc83a8e90b9d8",
         "format": {
           "codec": "pcm_s24le",
           "sample_rate_hz": 48000,
           "bits_per_sample": 24,
           "channels": 1,
-          "duration_seconds": 1.364
+          "duration_seconds": 0.651
         }
       },
       "delivery_file": {
         "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.mora.three_sakura.001.wav",
-        "sha256": "sha256:df0d383e24c4e1d2a73ed500ec50888554c989df60e7f9318caf4900e82dfbbf",
+        "sha256": "sha256:bff6c7de7edd6f515590ba2e131b48b795e2cea76e67108ddbd2b271d710cbcf",
         "format": {
           "codec": "pcm_s16le",
           "sample_rate_hz": 48000,
           "bits_per_sample": 16,
           "channels": 1,
-          "duration_seconds": 1.364
+          "duration_seconds": 0.651
         }
       },
       "audio_qa": {
         "status": "automated_measurement_only",
-        "loudness_lufs": -25.8,
-        "true_peak_dbtp": -7.0,
+        "loudness_lufs": -24.4,
+        "true_peak_dbtp": -8.2,
         "clipping_check": "not_tested",
         "noise_check": "not_tested",
         "device_playback_check": "not_tested"
       },
       "accessibility": {
-        "accessible_label": "Audio target U01-L1, speaker a, belum diputar",
+        "accessible_label": "Audio target U01-L1, 女声1 / ノーマル, belum diputar",
         "transcript_release": "after_submission_or_feedback",
         "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
         "alternative_classification": "support_adjusted",
@@ -1613,8 +1706,9 @@
         "redistribution": "prohibited",
         "rights_receipt_id": null,
         "consent_release_ref": null,
-        "license_ref": null,
-        "attribution": "Microsoft Windows installed voice; local-only scope pending EULA review"
+        "license_ref": "https://voicevox.hiroshiba.jp/nemo/term/",
+        "attribution": "VOICEVOX: Nemo",
+        "evidence_note": "VOICEVOX Nemo Terms berlaku sebagai source reference; exact hash receipt dan review masih pending."
       },
       "review": {
         "academic": "pending",
@@ -1633,45 +1727,48 @@
       "japanese_text": "さくら",
       "transcript_internal": "さくら",
       "evidence_policy": "applied",
-      "source_type": "local_system_tts",
-      "generation_tool": "System.Speech",
-      "voice_provider": "Microsoft Windows installed voice",
-      "voice_id": "MSTTS_V110_jaJP_IchiroM",
-      "voice_name": "Microsoft Ichiro",
+      "source_type": "voicevox_generated_audio",
+      "generation_tool": "VOICEVOX Engine HTTP API",
+      "voice_provider": "VOICEVOX Nemo",
+      "engine_version": "0.24.0",
+      "voice_id": 10001,
+      "voice_name": "男声1",
+      "speaker_uuid": "2171909e-d2d1-4bbb-aa45-442c12732665",
+      "style_name": "ノーマル",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T16:39:56.5317625+07:00",
+      "generated_at": "2026-09-20T18:56:24.5066650+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.mora.three_sakura.002.wav",
-        "sha256": "sha256:50d363a4808f7356e3215825c884d6a8ba060d5bec4463fe1b06288b1d3f0bbc",
+        "sha256": "sha256:89eda3a01fe89a71ba5822ddfad2e993346c7a82f508dff4380d2cbfa723e94a",
         "format": {
           "codec": "pcm_s24le",
           "sample_rate_hz": 48000,
           "bits_per_sample": 24,
           "channels": 1,
-          "duration_seconds": 1.414
+          "duration_seconds": 0.587
         }
       },
       "delivery_file": {
         "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.mora.three_sakura.002.wav",
-        "sha256": "sha256:a3b1d3388cfb77705d68daf66dcd846ec9a24431dc54faa36607b8958dab0cc5",
+        "sha256": "sha256:9eb37c8f7e1e80af390b487364609f9a1855de2f2854280d7600430d30320686",
         "format": {
           "codec": "pcm_s16le",
           "sample_rate_hz": 48000,
           "bits_per_sample": 16,
           "channels": 1,
-          "duration_seconds": 1.414
+          "duration_seconds": 0.587
         }
       },
       "audio_qa": {
         "status": "automated_measurement_only",
-        "loudness_lufs": -26.1,
-        "true_peak_dbtp": -5.7,
+        "loudness_lufs": -24.7,
+        "true_peak_dbtp": -7.4,
         "clipping_check": "not_tested",
         "noise_check": "not_tested",
         "device_playback_check": "not_tested"
       },
       "accessibility": {
-        "accessible_label": "Audio target U01-L1, speaker b, belum diputar",
+        "accessible_label": "Audio target U01-L1, 男声1 / ノーマル, belum diputar",
         "transcript_release": "after_submission_or_feedback",
         "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
         "alternative_classification": "support_adjusted",
@@ -1683,8 +1780,9 @@
         "redistribution": "prohibited",
         "rights_receipt_id": null,
         "consent_release_ref": null,
-        "license_ref": null,
-        "attribution": "Microsoft Windows installed voice; local-only scope pending EULA review"
+        "license_ref": "https://voicevox.hiroshiba.jp/nemo/term/",
+        "attribution": "VOICEVOX: Nemo",
+        "evidence_note": "VOICEVOX Nemo Terms berlaku sebagai source reference; exact hash receipt dan review masih pending."
       },
       "review": {
         "academic": "pending",
@@ -1703,45 +1801,48 @@
       "japanese_text": "聞いてください",
       "transcript_internal": "聞いてください",
       "evidence_policy": "non_scored",
-      "source_type": "local_system_tts",
-      "generation_tool": "System.Speech",
-      "voice_provider": "Microsoft Windows installed voice",
-      "voice_id": "MSTTS_V110_jaJP_AyumiM",
-      "voice_name": "Microsoft Ayumi",
+      "source_type": "voicevox_generated_audio",
+      "generation_tool": "VOICEVOX Engine HTTP API",
+      "voice_provider": "VOICEVOX Nemo",
+      "engine_version": "0.24.0",
+      "voice_id": 10005,
+      "voice_name": "女声1",
+      "speaker_uuid": "abccafa5-174f-44d8-b70c-c41eebb3061c",
+      "style_name": "ノーマル",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T16:39:56.5317625+07:00",
+      "generated_at": "2026-09-20T18:56:24.5066650+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.instruction.listen.001.wav",
-        "sha256": "sha256:58ea7cfcf0b91928be85ca06831cd198a5b402151eae16cd1a86264e588b066c",
+        "sha256": "sha256:51bbcbac9194f542a18df62f4c1b72e4cbb424af2f57d93e50a1a86ecf9693ca",
         "format": {
           "codec": "pcm_s24le",
           "sample_rate_hz": 48000,
           "bits_per_sample": 24,
           "channels": 1,
-          "duration_seconds": 1.894
+          "duration_seconds": 1.109
         }
       },
       "delivery_file": {
         "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.instruction.listen.001.wav",
-        "sha256": "sha256:2dda9faecdd39e69328da1ed1ee42b6486ac15321d6f0baa9eb514044a6359c0",
+        "sha256": "sha256:0ca4e03469e80a77915a53d1a5adc766bf3baa5bb135388892b0d88ead0bc039",
         "format": {
           "codec": "pcm_s16le",
           "sample_rate_hz": 48000,
           "bits_per_sample": 16,
           "channels": 1,
-          "duration_seconds": 1.894
+          "duration_seconds": 1.109
         }
       },
       "audio_qa": {
         "status": "automated_measurement_only",
-        "loudness_lufs": -22.2,
-        "true_peak_dbtp": -5.8,
+        "loudness_lufs": -23.8,
+        "true_peak_dbtp": -6.9,
         "clipping_check": "not_tested",
         "noise_check": "not_tested",
         "device_playback_check": "not_tested"
       },
       "accessibility": {
-        "accessible_label": "Audio target U01-L1, speaker a, belum diputar",
+        "accessible_label": "Audio target U01-L1, 女声1 / ノーマル, belum diputar",
         "transcript_release": "immediate_instructional",
         "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
         "alternative_classification": "support_adjusted",
@@ -1753,8 +1854,9 @@
         "redistribution": "prohibited",
         "rights_receipt_id": null,
         "consent_release_ref": null,
-        "license_ref": null,
-        "attribution": "Microsoft Windows installed voice; local-only scope pending EULA review"
+        "license_ref": "https://voicevox.hiroshiba.jp/nemo/term/",
+        "attribution": "VOICEVOX: Nemo",
+        "evidence_note": "VOICEVOX Nemo Terms berlaku sebagai source reference; exact hash receipt dan review masih pending."
       },
       "review": {
         "academic": "pending",
@@ -1773,45 +1875,48 @@
       "japanese_text": "選んでください",
       "transcript_internal": "選んでください",
       "evidence_policy": "non_scored",
-      "source_type": "local_system_tts",
-      "generation_tool": "System.Speech",
-      "voice_provider": "Microsoft Windows installed voice",
-      "voice_id": "MSTTS_V110_jaJP_IchiroM",
-      "voice_name": "Microsoft Ichiro",
+      "source_type": "voicevox_generated_audio",
+      "generation_tool": "VOICEVOX Engine HTTP API",
+      "voice_provider": "VOICEVOX Nemo",
+      "engine_version": "0.24.0",
+      "voice_id": 10001,
+      "voice_name": "男声1",
+      "speaker_uuid": "2171909e-d2d1-4bbb-aa45-442c12732665",
+      "style_name": "ノーマル",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T16:39:56.5317625+07:00",
+      "generated_at": "2026-09-20T18:56:24.5066650+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.instruction.choose.001.wav",
-        "sha256": "sha256:28e3fb7623bfdd93e9c916418f6ebc9f9d0dbd79367d053a9cf03684a879549f",
+        "sha256": "sha256:d9c80bd01a880ab0e3d45104851d688c83e4a5a5dbd10335cca5df2f658b1a77",
         "format": {
           "codec": "pcm_s24le",
           "sample_rate_hz": 48000,
           "bits_per_sample": 24,
           "channels": 1,
-          "duration_seconds": 2.034
+          "duration_seconds": 0.939
         }
       },
       "delivery_file": {
         "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.instruction.choose.001.wav",
-        "sha256": "sha256:3322a43a622acf284c3c1a0e4a016d091e859cb776992b78212e6fca06b6444b",
+        "sha256": "sha256:e58fcc9233de4877ed4d2024da9c169474ab4672cb01f9aea06eca2b2ace17d4",
         "format": {
           "codec": "pcm_s16le",
           "sample_rate_hz": 48000,
           "bits_per_sample": 16,
           "channels": 1,
-          "duration_seconds": 2.034
+          "duration_seconds": 0.939
         }
       },
       "audio_qa": {
         "status": "automated_measurement_only",
-        "loudness_lufs": -22.3,
-        "true_peak_dbtp": -5.7,
+        "loudness_lufs": -22.6,
+        "true_peak_dbtp": -5.2,
         "clipping_check": "not_tested",
         "noise_check": "not_tested",
         "device_playback_check": "not_tested"
       },
       "accessibility": {
-        "accessible_label": "Audio target U01-L1, speaker b, belum diputar",
+        "accessible_label": "Audio target U01-L1, 男声1 / ノーマル, belum diputar",
         "transcript_release": "immediate_instructional",
         "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
         "alternative_classification": "support_adjusted",
@@ -1823,8 +1928,9 @@
         "redistribution": "prohibited",
         "rights_receipt_id": null,
         "consent_release_ref": null,
-        "license_ref": null,
-        "attribution": "Microsoft Windows installed voice; local-only scope pending EULA review"
+        "license_ref": "https://voicevox.hiroshiba.jp/nemo/term/",
+        "attribution": "VOICEVOX: Nemo",
+        "evidence_note": "VOICEVOX Nemo Terms berlaku sebagai source reference; exact hash receipt dan review masih pending."
       },
       "review": {
         "academic": "pending",
@@ -1839,12 +1945,12 @@
   "rights_status": "pending_verification",
   "approval_status": "pending",
   "blockers": [
-    "Local-only dipilih; bukti EULA/rights untuk penggunaan pada workstation belum dilampirkan.",
+    "VOICEVOX Nemo dipilih; exact rights receipt dan review terms/attribution belum tersedia.",
     "Binary audio tidak boleh masuk repository publik atau artifact redistribution.",
     "Loudness, clipping, noise, dan physical-device playback QA belum dilakukan.",
     "Japanese Linguistic/Academic review belum dilakukan.",
     "Accessibility review dan approved alternative belum dilakukan.",
-    "Rights receipt dan approval receipt belum tersedia."
+    "Approval receipt dan publication gate belum tersedia."
   ],
-  "publication_note": "Draft local-only. Binary audio sengaja di-ignore oleh Git dan tidak boleh dipublikasikan. Jangan ubah seed menjadi approved atau runtime_eligible sebelum seluruh mandatory gate dan receipt menunjuk exact hash/version."
+  "publication_note": "Draft local-only menggunakan VOICEVOX Nemo Engine 0.24.0. Binary audio sengaja di-ignore oleh Git dan tidak boleh dipublikasikan. Attribution wajib: VOICEVOX: Nemo. Jangan ubah seed menjadi approved atau runtime_eligible sebelum seluruh mandatory gate dan receipt menunjuk exact hash/version."
 }

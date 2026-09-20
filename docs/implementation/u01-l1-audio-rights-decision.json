@@ -13,7 +13,8 @@
   },
   "rationale": [
     "Owner memilih penggunaan pribadi/local-only untuk draft audio U01-L1.",
-    "Audio dibuat dari voice yang terpasang pada workstation; bukti EULA/rights untuk scope Nekoru belum dilampirkan."
+    "VOICEVOX Nemo Engine 0.24.0 dipakai melalui HTTP server lokal; dua style dan speaker ID dicatat dari endpoint /speakers.",
+    "VOICEVOX Nemo Terms menjadi source reference dan attribution wajib dicatat; receipt rights exact hash tetap harus direview sebelum approval."
   ],
   "repository_handling": {
     "binary_policy": "ignore_and_keep_on_workstation",
@@ -22,12 +23,23 @@
     "public_history_note": "Commit sebelumnya masih dapat memuat binary audio; private repository atau history cleanup terpisah diperlukan bila exposure historis harus dihapus."
   },
   "receipt_template_ref": "docs/implementation/u01-l1-audio-rights-receipt.template.json",
+  "engine_evidence_ref": "docs/implementation/u01-l1-voicevox-engine-evidence.json",
   "rights": {
     "status": "pending_verification",
     "rights_receipt_id": null,
-    "license_ref": null,
+    "license_ref": "https://voicevox.hiroshiba.jp/nemo/term/",
     "consent_release_ref": null,
-    "attribution": "Microsoft Windows installed voice; local-only scope pending EULA review"
+    "attribution": "VOICEVOX: Nemo",
+    "provider": "VOICEVOX Nemo",
+    "engine_version": "0.24.0",
+    "speaker_ids": {
+      "a": 10005,
+      "b": 10001
+    },
+    "speaker_uuids": {
+      "a": "abccafa5-174f-44d8-b70c-c41eebb3061c",
+      "b": "2171909e-d2d1-4bbb-aa45-442c12732665"
+    }
   },
   "approval": {
     "status": "pending",
@@ -37,7 +49,7 @@
   },
   "closure_criteria": [
     "Repository HEAD tidak lagi melacak binary audio local-only.",
-    "Bukti EULA/rights untuk penggunaan lokal ditinjau oleh owner rights/legal.",
+    "VOICEVOX Nemo Terms, engine version, speaker IDs, attribution, dan exact manifest hash ditinjau oleh owner rights/legal.",
     "Jika audio akan dibagikan atau dideploy, gunakan asset dengan redistribusi yang eksplisit dan buat receipt per asset.",
     "Seed tetap draft sampai academic, linguistic, accessibility, audio QA, rights, dan approval gate selesai."
   ]

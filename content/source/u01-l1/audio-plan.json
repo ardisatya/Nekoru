@@ -7,7 +7,12 @@
   "distribution_scope": "local_only",
   "binary_policy": "never_commit_or_redistribute",
   "generation_profile": {
-    "provider": "windows_system_speech",
+    "provider": "voicevox_nemo_engine",
+    "engine_name": "VOICEVOX Nemo Engine",
+    "engine_version": "0.24.0",
+    "api_base_url": "http://127.0.0.1:50021",
+    "terms_ref": "https://voicevox.hiroshiba.jp/nemo/term/",
+    "attribution": "VOICEVOX: Nemo",
     "culture": "ja-JP",
     "sample_rate_hz": 48000,
     "channels": 1,
@@ -17,18 +22,28 @@
   },
   "voice_variants": {
     "a": {
-      "voice_name": "Microsoft Ayumi",
-      "voice_id": "MSTTS_V110_jaJP_AyumiM",
+      "voice_name": "女声1",
+      "style_name": "ノーマル",
+      "voice_id": 10005,
+      "speaker_uuid": "abccafa5-174f-44d8-b70c-c41eebb3061c",
       "voice_type": "synthetic_tts",
+      "voice_library": "VOICEVOX Nemo",
       "rights_status": "pending_verification",
-      "allowed_use": "local_only"
+      "allowed_use": "local_only",
+      "license_ref": "https://voicevox.hiroshiba.jp/nemo/term/",
+      "attribution": "VOICEVOX: Nemo"
     },
     "b": {
-      "voice_name": "Microsoft Ichiro",
-      "voice_id": "MSTTS_V110_jaJP_IchiroM",
+      "voice_name": "男声1",
+      "style_name": "ノーマル",
+      "voice_id": 10001,
+      "speaker_uuid": "2171909e-d2d1-4bbb-aa45-442c12732665",
       "voice_type": "synthetic_tts",
+      "voice_library": "VOICEVOX Nemo",
       "rights_status": "pending_verification",
-      "allowed_use": "local_only"
+      "allowed_use": "local_only",
+      "license_ref": "https://voicevox.hiroshiba.jp/nemo/term/",
+      "attribution": "VOICEVOX: Nemo"
     }
   },
   "recordings": [
@@ -322,7 +337,7 @@
   "rights_status": "pending_verification",
   "approval_status": "pending",
   "blockers": [
-    "Local-only dipilih; bukti EULA/rights untuk penggunaan pada workstation belum dilampirkan.",
+    "VOICEVOX Nemo Terms dan attribution sudah dicatat; rights receipt exact hash serta review owner belum dilampirkan.",
     "Binary audio tidak boleh masuk repository publik atau artifact redistribution.",
     "Japanese Linguistic/Academic review belum dilakukan.",
     "Physical-device playback dan accessibility QA belum dilakukan.",

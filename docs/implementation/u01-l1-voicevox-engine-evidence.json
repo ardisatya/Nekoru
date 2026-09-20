@@ -1,0 +1,47 @@
+{
+  "schema_version": "1.0.0",
+  "evidence_type": "local_voice_engine_provenance",
+  "status": "evidence_pending_review",
+  "provider": "VOICEVOX Nemo",
+  "engine_name": "VOICEVOX Nemo Engine",
+  "engine_version": "0.24.0",
+  "release_ref": "https://github.com/VOICEVOX/voicevox_nemo_engine/releases/tag/0.24.0",
+  "artifact": {
+    "filename": "voicevox_engine-windows-cpu-0.24.0.vvpp",
+    "download_ref": "https://github.com/VOICEVOX/voicevox_nemo_engine/releases/download/0.24.0/voicevox_engine-windows-cpu-0.24.0.vvpp",
+    "size_bytes": 140522153,
+    "sha256": "sha256:418c515ce567c1426b425bd2fe05eb0a62196bcec223829725e9ed4ff345b437",
+    "storage_scope": "local_only_ignored_artifacts"
+  },
+  "runtime": {
+    "api_base_url": "http://127.0.0.1:50021",
+    "default_sampling_rate_hz": 24000,
+    "synthesis_path": "/audio_query then /synthesis",
+    "binary_output_policy": "never_commit_or_redistribute"
+  },
+  "speaker_snapshot": {
+    "source_endpoint": "/speakers",
+    "variants": {
+      "a": {
+        "speaker_id": 10005,
+        "speaker_uuid": "abccafa5-174f-44d8-b70c-c41eebb3061c",
+        "speaker_name": "女声1",
+        "style_name": "ノーマル"
+      },
+      "b": {
+        "speaker_id": 10001,
+        "speaker_uuid": "2171909e-d2d1-4bbb-aa45-442c12732665",
+        "speaker_name": "男声1",
+        "style_name": "ノーマル"
+      }
+    }
+  },
+  "terms": {
+    "ref": "https://voicevox.hiroshiba.jp/nemo/term/",
+    "attribution": "VOICEVOX: Nemo",
+    "rights_status": "pending_verification",
+    "review_required": "Owner rights/content reviewer must verify terms, attribution, local-only scope, and exact manifest hashes before any approval."
+  },
+  "captured_at": "2026-09-20T18:57:42+07:00",
+  "captured_by": "tooling/content/generate-u01-audio-draft.ps1"
+}

@@ -28,16 +28,16 @@
 
 Semua keputusan berikut adalah bootstrap local/internal yang dapat dibalik; scope P0.1–P0.4 telah dikonfirmasi approved oleh owner.
 
-| ID           | Keputusan          | Exact selection                                                                                                    | Status     | Approval needed                    |
-| ------------ | ------------------ | ------------------------------------------------------------------------------------------------------------------ | ---------- | ---------------------------------- |
-| `DEC-P0-001` | Package/workspace  | pnpm `12.4.1`, Turborepo `2.10.12`, ESM, TypeScript strict                                                         | `approved` | Engineering Lead                   |
-| `DEC-P0-002` | Web                | Next.js `16.3.5`, React `19.3.0`, App Router, CSS Modules                                                          | `approved` | Engineering + Design/Accessibility |
-| `DEC-P0-003` | API/worker         | NestJS `11.2.3`, Fastify `5.12.4`, root override untuk transitive security patch, worker composition root terpisah | `approved` | Engineering + Security             |
-| `DEC-P0-004` | Data               | PostgreSQL `18`, Drizzle ORM `0.45.2`, Drizzle Kit `0.31.10`                                                       | `approved` | Engineering + Data                 |
-| `DEC-P0-005` | Canonical JSON     | `canonicalize@5.0.0` di belakang wrapper RFC 8785/JCS                                                              | `approved` | Engineering + Data                 |
-| `DEC-P0-006` | Identity           | `@clerk/nextjs@7.9.2` dan `@clerk/backend@3.17.2` dengan local identity double; live config tidak diisi            | `approved` | Security/Privacy + Identity owner  |
-| `DEC-P0-007` | Environment        | local/CI terpisah; target nonproduction `sin1`; tidak ada deployment yang dilakukan                                | `approved` | Operations + Security              |
-| `DEC-P0-008` | U01-L1 audio scope | local-only; binary audio di-ignore Git dan tidak untuk redistribution; rights/EULA receipt tetap pending           | `proposed` | Rights/Legal + Content owner       |
+| ID           | Keputusan          | Exact selection                                                                                                                                                        | Status     | Approval needed                    |
+| ------------ | ------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | ---------------------------------- |
+| `DEC-P0-001` | Package/workspace  | pnpm `12.4.1`, Turborepo `2.10.12`, ESM, TypeScript strict                                                                                                             | `approved` | Engineering Lead                   |
+| `DEC-P0-002` | Web                | Next.js `16.3.5`, React `19.3.0`, App Router, CSS Modules                                                                                                              | `approved` | Engineering + Design/Accessibility |
+| `DEC-P0-003` | API/worker         | NestJS `11.2.3`, Fastify `5.12.4`, root override untuk transitive security patch, worker composition root terpisah                                                     | `approved` | Engineering + Security             |
+| `DEC-P0-004` | Data               | PostgreSQL `18`, Drizzle ORM `0.45.2`, Drizzle Kit `0.31.10`                                                                                                           | `approved` | Engineering + Data                 |
+| `DEC-P0-005` | Canonical JSON     | `canonicalize@5.0.0` di belakang wrapper RFC 8785/JCS                                                                                                                  | `approved` | Engineering + Data                 |
+| `DEC-P0-006` | Identity           | `@clerk/nextjs@7.9.2` dan `@clerk/backend@3.17.2` dengan local identity double; live config tidak diisi                                                                | `approved` | Security/Privacy + Identity owner  |
+| `DEC-P0-007` | Environment        | local/CI terpisah; target nonproduction `sin1`; tidak ada deployment yang dilakukan                                                                                    | `approved` | Operations + Security              |
+| `DEC-P0-008` | U01-L1 audio scope | local-only; VOICEVOX Nemo Engine `0.24.0`, speaker styles `10005`/`10001`, binary audio di-ignore Git dan tidak untuk redistribution; terms/hash receipt tetap pending | `proposed` | Rights/Legal + Content owner       |
 
 Perubahan yang melampaui selection bootstrap di atas memerlukan impact review; perubahan boundary ADR memerlukan ADR baru atau superseding ADR.
 
@@ -64,18 +64,18 @@ Perubahan yang melampaui selection bootstrap di atas memerlukan impact review; p
 
 ## Registry DEP-001–DEP-010
 
-| ID        | Exact artifact/version                                | Status sekarang     | Owner                     | Approval/status yang masih dibutuhkan                                       |
-| --------- | ----------------------------------------------------- | ------------------- | ------------------------- | --------------------------------------------------------------------------- |
-| `DEP-001` | Domain/persistence model `0.0.0-phase0`               | `approved`          | Engineering + Product     | Owner attestation recorded; individual receipts not attached                |
-| `DEP-002` | Zod + JSON Schema bundle `schema_version: 1`          | `approved`          | Engineering               | Owner attestation recorded; individual receipts not attached                |
-| `DEP-003` | `milestone-1-policy.json`, schema `1.0.0`             | `draft`             | Academic + Engineering    | Academic approval dan registered exact policy/evaluator IDs                 |
-| `DEP-004` | U01-L1 seed `0.1.0-draft`                             | `blocked_external`  | Academic/Content          | Local-only audio metadata, EULA/rights, checksum, mandatory review receipts |
-| `DEP-005` | OpenAPI `0.0.0-phase0`                                | `contract_only`     | Engineering               | Endpoint payload review; runtime Phase 1                                    |
-| `DEP-006` | Event envelope/catalog `schema_version: 1`            | `approved`          | Engineering + Data        | Owner attestation recorded; individual receipts not attached                |
-| `DEP-007` | Prototype `P-M1-01..20`                               | `internal_ready`    | Design + Engineering      | Product, research, accessibility review                                     |
-| `DEP-008` | Acceptance fixture bundle `schema_version: 1`         | `partial`           | QA + Engineering          | Provider, device, and recovery evidence                                     |
-| `DEP-009` | Clerk/local auth decision `DEC-P0-006`                | `local_double_only` | Engineering + Security    | Live development environment smoke                                          |
-| `DEP-010` | Telemetry allowlist/redaction contract `0.0.0-phase0` | `approved`          | Data + Security + Product | Owner attestation recorded; individual receipts not attached                |
+| ID        | Exact artifact/version                                | Status sekarang     | Owner                     | Approval/status yang masih dibutuhkan                                           |
+| --------- | ----------------------------------------------------- | ------------------- | ------------------------- | ------------------------------------------------------------------------------- |
+| `DEP-001` | Domain/persistence model `0.0.0-phase0`               | `approved`          | Engineering + Product     | Owner attestation recorded; individual receipts not attached                    |
+| `DEP-002` | Zod + JSON Schema bundle `schema_version: 1`          | `approved`          | Engineering               | Owner attestation recorded; individual receipts not attached                    |
+| `DEP-003` | `milestone-1-policy.json`, schema `1.0.0`             | `draft`             | Academic + Engineering    | Academic approval dan registered exact policy/evaluator IDs                     |
+| `DEP-004` | U01-L1 seed `0.1.0-draft`                             | `blocked_external`  | Academic/Content          | Local-only VOICEVOX metadata, Terms/rights, checksum, mandatory review receipts |
+| `DEP-005` | OpenAPI `0.0.0-phase0`                                | `contract_only`     | Engineering               | Endpoint payload review; runtime Phase 1                                        |
+| `DEP-006` | Event envelope/catalog `schema_version: 1`            | `approved`          | Engineering + Data        | Owner attestation recorded; individual receipts not attached                    |
+| `DEP-007` | Prototype `P-M1-01..20`                               | `internal_ready`    | Design + Engineering      | Product, research, accessibility review                                         |
+| `DEP-008` | Acceptance fixture bundle `schema_version: 1`         | `partial`           | QA + Engineering          | Provider, device, and recovery evidence                                         |
+| `DEP-009` | Clerk/local auth decision `DEC-P0-006`                | `local_double_only` | Engineering + Security    | Live development environment smoke                                              |
+| `DEP-010` | Telemetry allowlist/redaction contract `0.0.0-phase0` | `approved`          | Data + Security + Product | Owner attestation recorded; individual receipts not attached                    |
 
 ## Blocker ke Fase
 
