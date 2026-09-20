@@ -23,11 +23,11 @@
     "public_history_note": "Commit sebelumnya masih dapat memuat binary audio; private repository atau history cleanup terpisah diperlukan bila exposure historis harus dihapus."
   },
   "receipt_template_ref": "docs/implementation/u01-l1-audio-rights-receipt.template.json",
-  "receipt_ref": "docs/implementation/u01-l1-audio-rights-receipt.json",
+  "receipt_ref": "docs/implementation/u01-l1-audio-rights-receipt-male3.json",
   "engine_evidence_ref": "docs/implementation/u01-l1-voicevox-engine-evidence.json",
   "rights": {
     "status": "verified_local_only",
-    "rights_receipt_id": "rev_01M2ZBMH58BGWFMPYACVX6FDNS",
+    "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER",
     "license_ref": "https://voicevox.hiroshiba.jp/nemo/term/",
     "consent_release_ref": null,
     "attribution": "VOICEVOX: Nemo",
@@ -35,11 +35,11 @@
     "engine_version": "0.24.0",
     "speaker_ids": {
       "a": 10005,
-      "b": 10001
+      "b": 10002
     },
     "speaker_uuids": {
       "a": "abccafa5-174f-44d8-b70c-c41eebb3061c",
-      "b": "2171909e-d2d1-4bbb-aa45-442c12732665"
+      "b": "627b3e92-32c5-4c2f-860a-a5553d3d6662"
     }
   },
   "approval": {

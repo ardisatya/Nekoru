@@ -37,7 +37,7 @@ Semua keputusan berikut adalah bootstrap local/internal yang dapat dibalik; scop
 | `DEC-P0-005` | Canonical JSON     | `canonicalize@5.0.0` di belakang wrapper RFC 8785/JCS                                                                                                                          | `approved` | Engineering + Data                 |
 | `DEC-P0-006` | Identity           | `@clerk/nextjs@7.9.2` dan `@clerk/backend@3.17.2` dengan local identity double; live config tidak diisi                                                                        | `approved` | Security/Privacy + Identity owner  |
 | `DEC-P0-007` | Environment        | local/CI terpisah; target nonproduction `sin1`; tidak ada deployment yang dilakukan                                                                                            | `approved` | Operations + Security              |
-| `DEC-P0-008` | U01-L1 audio scope | local-only; VOICEVOX Nemo Engine `0.24.0`, speaker styles `10005`/`10001`, binary audio di-ignore Git; terms/hash receipt `verified_local_only`, redistribution tetap dilarang | `proposed` | Rights/Legal + Content owner       |
+| `DEC-P0-008` | U01-L1 audio scope | local-only; VOICEVOX Nemo Engine `0.24.0`, speaker styles `10005`/`10002`, binary audio di-ignore Git; terms/hash receipt `verified_local_only`, redistribution tetap dilarang | `proposed` | Rights/Legal + Content owner       |
 
 Perubahan yang melampaui selection bootstrap di atas memerlukan impact review; perubahan boundary ADR memerlukan ADR baru atau superseding ADR.
 
