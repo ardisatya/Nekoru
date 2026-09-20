@@ -4,7 +4,7 @@
   "title": "Fondasi yang bisa dijalankan",
   "overall_status": "internal_ready",
   "plain_summary": "Fondasi teknis dan contoh alur belajar sudah siap diperiksa tim internal. Ini belum merupakan produk jadi atau approval Phase 0.",
-  "updated_at": "2026-09-20T20:01:34+07:00",
+  "updated_at": "2026-09-21T06:23:12+07:00",
   "milestones": [
     {
       "id": "P0.1",
@@ -71,7 +71,7 @@
       "id": "P0.5",
       "title": "Contoh belajar siap diperiksa",
       "status": "internal_ready",
-      "result": "Prototype 20 state, seed draft U01-L1, 26 draft audio asset dengan checksum dari VOICEVOX Nemo Engine 0.24.0, dan rights receipt verified_local_only siap diuji tim internal.",
+      "result": "Prototype 20 state, seed draft U01-L1, 26 normalized audio asset dengan checksum dari VOICEVOX Nemo Engine 0.24.0, rights receipt verified_local_only, audio review owner-attested, academic/linguistic review owner-attested local-only, accessibility emulator exception local-only, dan technical waiver local-only siap diuji tim internal. History GitHub main sudah dibersihkan dari binary audio; emulator accessibility matrix lulus 14/15 test (1 skip untuk project desktop-only).",
       "evidence_refs": [
         "apps/learner-web",
         "content/source/u01-l1",
@@ -82,19 +82,30 @@
         "docs/implementation/u01-l1-audio-rights-receipt.template.json",
         "docs/implementation/u01-l1-audio-rights-receipt.json",
         "docs/implementation/u01-l1-audio-rights-receipt-male3.json",
+        "docs/implementation/u01-l1-audio-rights-receipt-qa.json",
+        "docs/implementation/u01-l1-audio-rights-receipt-accessibility.json",
+        "docs/implementation/u01-l1-audio-review.json",
+        "docs/implementation/u01-l1-audio-qa-waiver.json",
+        "docs/implementation/u01-l1-accessibility-review.json",
+        "docs/implementation/u01-l1-accessibility-emulator-evidence.json",
+        "docs/implementation/u01-l1-accessibility-local-only-decision.json",
+        "docs/implementation/u01-l1-academic-review.json",
+        "docs/implementation/u01-l1-linguistic-review.json",
+        "docs/implementation/u01-l1-content-review-local-only-decision.json",
         "docs/implementation/u01-l1-voicevox-engine-evidence.json",
         "tooling/content/generate-u01-audio-draft.ps1",
         "DESIGN.md",
         ".impeccable/design.json",
+        "tooling/e2e/prototype.matrix.spec.ts",
+        "playwright.config.ts",
         "docs/implementation/phase-0-handoff.md"
       ],
       "blockers": [
-        "Rights receipt VOICEVOX sudah verified_local_only; audio binary tetap local-only dan tidak dilacak Git, sementara audio QA dan review akademik belum selesai.",
-        "Commit publik sebelumnya masih dapat memuat binary audio; history cleanup atau private repository belum dilakukan.",
-        "Usability research dan uji assistive technology pada perangkat fisik belum dilakukan.",
+        "Actual audio playback dan physical speaker/headphone playback tetap deferred ke Phase 1 P1.3; seed tetap draft dan runtime disabled.",
+        "Formal WCAG/platform support dan sesi NVDA/VoiceOver/TalkBack belum diklaim. Exception emulator hanya berlaku untuk local-only Phase 0 dan tidak mengubah approved platform matrix.",
         "Live Clerk environment smoke belum dapat dilakukan tanpa credentials."
       ],
-      "next_step": "Uji internal lebih dulu lalu kumpulkan evidence dan approval eksternal."
+      "next_step": "Pertahankan scope local-only dan jangan membuka redistribution atau production runtime. Saat Phase 1 dibuka, implementasikan actual audio player lalu lakukan device/AT matrix bila ingin membuat formal platform-support claim; Clerk smoke memerlukan credentials non-production."
     }
   ]
 }

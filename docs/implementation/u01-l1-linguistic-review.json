@@ -1,0 +1,117 @@
+{
+  "schema_version": "1.0.0",
+  "receipt_type": "content_review",
+  "review_id": "REVIEW.CONTENT.U01.L1.LINGUISTIC.000001",
+  "status": "approved",
+  "decision": "approved",
+  "approval_basis": "owner_attestation",
+  "formal_gate_status": "waived_local_only_owner_attested",
+  "artifact": {
+    "manifest_ref": "content/manifests/u01-l1.audio-draft.json",
+    "manifest_id": "MANIFEST.N5.S00.U01.L1.AUDIO.DRAFT",
+    "manifest_sha256": "sha256:aac587f2ca562adb69e224f8094a3b4812764df6b349c7ae0132eeb74cc3dba7",
+    "source_seed_version": "0.1.0",
+    "source_seed_commit": "7c32753a173e5686cb0e3b2a2acd9f1ba425de204",
+    "record_count": 26,
+    "local_only_decision_ref": "docs/implementation/u01-l1-content-review-local-only-decision.json"
+  },
+  "rubric_ref": "docs/product-specs/content-validation-rubric.md@0.1.0",
+  "gate_results": {
+    "LIS-002_transcript_identity": "pass",
+    "LIS-003_pronunciation_naturalness": "owner_attested",
+    "LIS-011_provenance_metadata": "pass"
+  },
+  "automated_checks": [
+    {
+      "id": "LNG-001",
+      "criterion": "Manifest audio adalah snapshot U01-L1 local-only yang tepat.",
+      "status": "pass",
+      "evidence": "MANIFEST.N5.S00.U01.L1.AUDIO.DRAFT@0.1.0; runtime_eligible=false"
+    },
+    {
+      "id": "LNG-002",
+      "criterion": "Seluruh 26 asset memiliki ID unik dan inventory yang sesuai seed.",
+      "status": "pass",
+      "evidence": "records=26; asset_id/logical_id unik"
+    },
+    {
+      "id": "LNG-003",
+      "criterion": "Teks Jepang target tepat: lima vowel, empat greeting, tiga contoh mora, dan dua instruction cue.",
+      "status": "pass",
+      "evidence": "inventory=14 key; unexpected=none"
+    },
+    {
+      "id": "LNG-004",
+      "criterion": "Transcript internal identik dengan teks Jepang canonical.",
+      "status": "pass",
+      "evidence": "matched=26/26"
+    },
+    {
+      "id": "LNG-005",
+      "criterion": "Evidence policy sesuai fungsi linguistik masing-masing asset.",
+      "status": "pass",
+      "evidence": "vowel=direct; greeting/mora=applied; instruction=non_scored"
+    },
+    {
+      "id": "LNG-006",
+      "criterion": "Setiap recording memakai metadata Japanese voice yang diharapkan.",
+      "status": "pass",
+      "evidence": "culture=ja-JP; provider=VOICEVOX Nemo; variants=10005/10002"
+    },
+    {
+      "id": "LNG-007",
+      "criterion": "Setiap target vowel/greeting/mora mempunyai dua speaker variant.",
+      "status": "pass",
+      "evidence": "speaker variant a dan b diperiksa pada 12 target"
+    },
+    {
+      "id": "LNG-008",
+      "criterion": "Setiap record menunjuk master dan delivery file yang memiliki checksum.",
+      "status": "pass",
+      "evidence": "26 master checksum dan 26 delivery checksum tersedia di manifest"
+    },
+    {
+      "id": "LNG-009",
+      "criterion": "Binary master/delivery yang tersedia cocok dengan checksum manifest.",
+      "status": "pass",
+      "evidence": "52 file hash cocok; binary tetap local-only"
+    }
+  ],
+  "manual_checks": [
+    {
+      "id": "LNG-MAN-001",
+      "criterion": "Pelafalan setiap target terdengar benar dan tidak ada bunyi yang hilang/bertambah.",
+      "status": "owner_attested",
+      "evidence": "Attestation eksplisit requester pada task ini; perlu Japanese Linguistic Reviewer untuk formal gate."
+    },
+    {
+      "id": "LNG-MAN-002",
+      "criterion": "Mora pada か, すし, dan さくら terdengar sesuai target satu/dua/tiga mora.",
+      "status": "owner_attested",
+      "evidence": "Attestation eksplisit requester; receipt tidak menggantikan formal linguistic sign-off."
+    },
+    {
+      "id": "LNG-MAN-003",
+      "criterion": "Greeting dan instruction cue terdengar natural serta register-nya sesuai.",
+      "status": "owner_attested",
+      "evidence": "Attestation eksplisit requester; naturalness/register tetap memerlukan reviewer berwenang."
+    }
+  ],
+  "findings": [],
+  "reviewers": [
+    {
+      "reviewer_id": "owner-attestation",
+      "role": "Content Owner (attestation only)",
+      "decision": "approved",
+      "reviewed_at": "2026-09-20T23:25:39.197Z",
+      "confirmation_source": "explicit_owner_statement_in_current_task",
+      "notes": "Scoped local-only owner attestation. Tidak mengklaim Japanese Linguistic Reviewer external sign-off dan tidak membuka publication/runtime."
+    }
+  ],
+  "created_at": "2026-09-20T23:25:39.197Z",
+  "notes": [
+    "Receipt terikat ke exact manifest hash; perubahan manifest memerlukan review baru.",
+    "Linguistic internal gate di-waive untuk local-only melalui docs/implementation/u01-l1-content-review-local-only-decision.json; external/publication gate tetap tidak diklaim.",
+    "Binary audio tidak didistribusikan; pemeriksaan hash hanya memverifikasi copy local-only yang tersedia di workstation."
+  ]
+}

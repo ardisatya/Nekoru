@@ -27,5 +27,20 @@ export default defineConfig({
       use: { ...devices["Desktop Chrome"] },
       testMatch: /prototype\.a11y\.spec\.ts/,
     },
+    {
+      name: "accessibility-matrix-desktop",
+      use: { ...devices["Desktop Chrome"] },
+      testMatch: /prototype\.matrix\.spec\.ts/,
+    },
+    {
+      name: "accessibility-matrix-ios-emulator",
+      use: { ...devices["iPhone 13"], browserName: "webkit" },
+      testMatch: /prototype\.matrix\.spec\.ts/,
+    },
+    {
+      name: "accessibility-matrix-android-emulator",
+      use: { ...devices["Pixel 5"] },
+      testMatch: /prototype\.matrix\.spec\.ts/,
+    },
   ],
 });

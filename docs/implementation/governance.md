@@ -53,46 +53,47 @@ Perubahan yang melampaui selection bootstrap di atas memerlukan impact review; p
 
 ## Dependency dan Blocker
 
-| ID        | Phase | Status           | Safe behavior                                                                                                                            | Owner/approval needed                       |
-| --------- | ----- | ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- |
-| DEP-P0-01 | P0    | approved         | Node 24 tersedia; migration dan tiga integration test lulus pada PostgreSQL 18.6 lokal ephemeral; tidak diterapkan ke shared environment | Technical/Data review + environment owner   |
-| DEP-P0-02 | P0    | approved         | Bootstrap package versions dipin di lockfile                                                                                             | Architecture owner                          |
-| DEP-P0-03 | P0    | pending          | Clerk memakai local double                                                                                                               | Security/Privacy + Identity owner           |
-| DEP-P0-04 | P0    | blocked_external | U01-L1 tetap `draft` dan runtime menolak                                                                                                 | Academic, Linguistic, Rights, Accessibility |
-| DEP-P0-05 | P0    | blocked_external | Prototype hanya evidence otomatis                                                                                                        | Product, Research, Accessibility            |
-| DEP-P0-06 | P0    | approved         | CI contract dan hosted run #3 lulus untuk commit `627210f`; approval scope dikonfirmasi owner                                            | Repository owner                            |
+| ID        | Phase | Status         | Safe behavior                                                                                                                                                         | Owner/approval needed                       |
+| --------- | ----- | -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- |
+| DEP-P0-01 | P0    | approved       | Node 24 tersedia; migration dan tiga integration test lulus pada PostgreSQL 18.6 lokal ephemeral; tidak diterapkan ke shared environment                              | Technical/Data review + environment owner   |
+| DEP-P0-02 | P0    | approved       | Bootstrap package versions dipin di lockfile                                                                                                                          | Architecture owner                          |
+| DEP-P0-03 | P0    | pending        | Clerk memakai local double                                                                                                                                            | Security/Privacy + Identity owner           |
+| DEP-P0-04 | P0    | internal_ready | U01-L1 tetap `draft` dan runtime menolak; audio, academic, linguistic, dan accessibility review owner-attested local-only; external/publication gate tidak diklaim    | Academic, Linguistic, Rights, Accessibility |
+| DEP-P0-05 | P0    | internal_ready | Prototype 20 state dan emulator matrix 14/15 test diterima melalui local-only exception; approved platform matrix dan formal public support claim tetap tidak berubah | Product, Research, Accessibility            |
+| DEP-P0-06 | P0    | approved       | CI contract dan hosted run #3 lulus untuk commit `627210f`; approval scope dikonfirmasi owner                                                                         | Repository owner                            |
 
 ## Registry DEP-001–DEP-010
 
-| ID        | Exact artifact/version                                | Status sekarang     | Owner                     | Approval/status yang masih dibutuhkan                                                                                 |
-| --------- | ----------------------------------------------------- | ------------------- | ------------------------- | --------------------------------------------------------------------------------------------------------------------- |
-| `DEP-001` | Domain/persistence model `0.0.0-phase0`               | `approved`          | Engineering + Product     | Owner attestation recorded; individual receipts not attached                                                          |
-| `DEP-002` | Zod + JSON Schema bundle `schema_version: 1`          | `approved`          | Engineering               | Owner attestation recorded; individual receipts not attached                                                          |
-| `DEP-003` | `milestone-1-policy.json`, schema `1.0.0`             | `draft`             | Academic + Engineering    | Academic approval dan registered exact policy/evaluator IDs                                                           |
-| `DEP-004` | U01-L1 seed `0.1.0-draft`                             | `blocked_external`  | Academic/Content          | Local-only VOICEVOX metadata, verified rights receipt; checksum/readiness dan mandatory review receipts masih terbuka |
-| `DEP-005` | OpenAPI `0.0.0-phase0`                                | `contract_only`     | Engineering               | Endpoint payload review; runtime Phase 1                                                                              |
-| `DEP-006` | Event envelope/catalog `schema_version: 1`            | `approved`          | Engineering + Data        | Owner attestation recorded; individual receipts not attached                                                          |
-| `DEP-007` | Prototype `P-M1-01..20`                               | `internal_ready`    | Design + Engineering      | Product, research, accessibility review                                                                               |
-| `DEP-008` | Acceptance fixture bundle `schema_version: 1`         | `partial`           | QA + Engineering          | Provider, device, and recovery evidence                                                                               |
-| `DEP-009` | Clerk/local auth decision `DEC-P0-006`                | `local_double_only` | Engineering + Security    | Live development environment smoke                                                                                    |
-| `DEP-010` | Telemetry allowlist/redaction contract `0.0.0-phase0` | `approved`          | Data + Security + Product | Owner attestation recorded; individual receipts not attached                                                          |
+| ID        | Exact artifact/version                                | Status sekarang                      | Owner                     | Approval/status yang masih dibutuhkan                                                                                                             |
+| --------- | ----------------------------------------------------- | ------------------------------------ | ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `DEP-001` | Domain/persistence model `0.0.0-phase0`               | `approved`                           | Engineering + Product     | Owner attestation recorded; individual receipts not attached                                                                                      |
+| `DEP-002` | Zod + JSON Schema bundle `schema_version: 1`          | `approved`                           | Engineering               | Owner attestation recorded; individual receipts not attached                                                                                      |
+| `DEP-003` | `milestone-1-policy.json`, schema `1.0.0`             | `draft`                              | Academic + Engineering    | Academic approval dan registered exact policy/evaluator IDs                                                                                       |
+| `DEP-004` | U01-L1 seed `0.1.0-draft`                             | `blocked_external`                   | Academic/Content          | Audio normalization, checksum, rights, audio QA waiver, dan prototype accessibility owner attestation tersedia; seed tetap draft/runtime disabled |
+| `DEP-005` | OpenAPI `0.0.0-phase0`                                | `contract_only`                      | Engineering               | Endpoint payload review; runtime Phase 1                                                                                                          |
+| `DEP-006` | Event envelope/catalog `schema_version: 1`            | `approved`                           | Engineering + Data        | Owner attestation recorded; individual receipts not attached                                                                                      |
+| `DEP-007` | Prototype `P-M1-01..20`                               | `approved_owner_attested_local_only` | Design + Engineering      | Formal cross-platform/device evidence deferred; no public WCAG support claim                                                                      |
+| `DEP-008` | Acceptance fixture bundle `schema_version: 1`         | `partial`                            | QA + Engineering          | Provider, device, and recovery evidence                                                                                                           |
+| `DEP-009` | Clerk/local auth decision `DEC-P0-006`                | `local_double_only`                  | Engineering + Security    | Live development environment smoke                                                                                                                |
+| `DEP-010` | Telemetry allowlist/redaction contract `0.0.0-phase0` | `approved`                           | Data + Security + Product | Owner attestation recorded; individual receipts not attached                                                                                      |
 
 ## Blocker ke Fase
 
-| Blocker                                                              | Memblokir                          | Safe behavior sekarang                                                                                                     |
-| -------------------------------------------------------------------- | ---------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| Seed/audio/review/approval U01-L1 belum lengkap                      | Phase 0 `done` dan Phase 1 runtime | Rights receipt sudah verified_local_only; audio binary tetap local-only, seed tetap `draft`, dan runtime selection menolak |
-| Live Clerk config belum tersedia                                     | Auth provider gate                 | Hanya local identity double; tidak ada akun nyata                                                                          |
-| Usability, screen-reader, dan physical-device evidence belum lengkap | Prototype approval                 | Hanya automated browser smoke yang diklaim                                                                                 |
+| Blocker                                         | Memblokir                          | Safe behavior sekarang                                                                                                                                                              |
+| ----------------------------------------------- | ---------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Seed/audio/review/approval U01-L1 belum lengkap | Phase 0 `done` dan Phase 1 runtime | Audio QA dan prototype accessibility owner-attested local-only; actual audio playback deferred ke P1.3; binary tetap local-only, seed tetap `draft`, dan runtime selection menolak  |
+| Live Clerk config belum tersedia                | Auth provider gate                 | Hanya local identity double; tidak ada akun nyata                                                                                                                                   |
+| Formal AT/device evidence belum lengkap         | Formal platform support claim      | Bukan blocker untuk scope pribadi local-only karena exception `DEC.P0.ACCESSIBILITY.U01.L1.EMULATOR_ONLY.000001`; NVDA/VoiceOver/TalkBack dan physical playback tetap tidak diklaim |
 
 ## Owner dan Approval Matrix
 
-| Artifact             | Prepared by                | Required reviewer/approver                              | Current state               |
-| -------------------- | -------------------------- | ------------------------------------------------------- | --------------------------- |
-| Bootstrap decisions  | Engineering                | Architecture/Technical owner                            | `approved`                  |
-| Executable contracts | Engineering                | Technical/Data + domain owners                          | `approved`                  |
-| U01-L1 seed          | Content/Engineering        | Academic, Linguistic, Assessment, Rights, Accessibility | `draft`                     |
-| Prototype report     | Product/Design/Engineering | Product, Research, Accessibility                        | `pending_external_evidence` |
-| Auth environment     | Engineering                | Security/Privacy + Identity owner                       | `local_double_only`         |
+| Artifact                                | Prepared by                | Required reviewer/approver                                 | Current state                        |
+| --------------------------------------- | -------------------------- | ---------------------------------------------------------- | ------------------------------------ |
+| Bootstrap decisions                     | Engineering                | Architecture/Technical owner                               | `approved`                           |
+| Executable contracts                    | Engineering                | Technical/Data + domain owners                             | `approved`                           |
+| U01-L1 seed                             | Content/Engineering        | Academic, Linguistic, Assessment, Rights, Accessibility    | `draft`                              |
+| Prototype report                        | Product/Design/Engineering | Product, Research, Accessibility                           | `approved_owner_attested_local_only` |
+| Academic/linguistic local-only decision | Content Owner              | Academic/Linguistic external reviewer bila scope diperluas | `approved_owner_attested_local_only` |
+| Auth environment                        | Engineering                | Security/Privacy + Identity owner                          | `local_double_only`                  |
 
 Phase 1 tidak boleh dimulai hanya karena automated tests hijau. Gate resmi membutuhkan evidence terhadap exact artifact version dan sign-off pihak berwenang.

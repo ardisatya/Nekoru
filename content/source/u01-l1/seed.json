@@ -72,8 +72,16 @@
     }
   ],
   "session_blueprints": [
-    { "id": "U01-L1-A", "order": 1, "purpose_id": "kenali_lima_vokal" },
-    { "id": "U01-L1-B", "order": 2, "purpose_id": "rasakan_irama_mora" },
+    {
+      "id": "U01-L1-A",
+      "order": 1,
+      "purpose_id": "kenali_lima_vokal"
+    },
+    {
+      "id": "U01-L1-B",
+      "order": 2,
+      "purpose_id": "rasakan_irama_mora"
+    },
     {
       "id": "U01-L1-C",
       "order": 3,
@@ -430,211 +438,218 @@
     {
       "id": "ast_01J00000000000000000000001",
       "kind": "audio",
-      "status": "pending",
-      "checksum": null,
-      "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER",
+      "status": "ready",
+      "checksum": "sha256:dc183936131b9ff6f76f52df1a2a7b54986dfc78413cfccb26226c885aec62a6",
+      "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T",
       "speaker_variant": "a"
     },
     {
       "id": "ast_01J00000000000000000000002",
       "kind": "audio",
-      "status": "pending",
-      "checksum": null,
-      "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER",
+      "status": "ready",
+      "checksum": "sha256:378b7ad91da1607f9c0e04d84803433ec4d79e9ee5a25da20cecd7bca57d83ad",
+      "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T",
       "speaker_variant": "b"
     },
     {
       "id": "ast_01J00000000000000000000003",
       "kind": "audio",
-      "status": "pending",
-      "checksum": null,
-      "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER",
+      "status": "ready",
+      "checksum": "sha256:a3df8f8c209d8a1d4193a1223e6ab6948c4fd6856a794cbfb8ed6c0ec4fdad26",
+      "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T",
       "speaker_variant": "a"
     },
     {
       "id": "ast_01J00000000000000000000004",
       "kind": "audio",
-      "status": "pending",
-      "checksum": null,
-      "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER",
+      "status": "ready",
+      "checksum": "sha256:3de6163c5d50b4c865e2fed979e0f2f4c623411dfabf4cc3b02547e569b0922d",
+      "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T",
       "speaker_variant": "b"
     },
     {
       "id": "ast_01J00000000000000000000005",
       "kind": "audio",
-      "status": "pending",
-      "checksum": null,
-      "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER",
+      "status": "ready",
+      "checksum": "sha256:b2a9f1d59011fd4d94e944c75ad7307a689997de91e8e1d2b48bbb91932a5ea6",
+      "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T",
       "speaker_variant": "a"
     },
     {
       "id": "ast_01J00000000000000000000006",
       "kind": "audio",
-      "status": "pending",
-      "checksum": null,
-      "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER",
+      "status": "ready",
+      "checksum": "sha256:936638970e20a9d04c3797d60edaf940a16f659982b2877adcf77a4885f35e39",
+      "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T",
       "speaker_variant": "b"
     },
     {
       "id": "ast_01J00000000000000000000007",
       "kind": "audio",
-      "status": "pending",
-      "checksum": null,
-      "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER",
+      "status": "ready",
+      "checksum": "sha256:73b9bc5c38f596903d70c1260406f85a815a15b368bf1fb72fcc2f0990fe02c0",
+      "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T",
       "speaker_variant": "a"
     },
     {
       "id": "ast_01J00000000000000000000008",
       "kind": "audio",
-      "status": "pending",
-      "checksum": null,
-      "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER",
+      "status": "ready",
+      "checksum": "sha256:7310e4f2ee89dbdaafe8dc69ab440ae0e2cd2b2b59a525a14e1bb7363def3ccb",
+      "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T",
       "speaker_variant": "b"
     },
     {
       "id": "ast_01J00000000000000000000009",
       "kind": "audio",
-      "status": "pending",
-      "checksum": null,
-      "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER",
+      "status": "ready",
+      "checksum": "sha256:c9edd6e6abe3e53667c265fc2bd67dc141da620250b1d3c3e2269274a4a9cc7f",
+      "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T",
       "speaker_variant": "a"
     },
     {
       "id": "ast_01J00000000000000000000010",
       "kind": "audio",
-      "status": "pending",
-      "checksum": null,
-      "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER",
+      "status": "ready",
+      "checksum": "sha256:292d303855f06b2cb9a8f1106c579baf4ab9601c0eeceb403f6ad1b360789ec0",
+      "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T",
       "speaker_variant": "b"
     },
     {
       "id": "ast_01J00000000000000000000011",
       "kind": "audio",
-      "status": "pending",
-      "checksum": null,
-      "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER",
+      "status": "ready",
+      "checksum": "sha256:948d9e1ef0844d72bd3c917caae014028853aa775062f2f5ae4be6e8632d9a6b",
+      "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T",
       "speaker_variant": "a"
     },
     {
       "id": "ast_01J00000000000000000000012",
       "kind": "audio",
-      "status": "pending",
-      "checksum": null,
-      "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER",
+      "status": "ready",
+      "checksum": "sha256:a2c480c8031a53d0ada775efd198f4f3aa17346488aa08829c6779e37804964f",
+      "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T",
       "speaker_variant": "b"
     },
     {
       "id": "ast_01J00000000000000000000013",
       "kind": "audio",
-      "status": "pending",
-      "checksum": null,
-      "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER",
+      "status": "ready",
+      "checksum": "sha256:cec16aefd5d5698902da9314c0175d317839eb68a00effa63c90b4dbe48cf100",
+      "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T",
       "speaker_variant": "a"
     },
     {
       "id": "ast_01J00000000000000000000014",
       "kind": "audio",
-      "status": "pending",
-      "checksum": null,
-      "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER",
+      "status": "ready",
+      "checksum": "sha256:874cd2cb903e50ebfc638260e2a54dffbd530a4a8fdbea4ab574520e61fbd8ac",
+      "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T",
       "speaker_variant": "b"
     },
     {
       "id": "ast_01J00000000000000000000015",
       "kind": "audio",
-      "status": "pending",
-      "checksum": null,
-      "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER",
+      "status": "ready",
+      "checksum": "sha256:3401b840e6f91f848c2e5e90c4bea080f94ff20cace50c661dc237e0ba9a5446",
+      "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T",
       "speaker_variant": "a"
     },
     {
       "id": "ast_01J00000000000000000000016",
       "kind": "audio",
-      "status": "pending",
-      "checksum": null,
-      "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER",
+      "status": "ready",
+      "checksum": "sha256:a64b389b2577dc7c4e593137df89cdf1cd9b99fa0ccc0eaebd15ccaa86d8e1b9",
+      "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T",
       "speaker_variant": "b"
     },
     {
       "id": "ast_01J00000000000000000000017",
       "kind": "audio",
-      "status": "pending",
-      "checksum": null,
-      "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER",
+      "status": "ready",
+      "checksum": "sha256:8ff8a5c2285b0e4f2db6602a891642bb5cb782ebcebb1161f52980197527c1e1",
+      "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T",
       "speaker_variant": "a"
     },
     {
       "id": "ast_01J00000000000000000000018",
       "kind": "audio",
-      "status": "pending",
-      "checksum": null,
-      "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER",
+      "status": "ready",
+      "checksum": "sha256:7c8ede6732aa4f64694312b0bf5d2ee9699decd060a0f638ccbd61afe3a83821",
+      "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T",
       "speaker_variant": "b"
     },
     {
       "id": "ast_01J00000000000000000000019",
       "kind": "audio",
-      "status": "pending",
-      "checksum": null,
-      "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER",
+      "status": "ready",
+      "checksum": "sha256:047d4f1c6382f43913213d1743a36d15c2c3cb139f2425b21e066ed9f473a843",
+      "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T",
       "speaker_variant": "a"
     },
     {
       "id": "ast_01J00000000000000000000020",
       "kind": "audio",
-      "status": "pending",
-      "checksum": null,
-      "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER",
+      "status": "ready",
+      "checksum": "sha256:f083662073185bf6f976445afdc52b2e920f1ef8aa890811c20aed21f6ca1131",
+      "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T",
       "speaker_variant": "b"
     },
     {
       "id": "ast_01J00000000000000000000021",
       "kind": "audio",
-      "status": "pending",
-      "checksum": null,
-      "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER",
+      "status": "ready",
+      "checksum": "sha256:8d1e352d836e3cce6d5a4f8d9147a9db85750c940ed8791ad19a4cf4d9dba801",
+      "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T",
       "speaker_variant": "a"
     },
     {
       "id": "ast_01J00000000000000000000022",
       "kind": "audio",
-      "status": "pending",
-      "checksum": null,
-      "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER",
+      "status": "ready",
+      "checksum": "sha256:ced8749f444ad44875acb74e69033ff4132ec3825637516345d51f8b4ee46d49",
+      "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T",
       "speaker_variant": "b"
     },
     {
       "id": "ast_01J00000000000000000000023",
       "kind": "audio",
-      "status": "pending",
-      "checksum": null,
-      "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER",
+      "status": "ready",
+      "checksum": "sha256:c09902dec3a79ff5f85f91703cd52881bb041b4fa8789b2b8df898b59159055d",
+      "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T",
       "speaker_variant": "a"
     },
     {
       "id": "ast_01J00000000000000000000024",
       "kind": "audio",
-      "status": "pending",
-      "checksum": null,
-      "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER",
+      "status": "ready",
+      "checksum": "sha256:93a75f81bcb44373f3bee6361291824711f39341b4502a298a3a74da3a0c4845",
+      "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T",
       "speaker_variant": "b"
     },
     {
       "id": "ast_01J00000000000000000000025",
       "kind": "audio",
-      "status": "pending",
-      "checksum": null,
-      "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER",
+      "status": "ready",
+      "checksum": "sha256:cf35078696a5b2496c8a45328c739b7c988566790ef584c756438b40400bebc3",
+      "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T",
       "speaker_variant": "a"
     },
     {
       "id": "ast_01J00000000000000000000026",
       "kind": "audio",
-      "status": "pending",
-      "checksum": null,
-      "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER",
+      "status": "ready",
+      "checksum": "sha256:0026ed39fa7c2a8216508db9fcd317f2d7287802033aa6175cbae381d95a89b2",
+      "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T",
       "speaker_variant": "b"
     }
   ],
-  "approval_receipts": []
+  "approval_receipts": [
+    "rev_01M2ZQ5M4K7W2C8N6P9R3S1T0V",
+    "REVIEW.CONTENT.U01.L1.AUDIO.000001",
+    "WAIVER.AUDIO.U01.L1.LOCAL_ONLY.000001",
+    "REVIEW.CONTENT.U01.L1.ACADEMIC.000001",
+    "REVIEW.CONTENT.U01.L1.LINGUISTIC.000001",
+    "REVIEW.ACCESSIBILITY.U01.L1.000001"
+  ]
 }

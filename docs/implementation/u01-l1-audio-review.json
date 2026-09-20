@@ -1,0 +1,142 @@
+{
+  "schema_version": "1.0.0",
+  "receipt_type": "content_review",
+  "review_id": "REVIEW.CONTENT.U01.L1.AUDIO.000001",
+  "status": "approved",
+  "decision": "approved",
+  "approval_basis": "owner_attestation",
+  "formal_gate_status": "waived_local_only_owner_attested",
+  "artifact": {
+    "manifest_ref": "content/manifests/u01-l1.audio-draft.json",
+    "manifest_id": "MANIFEST.N5.S00.U01.L1.AUDIO.DRAFT",
+    "manifest_sha256": "sha256:aac587f2ca562adb69e224f8094a3b4812764df6b349c7ae0132eeb74cc3dba7",
+    "source_seed_version": "0.1.0",
+    "source_seed_commit": "7c32753a173e5686cb0e3b2a2acd9f1ba425de204",
+    "record_count": 26,
+    "rights_receipt_ref": "docs/implementation/u01-l1-audio-rights-receipt-accessibility.json",
+    "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T"
+  },
+  "rubric_ref": "docs/product-specs/content-validation-rubric.md@0.1.0",
+  "gate_results": {
+    "LIS-004_loudness_true_peak": "waived_local_only_owner_attested",
+    "LIS-005_clipping_noise_playback": "owner_attested",
+    "LIS-011_provenance_metadata": "pass",
+    "TEC-001_audio_file_integrity": "pass",
+    "GOV-LOCAL-001_owner_scope": "owner_attested"
+  },
+  "automated_checks": [
+    {
+      "id": "AQA-001",
+      "criterion": "Manifest audio adalah snapshot U01-L1 local-only yang tepat.",
+      "status": "pass",
+      "evidence": "MANIFEST.N5.S00.U01.L1.AUDIO.DRAFT@0.1.0; runtime_eligible=false; distribution_scope=local_only"
+    },
+    {
+      "id": "AQA-002",
+      "criterion": "Seluruh 26 audio asset memiliki ID unik dan pasangan master/delivery.",
+      "status": "pass",
+      "evidence": "records=26; unique asset_id=26; unique logical_id=26"
+    },
+    {
+      "id": "AQA-003",
+      "criterion": "Metadata format dan checksum setiap master/delivery lengkap.",
+      "status": "pass",
+      "evidence": "master=PCM 24-bit/48 kHz/mono; delivery=PCM 16-bit/48 kHz/mono; checksum format SHA-256"
+    },
+    {
+      "id": "AQA-004",
+      "criterion": "Binary master/delivery yang tersedia cocok dengan checksum manifest.",
+      "status": "pass",
+      "evidence": "52 file hash cocok; binary tetap local-only"
+    },
+    {
+      "id": "AQA-005",
+      "criterion": "Header WAV aktual cocok dengan format delivery/master pada manifest.",
+      "status": "pass",
+      "evidence": "52 header WAV terbaca; PCM, sample rate, bit depth, dan channel sesuai"
+    },
+    {
+      "id": "AQA-006",
+      "criterion": "Provenance audio dan rights receipt menunjuk exact manifest yang sama.",
+      "status": "pass",
+      "evidence": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T; manifest_sha256=sha256:aac587f2ca562adb69e224f8094a3b4812764df6b349c7ae0132eeb74cc3dba7"
+    },
+    {
+      "id": "AQA-007",
+      "criterion": "Automated audio measurements tersedia dan true peak tidak melewati ceiling.",
+      "status": "pass",
+      "evidence": "measurements=26/26; true_peak_ceiling=<= -1 dBTP"
+    },
+    {
+      "id": "AQA-008",
+      "criterion": "Status audio QA tercatat transparan dan tidak disamarkan sebagai formal QA.",
+      "status": "pass",
+      "evidence": "26 record memiliki automated_measurement_only atau owner_attested_local_only"
+    },
+    {
+      "id": "AQA-009",
+      "criterion": "Clipping, noise, dan device playback tidak diklaim lulus tanpa evidence formal.",
+      "status": "owner_attested",
+      "evidence": "0/78 field manifest masih not_tested; owner approval hanya untuk local-only listening scope"
+    },
+    {
+      "id": "AQA-010",
+      "criterion": "Loudness berada pada baseline formal -16 LUFS ±2.",
+      "status": "owner_attested",
+      "evidence": "Baseline formal belum terpenuhi/terverifikasi untuk seluruh asset; min=-70 LUFS, max=-15.9 LUFS"
+    }
+  ],
+  "manual_checks": [
+    {
+      "id": "AUDIO-MAN-001",
+      "criterion": "Owner mendengarkan dan menyetujui set audio U01-L1 untuk penggunaan local-only.",
+      "status": "owner_attested",
+      "evidence": "Approval eksplisit requester pada task ini: audio asset tidak bermasalah dan seluruh set disetujui untuk penggunaan pribadi/local-only."
+    },
+    {
+      "id": "AUDIO-MAN-002",
+      "criterion": "Playback subjektif tidak menunjukkan suara hilang, dropout, clipping terdengar, atau noise yang mengganggu.",
+      "status": "owner_attested",
+      "evidence": "Owner menyatakan audio sudah tidak memiliki masalah; pemeriksaan teknis formal tetap dipisahkan dari attestation ini."
+    },
+    {
+      "id": "AUDIO-MAN-003",
+      "criterion": "Playback diuji pada device/platform matrix yang diwajibkan.",
+      "status": "owner_attested",
+      "evidence": "Requester mengonfirmasi poin 1-4 telah dilakukan dan tidak ada masalah pada playback yang diuji; evidence device matrix formal tetap memerlukan reviewer/fixture terpisah."
+    },
+    {
+      "id": "AUDIO-MAN-004",
+      "criterion": "Attribution VOICEVOX: Nemo dan batas local-only dipahami serta diterima.",
+      "status": "owner_attested",
+      "evidence": "Owner approval dicatat bersama rights receipt verified_local_only; redistribution dan production runtime tetap dilarang."
+    }
+  ],
+  "findings": [
+    {
+      "id": "FINDING.AQA-010",
+      "severity": "observation",
+      "summary": "Automated loudness observation belum memenuhi baseline formal -16 LUFS ±2.",
+      "evidence": "Technical waiver local-only terdaftar pada docs/implementation/u01-l1-audio-qa-waiver.json; tidak berlaku untuk publication/runtime."
+    }
+  ],
+  "reviewers": [
+    {
+      "reviewer_id": "owner-attestation",
+      "role": "Content Owner (attestation only)",
+      "decision": "approved",
+      "reviewed_at": "2026-09-20T23:25:38.463Z",
+      "confirmation_source": "explicit_owner_statement_in_current_task",
+      "notes": "Scoped owner attestation untuk penggunaan pribadi/local-only. Bukan pengganti Audio Domain Specialist, Technical/Data Reviewer, Accessibility Reviewer, atau device QA formal; tidak membuka publication/runtime."
+    }
+  ],
+  "created_at": "2026-09-20T23:25:38.463Z",
+  "notes": [
+    "Receipt terikat ke exact manifest hash; perubahan manifest atau binary memerlukan review baru.",
+    "Status approved di receipt ini berarti owner-approved untuk local-only listening scope, bukan formal publication approval.",
+    "Requester mengonfirmasi poin 1-4 Audio QA telah dilakukan dan tidak menemukan masalah; automated fields yang masih not_tested atau di luar baseline tetap tidak diubah menjadi pass tanpa evidence file/waiver yang dapat direproduksi.",
+    "Rights receipt tetap terpisah dan diverifikasi melalui exact manifest hash.",
+    "Loudness short-clip waiver: docs/implementation/u01-l1-audio-qa-waiver.json.",
+    "Audio manifest approved hanya untuk local-only owner scope; seed tetap draft dan runtime_eligible=false."
+  ]
+}

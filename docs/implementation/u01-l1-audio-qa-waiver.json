@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0.0",
+  "receipt_type": "technical_waiver",
+  "waiver_id": "WAIVER.AUDIO.U01.L1.LOCAL_ONLY.000001",
+  "status": "approved",
+  "decision": "waived_local_only",
+  "approval_basis": "owner_attestation",
+  "formal_gate_status": "waived_local_only_owner_attested",
+  "artifact": {
+    "manifest_ref": "content/manifests/u01-l1.audio-draft.json",
+    "manifest_id": "MANIFEST.N5.S00.U01.L1.AUDIO.DRAFT",
+    "manifest_sha256": "sha256:9b29f30135e77f17552e53de0f93d57f682cbdfafc9e69002a62720de8f7cf04",
+    "record_count": 26
+  },
+  "rubric_ref": "docs/product-specs/content-validation-rubric.md@0.1.0",
+  "gate_results": {
+    "LIS-004_loudness_true_peak": "waived_local_only_owner_attested",
+    "LIS-005_clipping_noise_playback": "owner_attested",
+    "LIS-011_provenance_device_playback": "owner_attested"
+  },
+  "affected_assets": [
+    "AUDIO.N5.S0.U01.L1.VOWEL.A.001",
+    "AUDIO.N5.S0.U01.L1.VOWEL.A.002",
+    "AUDIO.N5.S0.U01.L1.VOWEL.I.001",
+    "AUDIO.N5.S0.U01.L1.VOWEL.I.002",
+    "AUDIO.N5.S0.U01.L1.VOWEL.U.001",
+    "AUDIO.N5.S0.U01.L1.VOWEL.U.002",
+    "AUDIO.N5.S0.U01.L1.VOWEL.E.001",
+    "AUDIO.N5.S0.U01.L1.VOWEL.E.002",
+    "AUDIO.N5.S0.U01.L1.VOWEL.O.001",
+    "AUDIO.N5.S0.U01.L1.VOWEL.O.002",
+    "AUDIO.N5.S0.U01.L1.GREETING.KONNICHIWA.001",
+    "AUDIO.N5.S0.U01.L1.GREETING.KONNICHIWA.002",
+    "AUDIO.N5.S0.U01.L1.GREETING.KONBANWA.001",
+    "AUDIO.N5.S0.U01.L1.GREETING.KONBANWA.002",
+    "AUDIO.N5.S0.U01.L1.GREETING.SAYOUNARA.001",
+    "AUDIO.N5.S0.U01.L1.GREETING.SAYOUNARA.002",
+    "AUDIO.N5.S0.U01.L1.MORA.ONE_KA.001",
+    "AUDIO.N5.S0.U01.L1.MORA.ONE_KA.002",
+    "AUDIO.N5.S0.U01.L1.MORA.TWO_SUSHI.001",
+    "AUDIO.N5.S0.U01.L1.MORA.TWO_SUSHI.002",
+    "AUDIO.N5.S0.U01.L1.MORA.THREE_SAKURA.001",
+    "AUDIO.N5.S0.U01.L1.MORA.THREE_SAKURA.002"
+  ],
+  "rationale": {
+    "summary": "Isolated short Japanese vowel/mora clips may not produce a stable EBU R128 integrated loudness value; the measurement floor can report -70 LUFS even when peak-normalized playback is clear.",
+    "control": "All output is normalized with ffmpeg loudnorm, true peak is kept at or below -1 dBTP, 48 kHz mono PCM format is retained, 52 checksums are recorded, and the owner completed playback review.",
+    "scope": "Private/local workstation only. No redistribution, production runtime, or public publication is enabled."
+  },
+  "reviewers": [
+    {
+      "reviewer_id": "owner-attestation",
+      "role": "Content Owner (attestation only)",
+      "decision": "approved",
+      "reviewed_at": "2026-09-20T14:32:52.809Z",
+      "confirmation_source": "explicit_owner_statement_in_current_task",
+      "notes": "This waiver is a local-only scope decision and is not an external Audio Domain Specialist approval."
+    }
+  ],
+  "created_at": "2026-09-20T14:32:52.809Z",
+  "notes": [
+    "Waiver is bound to the exact normalized manifest hash.",
+    "Any binary or manifest change requires a new measurement and waiver review.",
+    "Seed remains draft and runtime_eligible=false."
+  ]
+}

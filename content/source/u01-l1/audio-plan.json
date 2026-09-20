@@ -18,7 +18,7 @@
     "channels": 1,
     "master_bits_per_sample": 24,
     "delivery_bits_per_sample": 16,
-    "note": "Candidate audio local-only. Binary output must stay on the approved workstation; human linguistic, academic, rights, accessibility, and device QA remain required."
+    "note": "Audio local-only. Binary output must stay on the approved workstation; prototype accessibility review is owner-attested for local-only scope, while actual audio playback and physical-device playback QA are explicitly deferred to Phase 1 P1.3."
   },
   "voice_variants": {
     "a": {
@@ -56,7 +56,7 @@
       "transcript_internal": "あ",
       "evidence_policy": "direct",
       "academic_review_status": "pending",
-      "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER"
+      "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T"
     },
     {
       "asset_id": "ast_01J00000000000000000000002",
@@ -67,7 +67,7 @@
       "transcript_internal": "あ",
       "evidence_policy": "direct",
       "academic_review_status": "pending",
-      "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER"
+      "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T"
     },
     {
       "asset_id": "ast_01J00000000000000000000003",
@@ -78,7 +78,7 @@
       "transcript_internal": "い",
       "evidence_policy": "direct",
       "academic_review_status": "pending",
-      "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER"
+      "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T"
     },
     {
       "asset_id": "ast_01J00000000000000000000004",
@@ -89,7 +89,7 @@
       "transcript_internal": "い",
       "evidence_policy": "direct",
       "academic_review_status": "pending",
-      "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER"
+      "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T"
     },
     {
       "asset_id": "ast_01J00000000000000000000005",
@@ -100,7 +100,7 @@
       "transcript_internal": "う",
       "evidence_policy": "direct",
       "academic_review_status": "pending",
-      "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER"
+      "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T"
     },
     {
       "asset_id": "ast_01J00000000000000000000006",
@@ -111,7 +111,7 @@
       "transcript_internal": "う",
       "evidence_policy": "direct",
       "academic_review_status": "pending",
-      "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER"
+      "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T"
     },
     {
       "asset_id": "ast_01J00000000000000000000007",
@@ -122,7 +122,7 @@
       "transcript_internal": "え",
       "evidence_policy": "direct",
       "academic_review_status": "pending",
-      "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER"
+      "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T"
     },
     {
       "asset_id": "ast_01J00000000000000000000008",
@@ -133,7 +133,7 @@
       "transcript_internal": "え",
       "evidence_policy": "direct",
       "academic_review_status": "pending",
-      "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER"
+      "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T"
     },
     {
       "asset_id": "ast_01J00000000000000000000009",
@@ -144,7 +144,7 @@
       "transcript_internal": "お",
       "evidence_policy": "direct",
       "academic_review_status": "pending",
-      "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER"
+      "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T"
     },
     {
       "asset_id": "ast_01J00000000000000000000010",
@@ -155,7 +155,7 @@
       "transcript_internal": "お",
       "evidence_policy": "direct",
       "academic_review_status": "pending",
-      "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER"
+      "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T"
     },
     {
       "asset_id": "ast_01J00000000000000000000011",
@@ -166,7 +166,7 @@
       "transcript_internal": "おはようございます",
       "evidence_policy": "applied",
       "academic_review_status": "pending",
-      "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER"
+      "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T"
     },
     {
       "asset_id": "ast_01J00000000000000000000012",
@@ -177,7 +177,7 @@
       "transcript_internal": "おはようございます",
       "evidence_policy": "applied",
       "academic_review_status": "pending",
-      "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER"
+      "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T"
     },
     {
       "asset_id": "ast_01J00000000000000000000013",
@@ -188,7 +188,7 @@
       "transcript_internal": "こんにちは",
       "evidence_policy": "applied",
       "academic_review_status": "pending",
-      "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER"
+      "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T"
     },
     {
       "asset_id": "ast_01J00000000000000000000014",
@@ -199,7 +199,7 @@
       "transcript_internal": "こんにちは",
       "evidence_policy": "applied",
       "academic_review_status": "pending",
-      "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER"
+      "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T"
     },
     {
       "asset_id": "ast_01J00000000000000000000015",
@@ -210,7 +210,7 @@
       "transcript_internal": "こんばんは",
       "evidence_policy": "applied",
       "academic_review_status": "pending",
-      "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER"
+      "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T"
     },
     {
       "asset_id": "ast_01J00000000000000000000016",
@@ -221,7 +221,7 @@
       "transcript_internal": "こんばんは",
       "evidence_policy": "applied",
       "academic_review_status": "pending",
-      "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER"
+      "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T"
     },
     {
       "asset_id": "ast_01J00000000000000000000017",
@@ -232,7 +232,7 @@
       "transcript_internal": "さようなら",
       "evidence_policy": "applied",
       "academic_review_status": "pending",
-      "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER"
+      "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T"
     },
     {
       "asset_id": "ast_01J00000000000000000000018",
@@ -243,7 +243,7 @@
       "transcript_internal": "さようなら",
       "evidence_policy": "applied",
       "academic_review_status": "pending",
-      "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER"
+      "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T"
     },
     {
       "asset_id": "ast_01J00000000000000000000019",
@@ -254,7 +254,7 @@
       "transcript_internal": "か",
       "evidence_policy": "applied",
       "academic_review_status": "pending",
-      "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER"
+      "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T"
     },
     {
       "asset_id": "ast_01J00000000000000000000020",
@@ -265,7 +265,7 @@
       "transcript_internal": "か",
       "evidence_policy": "applied",
       "academic_review_status": "pending",
-      "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER"
+      "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T"
     },
     {
       "asset_id": "ast_01J00000000000000000000021",
@@ -276,7 +276,7 @@
       "transcript_internal": "すし",
       "evidence_policy": "applied",
       "academic_review_status": "pending",
-      "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER"
+      "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T"
     },
     {
       "asset_id": "ast_01J00000000000000000000022",
@@ -287,7 +287,7 @@
       "transcript_internal": "すし",
       "evidence_policy": "applied",
       "academic_review_status": "pending",
-      "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER"
+      "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T"
     },
     {
       "asset_id": "ast_01J00000000000000000000023",
@@ -298,7 +298,7 @@
       "transcript_internal": "さくら",
       "evidence_policy": "applied",
       "academic_review_status": "pending",
-      "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER"
+      "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T"
     },
     {
       "asset_id": "ast_01J00000000000000000000024",
@@ -309,7 +309,7 @@
       "transcript_internal": "さくら",
       "evidence_policy": "applied",
       "academic_review_status": "pending",
-      "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER"
+      "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T"
     },
     {
       "asset_id": "ast_01J00000000000000000000025",
@@ -320,7 +320,7 @@
       "transcript_internal": "聞いてください",
       "evidence_policy": "non_scored",
       "academic_review_status": "pending",
-      "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER"
+      "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T"
     },
     {
       "asset_id": "ast_01J00000000000000000000026",
@@ -331,7 +331,7 @@
       "transcript_internal": "選んでください",
       "evidence_policy": "non_scored",
       "academic_review_status": "pending",
-      "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER"
+      "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T"
     }
   ],
   "rights_status": "verified_local_only",
@@ -339,7 +339,7 @@
   "blockers": [
     "Binary audio tidak boleh masuk repository publik atau artifact redistribution.",
     "Japanese Linguistic/Academic review belum dilakukan.",
-    "Physical-device playback dan accessibility QA belum dilakukan.",
+    "Actual audio playback dan physical-device playback QA ditunda ke Phase 1 P1.3; prototype accessibility sudah owner-attested local-only.",
     "Approval receipt dan publication gate belum tersedia."
   ]
 }

@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.0.0",
+  "evidence_type": "accessibility_emulator_matrix",
+  "evidence_id": "EVIDENCE.ACCESSIBILITY.U01.L1.EMULATOR.20260921.000001",
+  "status": "passed_emulator_subset",
+  "formal_gate_status": "waived_local_only_emulator_exception",
+  "scope": {
+    "surface": "learner_web_prototype",
+    "route": "/prototype/u01-l1",
+    "states": "P-M1-01..P-M1-20",
+    "distribution_scope": "local_only",
+    "runtime_eligible": false,
+    "emulator_only": true
+  },
+  "run": {
+    "command": "pnpm test:a11y:matrix",
+    "executed_at": "2026-09-20T23:27:12.9518362Z",
+    "tester": "Codex automated Playwright runner",
+    "playwright_version": "1.63.0",
+    "node_version": "24.14.0",
+    "pnpm_version": "12.4.1",
+    "commit_sha": "ee5bc7a173e5686cb0e3b2a2acd9f1ba425de204",
+    "source_state": "working_tree_with_uncommitted_test_harness_changes",
+    "result": {
+      "planned": 15,
+      "passed": 14,
+      "skipped": 1,
+      "failed": 0
+    }
+  },
+  "projects": [
+    {
+      "id": "accessibility-matrix-desktop",
+      "engine": "Chromium",
+      "profile": "Desktop Chrome emulation",
+      "result": "passed"
+    },
+    {
+      "id": "accessibility-matrix-ios-emulator",
+      "engine": "WebKit",
+      "profile": "iPhone 13 viewport/touch emulation",
+      "result": "passed"
+    },
+    {
+      "id": "accessibility-matrix-android-emulator",
+      "engine": "Chromium",
+      "profile": "Pixel 5 viewport/touch emulation",
+      "result": "passed"
+    }
+  ],
+  "checks": [
+    {
+      "id": "a11y-matrix-emulator-semantic-001",
+      "result": "passed",
+      "coverage": "axe representative initial/listening/matching/recovery states, language metadata, semantic landmark and Japanese content"
+    },
+    {
+      "id": "a11y-matrix-keyboard-focus-recovery-002",
+      "result": "passed",
+      "coverage": "keyboard focus handoff, audio-state controls, answer selection and submit availability"
+    },
+    {
+      "id": "a11y-matrix-responsive-visual-modes-003",
+      "result": "passed",
+      "coverage": "320 CSS px reflow, no horizontal overflow, visible target size, forced-colors and reduced-motion emulation"
+    },
+    {
+      "id": "a11y-matrix-mobile-emulator-touch-004",
+      "result": "passed_on_mobile_emulators",
+      "coverage": "touch capability, mobile overflow, target size and select-to-pair touch path"
+    },
+    {
+      "id": "a11y-matrix-no-hidden-answer-content-005",
+      "result": "passed",
+      "coverage": "prototype DOM and hidden content do not expose answer key or internal rationale markers"
+    }
+  ],
+  "source_hashes": {
+    "apps/learner-web/app/globals.css": "sha256:f72b815a9590a4a360232bf61b67790687f5522c084bf0c0593432c656112ab6",
+    "apps/learner-web/app/prototype/u01-l1/prototype.tsx": "sha256:82bdd10bdbb72162ab896f49d21b0a5bad1a3d7c4a46076c251f8db949e59494",
+    "apps/learner-web/app/prototype/u01-l1/prototype.module.css": "sha256:1add9bb1e68ca766cac213b642713c3c05ff9e136e810597223308223a8d1f49",
+    "playwright.config.ts": "sha256:09d18c9874e14ec0f9fd86d6febf6f1b6f82bf03be43d943ce758ca0cf675701",
+    "tooling/e2e/prototype.matrix.spec.ts": "sha256:16e90f3a40a0023c36f5d6808abd30fdb3e9e05a15a68ba85a0abb6aa0ecdbb2"
+  },
+  "not_tested": [
+    "NVDA actual screen reader session",
+    "VoiceOver actual session on macOS/iOS",
+    "TalkBack actual session on Android",
+    "physical iOS/Android device touch, soft keyboard, screen reader and speaker/headphone playback",
+    "actual audio player playback; prototype remains audio-state simulation until Phase 1 P1.3"
+  ],
+  "reason_formal_gate_remains_blocked": "Physical-device evidence tetap tidak tersedia untuk formal public/platform support. Untuk scope pribadi local-only Phase 0, owner-approved exception menerima emulator subset; approved platform matrix v1.0 tidak berubah.",
+  "local_only_decision_ref": "docs/implementation/u01-l1-accessibility-local-only-decision.json",
+  "evidence_refs": [
+    "tooling/e2e/prototype.matrix.spec.ts",
+    "playwright.config.ts",
+    "docs/product-specs/platform-support-and-accessibility-matrix.md@1.0",
+    "docs/implementation/u01-l1-accessibility-review.json"
+  ]
+}

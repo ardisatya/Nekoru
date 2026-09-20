@@ -19,6 +19,8 @@ artifacts/
 # must not be committed to the public repository or redistributed by default.
 content/assets/u01-l1/audio/master/*.wav
 content/assets/u01-l1/audio/delivery/*.wav
+content/assets/u01-l1/audio/master-qa/*.wav
+content/assets/u01-l1/audio/delivery-qa/*.wav
 
 # Local agent/editor hooks and consent settings
 .claude/settings.local.json

@@ -1,0 +1,113 @@
+{
+  "schema_version": "1.0.0",
+  "receipt_type": "content_review",
+  "review_id": "REVIEW.CONTENT.U01.L1.ACADEMIC.000001",
+  "status": "approved",
+  "decision": "approved",
+  "approval_basis": "owner_attestation",
+  "formal_gate_status": "waived_local_only_owner_attested",
+  "artifact": {
+    "seed_ref": "content/source/u01-l1/seed.json",
+    "seed_id": "cnt_01J00000000000000000000000",
+    "seed_sha256": "sha256:8bac998debd504ce66259514dc1202bd7d6beea344f5dbe40eecf95354b5f653",
+    "audio_manifest_ref": "content/manifests/u01-l1.audio-draft.json",
+    "audio_manifest_sha256": "sha256:aac587f2ca562adb69e224f8094a3b4812764df6b349c7ae0132eeb74cc3dba7",
+    "seed_version": "0.1.0",
+    "scope": "U01-L1",
+    "local_only_decision_ref": "docs/implementation/u01-l1-content-review-local-only-decision.json"
+  },
+  "rubric_ref": "docs/product-specs/content-validation-rubric.md@0.1.0",
+  "gate_results": {
+    "UNI-ACA-001_scope_and_accuracy": "pass",
+    "UNI-ACA-002_naturalness_and_register": "owner_attested",
+    "UNI-ACA-003_contrastive_fit": "pass",
+    "UNI-ACA-004_context_and_bias": "owner_attested"
+  },
+  "automated_checks": [
+    {
+      "id": "ACA-001",
+      "criterion": "Seed berada tepat pada scope U01-L1 dan belum dapat dipakai runtime.",
+      "status": "pass",
+      "evidence": "U01/U01-L1@0.1.0; status=draft; runtime_eligible=false"
+    },
+    {
+      "id": "ACA-002",
+      "criterion": "Target Knowledge Components tepat: lima vowel, mora, greeting, dan script awareness exposure.",
+      "status": "pass",
+      "evidence": "8 knowledge components; tidak ada target Grammar/Kanji formal"
+    },
+    {
+      "id": "ACA-003",
+      "criterion": "Empat greeting chunk dan communicative translation sesuai inventory U01-L1.",
+      "status": "pass",
+      "evidence": "vocabulary_chunks=4; formulaic greeting chunks only"
+    },
+    {
+      "id": "ACA-004",
+      "criterion": "Tiga session blueprint memiliki ID, urutan, dan purpose reference yang stabil.",
+      "status": "pass",
+      "evidence": "U01-L1-A/B/C; tiga blueprint; urutan 1–3"
+    },
+    {
+      "id": "ACA-005",
+      "criterion": "Activity pool memiliki 43 definition dengan distribusi family yang disetujui.",
+      "status": "pass",
+      "evidence": "vowel_discrimination=15/15; vowel_pair=5/5; mora_count=6/6; greeting_context=12/12; greeting_pair=4/4; script_awareness=1/1"
+    },
+    {
+      "id": "ACA-006",
+      "criterion": "Setiap activity memiliki primary KC, interaction, evidence mode, dan prompt yang konsisten.",
+      "status": "pass",
+      "evidence": "ID activity/prompt unik; family contract diperiksa terhadap setiap activity"
+    },
+    {
+      "id": "ACA-007",
+      "criterion": "Primary KC activity tidak tertukar antar domain dan tidak menambahkan Grammar/Kanji.",
+      "status": "pass",
+      "evidence": "vowel→SOUND.VOWEL.*; mora→SOUND.MORA.CV; greeting→FUNCTION.GREETING.CONTEXT; script→exposure"
+    },
+    {
+      "id": "ACA-008",
+      "criterion": "Seed memiliki 26 asset record dan seluruh asset memiliki rights receipt reference.",
+      "status": "pass",
+      "evidence": "assets=26; rights_receipt_ref tersedia pada seluruh asset"
+    }
+  ],
+  "manual_checks": [
+    {
+      "id": "ACA-MAN-001",
+      "criterion": "Outcome lesson sesuai level pemula dan tidak mengklaim U01/S0 lengkap.",
+      "status": "owner_attested",
+      "evidence": "Attestation eksplisit requester pada task ini; formal Academic Lead sign-off tetap terpisah."
+    },
+    {
+      "id": "ACA-MAN-002",
+      "criterion": "Urutan Session A/B/C, delayed review, dan beban materi sesuai blueprint akademik.",
+      "status": "owner_attested",
+      "evidence": "Requester menyatakan seluruh konten akademik sudah sesuai; seed belum menyimpan activity_refs per sesi."
+    },
+    {
+      "id": "ACA-MAN-003",
+      "criterion": "Evidence, difficulty, misconception mapping, dan formulaic-greeting boundary sesuai policy.",
+      "status": "owner_attested",
+      "evidence": "Attestation eksplisit requester; academic receipt tidak membuka scoring/mastery runtime."
+    }
+  ],
+  "findings": [],
+  "reviewers": [
+    {
+      "reviewer_id": "owner-attestation",
+      "role": "Content Owner (attestation only)",
+      "decision": "approved",
+      "reviewed_at": "2026-09-20T23:25:38.818Z",
+      "confirmation_source": "explicit_owner_statement_in_current_task",
+      "notes": "Scoped local-only owner attestation. Tidak mengklaim Academic Lead external sign-off dan tidak membuka publication/runtime."
+    }
+  ],
+  "created_at": "2026-09-20T23:25:38.818Z",
+  "notes": [
+    "Receipt terikat ke exact seed hash dan audio manifest hash; perubahan artefak memerlukan review baru.",
+    "Seed saat ini menyimpan blueprint sesi tetapi belum menyimpan activity_refs per sesi. Mapping per sesi tetap menjadi pekerjaan content-pack binding sebelum runtime.",
+    "Academic internal gate di-waive untuk local-only melalui docs/implementation/u01-l1-content-review-local-only-decision.json; external/publication gate tetap tidak diklaim."
+  ]
+}

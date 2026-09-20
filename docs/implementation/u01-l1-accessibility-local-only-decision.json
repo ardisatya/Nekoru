@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0.0",
+  "decision_type": "local_only_accessibility_scope_exception",
+  "decision_id": "DEC.P0.ACCESSIBILITY.U01.L1.EMULATOR_ONLY.000001",
+  "status": "approved_owner_attested_local_only",
+  "phase": "P0",
+  "scope": {
+    "surface": "learner_web_prototype",
+    "route": "/prototype/u01-l1",
+    "states": "P-M1-01..P-M1-20",
+    "distribution_scope": "local_only",
+    "runtime_eligible": false
+  },
+  "decision": "Untuk penggunaan pribadi local-only pada Phase 0, hasil emulator accessibility matrix diterima sebagai cukup untuk internal review. Physical iOS/Android dan sesi NVDA/VoiceOver/TalkBack tidak diwajibkan untuk scope ini.",
+  "evidence": {
+    "emulator_ref": "docs/implementation/u01-l1-accessibility-emulator-evidence.json",
+    "emulator_result": "14 passed, 1 skipped, 0 failed",
+    "review_ref": "docs/implementation/u01-l1-accessibility-review.json",
+    "approved_matrix_ref": "docs/product-specs/platform-support-and-accessibility-matrix.md@1.0"
+  },
+  "not_claimed": [
+    "WCAG 2.2 AA formal conformance",
+    "public or production platform support",
+    "physical-device assistive-technology coverage",
+    "physical speaker/headphone playback"
+  ],
+  "compatibility_impact": "Approved platform matrix v1.0 tetap tidak berubah. Exception ini hanya menutup blocker internal Phase 0 local-only dan tidak mengubah supported-platform claim.",
+  "owner_attestation": {
+    "reviewer_id": "owner-attestation",
+    "role": "Product/Content Owner",
+    "decision": "approved",
+    "confirmation_source": "explicit_owner_statement_in_current_task",
+    "reviewed_at": "2026-09-21",
+    "notes": "Scope exception untuk aplikasi pribadi; formal release gate tetap memerlukan evidence matrix sesuai policy apabila scope diperluas."
+  }
+}

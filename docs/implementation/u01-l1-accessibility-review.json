@@ -1,0 +1,146 @@
+{
+  "schema_version": "1.0.0",
+  "receipt_type": "accessibility_review",
+  "review_id": "REVIEW.ACCESSIBILITY.U01.L1.000001",
+  "status": "approved",
+  "decision": "approved",
+  "approval_basis": "owner_attestation",
+  "formal_gate_status": "waived_local_only_emulator_exception",
+  "scope": {
+    "surface": "learner_web_prototype",
+    "route": "/prototype/u01-l1",
+    "states": "P-M1-01..P-M1-20",
+    "distribution_scope": "local_only",
+    "runtime_eligible": false,
+    "actual_audio_playback": "deferred_phase_1_p1_3"
+  },
+  "artifact": {
+    "seed_ref": "content/source/u01-l1/seed.json",
+    "seed_id": "cnt_01J00000000000000000000000",
+    "seed_sha256": "sha256:8bac998debd504ce66259514dc1202bd7d6beea344f5dbe40eecf95354b5f653",
+    "seed_version": "0.1.0",
+    "manifest_ref": "content/manifests/u01-l1.audio-draft.json",
+    "manifest_id": "MANIFEST.N5.S00.U01.L1.AUDIO.DRAFT",
+    "manifest_sha256": "sha256:aac587f2ca562adb69e224f8094a3b4812764df6b349c7ae0132eeb74cc3dba7",
+    "rights_receipt_ref": "docs/implementation/u01-l1-audio-rights-receipt-accessibility.json",
+    "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T",
+    "prototype_ref": "apps/learner-web/app/prototype/u01-l1/prototype.tsx",
+    "prototype_css_ref": "apps/learner-web/app/prototype/u01-l1/prototype.module.css",
+    "build_evidence": "source_contract_and_owner_manual_review",
+    "emulator_evidence_ref": "docs/implementation/u01-l1-accessibility-emulator-evidence.json",
+    "local_only_decision_ref": "docs/implementation/u01-l1-accessibility-local-only-decision.json"
+  },
+  "matrix_ref": "docs/product-specs/platform-support-and-accessibility-matrix.md@1.0",
+  "automated_checks": [
+    {
+      "id": "ACC-UI-001_scope_and_states",
+      "criterion": "Prototype U01-L1 memuat 20 state P-M1 yang ditetapkan.",
+      "status": "pass",
+      "evidence": "P-M1-01 sampai P-M1-20 ditemukan pada prototype source"
+    },
+    {
+      "id": "ACC-UI-002_semantic_controls",
+      "criterion": "Prototype memakai semantic controls, grouping, labels, dan status announcement.",
+      "status": "pass",
+      "evidence": "fieldset/legend, label, role=status, dan aria-pressed ditemukan"
+    },
+    {
+      "id": "ACC-UI-003_focus_and_keyboard_contract",
+      "criterion": "Route transition memindahkan konteks ke heading dan focus-visible tersedia.",
+      "status": "pass",
+      "evidence": "heading focus handoff dan global focus-visible contract ditemukan"
+    },
+    {
+      "id": "ACC-UI-004_reflow_and_visual_modes",
+      "criterion": "Prototype memiliki responsive layout, forced-colors, dan reduced-motion behavior.",
+      "status": "pass",
+      "evidence": "320 px/reflow, forced-colors, dan reduced-motion rules ditemukan"
+    },
+    {
+      "id": "ACC-UI-005_language_and_japanese_content",
+      "criterion": "UI memakai lang Indonesia dan menandai materi Jepang sebagai ja.",
+      "status": "pass",
+      "evidence": "html lang=id dan Japanese content lang=ja ditemukan"
+    },
+    {
+      "id": "ACC-UI-006_non_drag_and_recovery",
+      "criterion": "Matching memiliki jalur non-drag dan failure/recovery state yang terlihat.",
+      "status": "pass",
+      "evidence": "select-to-pair, audio failure, dan technical recovery ditemukan"
+    },
+    {
+      "id": "ACC-UI-007_audio_scope",
+      "criterion": "Audio prototype tidak autoplay dan actual player runtime tetap ditunda ke P1.3.",
+      "status": "pass",
+      "evidence": "Prototype memakai audio-state simulation tanpa autoplay; playback runtime deferred"
+    }
+  ],
+  "manual_checks": [
+    {
+      "id": "ACC-MAN-001",
+      "criterion": "Owner telah memeriksa seluruh 20 state prototype, keyboard flow, error, recovery, dan reflow yang tersedia.",
+      "status": "owner_attested",
+      "evidence": "Pernyataan eksplisit requester pada task ini; scope dibatasi local-only prototype UI."
+    },
+    {
+      "id": "ACC-MAN-002",
+      "criterion": "Audio state UI, approved alternative/support-adjusted behavior, dan technical-failure copy dipahami tanpa mengubah konstruk.",
+      "status": "owner_attested",
+      "evidence": "Owner menyatakan accessibility telah tercapai; actual audio playback sengaja deferred ke Phase 1 P1.3."
+    },
+    {
+      "id": "ACC-MAN-003",
+      "criterion": "Formal cross-platform AT matrix (NVDA, VoiceOver, TalkBack, physical device) memiliki evidence release-grade.",
+      "status": "waived_local_only",
+      "evidence": "Physical AT matrix dikecualikan untuk scope local-only melalui docs/implementation/u01-l1-accessibility-local-only-decision.json; formal conformance tidak diklaim."
+    },
+    {
+      "id": "ACC-MAN-004",
+      "criterion": "Desktop dan mobile emulator matrix menjalankan semantic, keyboard, reflow, forced-colors, reduced-motion, touch, dan hidden-content checks.",
+      "status": "pass",
+      "evidence": "Evidence docs/implementation/u01-l1-accessibility-emulator-evidence.json: 14 passed, 1 skipped, 0 failed. Ini bukan pengganti physical AT/device evidence."
+    }
+  ],
+  "gate_results": {
+    "ACC-001_semantic_and_keyboard": "owner_attested",
+    "ACC-002_reflow_and_visual_modes": "owner_attested",
+    "ACC-003_japanese_and_construct_equivalence": "owner_attested",
+    "ACC-004_audio_failure_and_alternative": "owner_attested",
+    "ACC-005_formal_cross_platform_matrix": "waived_local_only_emulator_exception",
+    "ACC-006_emulator_subset": "passed_emulator_subset"
+  },
+  "findings": [
+    {
+      "id": "FINDING.ACC-PLAYBACK-P1",
+      "severity": "observation",
+      "summary": "Prototype audio control masih berupa state simulation; actual audio player dan physical playback QA ditunda ke Phase 1 P1.3.",
+      "evidence": "Option 1 dipilih secara eksplisit oleh requester.",
+      "status": "deferred",
+      "target_phase": "P1.3"
+    },
+    {
+      "id": "FINDING.ACC-PHYSICAL-MATRIX",
+      "severity": "observation",
+      "summary": "Physical cross-platform matrix dikecualikan untuk scope local-only Phase 0; formal support claim tetap tidak dibuat.",
+      "evidence": "Owner-approved local-only exception: docs/implementation/u01-l1-accessibility-local-only-decision.json. Approved platform matrix v1.0 tetap tidak berubah.",
+      "status": "waived_local_only",
+      "target_phase": "P1.3"
+    }
+  ],
+  "reviewers": [
+    {
+      "reviewer_id": "owner-attestation",
+      "role": "Product/Content Owner (attestation only)",
+      "decision": "approved",
+      "reviewed_at": "2026-09-20T23:25:38.066Z",
+      "confirmation_source": "explicit_owner_statement_in_current_task",
+      "notes": "Scoped local-only prototype approval. Bukan klaim formal WCAG support atau external accessibility reviewer sign-off."
+    }
+  ],
+  "created_at": "2026-09-20T23:25:38.066Z",
+  "notes": [
+    "Receipt terikat ke exact seed, manifest, dan prototype source hash; perubahan material memerlukan review ulang.",
+    "Physical AT/device evidence dikecualikan hanya untuk local-only Phase 0 melalui docs/implementation/u01-l1-accessibility-local-only-decision.json; formal WCAG/platform support tetap tidak diklaim.",
+    "Seed tetap draft dan runtime_eligible=false; receipt ini hanya mengubah status review prototype local-only."
+  ]
+}

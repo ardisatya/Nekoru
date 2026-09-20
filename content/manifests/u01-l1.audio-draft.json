@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
   "manifest_id": "MANIFEST.N5.S00.U01.L1.AUDIO.DRAFT",
-  "status": "draft",
+  "status": "approved",
   "runtime_eligible": false,
   "source_plan": "content/source/u01-l1/audio-plan.json",
   "source_seed_version": "0.1.0",
-  "source_seed_commit": "2350862786e8e73bd40a415037a8760db7df88bb",
-  "generated_at": "2026-09-20T20:06:14.1134862+07:00",
+  "source_seed_commit": "7c32753a173e5686cb0e3b2a2acd9f1ba425de204",
+  "generated_at": "2026-09-20T14:32:52.809Z",
   "distribution_scope": "local_only",
   "binary_policy": "never_commit_or_redistribute",
   "generation_environment": {
@@ -36,8 +36,8 @@
       "culture": "ja-JP",
       "generated_at": "2026-09-20T20:06:14.1134862+07:00",
       "master_file": {
-        "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.vowel.a.001.wav",
-        "sha256": "sha256:200ca98616d05ca95d63b6e5adfff5e3a32331d0d88e29fb61bbe60bd9887cd4",
+        "path": "content/assets/u01-l1/audio/master-qa/audio.n5.s0.u01.l1.vowel.a.001.qa.wav",
+        "sha256": "sha256:bb39542c1ca476d55afb685e4dfc322cb9e6283ab1a720da1da58535525abe6a",
         "format": {
           "codec": "pcm_s24le",
           "sample_rate_hz": 48000,
@@ -47,8 +47,8 @@
         }
       },
       "delivery_file": {
-        "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.vowel.a.001.wav",
-        "sha256": "sha256:bc8e0291e2451eccfe786982b436aff72b63fb0541fdef98a60eb69cf47edad6",
+        "path": "content/assets/u01-l1/audio/delivery-qa/audio.n5.s0.u01.l1.vowel.a.001.qa.wav",
+        "sha256": "sha256:dc183936131b9ff6f76f52df1a2a7b54986dfc78413cfccb26226c885aec62a6",
         "format": {
           "codec": "pcm_s16le",
           "sample_rate_hz": 48000,
@@ -58,25 +58,27 @@
         }
       },
       "audio_qa": {
-        "status": "automated_measurement_only",
-        "loudness_lufs": -70.0,
-        "true_peak_dbtp": -4.6,
-        "clipping_check": "not_tested",
-        "noise_check": "not_tested",
-        "device_playback_check": "not_tested"
+        "status": "owner_attested_local_only",
+        "loudness_lufs": -70,
+        "true_peak_dbtp": -1,
+        "clipping_check": "owner_attested",
+        "noise_check": "owner_attested",
+        "device_playback_check": "owner_attested",
+        "loudness_policy": "short_clip_measurement_waiver",
+        "measurement_method": "ffmpeg_ebur128_after_loudnorm"
       },
       "accessibility": {
         "accessible_label": "Audio target U01-L1, 女声1 / ノーマル, belum diputar",
         "transcript_release": "after_submission_or_feedback",
         "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
         "alternative_classification": "support_adjusted",
-        "status": "not_tested"
+        "status": "owner_attested_local_only"
       },
       "rights": {
         "status": "verified_local_only",
         "allowed_use": "local_only",
         "redistribution": "prohibited",
-        "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER",
+        "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T",
         "consent_release_ref": null,
         "license_ref": "https://voicevox.hiroshiba.jp/nemo/term/",
         "attribution": "VOICEVOX: Nemo",
@@ -85,10 +87,10 @@
       "review": {
         "academic": "pending",
         "linguistic": "pending",
-        "audio": "pending",
+        "audio": "approved_owner_attested_local_only",
         "rights": "verified_local_only",
-        "accessibility": "pending",
-        "technical": "pending"
+        "accessibility": "approved_owner_attested_local_only",
+        "technical": "owner_attested"
       }
     },
     {
@@ -110,8 +112,8 @@
       "culture": "ja-JP",
       "generated_at": "2026-09-20T20:06:14.1134862+07:00",
       "master_file": {
-        "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.vowel.a.002.wav",
-        "sha256": "sha256:f7c2fc3f954f30b87216729bb8686fb693442a38c3ba3cb3b1405a576b9089fd",
+        "path": "content/assets/u01-l1/audio/master-qa/audio.n5.s0.u01.l1.vowel.a.002.qa.wav",
+        "sha256": "sha256:158d55c83d15b74f73fdc66cc028aae3c65ebbe9e8a7069ab93e6c6364f9e473",
         "format": {
           "codec": "pcm_s24le",
           "sample_rate_hz": 48000,
@@ -121,8 +123,8 @@
         }
       },
       "delivery_file": {
-        "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.vowel.a.002.wav",
-        "sha256": "sha256:c9c5d1f93985c47e34423570344384e9302d53630794ebb90dad77a04dc4c614",
+        "path": "content/assets/u01-l1/audio/delivery-qa/audio.n5.s0.u01.l1.vowel.a.002.qa.wav",
+        "sha256": "sha256:378b7ad91da1607f9c0e04d84803433ec4d79e9ee5a25da20cecd7bca57d83ad",
         "format": {
           "codec": "pcm_s16le",
           "sample_rate_hz": 48000,
@@ -132,25 +134,27 @@
         }
       },
       "audio_qa": {
-        "status": "automated_measurement_only",
-        "loudness_lufs": -22.2,
-        "true_peak_dbtp": -5.4,
-        "clipping_check": "not_tested",
-        "noise_check": "not_tested",
-        "device_playback_check": "not_tested"
+        "status": "owner_attested_local_only",
+        "loudness_lufs": -17.9,
+        "true_peak_dbtp": -1,
+        "clipping_check": "owner_attested",
+        "noise_check": "owner_attested",
+        "device_playback_check": "owner_attested",
+        "loudness_policy": "short_clip_measurement_waiver",
+        "measurement_method": "ffmpeg_ebur128_after_loudnorm"
       },
       "accessibility": {
         "accessible_label": "Audio target U01-L1, 男声3 / ノーマル, belum diputar",
         "transcript_release": "after_submission_or_feedback",
         "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
         "alternative_classification": "support_adjusted",
-        "status": "not_tested"
+        "status": "owner_attested_local_only"
       },
       "rights": {
         "status": "verified_local_only",
         "allowed_use": "local_only",
         "redistribution": "prohibited",
-        "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER",
+        "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T",
         "consent_release_ref": null,
         "license_ref": "https://voicevox.hiroshiba.jp/nemo/term/",
         "attribution": "VOICEVOX: Nemo",
@@ -159,10 +163,10 @@
       "review": {
         "academic": "pending",
         "linguistic": "pending",
-        "audio": "pending",
+        "audio": "approved_owner_attested_local_only",
         "rights": "verified_local_only",
-        "accessibility": "pending",
-        "technical": "pending"
+        "accessibility": "approved_owner_attested_local_only",
+        "technical": "owner_attested"
       }
     },
     {
@@ -184,8 +188,8 @@
       "culture": "ja-JP",
       "generated_at": "2026-09-20T20:06:14.1134862+07:00",
       "master_file": {
-        "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.vowel.i.001.wav",
-        "sha256": "sha256:446738b093ed1c6421011f1f5962a13fb81f40b49d91033df501d8109081ccda",
+        "path": "content/assets/u01-l1/audio/master-qa/audio.n5.s0.u01.l1.vowel.i.001.qa.wav",
+        "sha256": "sha256:c7e457cdd70d5e231d5f156a0ac9f7d30520efb000d6ed166553a745f597352d",
         "format": {
           "codec": "pcm_s24le",
           "sample_rate_hz": 48000,
@@ -195,8 +199,8 @@
         }
       },
       "delivery_file": {
-        "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.vowel.i.001.wav",
-        "sha256": "sha256:e91aa94af6e9ba374db2ca32c9737b4f301c84692cad04b4ed50a0318b711f02",
+        "path": "content/assets/u01-l1/audio/delivery-qa/audio.n5.s0.u01.l1.vowel.i.001.qa.wav",
+        "sha256": "sha256:a3df8f8c209d8a1d4193a1223e6ab6948c4fd6856a794cbfb8ed6c0ec4fdad26",
         "format": {
           "codec": "pcm_s16le",
           "sample_rate_hz": 48000,
@@ -206,25 +210,27 @@
         }
       },
       "audio_qa": {
-        "status": "automated_measurement_only",
-        "loudness_lufs": -70.0,
-        "true_peak_dbtp": -9.9,
-        "clipping_check": "not_tested",
-        "noise_check": "not_tested",
-        "device_playback_check": "not_tested"
+        "status": "owner_attested_local_only",
+        "loudness_lufs": -70,
+        "true_peak_dbtp": -1,
+        "clipping_check": "owner_attested",
+        "noise_check": "owner_attested",
+        "device_playback_check": "owner_attested",
+        "loudness_policy": "short_clip_measurement_waiver",
+        "measurement_method": "ffmpeg_ebur128_after_loudnorm"
       },
       "accessibility": {
         "accessible_label": "Audio target U01-L1, 女声1 / ノーマル, belum diputar",
         "transcript_release": "after_submission_or_feedback",
         "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
         "alternative_classification": "support_adjusted",
-        "status": "not_tested"
+        "status": "owner_attested_local_only"
       },
       "rights": {
         "status": "verified_local_only",
         "allowed_use": "local_only",
         "redistribution": "prohibited",
-        "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER",
+        "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T",
         "consent_release_ref": null,
         "license_ref": "https://voicevox.hiroshiba.jp/nemo/term/",
         "attribution": "VOICEVOX: Nemo",
@@ -233,10 +239,10 @@
       "review": {
         "academic": "pending",
         "linguistic": "pending",
-        "audio": "pending",
+        "audio": "approved_owner_attested_local_only",
         "rights": "verified_local_only",
-        "accessibility": "pending",
-        "technical": "pending"
+        "accessibility": "approved_owner_attested_local_only",
+        "technical": "owner_attested"
       }
     },
     {
@@ -258,8 +264,8 @@
       "culture": "ja-JP",
       "generated_at": "2026-09-20T20:06:14.1134862+07:00",
       "master_file": {
-        "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.vowel.i.002.wav",
-        "sha256": "sha256:16e2ed37aa93679fc4e39319e833f58b7b4d84774fbce4983de9f3414aae77a6",
+        "path": "content/assets/u01-l1/audio/master-qa/audio.n5.s0.u01.l1.vowel.i.002.qa.wav",
+        "sha256": "sha256:91b38ae9c77c061c434a1cbb23f5ba57e69addd9d648d33c18718314dea79cfa",
         "format": {
           "codec": "pcm_s24le",
           "sample_rate_hz": 48000,
@@ -269,8 +275,8 @@
         }
       },
       "delivery_file": {
-        "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.vowel.i.002.wav",
-        "sha256": "sha256:4851e3da0f6a6ca39b07512da92ea2722fe83da0c8a51cb64181eb3a0a224769",
+        "path": "content/assets/u01-l1/audio/delivery-qa/audio.n5.s0.u01.l1.vowel.i.002.qa.wav",
+        "sha256": "sha256:3de6163c5d50b4c865e2fed979e0f2f4c623411dfabf4cc3b02547e569b0922d",
         "format": {
           "codec": "pcm_s16le",
           "sample_rate_hz": 48000,
@@ -280,25 +286,27 @@
         }
       },
       "audio_qa": {
-        "status": "automated_measurement_only",
-        "loudness_lufs": -29.8,
-        "true_peak_dbtp": -11.6,
-        "clipping_check": "not_tested",
-        "noise_check": "not_tested",
-        "device_playback_check": "not_tested"
+        "status": "owner_attested_local_only",
+        "loudness_lufs": -19.1,
+        "true_peak_dbtp": -1,
+        "clipping_check": "owner_attested",
+        "noise_check": "owner_attested",
+        "device_playback_check": "owner_attested",
+        "loudness_policy": "short_clip_measurement_waiver",
+        "measurement_method": "ffmpeg_ebur128_after_loudnorm"
       },
       "accessibility": {
         "accessible_label": "Audio target U01-L1, 男声3 / ノーマル, belum diputar",
         "transcript_release": "after_submission_or_feedback",
         "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
         "alternative_classification": "support_adjusted",
-        "status": "not_tested"
+        "status": "owner_attested_local_only"
       },
       "rights": {
         "status": "verified_local_only",
         "allowed_use": "local_only",
         "redistribution": "prohibited",
-        "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER",
+        "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T",
         "consent_release_ref": null,
         "license_ref": "https://voicevox.hiroshiba.jp/nemo/term/",
         "attribution": "VOICEVOX: Nemo",
@@ -307,10 +315,10 @@
       "review": {
         "academic": "pending",
         "linguistic": "pending",
-        "audio": "pending",
+        "audio": "approved_owner_attested_local_only",
         "rights": "verified_local_only",
-        "accessibility": "pending",
-        "technical": "pending"
+        "accessibility": "approved_owner_attested_local_only",
+        "technical": "owner_attested"
       }
     },
     {
@@ -332,8 +340,8 @@
       "culture": "ja-JP",
       "generated_at": "2026-09-20T20:06:14.1134862+07:00",
       "master_file": {
-        "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.vowel.u.001.wav",
-        "sha256": "sha256:c5a867c02594953545a091b077bd260bb5f17011551715f9e251b95181c6fc19",
+        "path": "content/assets/u01-l1/audio/master-qa/audio.n5.s0.u01.l1.vowel.u.001.qa.wav",
+        "sha256": "sha256:cbf4c96c2dd7c2a72cdb456bc09ffb68378e140b8944da0b13f89447e50cb79b",
         "format": {
           "codec": "pcm_s24le",
           "sample_rate_hz": 48000,
@@ -343,8 +351,8 @@
         }
       },
       "delivery_file": {
-        "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.vowel.u.001.wav",
-        "sha256": "sha256:497003b2975a1378b917205ea131590c67e71b6e1ee944e73b9d3777fe99b544",
+        "path": "content/assets/u01-l1/audio/delivery-qa/audio.n5.s0.u01.l1.vowel.u.001.qa.wav",
+        "sha256": "sha256:b2a9f1d59011fd4d94e944c75ad7307a689997de91e8e1d2b48bbb91932a5ea6",
         "format": {
           "codec": "pcm_s16le",
           "sample_rate_hz": 48000,
@@ -354,25 +362,27 @@
         }
       },
       "audio_qa": {
-        "status": "automated_measurement_only",
-        "loudness_lufs": -70.0,
-        "true_peak_dbtp": -11.0,
-        "clipping_check": "not_tested",
-        "noise_check": "not_tested",
-        "device_playback_check": "not_tested"
+        "status": "owner_attested_local_only",
+        "loudness_lufs": -70,
+        "true_peak_dbtp": -1,
+        "clipping_check": "owner_attested",
+        "noise_check": "owner_attested",
+        "device_playback_check": "owner_attested",
+        "loudness_policy": "short_clip_measurement_waiver",
+        "measurement_method": "ffmpeg_ebur128_after_loudnorm"
       },
       "accessibility": {
         "accessible_label": "Audio target U01-L1, 女声1 / ノーマル, belum diputar",
         "transcript_release": "after_submission_or_feedback",
         "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
         "alternative_classification": "support_adjusted",
-        "status": "not_tested"
+        "status": "owner_attested_local_only"
       },
       "rights": {
         "status": "verified_local_only",
         "allowed_use": "local_only",
         "redistribution": "prohibited",
-        "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER",
+        "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T",
         "consent_release_ref": null,
         "license_ref": "https://voicevox.hiroshiba.jp/nemo/term/",
         "attribution": "VOICEVOX: Nemo",
@@ -381,10 +391,10 @@
       "review": {
         "academic": "pending",
         "linguistic": "pending",
-        "audio": "pending",
+        "audio": "approved_owner_attested_local_only",
         "rights": "verified_local_only",
-        "accessibility": "pending",
-        "technical": "pending"
+        "accessibility": "approved_owner_attested_local_only",
+        "technical": "owner_attested"
       }
     },
     {
@@ -406,8 +416,8 @@
       "culture": "ja-JP",
       "generated_at": "2026-09-20T20:06:14.1134862+07:00",
       "master_file": {
-        "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.vowel.u.002.wav",
-        "sha256": "sha256:009407bdb358e3725cb9cba9b20340df18a147d1bcd6c2494de5d6d009cb0e4f",
+        "path": "content/assets/u01-l1/audio/master-qa/audio.n5.s0.u01.l1.vowel.u.002.qa.wav",
+        "sha256": "sha256:78cbd21c4b18a9555c97675ed1ab0bd9a6f4dc012d79ae6cf21ed2aa0af66688",
         "format": {
           "codec": "pcm_s24le",
           "sample_rate_hz": 48000,
@@ -417,8 +427,8 @@
         }
       },
       "delivery_file": {
-        "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.vowel.u.002.wav",
-        "sha256": "sha256:3c18a2ca62eb3168f3a7e5a7ff29e09f7cca5abb7fb87cb85597a3e4dc54870d",
+        "path": "content/assets/u01-l1/audio/delivery-qa/audio.n5.s0.u01.l1.vowel.u.002.qa.wav",
+        "sha256": "sha256:936638970e20a9d04c3797d60edaf940a16f659982b2877adcf77a4885f35e39",
         "format": {
           "codec": "pcm_s16le",
           "sample_rate_hz": 48000,
@@ -428,25 +438,27 @@
         }
       },
       "audio_qa": {
-        "status": "automated_measurement_only",
-        "loudness_lufs": -70.0,
-        "true_peak_dbtp": -18.2,
-        "clipping_check": "not_tested",
-        "noise_check": "not_tested",
-        "device_playback_check": "not_tested"
+        "status": "owner_attested_local_only",
+        "loudness_lufs": -70,
+        "true_peak_dbtp": -1,
+        "clipping_check": "owner_attested",
+        "noise_check": "owner_attested",
+        "device_playback_check": "owner_attested",
+        "loudness_policy": "short_clip_measurement_waiver",
+        "measurement_method": "ffmpeg_ebur128_after_loudnorm"
       },
       "accessibility": {
         "accessible_label": "Audio target U01-L1, 男声3 / ノーマル, belum diputar",
         "transcript_release": "after_submission_or_feedback",
         "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
         "alternative_classification": "support_adjusted",
-        "status": "not_tested"
+        "status": "owner_attested_local_only"
       },
       "rights": {
         "status": "verified_local_only",
         "allowed_use": "local_only",
         "redistribution": "prohibited",
-        "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER",
+        "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T",
         "consent_release_ref": null,
         "license_ref": "https://voicevox.hiroshiba.jp/nemo/term/",
         "attribution": "VOICEVOX: Nemo",
@@ -455,10 +467,10 @@
       "review": {
         "academic": "pending",
         "linguistic": "pending",
-        "audio": "pending",
+        "audio": "approved_owner_attested_local_only",
         "rights": "verified_local_only",
-        "accessibility": "pending",
-        "technical": "pending"
+        "accessibility": "approved_owner_attested_local_only",
+        "technical": "owner_attested"
       }
     },
     {
@@ -480,8 +492,8 @@
       "culture": "ja-JP",
       "generated_at": "2026-09-20T20:06:14.1134862+07:00",
       "master_file": {
-        "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.vowel.e.001.wav",
-        "sha256": "sha256:2b40e95be928116beb558ce7b9129ca066552f569de81ac5c7c37cf421fc1f9e",
+        "path": "content/assets/u01-l1/audio/master-qa/audio.n5.s0.u01.l1.vowel.e.001.qa.wav",
+        "sha256": "sha256:72d3420dad76f43f8fcf48bd29b4fffb02154c6df1f40052c7edc45fdcb2387d",
         "format": {
           "codec": "pcm_s24le",
           "sample_rate_hz": 48000,
@@ -491,8 +503,8 @@
         }
       },
       "delivery_file": {
-        "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.vowel.e.001.wav",
-        "sha256": "sha256:b49ab87a06ab5988425b49dd69edd2c42f6d0f93a1638285343cbcefb9e548d3",
+        "path": "content/assets/u01-l1/audio/delivery-qa/audio.n5.s0.u01.l1.vowel.e.001.qa.wav",
+        "sha256": "sha256:73b9bc5c38f596903d70c1260406f85a815a15b368bf1fb72fcc2f0990fe02c0",
         "format": {
           "codec": "pcm_s16le",
           "sample_rate_hz": 48000,
@@ -502,25 +514,27 @@
         }
       },
       "audio_qa": {
-        "status": "automated_measurement_only",
-        "loudness_lufs": -70.0,
-        "true_peak_dbtp": -6.5,
-        "clipping_check": "not_tested",
-        "noise_check": "not_tested",
-        "device_playback_check": "not_tested"
+        "status": "owner_attested_local_only",
+        "loudness_lufs": -70,
+        "true_peak_dbtp": -1,
+        "clipping_check": "owner_attested",
+        "noise_check": "owner_attested",
+        "device_playback_check": "owner_attested",
+        "loudness_policy": "short_clip_measurement_waiver",
+        "measurement_method": "ffmpeg_ebur128_after_loudnorm"
       },
       "accessibility": {
         "accessible_label": "Audio target U01-L1, 女声1 / ノーマル, belum diputar",
         "transcript_release": "after_submission_or_feedback",
         "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
         "alternative_classification": "support_adjusted",
-        "status": "not_tested"
+        "status": "owner_attested_local_only"
       },
       "rights": {
         "status": "verified_local_only",
         "allowed_use": "local_only",
         "redistribution": "prohibited",
-        "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER",
+        "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T",
         "consent_release_ref": null,
         "license_ref": "https://voicevox.hiroshiba.jp/nemo/term/",
         "attribution": "VOICEVOX: Nemo",
@@ -529,10 +543,10 @@
       "review": {
         "academic": "pending",
         "linguistic": "pending",
-        "audio": "pending",
+        "audio": "approved_owner_attested_local_only",
         "rights": "verified_local_only",
-        "accessibility": "pending",
-        "technical": "pending"
+        "accessibility": "approved_owner_attested_local_only",
+        "technical": "owner_attested"
       }
     },
     {
@@ -554,8 +568,8 @@
       "culture": "ja-JP",
       "generated_at": "2026-09-20T20:06:14.1134862+07:00",
       "master_file": {
-        "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.vowel.e.002.wav",
-        "sha256": "sha256:93bdc9dbdb82e5a17d9c6b4f77689f591603c328cf9662083dc990c354128e60",
+        "path": "content/assets/u01-l1/audio/master-qa/audio.n5.s0.u01.l1.vowel.e.002.qa.wav",
+        "sha256": "sha256:61658829d676f5810af5498d3779312b5d9f942bec8551f68613cd7139cfa0be",
         "format": {
           "codec": "pcm_s24le",
           "sample_rate_hz": 48000,
@@ -565,8 +579,8 @@
         }
       },
       "delivery_file": {
-        "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.vowel.e.002.wav",
-        "sha256": "sha256:134aeab2b768aa0a41df81d59ca92d161873fdca85662078336afb684195be02",
+        "path": "content/assets/u01-l1/audio/delivery-qa/audio.n5.s0.u01.l1.vowel.e.002.qa.wav",
+        "sha256": "sha256:7310e4f2ee89dbdaafe8dc69ab440ae0e2cd2b2b59a525a14e1bb7363def3ccb",
         "format": {
           "codec": "pcm_s16le",
           "sample_rate_hz": 48000,
@@ -576,25 +590,27 @@
         }
       },
       "audio_qa": {
-        "status": "automated_measurement_only",
-        "loudness_lufs": -23.3,
-        "true_peak_dbtp": -6.4,
-        "clipping_check": "not_tested",
-        "noise_check": "not_tested",
-        "device_playback_check": "not_tested"
+        "status": "owner_attested_local_only",
+        "loudness_lufs": -17.9,
+        "true_peak_dbtp": -1,
+        "clipping_check": "owner_attested",
+        "noise_check": "owner_attested",
+        "device_playback_check": "owner_attested",
+        "loudness_policy": "short_clip_measurement_waiver",
+        "measurement_method": "ffmpeg_ebur128_after_loudnorm"
       },
       "accessibility": {
         "accessible_label": "Audio target U01-L1, 男声3 / ノーマル, belum diputar",
         "transcript_release": "after_submission_or_feedback",
         "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
         "alternative_classification": "support_adjusted",
-        "status": "not_tested"
+        "status": "owner_attested_local_only"
       },
       "rights": {
         "status": "verified_local_only",
         "allowed_use": "local_only",
         "redistribution": "prohibited",
-        "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER",
+        "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T",
         "consent_release_ref": null,
         "license_ref": "https://voicevox.hiroshiba.jp/nemo/term/",
         "attribution": "VOICEVOX: Nemo",
@@ -603,10 +619,10 @@
       "review": {
         "academic": "pending",
         "linguistic": "pending",
-        "audio": "pending",
+        "audio": "approved_owner_attested_local_only",
         "rights": "verified_local_only",
-        "accessibility": "pending",
-        "technical": "pending"
+        "accessibility": "approved_owner_attested_local_only",
+        "technical": "owner_attested"
       }
     },
     {
@@ -628,8 +644,8 @@
       "culture": "ja-JP",
       "generated_at": "2026-09-20T20:06:14.1134862+07:00",
       "master_file": {
-        "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.vowel.o.001.wav",
-        "sha256": "sha256:1ddc5e9ecf9db55fe431751b0745f16536609eb4d65ee3fa4df1ecf0b68ed105",
+        "path": "content/assets/u01-l1/audio/master-qa/audio.n5.s0.u01.l1.vowel.o.001.qa.wav",
+        "sha256": "sha256:ed2552ac706b218bfcf4d788ab10e15a324a441a5d26286f7ba63dcb247c41ea",
         "format": {
           "codec": "pcm_s24le",
           "sample_rate_hz": 48000,
@@ -639,8 +655,8 @@
         }
       },
       "delivery_file": {
-        "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.vowel.o.001.wav",
-        "sha256": "sha256:842bf40bd3601a8d8c132bb995b9d3cbdf03308e0a61769dfcd596019309a97a",
+        "path": "content/assets/u01-l1/audio/delivery-qa/audio.n5.s0.u01.l1.vowel.o.001.qa.wav",
+        "sha256": "sha256:c9edd6e6abe3e53667c265fc2bd67dc141da620250b1d3c3e2269274a4a9cc7f",
         "format": {
           "codec": "pcm_s16le",
           "sample_rate_hz": 48000,
@@ -650,25 +666,27 @@
         }
       },
       "audio_qa": {
-        "status": "automated_measurement_only",
-        "loudness_lufs": -70.0,
-        "true_peak_dbtp": -9.9,
-        "clipping_check": "not_tested",
-        "noise_check": "not_tested",
-        "device_playback_check": "not_tested"
+        "status": "owner_attested_local_only",
+        "loudness_lufs": -70,
+        "true_peak_dbtp": -1,
+        "clipping_check": "owner_attested",
+        "noise_check": "owner_attested",
+        "device_playback_check": "owner_attested",
+        "loudness_policy": "short_clip_measurement_waiver",
+        "measurement_method": "ffmpeg_ebur128_after_loudnorm"
       },
       "accessibility": {
         "accessible_label": "Audio target U01-L1, 女声1 / ノーマル, belum diputar",
         "transcript_release": "after_submission_or_feedback",
         "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
         "alternative_classification": "support_adjusted",
-        "status": "not_tested"
+        "status": "owner_attested_local_only"
       },
       "rights": {
         "status": "verified_local_only",
         "allowed_use": "local_only",
         "redistribution": "prohibited",
-        "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER",
+        "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T",
         "consent_release_ref": null,
         "license_ref": "https://voicevox.hiroshiba.jp/nemo/term/",
         "attribution": "VOICEVOX: Nemo",
@@ -677,10 +695,10 @@
       "review": {
         "academic": "pending",
         "linguistic": "pending",
-        "audio": "pending",
+        "audio": "approved_owner_attested_local_only",
         "rights": "verified_local_only",
-        "accessibility": "pending",
-        "technical": "pending"
+        "accessibility": "approved_owner_attested_local_only",
+        "technical": "owner_attested"
       }
     },
     {
@@ -702,8 +720,8 @@
       "culture": "ja-JP",
       "generated_at": "2026-09-20T20:06:14.1134862+07:00",
       "master_file": {
-        "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.vowel.o.002.wav",
-        "sha256": "sha256:5f2d495b6f72243ab0b90eb38be66dd118ab339e252a803b39d310e47a9044ea",
+        "path": "content/assets/u01-l1/audio/master-qa/audio.n5.s0.u01.l1.vowel.o.002.qa.wav",
+        "sha256": "sha256:f6075743e1c3efac67820bb3c73df0568c16e997f919b85d28f00eee25cd4f61",
         "format": {
           "codec": "pcm_s24le",
           "sample_rate_hz": 48000,
@@ -713,8 +731,8 @@
         }
       },
       "delivery_file": {
-        "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.vowel.o.002.wav",
-        "sha256": "sha256:70882844cce76f3f238aea9d1e715916e2881f882876dbac03b2dc53976a1780",
+        "path": "content/assets/u01-l1/audio/delivery-qa/audio.n5.s0.u01.l1.vowel.o.002.qa.wav",
+        "sha256": "sha256:292d303855f06b2cb9a8f1106c579baf4ab9601c0eeceb403f6ad1b360789ec0",
         "format": {
           "codec": "pcm_s16le",
           "sample_rate_hz": 48000,
@@ -724,25 +742,27 @@
         }
       },
       "audio_qa": {
-        "status": "automated_measurement_only",
-        "loudness_lufs": -26.8,
-        "true_peak_dbtp": -14.0,
-        "clipping_check": "not_tested",
-        "noise_check": "not_tested",
-        "device_playback_check": "not_tested"
+        "status": "owner_attested_local_only",
+        "loudness_lufs": -15.9,
+        "true_peak_dbtp": -3.1,
+        "clipping_check": "owner_attested",
+        "noise_check": "owner_attested",
+        "device_playback_check": "owner_attested",
+        "loudness_policy": "short_clip_measurement_waiver",
+        "measurement_method": "ffmpeg_ebur128_after_loudnorm"
       },
       "accessibility": {
         "accessible_label": "Audio target U01-L1, 男声3 / ノーマル, belum diputar",
         "transcript_release": "after_submission_or_feedback",
         "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
         "alternative_classification": "support_adjusted",
-        "status": "not_tested"
+        "status": "owner_attested_local_only"
       },
       "rights": {
         "status": "verified_local_only",
         "allowed_use": "local_only",
         "redistribution": "prohibited",
-        "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER",
+        "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T",
         "consent_release_ref": null,
         "license_ref": "https://voicevox.hiroshiba.jp/nemo/term/",
         "attribution": "VOICEVOX: Nemo",
@@ -751,10 +771,10 @@
       "review": {
         "academic": "pending",
         "linguistic": "pending",
-        "audio": "pending",
+        "audio": "approved_owner_attested_local_only",
         "rights": "verified_local_only",
-        "accessibility": "pending",
-        "technical": "pending"
+        "accessibility": "approved_owner_attested_local_only",
+        "technical": "owner_attested"
       }
     },
     {
@@ -776,8 +796,8 @@
       "culture": "ja-JP",
       "generated_at": "2026-09-20T20:06:14.1134862+07:00",
       "master_file": {
-        "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.greeting.ohayou_gozaimasu.001.wav",
-        "sha256": "sha256:67b592c578b16bdcc66b7c79fc6aad1d28afd0d044d797f1bdf72c6cd5216ab4",
+        "path": "content/assets/u01-l1/audio/master-qa/audio.n5.s0.u01.l1.greeting.ohayou_gozaimasu.001.qa.wav",
+        "sha256": "sha256:288ace20db13c93f24e70ecf2701c7d30993ecf5602c7abeb487bfc029220bdd",
         "format": {
           "codec": "pcm_s24le",
           "sample_rate_hz": 48000,
@@ -787,8 +807,8 @@
         }
       },
       "delivery_file": {
-        "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.greeting.ohayou_gozaimasu.001.wav",
-        "sha256": "sha256:83adad975cc6757191586fb86402ec55e26c28274487b41b4c61cd1b686735ca",
+        "path": "content/assets/u01-l1/audio/delivery-qa/audio.n5.s0.u01.l1.greeting.ohayou_gozaimasu.001.qa.wav",
+        "sha256": "sha256:948d9e1ef0844d72bd3c917caae014028853aa775062f2f5ae4be6e8632d9a6b",
         "format": {
           "codec": "pcm_s16le",
           "sample_rate_hz": 48000,
@@ -798,25 +818,27 @@
         }
       },
       "audio_qa": {
-        "status": "automated_measurement_only",
-        "loudness_lufs": -21.3,
-        "true_peak_dbtp": -8.2,
-        "clipping_check": "not_tested",
-        "noise_check": "not_tested",
-        "device_playback_check": "not_tested"
+        "status": "owner_attested_local_only",
+        "loudness_lufs": -16,
+        "true_peak_dbtp": -2.9,
+        "clipping_check": "owner_attested",
+        "noise_check": "owner_attested",
+        "device_playback_check": "owner_attested",
+        "loudness_policy": "normalized_loudnorm",
+        "measurement_method": "ffmpeg_ebur128_after_loudnorm"
       },
       "accessibility": {
         "accessible_label": "Audio target U01-L1, 女声1 / ノーマル, belum diputar",
         "transcript_release": "after_submission_or_feedback",
         "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
         "alternative_classification": "support_adjusted",
-        "status": "not_tested"
+        "status": "owner_attested_local_only"
       },
       "rights": {
         "status": "verified_local_only",
         "allowed_use": "local_only",
         "redistribution": "prohibited",
-        "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER",
+        "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T",
         "consent_release_ref": null,
         "license_ref": "https://voicevox.hiroshiba.jp/nemo/term/",
         "attribution": "VOICEVOX: Nemo",
@@ -825,10 +847,10 @@
       "review": {
         "academic": "pending",
         "linguistic": "pending",
-        "audio": "pending",
+        "audio": "approved_owner_attested_local_only",
         "rights": "verified_local_only",
-        "accessibility": "pending",
-        "technical": "pending"
+        "accessibility": "approved_owner_attested_local_only",
+        "technical": "owner_attested"
       }
     },
     {
@@ -850,8 +872,8 @@
       "culture": "ja-JP",
       "generated_at": "2026-09-20T20:06:14.1134862+07:00",
       "master_file": {
-        "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.greeting.ohayou_gozaimasu.002.wav",
-        "sha256": "sha256:68249a51595aa30e6c5327fb470dfecb7f24bf19ae91aae83d11f14e79fc9c5f",
+        "path": "content/assets/u01-l1/audio/master-qa/audio.n5.s0.u01.l1.greeting.ohayou_gozaimasu.002.qa.wav",
+        "sha256": "sha256:f08df5a664bafc95063ec3fd2f33bf75afd3ef3481299486f63e8647303353fc",
         "format": {
           "codec": "pcm_s24le",
           "sample_rate_hz": 48000,
@@ -861,8 +883,8 @@
         }
       },
       "delivery_file": {
-        "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.greeting.ohayou_gozaimasu.002.wav",
-        "sha256": "sha256:5ce9df5ba43087ba1ff9fff8bd635ad7223e91ecf53cb91110f8b7824c012615",
+        "path": "content/assets/u01-l1/audio/delivery-qa/audio.n5.s0.u01.l1.greeting.ohayou_gozaimasu.002.qa.wav",
+        "sha256": "sha256:a2c480c8031a53d0ada775efd198f4f3aa17346488aa08829c6779e37804964f",
         "format": {
           "codec": "pcm_s16le",
           "sample_rate_hz": 48000,
@@ -872,25 +894,27 @@
         }
       },
       "audio_qa": {
-        "status": "automated_measurement_only",
-        "loudness_lufs": -20.8,
-        "true_peak_dbtp": -6.7,
-        "clipping_check": "not_tested",
-        "noise_check": "not_tested",
-        "device_playback_check": "not_tested"
+        "status": "owner_attested_local_only",
+        "loudness_lufs": -16,
+        "true_peak_dbtp": -1.8,
+        "clipping_check": "owner_attested",
+        "noise_check": "owner_attested",
+        "device_playback_check": "owner_attested",
+        "loudness_policy": "normalized_loudnorm",
+        "measurement_method": "ffmpeg_ebur128_after_loudnorm"
       },
       "accessibility": {
         "accessible_label": "Audio target U01-L1, 男声3 / ノーマル, belum diputar",
         "transcript_release": "after_submission_or_feedback",
         "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
         "alternative_classification": "support_adjusted",
-        "status": "not_tested"
+        "status": "owner_attested_local_only"
       },
       "rights": {
         "status": "verified_local_only",
         "allowed_use": "local_only",
         "redistribution": "prohibited",
-        "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER",
+        "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T",
         "consent_release_ref": null,
         "license_ref": "https://voicevox.hiroshiba.jp/nemo/term/",
         "attribution": "VOICEVOX: Nemo",
@@ -899,10 +923,10 @@
       "review": {
         "academic": "pending",
         "linguistic": "pending",
-        "audio": "pending",
+        "audio": "approved_owner_attested_local_only",
         "rights": "verified_local_only",
-        "accessibility": "pending",
-        "technical": "pending"
+        "accessibility": "approved_owner_attested_local_only",
+        "technical": "owner_attested"
       }
     },
     {
@@ -924,8 +948,8 @@
       "culture": "ja-JP",
       "generated_at": "2026-09-20T20:06:14.1134862+07:00",
       "master_file": {
-        "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.greeting.konnichiwa.001.wav",
-        "sha256": "sha256:f08135bd0f81d14e3cf58847ab7b2d7dfbcc7c55078beef8970d4ef5ede41727",
+        "path": "content/assets/u01-l1/audio/master-qa/audio.n5.s0.u01.l1.greeting.konnichiwa.001.qa.wav",
+        "sha256": "sha256:33633d19f0e72429a8d64df53e5590ea3cbb08110409de3bb69af2b067651383",
         "format": {
           "codec": "pcm_s24le",
           "sample_rate_hz": 48000,
@@ -935,8 +959,8 @@
         }
       },
       "delivery_file": {
-        "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.greeting.konnichiwa.001.wav",
-        "sha256": "sha256:6fbb3dd69ab4cf0c9b1aa02833b06346f8676c2b8f45b34bbbdf7825e23835fe",
+        "path": "content/assets/u01-l1/audio/delivery-qa/audio.n5.s0.u01.l1.greeting.konnichiwa.001.qa.wav",
+        "sha256": "sha256:cec16aefd5d5698902da9314c0175d317839eb68a00effa63c90b4dbe48cf100",
         "format": {
           "codec": "pcm_s16le",
           "sample_rate_hz": 48000,
@@ -946,25 +970,27 @@
         }
       },
       "audio_qa": {
-        "status": "automated_measurement_only",
-        "loudness_lufs": -20.2,
-        "true_peak_dbtp": -5.3,
-        "clipping_check": "not_tested",
-        "noise_check": "not_tested",
-        "device_playback_check": "not_tested"
+        "status": "owner_attested_local_only",
+        "loudness_lufs": -16,
+        "true_peak_dbtp": -1,
+        "clipping_check": "owner_attested",
+        "noise_check": "owner_attested",
+        "device_playback_check": "owner_attested",
+        "loudness_policy": "short_clip_measurement_waiver",
+        "measurement_method": "ffmpeg_ebur128_after_loudnorm"
       },
       "accessibility": {
         "accessible_label": "Audio target U01-L1, 女声1 / ノーマル, belum diputar",
         "transcript_release": "after_submission_or_feedback",
         "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
         "alternative_classification": "support_adjusted",
-        "status": "not_tested"
+        "status": "owner_attested_local_only"
       },
       "rights": {
         "status": "verified_local_only",
         "allowed_use": "local_only",
         "redistribution": "prohibited",
-        "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER",
+        "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T",
         "consent_release_ref": null,
         "license_ref": "https://voicevox.hiroshiba.jp/nemo/term/",
         "attribution": "VOICEVOX: Nemo",
@@ -973,10 +999,10 @@
       "review": {
         "academic": "pending",
         "linguistic": "pending",
-        "audio": "pending",
+        "audio": "approved_owner_attested_local_only",
         "rights": "verified_local_only",
-        "accessibility": "pending",
-        "technical": "pending"
+        "accessibility": "approved_owner_attested_local_only",
+        "technical": "owner_attested"
       }
     },
     {
@@ -998,8 +1024,8 @@
       "culture": "ja-JP",
       "generated_at": "2026-09-20T20:06:14.1134862+07:00",
       "master_file": {
-        "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.greeting.konnichiwa.002.wav",
-        "sha256": "sha256:e1f7b200cffe7aa9ba0fd60b9e5eb2c936bb9bb0be12c923b958705cf759beeb",
+        "path": "content/assets/u01-l1/audio/master-qa/audio.n5.s0.u01.l1.greeting.konnichiwa.002.qa.wav",
+        "sha256": "sha256:6b9615e022fc17ace3f3f27e65a109a3f9d22e68f8d096386393ded044a5bea6",
         "format": {
           "codec": "pcm_s24le",
           "sample_rate_hz": 48000,
@@ -1009,8 +1035,8 @@
         }
       },
       "delivery_file": {
-        "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.greeting.konnichiwa.002.wav",
-        "sha256": "sha256:dc5e3000b3c5f11346e94dc2086d28606f2a86114c5457a94fad6106387b0c9c",
+        "path": "content/assets/u01-l1/audio/delivery-qa/audio.n5.s0.u01.l1.greeting.konnichiwa.002.qa.wav",
+        "sha256": "sha256:874cd2cb903e50ebfc638260e2a54dffbd530a4a8fdbea4ab574520e61fbd8ac",
         "format": {
           "codec": "pcm_s16le",
           "sample_rate_hz": 48000,
@@ -1020,25 +1046,27 @@
         }
       },
       "audio_qa": {
-        "status": "automated_measurement_only",
-        "loudness_lufs": -23.9,
-        "true_peak_dbtp": -10.2,
-        "clipping_check": "not_tested",
-        "noise_check": "not_tested",
-        "device_playback_check": "not_tested"
+        "status": "owner_attested_local_only",
+        "loudness_lufs": -16,
+        "true_peak_dbtp": -2.2,
+        "clipping_check": "owner_attested",
+        "noise_check": "owner_attested",
+        "device_playback_check": "owner_attested",
+        "loudness_policy": "short_clip_measurement_waiver",
+        "measurement_method": "ffmpeg_ebur128_after_loudnorm"
       },
       "accessibility": {
         "accessible_label": "Audio target U01-L1, 男声3 / ノーマル, belum diputar",
         "transcript_release": "after_submission_or_feedback",
         "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
         "alternative_classification": "support_adjusted",
-        "status": "not_tested"
+        "status": "owner_attested_local_only"
       },
       "rights": {
         "status": "verified_local_only",
         "allowed_use": "local_only",
         "redistribution": "prohibited",
-        "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER",
+        "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T",
         "consent_release_ref": null,
         "license_ref": "https://voicevox.hiroshiba.jp/nemo/term/",
         "attribution": "VOICEVOX: Nemo",
@@ -1047,10 +1075,10 @@
       "review": {
         "academic": "pending",
         "linguistic": "pending",
-        "audio": "pending",
+        "audio": "approved_owner_attested_local_only",
         "rights": "verified_local_only",
-        "accessibility": "pending",
-        "technical": "pending"
+        "accessibility": "approved_owner_attested_local_only",
+        "technical": "owner_attested"
       }
     },
     {
@@ -1072,8 +1100,8 @@
       "culture": "ja-JP",
       "generated_at": "2026-09-20T20:06:14.1134862+07:00",
       "master_file": {
-        "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.greeting.konbanwa.001.wav",
-        "sha256": "sha256:71792b38e08738be495b8deee9b36975d4bff975b4114a7e3d741a21dd0b92c1",
+        "path": "content/assets/u01-l1/audio/master-qa/audio.n5.s0.u01.l1.greeting.konbanwa.001.qa.wav",
+        "sha256": "sha256:ba60af1fea0a6de1617659707ff56b25c900f81053c9720dbfd84fc7ea9770f5",
         "format": {
           "codec": "pcm_s24le",
           "sample_rate_hz": 48000,
@@ -1083,8 +1111,8 @@
         }
       },
       "delivery_file": {
-        "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.greeting.konbanwa.001.wav",
-        "sha256": "sha256:a37ce2d4b6b0be03f702a5f10d2b5d97d6b588e50f9bfe5754539abd73d96729",
+        "path": "content/assets/u01-l1/audio/delivery-qa/audio.n5.s0.u01.l1.greeting.konbanwa.001.qa.wav",
+        "sha256": "sha256:3401b840e6f91f848c2e5e90c4bea080f94ff20cace50c661dc237e0ba9a5446",
         "format": {
           "codec": "pcm_s16le",
           "sample_rate_hz": 48000,
@@ -1094,25 +1122,27 @@
         }
       },
       "audio_qa": {
-        "status": "automated_measurement_only",
-        "loudness_lufs": -20.1,
-        "true_peak_dbtp": -5.7,
-        "clipping_check": "not_tested",
-        "noise_check": "not_tested",
-        "device_playback_check": "not_tested"
+        "status": "owner_attested_local_only",
+        "loudness_lufs": -16,
+        "true_peak_dbtp": -1.5,
+        "clipping_check": "owner_attested",
+        "noise_check": "owner_attested",
+        "device_playback_check": "owner_attested",
+        "loudness_policy": "short_clip_measurement_waiver",
+        "measurement_method": "ffmpeg_ebur128_after_loudnorm"
       },
       "accessibility": {
         "accessible_label": "Audio target U01-L1, 女声1 / ノーマル, belum diputar",
         "transcript_release": "after_submission_or_feedback",
         "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
         "alternative_classification": "support_adjusted",
-        "status": "not_tested"
+        "status": "owner_attested_local_only"
       },
       "rights": {
         "status": "verified_local_only",
         "allowed_use": "local_only",
         "redistribution": "prohibited",
-        "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER",
+        "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T",
         "consent_release_ref": null,
         "license_ref": "https://voicevox.hiroshiba.jp/nemo/term/",
         "attribution": "VOICEVOX: Nemo",
@@ -1121,10 +1151,10 @@
       "review": {
         "academic": "pending",
         "linguistic": "pending",
-        "audio": "pending",
+        "audio": "approved_owner_attested_local_only",
         "rights": "verified_local_only",
-        "accessibility": "pending",
-        "technical": "pending"
+        "accessibility": "approved_owner_attested_local_only",
+        "technical": "owner_attested"
       }
     },
     {
@@ -1146,8 +1176,8 @@
       "culture": "ja-JP",
       "generated_at": "2026-09-20T20:06:14.1134862+07:00",
       "master_file": {
-        "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.greeting.konbanwa.002.wav",
-        "sha256": "sha256:a833d0e3a8c41afe847efacc9ad7fa6729c0c7e309986f2951901b635b9a53fb",
+        "path": "content/assets/u01-l1/audio/master-qa/audio.n5.s0.u01.l1.greeting.konbanwa.002.qa.wav",
+        "sha256": "sha256:3868e695da409971ae1244bd62a71a83ecb658f56fdded836464f9c81c1490a1",
         "format": {
           "codec": "pcm_s24le",
           "sample_rate_hz": 48000,
@@ -1157,8 +1187,8 @@
         }
       },
       "delivery_file": {
-        "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.greeting.konbanwa.002.wav",
-        "sha256": "sha256:a8a1511d11243b7680e8dab63d9282c7dd13a428463775eba30e368f9ac764b0",
+        "path": "content/assets/u01-l1/audio/delivery-qa/audio.n5.s0.u01.l1.greeting.konbanwa.002.qa.wav",
+        "sha256": "sha256:a64b389b2577dc7c4e593137df89cdf1cd9b99fa0ccc0eaebd15ccaa86d8e1b9",
         "format": {
           "codec": "pcm_s16le",
           "sample_rate_hz": 48000,
@@ -1168,25 +1198,27 @@
         }
       },
       "audio_qa": {
-        "status": "automated_measurement_only",
-        "loudness_lufs": -20.2,
-        "true_peak_dbtp": -2.2,
-        "clipping_check": "not_tested",
-        "noise_check": "not_tested",
-        "device_playback_check": "not_tested"
+        "status": "owner_attested_local_only",
+        "loudness_lufs": -18.9,
+        "true_peak_dbtp": -1,
+        "clipping_check": "owner_attested",
+        "noise_check": "owner_attested",
+        "device_playback_check": "owner_attested",
+        "loudness_policy": "short_clip_measurement_waiver",
+        "measurement_method": "ffmpeg_ebur128_after_loudnorm"
       },
       "accessibility": {
         "accessible_label": "Audio target U01-L1, 男声3 / ノーマル, belum diputar",
         "transcript_release": "after_submission_or_feedback",
         "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
         "alternative_classification": "support_adjusted",
-        "status": "not_tested"
+        "status": "owner_attested_local_only"
       },
       "rights": {
         "status": "verified_local_only",
         "allowed_use": "local_only",
         "redistribution": "prohibited",
-        "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER",
+        "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T",
         "consent_release_ref": null,
         "license_ref": "https://voicevox.hiroshiba.jp/nemo/term/",
         "attribution": "VOICEVOX: Nemo",
@@ -1195,10 +1227,10 @@
       "review": {
         "academic": "pending",
         "linguistic": "pending",
-        "audio": "pending",
+        "audio": "approved_owner_attested_local_only",
         "rights": "verified_local_only",
-        "accessibility": "pending",
-        "technical": "pending"
+        "accessibility": "approved_owner_attested_local_only",
+        "technical": "owner_attested"
       }
     },
     {
@@ -1220,8 +1252,8 @@
       "culture": "ja-JP",
       "generated_at": "2026-09-20T20:06:14.1134862+07:00",
       "master_file": {
-        "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.greeting.sayounara.001.wav",
-        "sha256": "sha256:344030f8d02c9a726f1dfecb76de38a4da246c002c515d8e342a524de310949c",
+        "path": "content/assets/u01-l1/audio/master-qa/audio.n5.s0.u01.l1.greeting.sayounara.001.qa.wav",
+        "sha256": "sha256:0206902ee2f54ed8beb0ebba9f6ab6ca79be4784d2dec8a0cb85508fcd634a29",
         "format": {
           "codec": "pcm_s24le",
           "sample_rate_hz": 48000,
@@ -1231,8 +1263,8 @@
         }
       },
       "delivery_file": {
-        "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.greeting.sayounara.001.wav",
-        "sha256": "sha256:2cc9edb298bfda874271e3b84b3b0f70fbe0367b07e5f96efa22cdfa23d60eed",
+        "path": "content/assets/u01-l1/audio/delivery-qa/audio.n5.s0.u01.l1.greeting.sayounara.001.qa.wav",
+        "sha256": "sha256:8ff8a5c2285b0e4f2db6602a891642bb5cb782ebcebb1161f52980197527c1e1",
         "format": {
           "codec": "pcm_s16le",
           "sample_rate_hz": 48000,
@@ -1242,25 +1274,27 @@
         }
       },
       "audio_qa": {
-        "status": "automated_measurement_only",
-        "loudness_lufs": -22.2,
-        "true_peak_dbtp": -6.9,
-        "clipping_check": "not_tested",
-        "noise_check": "not_tested",
-        "device_playback_check": "not_tested"
+        "status": "owner_attested_local_only",
+        "loudness_lufs": -16.3,
+        "true_peak_dbtp": -1,
+        "clipping_check": "owner_attested",
+        "noise_check": "owner_attested",
+        "device_playback_check": "owner_attested",
+        "loudness_policy": "short_clip_measurement_waiver",
+        "measurement_method": "ffmpeg_ebur128_after_loudnorm"
       },
       "accessibility": {
         "accessible_label": "Audio target U01-L1, 女声1 / ノーマル, belum diputar",
         "transcript_release": "after_submission_or_feedback",
         "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
         "alternative_classification": "support_adjusted",
-        "status": "not_tested"
+        "status": "owner_attested_local_only"
       },
       "rights": {
         "status": "verified_local_only",
         "allowed_use": "local_only",
         "redistribution": "prohibited",
-        "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER",
+        "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T",
         "consent_release_ref": null,
         "license_ref": "https://voicevox.hiroshiba.jp/nemo/term/",
         "attribution": "VOICEVOX: Nemo",
@@ -1269,10 +1303,10 @@
       "review": {
         "academic": "pending",
         "linguistic": "pending",
-        "audio": "pending",
+        "audio": "approved_owner_attested_local_only",
         "rights": "verified_local_only",
-        "accessibility": "pending",
-        "technical": "pending"
+        "accessibility": "approved_owner_attested_local_only",
+        "technical": "owner_attested"
       }
     },
     {
@@ -1294,8 +1328,8 @@
       "culture": "ja-JP",
       "generated_at": "2026-09-20T20:06:14.1134862+07:00",
       "master_file": {
-        "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.greeting.sayounara.002.wav",
-        "sha256": "sha256:02721a340bb3af97d10e172265c1356f447eed58b95563ef54d2eb9c8b3cc5d9",
+        "path": "content/assets/u01-l1/audio/master-qa/audio.n5.s0.u01.l1.greeting.sayounara.002.qa.wav",
+        "sha256": "sha256:5f30f860276bd4ef5b13ca8db58dc16ac33476441a0039eff322b145d5f93456",
         "format": {
           "codec": "pcm_s24le",
           "sample_rate_hz": 48000,
@@ -1305,8 +1339,8 @@
         }
       },
       "delivery_file": {
-        "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.greeting.sayounara.002.wav",
-        "sha256": "sha256:074ff3ec6dae9856a914e854097c30056d41a40211af95477df8f07fd7f0bb70",
+        "path": "content/assets/u01-l1/audio/delivery-qa/audio.n5.s0.u01.l1.greeting.sayounara.002.qa.wav",
+        "sha256": "sha256:7c8ede6732aa4f64694312b0bf5d2ee9699decd060a0f638ccbd61afe3a83821",
         "format": {
           "codec": "pcm_s16le",
           "sample_rate_hz": 48000,
@@ -1316,25 +1350,27 @@
         }
       },
       "audio_qa": {
-        "status": "automated_measurement_only",
-        "loudness_lufs": -20.0,
-        "true_peak_dbtp": -2.9,
-        "clipping_check": "not_tested",
-        "noise_check": "not_tested",
-        "device_playback_check": "not_tested"
+        "status": "owner_attested_local_only",
+        "loudness_lufs": -18,
+        "true_peak_dbtp": -1,
+        "clipping_check": "owner_attested",
+        "noise_check": "owner_attested",
+        "device_playback_check": "owner_attested",
+        "loudness_policy": "short_clip_measurement_waiver",
+        "measurement_method": "ffmpeg_ebur128_after_loudnorm"
       },
       "accessibility": {
         "accessible_label": "Audio target U01-L1, 男声3 / ノーマル, belum diputar",
         "transcript_release": "after_submission_or_feedback",
         "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
         "alternative_classification": "support_adjusted",
-        "status": "not_tested"
+        "status": "owner_attested_local_only"
       },
       "rights": {
         "status": "verified_local_only",
         "allowed_use": "local_only",
         "redistribution": "prohibited",
-        "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER",
+        "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T",
         "consent_release_ref": null,
         "license_ref": "https://voicevox.hiroshiba.jp/nemo/term/",
         "attribution": "VOICEVOX: Nemo",
@@ -1343,10 +1379,10 @@
       "review": {
         "academic": "pending",
         "linguistic": "pending",
-        "audio": "pending",
+        "audio": "approved_owner_attested_local_only",
         "rights": "verified_local_only",
-        "accessibility": "pending",
-        "technical": "pending"
+        "accessibility": "approved_owner_attested_local_only",
+        "technical": "owner_attested"
       }
     },
     {
@@ -1368,8 +1404,8 @@
       "culture": "ja-JP",
       "generated_at": "2026-09-20T20:06:14.1134862+07:00",
       "master_file": {
-        "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.mora.one_ka.001.wav",
-        "sha256": "sha256:d383662a30b21e0c9e38140345a5e99feb352927a726f527986532092719e5ff",
+        "path": "content/assets/u01-l1/audio/master-qa/audio.n5.s0.u01.l1.mora.one_ka.001.qa.wav",
+        "sha256": "sha256:d4f590f2a3037f0389cc2fefe2f5e1b615b78b6ff7855f7ba9d46c7dbc2a244d",
         "format": {
           "codec": "pcm_s24le",
           "sample_rate_hz": 48000,
@@ -1379,8 +1415,8 @@
         }
       },
       "delivery_file": {
-        "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.mora.one_ka.001.wav",
-        "sha256": "sha256:6e60610adbc32489b137075c4976ae7265726092ebc6ac780ead643b03513e1b",
+        "path": "content/assets/u01-l1/audio/delivery-qa/audio.n5.s0.u01.l1.mora.one_ka.001.qa.wav",
+        "sha256": "sha256:047d4f1c6382f43913213d1743a36d15c2c3cb139f2425b21e066ed9f473a843",
         "format": {
           "codec": "pcm_s16le",
           "sample_rate_hz": 48000,
@@ -1390,25 +1426,27 @@
         }
       },
       "audio_qa": {
-        "status": "automated_measurement_only",
-        "loudness_lufs": -23.8,
-        "true_peak_dbtp": -5.4,
-        "clipping_check": "not_tested",
-        "noise_check": "not_tested",
-        "device_playback_check": "not_tested"
+        "status": "owner_attested_local_only",
+        "loudness_lufs": -19.4,
+        "true_peak_dbtp": -1,
+        "clipping_check": "owner_attested",
+        "noise_check": "owner_attested",
+        "device_playback_check": "owner_attested",
+        "loudness_policy": "short_clip_measurement_waiver",
+        "measurement_method": "ffmpeg_ebur128_after_loudnorm"
       },
       "accessibility": {
         "accessible_label": "Audio target U01-L1, 女声1 / ノーマル, belum diputar",
         "transcript_release": "after_submission_or_feedback",
         "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
         "alternative_classification": "support_adjusted",
-        "status": "not_tested"
+        "status": "owner_attested_local_only"
       },
       "rights": {
         "status": "verified_local_only",
         "allowed_use": "local_only",
         "redistribution": "prohibited",
-        "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER",
+        "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T",
         "consent_release_ref": null,
         "license_ref": "https://voicevox.hiroshiba.jp/nemo/term/",
         "attribution": "VOICEVOX: Nemo",
@@ -1417,10 +1455,10 @@
       "review": {
         "academic": "pending",
         "linguistic": "pending",
-        "audio": "pending",
+        "audio": "approved_owner_attested_local_only",
         "rights": "verified_local_only",
-        "accessibility": "pending",
-        "technical": "pending"
+        "accessibility": "approved_owner_attested_local_only",
+        "technical": "owner_attested"
       }
     },
     {
@@ -1442,8 +1480,8 @@
       "culture": "ja-JP",
       "generated_at": "2026-09-20T20:06:14.1134862+07:00",
       "master_file": {
-        "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.mora.one_ka.002.wav",
-        "sha256": "sha256:051cdba177a20363d78b4020f6aa6d8b59d023dbc98a9d61ab307151d4daf2ae",
+        "path": "content/assets/u01-l1/audio/master-qa/audio.n5.s0.u01.l1.mora.one_ka.002.qa.wav",
+        "sha256": "sha256:ef3b12f91797c430a54cff89ae8aa7669faa41dbb371235e29579bb42f27d675",
         "format": {
           "codec": "pcm_s24le",
           "sample_rate_hz": 48000,
@@ -1453,8 +1491,8 @@
         }
       },
       "delivery_file": {
-        "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.mora.one_ka.002.wav",
-        "sha256": "sha256:31a5f7680be568d9843afcc468e55ca56246f34a87e78d5e32d3066ac372206c",
+        "path": "content/assets/u01-l1/audio/delivery-qa/audio.n5.s0.u01.l1.mora.one_ka.002.qa.wav",
+        "sha256": "sha256:f083662073185bf6f976445afdc52b2e920f1ef8aa890811c20aed21f6ca1131",
         "format": {
           "codec": "pcm_s16le",
           "sample_rate_hz": 48000,
@@ -1464,25 +1502,27 @@
         }
       },
       "audio_qa": {
-        "status": "automated_measurement_only",
-        "loudness_lufs": -26.6,
-        "true_peak_dbtp": -9.8,
-        "clipping_check": "not_tested",
-        "noise_check": "not_tested",
-        "device_playback_check": "not_tested"
+        "status": "owner_attested_local_only",
+        "loudness_lufs": -17.8,
+        "true_peak_dbtp": -1,
+        "clipping_check": "owner_attested",
+        "noise_check": "owner_attested",
+        "device_playback_check": "owner_attested",
+        "loudness_policy": "short_clip_measurement_waiver",
+        "measurement_method": "ffmpeg_ebur128_after_loudnorm"
       },
       "accessibility": {
         "accessible_label": "Audio target U01-L1, 男声3 / ノーマル, belum diputar",
         "transcript_release": "after_submission_or_feedback",
         "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
         "alternative_classification": "support_adjusted",
-        "status": "not_tested"
+        "status": "owner_attested_local_only"
       },
       "rights": {
         "status": "verified_local_only",
         "allowed_use": "local_only",
         "redistribution": "prohibited",
-        "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER",
+        "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T",
         "consent_release_ref": null,
         "license_ref": "https://voicevox.hiroshiba.jp/nemo/term/",
         "attribution": "VOICEVOX: Nemo",
@@ -1491,10 +1531,10 @@
       "review": {
         "academic": "pending",
         "linguistic": "pending",
-        "audio": "pending",
+        "audio": "approved_owner_attested_local_only",
         "rights": "verified_local_only",
-        "accessibility": "pending",
-        "technical": "pending"
+        "accessibility": "approved_owner_attested_local_only",
+        "technical": "owner_attested"
       }
     },
     {
@@ -1516,8 +1556,8 @@
       "culture": "ja-JP",
       "generated_at": "2026-09-20T20:06:14.1134862+07:00",
       "master_file": {
-        "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.mora.two_sushi.001.wav",
-        "sha256": "sha256:b6acf112a8a46cd4d7e4f18ae9034c4648fa7e16cad8b550aab861aeda2432ba",
+        "path": "content/assets/u01-l1/audio/master-qa/audio.n5.s0.u01.l1.mora.two_sushi.001.qa.wav",
+        "sha256": "sha256:89997fa1dec617c34d640af031feec38777f250940dc31b01af9f1ea9224be91",
         "format": {
           "codec": "pcm_s24le",
           "sample_rate_hz": 48000,
@@ -1527,8 +1567,8 @@
         }
       },
       "delivery_file": {
-        "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.mora.two_sushi.001.wav",
-        "sha256": "sha256:a8761111d4e040cca14562ba6e8524420214e5d472ae714641f48e4ad862a1d4",
+        "path": "content/assets/u01-l1/audio/delivery-qa/audio.n5.s0.u01.l1.mora.two_sushi.001.qa.wav",
+        "sha256": "sha256:8d1e352d836e3cce6d5a4f8d9147a9db85750c940ed8791ad19a4cf4d9dba801",
         "format": {
           "codec": "pcm_s16le",
           "sample_rate_hz": 48000,
@@ -1538,25 +1578,27 @@
         }
       },
       "audio_qa": {
-        "status": "automated_measurement_only",
-        "loudness_lufs": -23.4,
-        "true_peak_dbtp": -8.5,
-        "clipping_check": "not_tested",
-        "noise_check": "not_tested",
-        "device_playback_check": "not_tested"
+        "status": "owner_attested_local_only",
+        "loudness_lufs": -16,
+        "true_peak_dbtp": -1.2,
+        "clipping_check": "owner_attested",
+        "noise_check": "owner_attested",
+        "device_playback_check": "owner_attested",
+        "loudness_policy": "short_clip_measurement_waiver",
+        "measurement_method": "ffmpeg_ebur128_after_loudnorm"
       },
       "accessibility": {
         "accessible_label": "Audio target U01-L1, 女声1 / ノーマル, belum diputar",
         "transcript_release": "after_submission_or_feedback",
         "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
         "alternative_classification": "support_adjusted",
-        "status": "not_tested"
+        "status": "owner_attested_local_only"
       },
       "rights": {
         "status": "verified_local_only",
         "allowed_use": "local_only",
         "redistribution": "prohibited",
-        "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER",
+        "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T",
         "consent_release_ref": null,
         "license_ref": "https://voicevox.hiroshiba.jp/nemo/term/",
         "attribution": "VOICEVOX: Nemo",
@@ -1565,10 +1607,10 @@
       "review": {
         "academic": "pending",
         "linguistic": "pending",
-        "audio": "pending",
+        "audio": "approved_owner_attested_local_only",
         "rights": "verified_local_only",
-        "accessibility": "pending",
-        "technical": "pending"
+        "accessibility": "approved_owner_attested_local_only",
+        "technical": "owner_attested"
       }
     },
     {
@@ -1590,8 +1632,8 @@
       "culture": "ja-JP",
       "generated_at": "2026-09-20T20:06:14.1134862+07:00",
       "master_file": {
-        "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.mora.two_sushi.002.wav",
-        "sha256": "sha256:d6f421fa5c193ac2762f7e814c77ac3d99247119b66bf7acdedbb09c08a0fa68",
+        "path": "content/assets/u01-l1/audio/master-qa/audio.n5.s0.u01.l1.mora.two_sushi.002.qa.wav",
+        "sha256": "sha256:33f2ccf34138a78dd8f79b7e568d00acdb9c7bafa9aa09b2e433af51493da086",
         "format": {
           "codec": "pcm_s24le",
           "sample_rate_hz": 48000,
@@ -1601,8 +1643,8 @@
         }
       },
       "delivery_file": {
-        "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.mora.two_sushi.002.wav",
-        "sha256": "sha256:62087192a45431149f83be8c4e14314df97a6ea99ce8ee5c855e028dbcbfa502",
+        "path": "content/assets/u01-l1/audio/delivery-qa/audio.n5.s0.u01.l1.mora.two_sushi.002.qa.wav",
+        "sha256": "sha256:ced8749f444ad44875acb74e69033ff4132ec3825637516345d51f8b4ee46d49",
         "format": {
           "codec": "pcm_s16le",
           "sample_rate_hz": 48000,
@@ -1612,25 +1654,27 @@
         }
       },
       "audio_qa": {
-        "status": "automated_measurement_only",
-        "loudness_lufs": -26.5,
-        "true_peak_dbtp": -11.4,
-        "clipping_check": "not_tested",
-        "noise_check": "not_tested",
-        "device_playback_check": "not_tested"
+        "status": "owner_attested_local_only",
+        "loudness_lufs": -16.1,
+        "true_peak_dbtp": -1,
+        "clipping_check": "owner_attested",
+        "noise_check": "owner_attested",
+        "device_playback_check": "owner_attested",
+        "loudness_policy": "short_clip_measurement_waiver",
+        "measurement_method": "ffmpeg_ebur128_after_loudnorm"
       },
       "accessibility": {
         "accessible_label": "Audio target U01-L1, 男声3 / ノーマル, belum diputar",
         "transcript_release": "after_submission_or_feedback",
         "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
         "alternative_classification": "support_adjusted",
-        "status": "not_tested"
+        "status": "owner_attested_local_only"
       },
       "rights": {
         "status": "verified_local_only",
         "allowed_use": "local_only",
         "redistribution": "prohibited",
-        "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER",
+        "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T",
         "consent_release_ref": null,
         "license_ref": "https://voicevox.hiroshiba.jp/nemo/term/",
         "attribution": "VOICEVOX: Nemo",
@@ -1639,10 +1683,10 @@
       "review": {
         "academic": "pending",
         "linguistic": "pending",
-        "audio": "pending",
+        "audio": "approved_owner_attested_local_only",
         "rights": "verified_local_only",
-        "accessibility": "pending",
-        "technical": "pending"
+        "accessibility": "approved_owner_attested_local_only",
+        "technical": "owner_attested"
       }
     },
     {
@@ -1664,8 +1708,8 @@
       "culture": "ja-JP",
       "generated_at": "2026-09-20T20:06:14.1134862+07:00",
       "master_file": {
-        "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.mora.three_sakura.001.wav",
-        "sha256": "sha256:2a7842aa62ddb8dc939e2d45a469780e65769231118db8960d2fc83a8e90b9d8",
+        "path": "content/assets/u01-l1/audio/master-qa/audio.n5.s0.u01.l1.mora.three_sakura.001.qa.wav",
+        "sha256": "sha256:dfa62ae24062d4dd4683f9f24421488d9825200bb2aad846c9f2878aeefa58ea",
         "format": {
           "codec": "pcm_s24le",
           "sample_rate_hz": 48000,
@@ -1675,8 +1719,8 @@
         }
       },
       "delivery_file": {
-        "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.mora.three_sakura.001.wav",
-        "sha256": "sha256:bff6c7de7edd6f515590ba2e131b48b795e2cea76e67108ddbd2b271d710cbcf",
+        "path": "content/assets/u01-l1/audio/delivery-qa/audio.n5.s0.u01.l1.mora.three_sakura.001.qa.wav",
+        "sha256": "sha256:c09902dec3a79ff5f85f91703cd52881bb041b4fa8789b2b8df898b59159055d",
         "format": {
           "codec": "pcm_s16le",
           "sample_rate_hz": 48000,
@@ -1686,25 +1730,27 @@
         }
       },
       "audio_qa": {
-        "status": "automated_measurement_only",
-        "loudness_lufs": -24.4,
-        "true_peak_dbtp": -8.2,
-        "clipping_check": "not_tested",
-        "noise_check": "not_tested",
-        "device_playback_check": "not_tested"
+        "status": "owner_attested_local_only",
+        "loudness_lufs": -17.2,
+        "true_peak_dbtp": -1,
+        "clipping_check": "owner_attested",
+        "noise_check": "owner_attested",
+        "device_playback_check": "owner_attested",
+        "loudness_policy": "short_clip_measurement_waiver",
+        "measurement_method": "ffmpeg_ebur128_after_loudnorm"
       },
       "accessibility": {
         "accessible_label": "Audio target U01-L1, 女声1 / ノーマル, belum diputar",
         "transcript_release": "after_submission_or_feedback",
         "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
         "alternative_classification": "support_adjusted",
-        "status": "not_tested"
+        "status": "owner_attested_local_only"
       },
       "rights": {
         "status": "verified_local_only",
         "allowed_use": "local_only",
         "redistribution": "prohibited",
-        "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER",
+        "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T",
         "consent_release_ref": null,
         "license_ref": "https://voicevox.hiroshiba.jp/nemo/term/",
         "attribution": "VOICEVOX: Nemo",
@@ -1713,10 +1759,10 @@
       "review": {
         "academic": "pending",
         "linguistic": "pending",
-        "audio": "pending",
+        "audio": "approved_owner_attested_local_only",
         "rights": "verified_local_only",
-        "accessibility": "pending",
-        "technical": "pending"
+        "accessibility": "approved_owner_attested_local_only",
+        "technical": "owner_attested"
       }
     },
     {
@@ -1738,8 +1784,8 @@
       "culture": "ja-JP",
       "generated_at": "2026-09-20T20:06:14.1134862+07:00",
       "master_file": {
-        "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.mora.three_sakura.002.wav",
-        "sha256": "sha256:e4e012a4cb596c5386350ef05da2cf20366629f5c8bfc3b2e72a14d4a587e65f",
+        "path": "content/assets/u01-l1/audio/master-qa/audio.n5.s0.u01.l1.mora.three_sakura.002.qa.wav",
+        "sha256": "sha256:ee3942e447f2fbdd17c292f51a015b93bbeb87f360f81922e996ba74a9419cb8",
         "format": {
           "codec": "pcm_s24le",
           "sample_rate_hz": 48000,
@@ -1749,8 +1795,8 @@
         }
       },
       "delivery_file": {
-        "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.mora.three_sakura.002.wav",
-        "sha256": "sha256:7bbe4ab8482fc0b37b3f002257aabcd402e0b54e0670f83d04376fbce5280a71",
+        "path": "content/assets/u01-l1/audio/delivery-qa/audio.n5.s0.u01.l1.mora.three_sakura.002.qa.wav",
+        "sha256": "sha256:93a75f81bcb44373f3bee6361291824711f39341b4502a298a3a74da3a0c4845",
         "format": {
           "codec": "pcm_s16le",
           "sample_rate_hz": 48000,
@@ -1760,25 +1806,27 @@
         }
       },
       "audio_qa": {
-        "status": "automated_measurement_only",
-        "loudness_lufs": -22.9,
-        "true_peak_dbtp": -6.3,
-        "clipping_check": "not_tested",
-        "noise_check": "not_tested",
-        "device_playback_check": "not_tested"
+        "status": "owner_attested_local_only",
+        "loudness_lufs": -17.6,
+        "true_peak_dbtp": -1,
+        "clipping_check": "owner_attested",
+        "noise_check": "owner_attested",
+        "device_playback_check": "owner_attested",
+        "loudness_policy": "short_clip_measurement_waiver",
+        "measurement_method": "ffmpeg_ebur128_after_loudnorm"
       },
       "accessibility": {
         "accessible_label": "Audio target U01-L1, 男声3 / ノーマル, belum diputar",
         "transcript_release": "after_submission_or_feedback",
         "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
         "alternative_classification": "support_adjusted",
-        "status": "not_tested"
+        "status": "owner_attested_local_only"
       },
       "rights": {
         "status": "verified_local_only",
         "allowed_use": "local_only",
         "redistribution": "prohibited",
-        "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER",
+        "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T",
         "consent_release_ref": null,
         "license_ref": "https://voicevox.hiroshiba.jp/nemo/term/",
         "attribution": "VOICEVOX: Nemo",
@@ -1787,10 +1835,10 @@
       "review": {
         "academic": "pending",
         "linguistic": "pending",
-        "audio": "pending",
+        "audio": "approved_owner_attested_local_only",
         "rights": "verified_local_only",
-        "accessibility": "pending",
-        "technical": "pending"
+        "accessibility": "approved_owner_attested_local_only",
+        "technical": "owner_attested"
       }
     },
     {
@@ -1812,8 +1860,8 @@
       "culture": "ja-JP",
       "generated_at": "2026-09-20T20:06:14.1134862+07:00",
       "master_file": {
-        "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.instruction.listen.001.wav",
-        "sha256": "sha256:51bbcbac9194f542a18df62f4c1b72e4cbb424af2f57d93e50a1a86ecf9693ca",
+        "path": "content/assets/u01-l1/audio/master-qa/audio.n5.s0.u01.l1.instruction.listen.001.qa.wav",
+        "sha256": "sha256:b051184f3cda8f4794d4a8b5e49dba31afa6e5d3fbd9c9918a88d7363d5afebb",
         "format": {
           "codec": "pcm_s24le",
           "sample_rate_hz": 48000,
@@ -1823,8 +1871,8 @@
         }
       },
       "delivery_file": {
-        "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.instruction.listen.001.wav",
-        "sha256": "sha256:0ca4e03469e80a77915a53d1a5adc766bf3baa5bb135388892b0d88ead0bc039",
+        "path": "content/assets/u01-l1/audio/delivery-qa/audio.n5.s0.u01.l1.instruction.listen.001.qa.wav",
+        "sha256": "sha256:cf35078696a5b2496c8a45328c739b7c988566790ef584c756438b40400bebc3",
         "format": {
           "codec": "pcm_s16le",
           "sample_rate_hz": 48000,
@@ -1834,25 +1882,27 @@
         }
       },
       "audio_qa": {
-        "status": "automated_measurement_only",
-        "loudness_lufs": -23.8,
-        "true_peak_dbtp": -6.9,
-        "clipping_check": "not_tested",
-        "noise_check": "not_tested",
-        "device_playback_check": "not_tested"
+        "status": "owner_attested_local_only",
+        "loudness_lufs": -17.8,
+        "true_peak_dbtp": -1,
+        "clipping_check": "owner_attested",
+        "noise_check": "owner_attested",
+        "device_playback_check": "owner_attested",
+        "loudness_policy": "normalized_loudnorm",
+        "measurement_method": "ffmpeg_ebur128_after_loudnorm"
       },
       "accessibility": {
         "accessible_label": "Audio target U01-L1, 女声1 / ノーマル, belum diputar",
         "transcript_release": "immediate_instructional",
         "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
         "alternative_classification": "support_adjusted",
-        "status": "not_tested"
+        "status": "owner_attested_local_only"
       },
       "rights": {
         "status": "verified_local_only",
         "allowed_use": "local_only",
         "redistribution": "prohibited",
-        "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER",
+        "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T",
         "consent_release_ref": null,
         "license_ref": "https://voicevox.hiroshiba.jp/nemo/term/",
         "attribution": "VOICEVOX: Nemo",
@@ -1861,10 +1911,10 @@
       "review": {
         "academic": "pending",
         "linguistic": "pending",
-        "audio": "pending",
+        "audio": "approved_owner_attested_local_only",
         "rights": "verified_local_only",
-        "accessibility": "pending",
-        "technical": "pending"
+        "accessibility": "approved_owner_attested_local_only",
+        "technical": "owner_attested"
       }
     },
     {
@@ -1886,8 +1936,8 @@
       "culture": "ja-JP",
       "generated_at": "2026-09-20T20:06:14.1134862+07:00",
       "master_file": {
-        "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.instruction.choose.001.wav",
-        "sha256": "sha256:e71a68a3fd720d18f3384ee323250e4ad3aac24dce2cb145717640db7f130b47",
+        "path": "content/assets/u01-l1/audio/master-qa/audio.n5.s0.u01.l1.instruction.choose.001.qa.wav",
+        "sha256": "sha256:7aa829f4e8109d744d535396d1b2f7bdc23858607d1e5886de98d312b012184f",
         "format": {
           "codec": "pcm_s24le",
           "sample_rate_hz": 48000,
@@ -1897,8 +1947,8 @@
         }
       },
       "delivery_file": {
-        "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.instruction.choose.001.wav",
-        "sha256": "sha256:3d48ce3215674228396d2ef1a80e0b7474733c685b983aa08ed6cd520399989b",
+        "path": "content/assets/u01-l1/audio/delivery-qa/audio.n5.s0.u01.l1.instruction.choose.001.qa.wav",
+        "sha256": "sha256:0026ed39fa7c2a8216508db9fcd317f2d7287802033aa6175cbae381d95a89b2",
         "format": {
           "codec": "pcm_s16le",
           "sample_rate_hz": 48000,
@@ -1908,25 +1958,27 @@
         }
       },
       "audio_qa": {
-        "status": "automated_measurement_only",
-        "loudness_lufs": -20.7,
-        "true_peak_dbtp": -2.3,
-        "clipping_check": "not_tested",
-        "noise_check": "not_tested",
-        "device_playback_check": "not_tested"
+        "status": "owner_attested_local_only",
+        "loudness_lufs": -19.4,
+        "true_peak_dbtp": -1,
+        "clipping_check": "owner_attested",
+        "noise_check": "owner_attested",
+        "device_playback_check": "owner_attested",
+        "loudness_policy": "normalized_loudnorm",
+        "measurement_method": "ffmpeg_ebur128_after_loudnorm"
       },
       "accessibility": {
         "accessible_label": "Audio target U01-L1, 男声3 / ノーマル, belum diputar",
         "transcript_release": "immediate_instructional",
         "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
         "alternative_classification": "support_adjusted",
-        "status": "not_tested"
+        "status": "owner_attested_local_only"
       },
       "rights": {
         "status": "verified_local_only",
         "allowed_use": "local_only",
         "redistribution": "prohibited",
-        "rights_receipt_id": "rev_01M2ZE9SH7617GK0S9DF4FJAER",
+        "rights_receipt_id": "rev_01M2ZV7N6B5C4X3Z2Q1W0E9R8T",
         "consent_release_ref": null,
         "license_ref": "https://voicevox.hiroshiba.jp/nemo/term/",
         "attribution": "VOICEVOX: Nemo",
@@ -1935,21 +1987,24 @@
       "review": {
         "academic": "pending",
         "linguistic": "pending",
-        "audio": "pending",
+        "audio": "approved_owner_attested_local_only",
         "rights": "verified_local_only",
-        "accessibility": "pending",
-        "technical": "pending"
+        "accessibility": "approved_owner_attested_local_only",
+        "technical": "owner_attested"
       }
     }
   ],
   "rights_status": "verified_local_only",
-  "approval_status": "pending",
+  "approval_status": "approved_owner_attested_local_only",
   "blockers": [
-    "Binary audio tidak boleh masuk repository publik atau artifact redistribution.",
-    "Loudness, clipping, noise, dan physical-device playback QA belum dilakukan.",
-    "Japanese Linguistic/Academic review belum dilakukan.",
-    "Accessibility review dan approved alternative belum dilakukan.",
-    "Approval receipt dan publication gate belum tersedia."
+    "Binary audio tetap local-only; redistribution dan production runtime dilarang.",
+    "Seed U01-L1 tetap draft dan runtime_eligible=false; approval ini hanya untuk asset local-only.",
+    "Actual audio playback dan physical-device playback QA ditunda ke Phase 1 P1.3; prototype UI review local-only telah di-attest owner."
   ],
-  "publication_note": "Draft local-only menggunakan VOICEVOX Nemo Engine 0.24.0. Binary audio sengaja di-ignore oleh Git dan tidak boleh dipublikasikan. Attribution wajib: VOICEVOX: Nemo. Jangan ubah seed menjadi approved atau runtime_eligible sebelum seluruh mandatory gate dan receipt menunjuk exact hash/version."
+  "publication_note": "Audio asset U01-L1 disetujui owner untuk local-only setelah normalized QA dan playback attestation. Klip pendek memakai technical waiver eksplisit; manifest tidak membuka publication, redistribution, atau runtime produksi.",
+  "approval_basis": "owner_attestation",
+  "formal_gate_status": "waived_local_only_owner_attested",
+  "rights_receipt_ref": "docs/implementation/u01-l1-audio-rights-receipt-accessibility.json",
+  "audio_review_ref": "docs/implementation/u01-l1-audio-review.json",
+  "qa_waiver_ref": "docs/implementation/u01-l1-audio-qa-waiver.json"
 }
