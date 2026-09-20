@@ -5,8 +5,8 @@
   "runtime_eligible": false,
   "source_plan": "content/source/u01-l1/audio-plan.json",
   "source_seed_version": "0.1.0",
-  "source_seed_commit": "9d6d067701c18460b81874e81c70779a67f56f94",
-  "generated_at": "2026-09-20T19:16:21.7558391+07:00",
+  "source_seed_commit": "5fcae093cd1377f21c709507f185b5905b29d4cb",
+  "generated_at": "2026-09-20T19:22:18.5056131+07:00",
   "distribution_scope": "local_only",
   "binary_policy": "never_commit_or_redistribute",
   "generation_environment": {
@@ -34,7 +34,7 @@
       "speaker_uuid": "abccafa5-174f-44d8-b70c-c41eebb3061c",
       "style_name": "ノーマル",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T19:16:21.7558391+07:00",
+      "generated_at": "2026-09-20T19:22:18.5056131+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.vowel.a.001.wav",
         "sha256": "sha256:200ca98616d05ca95d63b6e5adfff5e3a32331d0d88e29fb61bbe60bd9887cd4",
@@ -108,7 +108,7 @@
       "speaker_uuid": "2171909e-d2d1-4bbb-aa45-442c12732665",
       "style_name": "ノーマル",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T19:16:21.7558391+07:00",
+      "generated_at": "2026-09-20T19:22:18.5056131+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.vowel.a.002.wav",
         "sha256": "sha256:3e2c55abc4eb178f1be7925b6d288b0d56ca6dcabbe3d534865d40b659a59a02",
@@ -182,7 +182,7 @@
       "speaker_uuid": "abccafa5-174f-44d8-b70c-c41eebb3061c",
       "style_name": "ノーマル",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T19:16:21.7558391+07:00",
+      "generated_at": "2026-09-20T19:22:18.5056131+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.vowel.i.001.wav",
         "sha256": "sha256:446738b093ed1c6421011f1f5962a13fb81f40b49d91033df501d8109081ccda",
@@ -256,7 +256,7 @@
       "speaker_uuid": "2171909e-d2d1-4bbb-aa45-442c12732665",
       "style_name": "ノーマル",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T19:16:21.7558391+07:00",
+      "generated_at": "2026-09-20T19:22:18.5056131+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.vowel.i.002.wav",
         "sha256": "sha256:30fad2307c70a0b51a9613edb9accf588750fa1ed1bfb9c55b3da4f9708d7b4b",
@@ -330,7 +330,7 @@
       "speaker_uuid": "abccafa5-174f-44d8-b70c-c41eebb3061c",
       "style_name": "ノーマル",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T19:16:21.7558391+07:00",
+      "generated_at": "2026-09-20T19:22:18.5056131+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.vowel.u.001.wav",
         "sha256": "sha256:c5a867c02594953545a091b077bd260bb5f17011551715f9e251b95181c6fc19",
@@ -404,7 +404,7 @@
       "speaker_uuid": "2171909e-d2d1-4bbb-aa45-442c12732665",
       "style_name": "ノーマル",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T19:16:21.7558391+07:00",
+      "generated_at": "2026-09-20T19:22:18.5056131+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.vowel.u.002.wav",
         "sha256": "sha256:2333257a7ffbb0b14b0ce89b8d237bc404af6a48317958f7c144cb626502fd14",
@@ -478,7 +478,7 @@
       "speaker_uuid": "abccafa5-174f-44d8-b70c-c41eebb3061c",
       "style_name": "ノーマル",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T19:16:21.7558391+07:00",
+      "generated_at": "2026-09-20T19:22:18.5056131+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.vowel.e.001.wav",
         "sha256": "sha256:2b40e95be928116beb558ce7b9129ca066552f569de81ac5c7c37cf421fc1f9e",
@@ -552,7 +552,7 @@
       "speaker_uuid": "2171909e-d2d1-4bbb-aa45-442c12732665",
       "style_name": "ノーマル",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T19:16:21.7558391+07:00",
+      "generated_at": "2026-09-20T19:22:18.5056131+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.vowel.e.002.wav",
         "sha256": "sha256:5c0f13a5a0def5a87f450c4a43cbfb0b6c7aff5aecd95e292bd52e1a68561cb6",
@@ -626,7 +626,7 @@
       "speaker_uuid": "abccafa5-174f-44d8-b70c-c41eebb3061c",
       "style_name": "ノーマル",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T19:16:21.7558391+07:00",
+      "generated_at": "2026-09-20T19:22:18.5056131+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.vowel.o.001.wav",
         "sha256": "sha256:1ddc5e9ecf9db55fe431751b0745f16536609eb4d65ee3fa4df1ecf0b68ed105",
@@ -700,7 +700,7 @@
       "speaker_uuid": "2171909e-d2d1-4bbb-aa45-442c12732665",
       "style_name": "ノーマル",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T19:16:21.7558391+07:00",
+      "generated_at": "2026-09-20T19:22:18.5056131+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.vowel.o.002.wav",
         "sha256": "sha256:327a11c3c3c589ec777115c5224566cea2216095944fad156dd487acb446db90",
@@ -774,7 +774,7 @@
       "speaker_uuid": "abccafa5-174f-44d8-b70c-c41eebb3061c",
       "style_name": "ノーマル",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T19:16:21.7558391+07:00",
+      "generated_at": "2026-09-20T19:22:18.5056131+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.greeting.ohayou_gozaimasu.001.wav",
         "sha256": "sha256:67b592c578b16bdcc66b7c79fc6aad1d28afd0d044d797f1bdf72c6cd5216ab4",
@@ -848,7 +848,7 @@
       "speaker_uuid": "2171909e-d2d1-4bbb-aa45-442c12732665",
       "style_name": "ノーマル",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T19:16:21.7558391+07:00",
+      "generated_at": "2026-09-20T19:22:18.5056131+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.greeting.ohayou_gozaimasu.002.wav",
         "sha256": "sha256:3a0caa70e98a7fac05a3a3d78f6f856bc3a6847e81adc3406d7fab5277b7f644",
@@ -922,7 +922,7 @@
       "speaker_uuid": "abccafa5-174f-44d8-b70c-c41eebb3061c",
       "style_name": "ノーマル",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T19:16:21.7558391+07:00",
+      "generated_at": "2026-09-20T19:22:18.5056131+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.greeting.konnichiwa.001.wav",
         "sha256": "sha256:f08135bd0f81d14e3cf58847ab7b2d7dfbcc7c55078beef8970d4ef5ede41727",
@@ -996,7 +996,7 @@
       "speaker_uuid": "2171909e-d2d1-4bbb-aa45-442c12732665",
       "style_name": "ノーマル",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T19:16:21.7558391+07:00",
+      "generated_at": "2026-09-20T19:22:18.5056131+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.greeting.konnichiwa.002.wav",
         "sha256": "sha256:2abecdc15ddf687c5ab4a3bd1a11e180ebaf7ebf7268ec5cf4b856a579bc6653",
@@ -1070,7 +1070,7 @@
       "speaker_uuid": "abccafa5-174f-44d8-b70c-c41eebb3061c",
       "style_name": "ノーマル",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T19:16:21.7558391+07:00",
+      "generated_at": "2026-09-20T19:22:18.5056131+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.greeting.konbanwa.001.wav",
         "sha256": "sha256:71792b38e08738be495b8deee9b36975d4bff975b4114a7e3d741a21dd0b92c1",
@@ -1144,7 +1144,7 @@
       "speaker_uuid": "2171909e-d2d1-4bbb-aa45-442c12732665",
       "style_name": "ノーマル",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T19:16:21.7558391+07:00",
+      "generated_at": "2026-09-20T19:22:18.5056131+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.greeting.konbanwa.002.wav",
         "sha256": "sha256:9bd623d9de37d84e48aeac78dd164796dd4c3795c3886b89b16bb6b8e12c0c46",
@@ -1218,7 +1218,7 @@
       "speaker_uuid": "abccafa5-174f-44d8-b70c-c41eebb3061c",
       "style_name": "ノーマル",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T19:16:21.7558391+07:00",
+      "generated_at": "2026-09-20T19:22:18.5056131+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.greeting.sayounara.001.wav",
         "sha256": "sha256:344030f8d02c9a726f1dfecb76de38a4da246c002c515d8e342a524de310949c",
@@ -1292,7 +1292,7 @@
       "speaker_uuid": "2171909e-d2d1-4bbb-aa45-442c12732665",
       "style_name": "ノーマル",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T19:16:21.7558391+07:00",
+      "generated_at": "2026-09-20T19:22:18.5056131+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.greeting.sayounara.002.wav",
         "sha256": "sha256:33eef3407749704d19105ffb282eed0afced3916040c472758c9f99fa94a3aca",
@@ -1366,7 +1366,7 @@
       "speaker_uuid": "abccafa5-174f-44d8-b70c-c41eebb3061c",
       "style_name": "ノーマル",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T19:16:21.7558391+07:00",
+      "generated_at": "2026-09-20T19:22:18.5056131+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.mora.one_ka.001.wav",
         "sha256": "sha256:d383662a30b21e0c9e38140345a5e99feb352927a726f527986532092719e5ff",
@@ -1440,7 +1440,7 @@
       "speaker_uuid": "2171909e-d2d1-4bbb-aa45-442c12732665",
       "style_name": "ノーマル",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T19:16:21.7558391+07:00",
+      "generated_at": "2026-09-20T19:22:18.5056131+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.mora.one_ka.002.wav",
         "sha256": "sha256:6a1b5331d5ea54901efabcee17e8c66f3773af15a1d61f1deb7beec4d7e8580e",
@@ -1514,7 +1514,7 @@
       "speaker_uuid": "abccafa5-174f-44d8-b70c-c41eebb3061c",
       "style_name": "ノーマル",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T19:16:21.7558391+07:00",
+      "generated_at": "2026-09-20T19:22:18.5056131+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.mora.two_sushi.001.wav",
         "sha256": "sha256:b6acf112a8a46cd4d7e4f18ae9034c4648fa7e16cad8b550aab861aeda2432ba",
@@ -1588,7 +1588,7 @@
       "speaker_uuid": "2171909e-d2d1-4bbb-aa45-442c12732665",
       "style_name": "ノーマル",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T19:16:21.7558391+07:00",
+      "generated_at": "2026-09-20T19:22:18.5056131+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.mora.two_sushi.002.wav",
         "sha256": "sha256:0a8efc641a2d29e2867c5371acfe7595ba020572442a2f4d9d3434062f7b1c73",
@@ -1662,7 +1662,7 @@
       "speaker_uuid": "abccafa5-174f-44d8-b70c-c41eebb3061c",
       "style_name": "ノーマル",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T19:16:21.7558391+07:00",
+      "generated_at": "2026-09-20T19:22:18.5056131+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.mora.three_sakura.001.wav",
         "sha256": "sha256:2a7842aa62ddb8dc939e2d45a469780e65769231118db8960d2fc83a8e90b9d8",
@@ -1736,7 +1736,7 @@
       "speaker_uuid": "2171909e-d2d1-4bbb-aa45-442c12732665",
       "style_name": "ノーマル",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T19:16:21.7558391+07:00",
+      "generated_at": "2026-09-20T19:22:18.5056131+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.mora.three_sakura.002.wav",
         "sha256": "sha256:89eda3a01fe89a71ba5822ddfad2e993346c7a82f508dff4380d2cbfa723e94a",
@@ -1810,7 +1810,7 @@
       "speaker_uuid": "abccafa5-174f-44d8-b70c-c41eebb3061c",
       "style_name": "ノーマル",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T19:16:21.7558391+07:00",
+      "generated_at": "2026-09-20T19:22:18.5056131+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.instruction.listen.001.wav",
         "sha256": "sha256:51bbcbac9194f542a18df62f4c1b72e4cbb424af2f57d93e50a1a86ecf9693ca",
@@ -1884,7 +1884,7 @@
       "speaker_uuid": "2171909e-d2d1-4bbb-aa45-442c12732665",
       "style_name": "ノーマル",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T19:16:21.7558391+07:00",
+      "generated_at": "2026-09-20T19:22:18.5056131+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.instruction.choose.001.wav",
         "sha256": "sha256:d9c80bd01a880ab0e3d45104851d688c83e4a5a5dbd10335cca5df2f658b1a77",

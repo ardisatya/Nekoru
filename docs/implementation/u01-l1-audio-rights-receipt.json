@@ -6,8 +6,9 @@
   "decision_ref": "DEC-P0-008",
   "asset_scope": {
     "manifest_ref": "content/manifests/u01-l1.audio-draft.json",
-    "manifest_sha256": "sha256:186abd26dcc6667f163804696c35a3498981c9da5ad4f9485b5087f8304e9ef6",
-    "manifest_generated_at": "2026-09-20T19:16:21.7558391+07:00",
+    "manifest_sha256": "sha256:824bf9ffffa97557218c36851fbc25091e667d8f18ab2fd508d630c8324ec9b9",
+    "manifest_generated_at": "2026-09-20T19:22:18.5056131+07:00",
+    "source_seed_commit": "5fcae093cd1377f21c709507f185b5905b29d4cb",
     "expected_asset_count": 26,
     "asset_ids_must_match_manifest": true,
     "sha256_must_match_manifest": true,

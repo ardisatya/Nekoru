@@ -10,9 +10,17 @@ const input = JSON.parse(
 const report = validateU01L1(input, (value) =>
   new NodeHashService().sha256(value),
 );
+const validation = { generated_at: "deterministic", ...report };
+const inlineBlockers = `  "blockers": [${validation.blockers.map((blocker) => JSON.stringify(blocker)).join(", ")}],`;
+const serializedValidation = JSON.stringify(validation, null, 2).replace(
+  /\x20{2}"blockers": \[[\s\S]*?\],\n\x20{2}"errors":/,
+  inlineBlockers.length <= 80
+    ? `${inlineBlockers}\n  "errors":`
+    : `  "blockers": [\n    ${validation.blockers.map((blocker) => JSON.stringify(blocker)).join(",\n    ")}\n  ],\n  "errors":`,
+);
 await writeFile(
   resolve(root, "content/manifests/u01-l1.validation.json"),
-  `${JSON.stringify({ generated_at: "deterministic", ...report }, null, 2)}\n`,
+  `${serializedValidation}\n`,
 );
 if (!report.valid || report.runtime_eligible) {
   process.stderr.write(`${JSON.stringify(report, null, 2)}\n`);

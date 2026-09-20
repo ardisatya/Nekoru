@@ -8,9 +8,6 @@
     "audio_assets": 26,
     "session_blueprints": 3
   },
-  "blockers": [
-    "Audio assets belum ready",
-    "Approval receipts belum tersedia"
-  ],
+  "blockers": ["Audio assets belum ready", "Approval receipts belum tersedia"],
   "errors": []
 }
