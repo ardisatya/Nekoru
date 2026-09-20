@@ -92,6 +92,7 @@
         "docs/implementation/u01-l1-academic-review.json",
         "docs/implementation/u01-l1-linguistic-review.json",
         "docs/implementation/u01-l1-content-review-local-only-decision.json",
+        "docs/implementation/u01-l1-audio-history-cleanup.json",
         "docs/implementation/u01-l1-voicevox-engine-evidence.json",
         "tooling/content/generate-u01-audio-draft.ps1",
         "DESIGN.md",

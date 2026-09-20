@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0.0",
+  "receipt_type": "git_history_cleanup",
+  "receipt_id": "RECEIPT.GIT.AUDIO.U01.L1.20260921.000001",
+  "status": "completed",
+  "scope": {
+    "repository": "https://github.com/ardisatya/Nekoru.git",
+    "branch": "main",
+    "path_pattern": "content/assets/u01-l1/audio/**/*.wav",
+    "policy": "binary audio stays local-only and is never committed or redistributed"
+  },
+  "operation": {
+    "method": "git filter-branch --index-filter with git rm --cached --ignore-unmatch",
+    "before_remote_sha": "24964e438d7b0dea10f178338ef4ea8608ef9a76",
+    "before_local_sha": "1ed5ad90cede9dc9845adcee246ce8e4c683277e",
+    "rewritten_sha_before_receipt_commit": "ee5bc7a173e5686cb0e3b2a2acd9f1ba425de204",
+    "final_remote_sha": "accc89d8d5af1501ef5541d5ac73c5c258f14cad",
+    "reachable_audio_objects_before": 52,
+    "reachable_audio_objects_after": 0,
+    "force_push": "git push --force-with-lease=refs/heads/main:24964e438d7b0dea10f178338ef4ea8608ef9a76 origin main",
+    "final_push": "git push origin main"
+  },
+  "verification": {
+    "remote_ref": "refs/heads/main",
+    "remote_reachable_audio_objects": 0,
+    "working_tree_audio_files": "local ignored files only",
+    "working_tree_status": "clean",
+    "backup_bundle": "E:/Project/Nekoru-pre-audio-history-cleanup-20260921.bundle",
+    "backup_bundle_verified": true,
+    "backup_branch_and_filter_branch_original_ref_removed": true
+  },
+  "compatibility_impact": "History rewrite mengubah commit SHA lama. Receipt/provenance yang mengikat source seed diperbarui ke rewritten commit; working-tree audio tetap tersedia untuk local-only playback dan tidak masuk Git.",
+  "not_claimed": [
+    "Redistribution rights",
+    "Production audio runtime",
+    "Remote object garbage-collection completion on Git hosting"
+  ],
+  "completed_at": "2026-09-21T06:30:00+07:00"
+}
