@@ -53,7 +53,7 @@ Untuk gate database, siapkan PostgreSQL 18 ephemeral melalui `docker compose up 
 ## Masih Menunggu
 
 - Owner/reviewer manusia untuk architecture, data, security/privacy, product, academic, linguistic, rights, accessibility, dan QA.
-- Hosted CI run setelah commit awal dikirim ke `origin/main`; repository tujuan saat ini masih kosong.
+- Hosted CI run #2 sukses untuk commit `c2165b3`: https://github.com/ardisatya/Nekoru/actions/runs/35498256847.
 - Live Clerk development credentials dan smoke test.
 - Audio dua speaker yang memiliki checksum serta rights receipt.
 - Review akademik/linguistik/content/accessibility, usability research, dan assistive-technology physical-device evidence.

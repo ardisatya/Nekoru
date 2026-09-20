@@ -4,7 +4,7 @@
   "title": "Fondasi yang bisa dijalankan",
   "overall_status": "internal_ready",
   "plain_summary": "Fondasi teknis dan contoh alur belajar sudah siap diperiksa tim internal. Ini belum merupakan produk jadi atau approval Phase 0.",
-  "updated_at": "2026-09-20T14:46:44+07:00",
+  "updated_at": "2026-09-20T15:01:07+07:00",
   "milestones": [
     {
       "id": "P0.1",
@@ -33,14 +33,13 @@
         "apps",
         "packages",
         "turbo.json",
+        ".github/workflows/phase-0.yml",
         "tooling/security/check.ts",
         "packages/persistence/migrations/manifest.json",
         "docs/implementation/database-integration-evidence.json"
       ],
-      "blockers": [
-        "Hosted CI belum berjalan; remote sudah terhubung tetapi repository tujuan belum memiliki branch/commit."
-      ],
-      "next_step": "Tetapkan Git author, buat commit awal, push ke origin/main, lalu periksa hasil hosted CI."
+      "blockers": [],
+      "next_step": "Reviewer Engineering, Security, dan QA memeriksa commit serta evidence hosted CI."
     },
     {
       "id": "P0.4",
@@ -59,7 +58,7 @@
       "blockers": [
         "Reviewer data/teknis belum meninjau dan menyetujui contract serta evidence untuk versi artefak ini."
       ],
-      "next_step": "Reviewer data/teknis memeriksa migration dan contract; hosted CI tetap perlu dijalankan setelah commit dikirim."
+      "next_step": "Reviewer data/teknis memeriksa migration, contract, dan evidence exact-version."
     },
     {
       "id": "P0.5",

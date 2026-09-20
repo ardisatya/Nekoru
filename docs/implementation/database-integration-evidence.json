@@ -49,8 +49,13 @@
     ]
   },
   "hosted_ci": {
-    "result": "not_run",
-    "reason": "origin sudah terhubung, tetapi repository tujuan masih kosong dan belum memiliki commit/branch untuk memicu workflow."
+    "result": "passed",
+    "workflow": "Phase 0 checks",
+    "run_number": 2,
+    "run_id": 35498256847,
+    "commit": "c2165b35e953dd74de6ede8b3a8bc5b07f1ea709",
+    "url": "https://github.com/ardisatya/Nekoru/actions/runs/35498256847",
+    "completed_at": "2026-09-20T14:59:29+07:00"
   },
   "review": {
     "status": "pending",

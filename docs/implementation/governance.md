@@ -59,7 +59,7 @@ Perubahan yang melampaui selection bootstrap di atas memerlukan impact review; p
 | DEP-P0-03 | P0    | pending              | Clerk memakai local double                                                                                                               | Security/Privacy + Identity owner           |
 | DEP-P0-04 | P0    | blocked_external     | U01-L1 tetap `draft` dan runtime menolak                                                                                                 | Academic, Linguistic, Rights, Accessibility |
 | DEP-P0-05 | P0    | blocked_external     | Prototype hanya evidence otomatis                                                                                                        | Product, Research, Accessibility            |
-| DEP-P0-06 | P0    | pending              | CI contract tersedia; `origin` terhubung, tetapi repository belum memiliki commit/branch untuk memicu workflow                           | Repository owner                            |
+| DEP-P0-06 | P0    | pending_review       | CI contract dan hosted run #2 lulus untuk commit `c2165b3`; sign-off formal masih pending                                                | Repository owner                            |
 
 ## Registry DEP-001–DEP-010
 
@@ -78,13 +78,12 @@ Perubahan yang melampaui selection bootstrap di atas memerlukan impact review; p
 
 ## Blocker ke Fase
 
-| Blocker                                                              | Memblokir                          | Safe behavior sekarang                                              |
-| -------------------------------------------------------------------- | ---------------------------------- | ------------------------------------------------------------------- |
-| Seed/audio/rights/approval U01-L1 belum lengkap                      | Phase 0 `done` dan Phase 1 runtime | Seed tetap `draft`; runtime selection menolak                       |
-| Live Clerk config belum tersedia                                     | Auth provider gate                 | Hanya local identity double; tidak ada akun nyata                   |
-| Usability, screen-reader, dan physical-device evidence belum lengkap | Prototype approval                 | Hanya automated browser smoke yang diklaim                          |
-| Hosted CI belum dijalankan; repository tujuan masih kosong           | CI evidence/sign-off               | `check:pr` lokal lulus; workflow menunggu commit pada `origin/main` |
-| Approval owner lintas domain belum ada                               | Phase 0 `done` / Phase 1 start     | Status maksimal `internal_ready` atau `pending_review`              |
+| Blocker                                                              | Memblokir                          | Safe behavior sekarang                                 |
+| -------------------------------------------------------------------- | ---------------------------------- | ------------------------------------------------------ |
+| Seed/audio/rights/approval U01-L1 belum lengkap                      | Phase 0 `done` dan Phase 1 runtime | Seed tetap `draft`; runtime selection menolak          |
+| Live Clerk config belum tersedia                                     | Auth provider gate                 | Hanya local identity double; tidak ada akun nyata      |
+| Usability, screen-reader, dan physical-device evidence belum lengkap | Prototype approval                 | Hanya automated browser smoke yang diklaim             |
+| Approval owner lintas domain belum ada                               | Phase 0 `done` / Phase 1 start     | Status maksimal `internal_ready` atau `pending_review` |
 
 ## Owner dan Approval Matrix
 
