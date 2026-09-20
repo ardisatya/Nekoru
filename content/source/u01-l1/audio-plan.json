@@ -4,6 +4,8 @@
   "content_pack_version": "0.1.0",
   "status": "draft",
   "runtime_eligible": false,
+  "distribution_scope": "local_only",
+  "binary_policy": "never_commit_or_redistribute",
   "generation_profile": {
     "provider": "windows_system_speech",
     "culture": "ja-JP",
@@ -11,20 +13,22 @@
     "channels": 1,
     "master_bits_per_sample": 24,
     "delivery_bits_per_sample": 16,
-    "note": "Candidate audio only. Human linguistic, academic, rights, accessibility, and device QA remain required."
+    "note": "Candidate audio local-only. Binary output must stay on the approved workstation; human linguistic, academic, rights, accessibility, and device QA remain required."
   },
   "voice_variants": {
     "a": {
       "voice_name": "Microsoft Ayumi",
       "voice_id": "MSTTS_V110_jaJP_AyumiM",
       "voice_type": "synthetic_tts",
-      "rights_status": "pending_verification"
+      "rights_status": "pending_verification",
+      "allowed_use": "local_only"
     },
     "b": {
       "voice_name": "Microsoft Ichiro",
       "voice_id": "MSTTS_V110_jaJP_IchiroM",
       "voice_type": "synthetic_tts",
-      "rights_status": "pending_verification"
+      "rights_status": "pending_verification",
+      "allowed_use": "local_only"
     }
   },
   "recordings": [
@@ -318,7 +322,8 @@
   "rights_status": "pending_verification",
   "approval_status": "pending",
   "blockers": [
-    "System voice redistribution terms belum diverifikasi untuk penggunaan Nekoru.",
+    "Local-only dipilih; bukti EULA/rights untuk penggunaan pada workstation belum dilampirkan.",
+    "Binary audio tidak boleh masuk repository publik atau artifact redistribution.",
     "Japanese Linguistic/Academic review belum dilakukan.",
     "Physical-device playback dan accessibility QA belum dilakukan.",
     "Rights receipt dan approval receipt belum tersedia."

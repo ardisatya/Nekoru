@@ -173,10 +173,12 @@ try {
         }
         rights = [ordered]@{
           status = "pending_verification"
+          allowed_use = "local_only"
+          redistribution = "prohibited"
           rights_receipt_id = $null
           consent_release_ref = $null
           license_ref = $null
-          attribution = "Microsoft Windows installed voice; redistribution terms pending review"
+          attribution = "Microsoft Windows installed voice; local-only scope pending EULA review"
         }
         review = [ordered]@{
           academic = "pending"
@@ -203,6 +205,8 @@ $manifest = [ordered]@{
   source_seed_version = [string]$seed.version
   source_seed_commit = $sourceCommit
   generated_at = $generatedAt
+  distribution_scope = "local_only"
+  binary_policy = "never_commit_or_redistribute"
   generation_environment = [ordered]@{
     os = [System.Environment]::OSVersion.VersionString
     powershell = $PSVersionTable.PSVersion.ToString()
@@ -212,14 +216,15 @@ $manifest = [ordered]@{
   rights_status = "pending_verification"
   approval_status = "pending"
   blockers = @(
-    "System voice redistribution terms belum diverifikasi untuk penggunaan Nekoru.",
+    "Local-only dipilih; bukti EULA/rights untuk penggunaan pada workstation belum dilampirkan.",
+    "Binary audio tidak boleh masuk repository publik atau artifact redistribution.",
     "Loudness, clipping, noise, dan physical-device playback QA belum dilakukan.",
     "Japanese Linguistic/Academic review belum dilakukan.",
     "Accessibility review dan approved alternative belum dilakukan.",
     "Rights receipt dan approval receipt belum tersedia."
   )
-  publication_note = "Draft internal only. Jangan ubah seed menjadi approved atau runtime_eligible sebelum seluruh mandatory gate dan receipt menunjuk exact hash/version."
+  publication_note = "Draft local-only. Binary audio sengaja di-ignore oleh Git dan tidak boleh dipublikasikan. Jangan ubah seed menjadi approved atau runtime_eligible sebelum seluruh mandatory gate dan receipt menunjuk exact hash/version."
 }
 $utf8NoBom = New-Object System.Text.UTF8Encoding($false)
 [IO.File]::WriteAllText($manifestPath, (($manifest | ConvertTo-Json -Depth 30) + [Environment]::NewLine), $utf8NoBom)
-Write-Output "Generated $($records.Count) draft audio assets and $manifestPath"
+Write-Output "Generated $($records.Count) local-only draft audio assets and $manifestPath"

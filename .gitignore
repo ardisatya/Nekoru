@@ -15,6 +15,11 @@ test-results/
 artifacts/
 *.tsbuildinfo
 
+# U01-L1 local-only audio generated from host-installed voices. Binary audio
+# must not be committed to the public repository or redistributed by default.
+content/assets/u01-l1/audio/master/*.wav
+content/assets/u01-l1/audio/delivery/*.wav
+
 # Local agent/editor hooks and consent settings
 .claude/settings.local.json
 .codex/hooks.json

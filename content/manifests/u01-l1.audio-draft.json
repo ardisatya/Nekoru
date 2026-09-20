@@ -5,8 +5,10 @@
   "runtime_eligible": false,
   "source_plan": "content/source/u01-l1/audio-plan.json",
   "source_seed_version": "0.1.0",
-  "source_seed_commit": "aa5c85ace3423c00a6d61c5ad56216ee8318c238",
-  "generated_at": "2026-09-20T15:43:03.2797126+07:00",
+  "source_seed_commit": "dbed82e1c49e914c5c32fa0eb695819ccbfbef1b",
+  "generated_at": "2026-09-20T16:39:56.5317625+07:00",
+  "distribution_scope": "local_only",
+  "binary_policy": "never_commit_or_redistribute",
   "generation_environment": {
     "os": "Microsoft Windows NT 10.0.22631.0",
     "powershell": "7.6.5",
@@ -27,7 +29,7 @@
       "voice_id": "MSTTS_V110_jaJP_AyumiM",
       "voice_name": "Microsoft Ayumi",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T15:43:03.2797126+07:00",
+      "generated_at": "2026-09-20T16:39:56.5317625+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.vowel.a.001.wav",
         "sha256": "sha256:badad8b99cd3504d85d4df7fd10d1431a9029c3c9f04602df3970051769f909e",
@@ -67,10 +69,12 @@
       },
       "rights": {
         "status": "pending_verification",
+        "allowed_use": "local_only",
+        "redistribution": "prohibited",
         "rights_receipt_id": null,
         "consent_release_ref": null,
         "license_ref": null,
-        "attribution": "Microsoft Windows installed voice; redistribution terms pending review"
+        "attribution": "Microsoft Windows installed voice; local-only scope pending EULA review"
       },
       "review": {
         "academic": "pending",
@@ -95,7 +99,7 @@
       "voice_id": "MSTTS_V110_jaJP_IchiroM",
       "voice_name": "Microsoft Ichiro",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T15:43:03.2797126+07:00",
+      "generated_at": "2026-09-20T16:39:56.5317625+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.vowel.a.002.wav",
         "sha256": "sha256:09ebeb170d78bb56e825192fe86a9535681841e1e220db8bcb750f3c7a84986d",
@@ -135,10 +139,12 @@
       },
       "rights": {
         "status": "pending_verification",
+        "allowed_use": "local_only",
+        "redistribution": "prohibited",
         "rights_receipt_id": null,
         "consent_release_ref": null,
         "license_ref": null,
-        "attribution": "Microsoft Windows installed voice; redistribution terms pending review"
+        "attribution": "Microsoft Windows installed voice; local-only scope pending EULA review"
       },
       "review": {
         "academic": "pending",
@@ -163,7 +169,7 @@
       "voice_id": "MSTTS_V110_jaJP_AyumiM",
       "voice_name": "Microsoft Ayumi",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T15:43:03.2797126+07:00",
+      "generated_at": "2026-09-20T16:39:56.5317625+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.vowel.i.001.wav",
         "sha256": "sha256:84972299dd5846ea999f29ad72ce43a6a2eaa51dceb3e3876c01b5df864d3b61",
@@ -203,10 +209,12 @@
       },
       "rights": {
         "status": "pending_verification",
+        "allowed_use": "local_only",
+        "redistribution": "prohibited",
         "rights_receipt_id": null,
         "consent_release_ref": null,
         "license_ref": null,
-        "attribution": "Microsoft Windows installed voice; redistribution terms pending review"
+        "attribution": "Microsoft Windows installed voice; local-only scope pending EULA review"
       },
       "review": {
         "academic": "pending",
@@ -231,7 +239,7 @@
       "voice_id": "MSTTS_V110_jaJP_IchiroM",
       "voice_name": "Microsoft Ichiro",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T15:43:03.2797126+07:00",
+      "generated_at": "2026-09-20T16:39:56.5317625+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.vowel.i.002.wav",
         "sha256": "sha256:bdf32de58ef54ea01857e91910c30eb551112de24a02ba23f1446aa913a7e39f",
@@ -271,10 +279,12 @@
       },
       "rights": {
         "status": "pending_verification",
+        "allowed_use": "local_only",
+        "redistribution": "prohibited",
         "rights_receipt_id": null,
         "consent_release_ref": null,
         "license_ref": null,
-        "attribution": "Microsoft Windows installed voice; redistribution terms pending review"
+        "attribution": "Microsoft Windows installed voice; local-only scope pending EULA review"
       },
       "review": {
         "academic": "pending",
@@ -299,7 +309,7 @@
       "voice_id": "MSTTS_V110_jaJP_AyumiM",
       "voice_name": "Microsoft Ayumi",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T15:43:03.2797126+07:00",
+      "generated_at": "2026-09-20T16:39:56.5317625+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.vowel.u.001.wav",
         "sha256": "sha256:3c56e4ad8542a629678a18c865d763cab5ce23e7620820b9354cf2eb3d1f1742",
@@ -339,10 +349,12 @@
       },
       "rights": {
         "status": "pending_verification",
+        "allowed_use": "local_only",
+        "redistribution": "prohibited",
         "rights_receipt_id": null,
         "consent_release_ref": null,
         "license_ref": null,
-        "attribution": "Microsoft Windows installed voice; redistribution terms pending review"
+        "attribution": "Microsoft Windows installed voice; local-only scope pending EULA review"
       },
       "review": {
         "academic": "pending",
@@ -367,7 +379,7 @@
       "voice_id": "MSTTS_V110_jaJP_IchiroM",
       "voice_name": "Microsoft Ichiro",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T15:43:03.2797126+07:00",
+      "generated_at": "2026-09-20T16:39:56.5317625+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.vowel.u.002.wav",
         "sha256": "sha256:bfa6fb8046883d903f929bf192a69ef6dc915d4cb277d467ed84439c1d682ee3",
@@ -407,10 +419,12 @@
       },
       "rights": {
         "status": "pending_verification",
+        "allowed_use": "local_only",
+        "redistribution": "prohibited",
         "rights_receipt_id": null,
         "consent_release_ref": null,
         "license_ref": null,
-        "attribution": "Microsoft Windows installed voice; redistribution terms pending review"
+        "attribution": "Microsoft Windows installed voice; local-only scope pending EULA review"
       },
       "review": {
         "academic": "pending",
@@ -435,7 +449,7 @@
       "voice_id": "MSTTS_V110_jaJP_AyumiM",
       "voice_name": "Microsoft Ayumi",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T15:43:03.2797126+07:00",
+      "generated_at": "2026-09-20T16:39:56.5317625+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.vowel.e.001.wav",
         "sha256": "sha256:33f1a9a4561673d51bc6de92b8591190799a1e8164fe017b2c17551133aa3631",
@@ -475,10 +489,12 @@
       },
       "rights": {
         "status": "pending_verification",
+        "allowed_use": "local_only",
+        "redistribution": "prohibited",
         "rights_receipt_id": null,
         "consent_release_ref": null,
         "license_ref": null,
-        "attribution": "Microsoft Windows installed voice; redistribution terms pending review"
+        "attribution": "Microsoft Windows installed voice; local-only scope pending EULA review"
       },
       "review": {
         "academic": "pending",
@@ -503,7 +519,7 @@
       "voice_id": "MSTTS_V110_jaJP_IchiroM",
       "voice_name": "Microsoft Ichiro",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T15:43:03.2797126+07:00",
+      "generated_at": "2026-09-20T16:39:56.5317625+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.vowel.e.002.wav",
         "sha256": "sha256:f5c502fe73caebec496f64a0912f3e737614e9e47bd385952b535e65625aa015",
@@ -543,10 +559,12 @@
       },
       "rights": {
         "status": "pending_verification",
+        "allowed_use": "local_only",
+        "redistribution": "prohibited",
         "rights_receipt_id": null,
         "consent_release_ref": null,
         "license_ref": null,
-        "attribution": "Microsoft Windows installed voice; redistribution terms pending review"
+        "attribution": "Microsoft Windows installed voice; local-only scope pending EULA review"
       },
       "review": {
         "academic": "pending",
@@ -571,7 +589,7 @@
       "voice_id": "MSTTS_V110_jaJP_AyumiM",
       "voice_name": "Microsoft Ayumi",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T15:43:03.2797126+07:00",
+      "generated_at": "2026-09-20T16:39:56.5317625+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.vowel.o.001.wav",
         "sha256": "sha256:d23c154fc18db0c4a83cf4525a31ed6662b25bfdc2bf03dfe00bb2ee1312cf05",
@@ -611,10 +629,12 @@
       },
       "rights": {
         "status": "pending_verification",
+        "allowed_use": "local_only",
+        "redistribution": "prohibited",
         "rights_receipt_id": null,
         "consent_release_ref": null,
         "license_ref": null,
-        "attribution": "Microsoft Windows installed voice; redistribution terms pending review"
+        "attribution": "Microsoft Windows installed voice; local-only scope pending EULA review"
       },
       "review": {
         "academic": "pending",
@@ -639,7 +659,7 @@
       "voice_id": "MSTTS_V110_jaJP_IchiroM",
       "voice_name": "Microsoft Ichiro",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T15:43:03.2797126+07:00",
+      "generated_at": "2026-09-20T16:39:56.5317625+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.vowel.o.002.wav",
         "sha256": "sha256:677e9ef92eba2a7b9d28a1aef358d6df0921892ecd83b6191a3b9418b99f2914",
@@ -679,10 +699,12 @@
       },
       "rights": {
         "status": "pending_verification",
+        "allowed_use": "local_only",
+        "redistribution": "prohibited",
         "rights_receipt_id": null,
         "consent_release_ref": null,
         "license_ref": null,
-        "attribution": "Microsoft Windows installed voice; redistribution terms pending review"
+        "attribution": "Microsoft Windows installed voice; local-only scope pending EULA review"
       },
       "review": {
         "academic": "pending",
@@ -707,7 +729,7 @@
       "voice_id": "MSTTS_V110_jaJP_AyumiM",
       "voice_name": "Microsoft Ayumi",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T15:43:03.2797126+07:00",
+      "generated_at": "2026-09-20T16:39:56.5317625+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.greeting.ohayou_gozaimasu.001.wav",
         "sha256": "sha256:c9b3192d7e98961ae1b6e7108acfb4eef2201f51b3efcfe34deb1ab5b506ae20",
@@ -747,10 +769,12 @@
       },
       "rights": {
         "status": "pending_verification",
+        "allowed_use": "local_only",
+        "redistribution": "prohibited",
         "rights_receipt_id": null,
         "consent_release_ref": null,
         "license_ref": null,
-        "attribution": "Microsoft Windows installed voice; redistribution terms pending review"
+        "attribution": "Microsoft Windows installed voice; local-only scope pending EULA review"
       },
       "review": {
         "academic": "pending",
@@ -775,7 +799,7 @@
       "voice_id": "MSTTS_V110_jaJP_IchiroM",
       "voice_name": "Microsoft Ichiro",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T15:43:03.2797126+07:00",
+      "generated_at": "2026-09-20T16:39:56.5317625+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.greeting.ohayou_gozaimasu.002.wav",
         "sha256": "sha256:ea4c1996d630f11dae56f5a6b2b1ca8fcd7c7556080ff4454b3fc83fce2d3455",
@@ -815,10 +839,12 @@
       },
       "rights": {
         "status": "pending_verification",
+        "allowed_use": "local_only",
+        "redistribution": "prohibited",
         "rights_receipt_id": null,
         "consent_release_ref": null,
         "license_ref": null,
-        "attribution": "Microsoft Windows installed voice; redistribution terms pending review"
+        "attribution": "Microsoft Windows installed voice; local-only scope pending EULA review"
       },
       "review": {
         "academic": "pending",
@@ -843,7 +869,7 @@
       "voice_id": "MSTTS_V110_jaJP_AyumiM",
       "voice_name": "Microsoft Ayumi",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T15:43:03.2797126+07:00",
+      "generated_at": "2026-09-20T16:39:56.5317625+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.greeting.konnichiwa.001.wav",
         "sha256": "sha256:be3e82932de616282e786494d3eac8b44a6b35a9812f6d2e404ab485a408cb26",
@@ -883,10 +909,12 @@
       },
       "rights": {
         "status": "pending_verification",
+        "allowed_use": "local_only",
+        "redistribution": "prohibited",
         "rights_receipt_id": null,
         "consent_release_ref": null,
         "license_ref": null,
-        "attribution": "Microsoft Windows installed voice; redistribution terms pending review"
+        "attribution": "Microsoft Windows installed voice; local-only scope pending EULA review"
       },
       "review": {
         "academic": "pending",
@@ -911,7 +939,7 @@
       "voice_id": "MSTTS_V110_jaJP_IchiroM",
       "voice_name": "Microsoft Ichiro",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T15:43:03.2797126+07:00",
+      "generated_at": "2026-09-20T16:39:56.5317625+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.greeting.konnichiwa.002.wav",
         "sha256": "sha256:061fa63fafffc27f3860d495caf042f8ccb51ff5a6d18c5b78d155736d51ac53",
@@ -951,10 +979,12 @@
       },
       "rights": {
         "status": "pending_verification",
+        "allowed_use": "local_only",
+        "redistribution": "prohibited",
         "rights_receipt_id": null,
         "consent_release_ref": null,
         "license_ref": null,
-        "attribution": "Microsoft Windows installed voice; redistribution terms pending review"
+        "attribution": "Microsoft Windows installed voice; local-only scope pending EULA review"
       },
       "review": {
         "academic": "pending",
@@ -979,7 +1009,7 @@
       "voice_id": "MSTTS_V110_jaJP_AyumiM",
       "voice_name": "Microsoft Ayumi",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T15:43:03.2797126+07:00",
+      "generated_at": "2026-09-20T16:39:56.5317625+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.greeting.konbanwa.001.wav",
         "sha256": "sha256:a7f66f3184f8abcc0024f2fb6a537a3b3980a4165b5792afe8774dbc441b7217",
@@ -1019,10 +1049,12 @@
       },
       "rights": {
         "status": "pending_verification",
+        "allowed_use": "local_only",
+        "redistribution": "prohibited",
         "rights_receipt_id": null,
         "consent_release_ref": null,
         "license_ref": null,
-        "attribution": "Microsoft Windows installed voice; redistribution terms pending review"
+        "attribution": "Microsoft Windows installed voice; local-only scope pending EULA review"
       },
       "review": {
         "academic": "pending",
@@ -1047,7 +1079,7 @@
       "voice_id": "MSTTS_V110_jaJP_IchiroM",
       "voice_name": "Microsoft Ichiro",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T15:43:03.2797126+07:00",
+      "generated_at": "2026-09-20T16:39:56.5317625+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.greeting.konbanwa.002.wav",
         "sha256": "sha256:99b1d3642a252b27613f2fae4d1a397e93e9abe20f54f7be0d4bed7f83fb3911",
@@ -1087,10 +1119,12 @@
       },
       "rights": {
         "status": "pending_verification",
+        "allowed_use": "local_only",
+        "redistribution": "prohibited",
         "rights_receipt_id": null,
         "consent_release_ref": null,
         "license_ref": null,
-        "attribution": "Microsoft Windows installed voice; redistribution terms pending review"
+        "attribution": "Microsoft Windows installed voice; local-only scope pending EULA review"
       },
       "review": {
         "academic": "pending",
@@ -1115,7 +1149,7 @@
       "voice_id": "MSTTS_V110_jaJP_AyumiM",
       "voice_name": "Microsoft Ayumi",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T15:43:03.2797126+07:00",
+      "generated_at": "2026-09-20T16:39:56.5317625+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.greeting.sayounara.001.wav",
         "sha256": "sha256:c916bafd65e4f0ebf46dad030de66e78df9d5b47d3328b7dc047c48824e73373",
@@ -1155,10 +1189,12 @@
       },
       "rights": {
         "status": "pending_verification",
+        "allowed_use": "local_only",
+        "redistribution": "prohibited",
         "rights_receipt_id": null,
         "consent_release_ref": null,
         "license_ref": null,
-        "attribution": "Microsoft Windows installed voice; redistribution terms pending review"
+        "attribution": "Microsoft Windows installed voice; local-only scope pending EULA review"
       },
       "review": {
         "academic": "pending",
@@ -1183,7 +1219,7 @@
       "voice_id": "MSTTS_V110_jaJP_IchiroM",
       "voice_name": "Microsoft Ichiro",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T15:43:03.2797126+07:00",
+      "generated_at": "2026-09-20T16:39:56.5317625+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.greeting.sayounara.002.wav",
         "sha256": "sha256:c70cc9333863a8aad74e89af84e2fb87739e573b0f21ed90c3dd3ca54da008ef",
@@ -1223,10 +1259,12 @@
       },
       "rights": {
         "status": "pending_verification",
+        "allowed_use": "local_only",
+        "redistribution": "prohibited",
         "rights_receipt_id": null,
         "consent_release_ref": null,
         "license_ref": null,
-        "attribution": "Microsoft Windows installed voice; redistribution terms pending review"
+        "attribution": "Microsoft Windows installed voice; local-only scope pending EULA review"
       },
       "review": {
         "academic": "pending",
@@ -1251,7 +1289,7 @@
       "voice_id": "MSTTS_V110_jaJP_AyumiM",
       "voice_name": "Microsoft Ayumi",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T15:43:03.2797126+07:00",
+      "generated_at": "2026-09-20T16:39:56.5317625+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.mora.one_ka.001.wav",
         "sha256": "sha256:df0f63c45c7df5b31d8700e06d6f108963f15577abe342777f0bcc919d7c9c48",
@@ -1291,10 +1329,12 @@
       },
       "rights": {
         "status": "pending_verification",
+        "allowed_use": "local_only",
+        "redistribution": "prohibited",
         "rights_receipt_id": null,
         "consent_release_ref": null,
         "license_ref": null,
-        "attribution": "Microsoft Windows installed voice; redistribution terms pending review"
+        "attribution": "Microsoft Windows installed voice; local-only scope pending EULA review"
       },
       "review": {
         "academic": "pending",
@@ -1319,7 +1359,7 @@
       "voice_id": "MSTTS_V110_jaJP_IchiroM",
       "voice_name": "Microsoft Ichiro",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T15:43:03.2797126+07:00",
+      "generated_at": "2026-09-20T16:39:56.5317625+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.mora.one_ka.002.wav",
         "sha256": "sha256:ebd2c43a8eb57b908bedf949338d380bf4569649a968d3fb94d1e0328b81b4e0",
@@ -1359,10 +1399,12 @@
       },
       "rights": {
         "status": "pending_verification",
+        "allowed_use": "local_only",
+        "redistribution": "prohibited",
         "rights_receipt_id": null,
         "consent_release_ref": null,
         "license_ref": null,
-        "attribution": "Microsoft Windows installed voice; redistribution terms pending review"
+        "attribution": "Microsoft Windows installed voice; local-only scope pending EULA review"
       },
       "review": {
         "academic": "pending",
@@ -1387,7 +1429,7 @@
       "voice_id": "MSTTS_V110_jaJP_AyumiM",
       "voice_name": "Microsoft Ayumi",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T15:43:03.2797126+07:00",
+      "generated_at": "2026-09-20T16:39:56.5317625+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.mora.two_sushi.001.wav",
         "sha256": "sha256:405dd7dcd363f6bfabcc5b13b44b6b9418fca04f346586ab2a11f55a1340c746",
@@ -1427,10 +1469,12 @@
       },
       "rights": {
         "status": "pending_verification",
+        "allowed_use": "local_only",
+        "redistribution": "prohibited",
         "rights_receipt_id": null,
         "consent_release_ref": null,
         "license_ref": null,
-        "attribution": "Microsoft Windows installed voice; redistribution terms pending review"
+        "attribution": "Microsoft Windows installed voice; local-only scope pending EULA review"
       },
       "review": {
         "academic": "pending",
@@ -1455,7 +1499,7 @@
       "voice_id": "MSTTS_V110_jaJP_IchiroM",
       "voice_name": "Microsoft Ichiro",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T15:43:03.2797126+07:00",
+      "generated_at": "2026-09-20T16:39:56.5317625+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.mora.two_sushi.002.wav",
         "sha256": "sha256:8240d0af9d79ea0662a0eca72d1137ec1ac5ce6f2e0ce2b0d6c360f05b675dcf",
@@ -1495,10 +1539,12 @@
       },
       "rights": {
         "status": "pending_verification",
+        "allowed_use": "local_only",
+        "redistribution": "prohibited",
         "rights_receipt_id": null,
         "consent_release_ref": null,
         "license_ref": null,
-        "attribution": "Microsoft Windows installed voice; redistribution terms pending review"
+        "attribution": "Microsoft Windows installed voice; local-only scope pending EULA review"
       },
       "review": {
         "academic": "pending",
@@ -1523,7 +1569,7 @@
       "voice_id": "MSTTS_V110_jaJP_AyumiM",
       "voice_name": "Microsoft Ayumi",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T15:43:03.2797126+07:00",
+      "generated_at": "2026-09-20T16:39:56.5317625+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.mora.three_sakura.001.wav",
         "sha256": "sha256:cd610e037190c088dd6504bcf728c3f3412bb2b3865cc3d4dc9ec34310342b9a",
@@ -1563,10 +1609,12 @@
       },
       "rights": {
         "status": "pending_verification",
+        "allowed_use": "local_only",
+        "redistribution": "prohibited",
         "rights_receipt_id": null,
         "consent_release_ref": null,
         "license_ref": null,
-        "attribution": "Microsoft Windows installed voice; redistribution terms pending review"
+        "attribution": "Microsoft Windows installed voice; local-only scope pending EULA review"
       },
       "review": {
         "academic": "pending",
@@ -1591,7 +1639,7 @@
       "voice_id": "MSTTS_V110_jaJP_IchiroM",
       "voice_name": "Microsoft Ichiro",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T15:43:03.2797126+07:00",
+      "generated_at": "2026-09-20T16:39:56.5317625+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.mora.three_sakura.002.wav",
         "sha256": "sha256:50d363a4808f7356e3215825c884d6a8ba060d5bec4463fe1b06288b1d3f0bbc",
@@ -1631,10 +1679,12 @@
       },
       "rights": {
         "status": "pending_verification",
+        "allowed_use": "local_only",
+        "redistribution": "prohibited",
         "rights_receipt_id": null,
         "consent_release_ref": null,
         "license_ref": null,
-        "attribution": "Microsoft Windows installed voice; redistribution terms pending review"
+        "attribution": "Microsoft Windows installed voice; local-only scope pending EULA review"
       },
       "review": {
         "academic": "pending",
@@ -1659,7 +1709,7 @@
       "voice_id": "MSTTS_V110_jaJP_AyumiM",
       "voice_name": "Microsoft Ayumi",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T15:43:03.2797126+07:00",
+      "generated_at": "2026-09-20T16:39:56.5317625+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.instruction.listen.001.wav",
         "sha256": "sha256:58ea7cfcf0b91928be85ca06831cd198a5b402151eae16cd1a86264e588b066c",
@@ -1699,10 +1749,12 @@
       },
       "rights": {
         "status": "pending_verification",
+        "allowed_use": "local_only",
+        "redistribution": "prohibited",
         "rights_receipt_id": null,
         "consent_release_ref": null,
         "license_ref": null,
-        "attribution": "Microsoft Windows installed voice; redistribution terms pending review"
+        "attribution": "Microsoft Windows installed voice; local-only scope pending EULA review"
       },
       "review": {
         "academic": "pending",
@@ -1727,7 +1779,7 @@
       "voice_id": "MSTTS_V110_jaJP_IchiroM",
       "voice_name": "Microsoft Ichiro",
       "culture": "ja-JP",
-      "generated_at": "2026-09-20T15:43:03.2797126+07:00",
+      "generated_at": "2026-09-20T16:39:56.5317625+07:00",
       "master_file": {
         "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.instruction.choose.001.wav",
         "sha256": "sha256:28e3fb7623bfdd93e9c916418f6ebc9f9d0dbd79367d053a9cf03684a879549f",
@@ -1767,10 +1819,12 @@
       },
       "rights": {
         "status": "pending_verification",
+        "allowed_use": "local_only",
+        "redistribution": "prohibited",
         "rights_receipt_id": null,
         "consent_release_ref": null,
         "license_ref": null,
-        "attribution": "Microsoft Windows installed voice; redistribution terms pending review"
+        "attribution": "Microsoft Windows installed voice; local-only scope pending EULA review"
       },
       "review": {
         "academic": "pending",
@@ -1785,11 +1839,12 @@
   "rights_status": "pending_verification",
   "approval_status": "pending",
   "blockers": [
-    "System voice redistribution terms belum diverifikasi untuk penggunaan Nekoru.",
+    "Local-only dipilih; bukti EULA/rights untuk penggunaan pada workstation belum dilampirkan.",
+    "Binary audio tidak boleh masuk repository publik atau artifact redistribution.",
     "Loudness, clipping, noise, dan physical-device playback QA belum dilakukan.",
     "Japanese Linguistic/Academic review belum dilakukan.",
     "Accessibility review dan approved alternative belum dilakukan.",
     "Rights receipt dan approval receipt belum tersedia."
   ],
-  "publication_note": "Draft internal only. Jangan ubah seed menjadi approved atau runtime_eligible sebelum seluruh mandatory gate dan receipt menunjuk exact hash/version."
+  "publication_note": "Draft local-only. Binary audio sengaja di-ignore oleh Git dan tidak boleh dipublikasikan. Jangan ubah seed menjadi approved atau runtime_eligible sebelum seluruh mandatory gate dan receipt menunjuk exact hash/version."
 }

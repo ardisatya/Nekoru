@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0.0",
+  "decision_id": "DEC-P0-008",
+  "title": "U01-L1 audio distribution scope",
+  "status": "proposed",
+  "decision": "local_only",
+  "scope": {
+    "content_pack_id": "PACK.N5.S00.U01.L1.SEED",
+    "audio_asset_count": 26,
+    "allowed_use": "local_only",
+    "redistribution": "prohibited",
+    "runtime_eligible": false
+  },
+  "rationale": [
+    "Owner memilih penggunaan pribadi/local-only untuk draft audio U01-L1.",
+    "Audio dibuat dari voice yang terpasang pada workstation; bukti EULA/rights untuk scope Nekoru belum dilampirkan."
+  ],
+  "repository_handling": {
+    "binary_policy": "ignore_and_keep_on_workstation",
+    "current_branch_action": "untrack_binary_audio_and_add_gitignore",
+    "public_history_cleanup": "not_performed",
+    "public_history_note": "Commit sebelumnya masih dapat memuat binary audio; private repository atau history cleanup terpisah diperlukan bila exposure historis harus dihapus."
+  },
+  "rights": {
+    "status": "pending_verification",
+    "rights_receipt_id": null,
+    "license_ref": null,
+    "consent_release_ref": null,
+    "attribution": "Microsoft Windows installed voice; local-only scope pending EULA review"
+  },
+  "approval": {
+    "status": "pending",
+    "reviewer_id": null,
+    "reviewed_at": null,
+    "receipt_id": null
+  },
+  "closure_criteria": [
+    "Repository HEAD tidak lagi melacak binary audio local-only.",
+    "Bukti EULA/rights untuk penggunaan lokal ditinjau oleh owner rights/legal.",
+    "Jika audio akan dibagikan atau dideploy, gunakan asset dengan redistribusi yang eksplisit dan buat receipt per asset.",
+    "Seed tetap draft sampai academic, linguistic, accessibility, audio QA, rights, dan approval gate selesai."
+  ]
+}
