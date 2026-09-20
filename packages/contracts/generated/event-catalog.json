@@ -1,0 +1,158 @@
+{
+  "schema_version": 1,
+  "phase": "phase_0",
+  "events": [
+    {
+      "event_type": "identity_reconciled",
+      "event_version": 1,
+      "producer": "identity",
+      "primary_consumer": "audit/profile",
+      "classification": "confidential",
+      "implementation_status": "contract_only"
+    },
+    {
+      "event_type": "guest_draft_migrated",
+      "event_version": 1,
+      "producer": "profile",
+      "primary_consumer": "audit/product_analytics",
+      "classification": "confidential_without_draft_body",
+      "implementation_status": "contract_only"
+    },
+    {
+      "event_type": "learner_profile_updated",
+      "event_version": 1,
+      "producer": "profile",
+      "primary_consumer": "learning/audit",
+      "classification": "confidential",
+      "implementation_status": "contract_only"
+    },
+    {
+      "event_type": "learning_plan_created",
+      "event_version": 1,
+      "producer": "learning",
+      "primary_consumer": "learner_read_model/audit",
+      "classification": "confidential",
+      "implementation_status": "contract_only"
+    },
+    {
+      "event_type": "session_planned",
+      "event_version": 1,
+      "producer": "learning",
+      "primary_consumer": "practice/audit",
+      "classification": "confidential",
+      "implementation_status": "contract_only"
+    },
+    {
+      "event_type": "session_started",
+      "event_version": 1,
+      "producer": "practice",
+      "primary_consumer": "learning/analytics",
+      "classification": "confidential",
+      "implementation_status": "contract_only"
+    },
+    {
+      "event_type": "activity_started",
+      "event_version": 1,
+      "producer": "practice",
+      "primary_consumer": "analytics",
+      "classification": "confidential",
+      "implementation_status": "contract_only"
+    },
+    {
+      "event_type": "hint_used",
+      "event_version": 1,
+      "producer": "practice",
+      "primary_consumer": "evidence/analytics",
+      "classification": "confidential",
+      "implementation_status": "contract_only"
+    },
+    {
+      "event_type": "audio_replayed",
+      "event_version": 1,
+      "producer": "practice",
+      "primary_consumer": "analytics",
+      "classification": "confidential",
+      "implementation_status": "contract_only"
+    },
+    {
+      "event_type": "answer_submitted",
+      "event_version": 1,
+      "producer": "practice",
+      "primary_consumer": "internal_transaction/audit",
+      "classification": "restricted_no_raw_response",
+      "implementation_status": "contract_only"
+    },
+    {
+      "event_type": "answer_evaluated",
+      "event_version": 1,
+      "producer": "practice",
+      "primary_consumer": "learning/evidence",
+      "classification": "confidential_structured_result",
+      "implementation_status": "contract_only"
+    },
+    {
+      "event_type": "evidence_recorded",
+      "event_version": 1,
+      "producer": "learning",
+      "primary_consumer": "mastery/audit",
+      "classification": "confidential",
+      "implementation_status": "contract_only"
+    },
+    {
+      "event_type": "mastery_recalculated",
+      "event_version": 1,
+      "producer": "mastery",
+      "primary_consumer": "learning/read_model/audit",
+      "classification": "confidential",
+      "implementation_status": "contract_only"
+    },
+    {
+      "event_type": "review_scheduled",
+      "event_version": 1,
+      "producer": "mastery",
+      "primary_consumer": "learning/notification_read_model",
+      "classification": "confidential",
+      "implementation_status": "contract_only"
+    },
+    {
+      "event_type": "activity_skipped",
+      "event_version": 1,
+      "producer": "practice",
+      "primary_consumer": "learning/analytics",
+      "classification": "confidential",
+      "implementation_status": "contract_only"
+    },
+    {
+      "event_type": "activity_completed",
+      "event_version": 1,
+      "producer": "practice",
+      "primary_consumer": "learning/analytics",
+      "classification": "confidential",
+      "implementation_status": "contract_only"
+    },
+    {
+      "event_type": "session_completed",
+      "event_version": 1,
+      "producer": "practice",
+      "primary_consumer": "learning/analytics",
+      "classification": "confidential",
+      "implementation_status": "contract_only"
+    },
+    {
+      "event_type": "session_abandoned",
+      "event_version": 1,
+      "producer": "practice",
+      "primary_consumer": "learning/analytics",
+      "classification": "confidential",
+      "implementation_status": "contract_only"
+    },
+    {
+      "event_type": "technical_failure_recorded",
+      "event_version": 1,
+      "producer": "owning_module",
+      "primary_consumer": "operations/qa",
+      "classification": "internal_or_confidential_redacted",
+      "implementation_status": "contract_only"
+    }
+  ]
+}

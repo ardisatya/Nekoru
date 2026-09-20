@@ -1,0 +1,49 @@
+{
+  "name": "nekoru",
+  "private": true,
+  "type": "module",
+  "version": "0.0.0",
+  "packageManager": "pnpm@12.4.1",
+  "engines": {
+    "node": ">=24 <25",
+    "pnpm": ">=12 <13"
+  },
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build",
+    "format:check": "prettier --check .",
+    "lint": "eslint .",
+    "typecheck": "turbo run typecheck",
+    "test": "turbo run test",
+    "test:unit": "turbo run test:unit",
+    "test:contract": "turbo run test:contract",
+    "test:integration": "turbo run test:integration",
+    "test:e2e": "playwright test --project=critical-e2e",
+    "test:a11y": "playwright test --project=accessibility",
+    "content:validate": "pnpm --filter @nekoru/content-tooling validate",
+    "db:generate": "pnpm --filter @nekoru/persistence db:generate",
+    "db:migrate": "pnpm --filter @nekoru/persistence db:migrate",
+    "db:check": "tsx tooling/persistence/check-migrations.ts",
+    "status:generate": "tsx tooling/status/generate.ts",
+    "status:check": "tsx tooling/status/check.ts",
+    "architecture:check": "tsx tooling/architecture/check-boundaries.ts",
+    "contracts:check": "tsx tooling/contracts/check-generated.ts",
+    "security:check": "tsx tooling/security/check.ts",
+    "security:audit": "pnpm audit --prod --audit-level high",
+    "check": "pnpm format:check && pnpm lint && pnpm architecture:check && pnpm security:check && pnpm contracts:check && pnpm db:check && pnpm typecheck && pnpm test:unit && pnpm test:contract && pnpm content:validate && pnpm status:check",
+    "check:pr": "pnpm check && pnpm security:audit && pnpm build && pnpm test:integration && pnpm test:e2e && pnpm test:a11y"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.11.0",
+    "@eslint/js": "10.0.1",
+    "@playwright/test": "1.63.0",
+    "@types/node": "24.10.1",
+    "eslint": "10.0.3",
+    "prettier": "3.9.0",
+    "tsx": "4.20.6",
+    "turbo": "2.10.12",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.70.0",
+    "vitest": "5.0.0"
+  }
+}

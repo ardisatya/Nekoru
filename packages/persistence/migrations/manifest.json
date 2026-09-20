@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "dialect": "postgresql",
+  "target_major_version": 18,
+  "migrations": [
+    {
+      "id": "0000_bizarre_warlock",
+      "file": "0000_bizarre_warlock.sql",
+      "sha256": "593a63f43435d0162d078654a8cac07f44d8ed48d1a7052a0f0b94087e5d9bce",
+      "applied_to_shared_environment": false
+    }
+  ],
+  "runtime_disabled_schemas": ["assessment", "offline"]
+}

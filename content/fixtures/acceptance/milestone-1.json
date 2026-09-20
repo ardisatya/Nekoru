@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "phase": "phase_0",
+  "scenarios": [
+    {
+      "id": "fixture-m1-happy-path-001",
+      "case": "happy_path",
+      "state_ref": "P-M1-01..P-M1-20",
+      "implementation_status": "prototype_only"
+    },
+    {
+      "id": "fixture-m1-duplicate-submit-002",
+      "case": "duplicate_submit",
+      "state_ref": "P-M1-12",
+      "implementation_status": "contract_only"
+    },
+    {
+      "id": "fixture-m1-stale-revision-003",
+      "case": "stale_revision",
+      "state_ref": "P-M1-16",
+      "implementation_status": "prototype_only"
+    },
+    {
+      "id": "fixture-m1-provider-failure-004",
+      "case": "provider_failure",
+      "state_ref": "P-M1-20",
+      "implementation_status": "contract_only"
+    },
+    {
+      "id": "fixture-m1-audio-failure-005",
+      "case": "audio_failure",
+      "state_ref": "P-M1-10",
+      "implementation_status": "prototype_only"
+    },
+    {
+      "id": "fixture-m1-accessibility-006",
+      "case": "accessibility",
+      "state_ref": "all",
+      "implementation_status": "automated_smoke_only"
+    }
+  ]
+}

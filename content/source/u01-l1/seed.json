@@ -1,0 +1,640 @@
+{
+  "schema_version": "1.0.0",
+  "id": "cnt_01J00000000000000000000000",
+  "version": "0.1.0",
+  "status": "draft",
+  "unit_id": "U01",
+  "lesson_id": "U01-L1",
+  "runtime_eligible": false,
+  "fixture_only": false,
+  "knowledge_components": [
+    {
+      "id": "kc_01J00000000000000000000001",
+      "code": "SOUND.VOWEL.A",
+      "required": true
+    },
+    {
+      "id": "kc_01J00000000000000000000002",
+      "code": "SOUND.VOWEL.I",
+      "required": true
+    },
+    {
+      "id": "kc_01J00000000000000000000003",
+      "code": "SOUND.VOWEL.U",
+      "required": true
+    },
+    {
+      "id": "kc_01J00000000000000000000004",
+      "code": "SOUND.VOWEL.E",
+      "required": true
+    },
+    {
+      "id": "kc_01J00000000000000000000005",
+      "code": "SOUND.VOWEL.O",
+      "required": true
+    },
+    {
+      "id": "kc_01J00000000000000000000006",
+      "code": "SOUND.MORA.CV",
+      "required": true
+    },
+    {
+      "id": "kc_01J00000000000000000000007",
+      "code": "FUNCTION.GREETING.CONTEXT",
+      "required": true
+    },
+    {
+      "id": "kc_01J00000000000000000000008",
+      "code": "SCRIPT.SYSTEM.AWARENESS",
+      "required": false
+    }
+  ],
+  "vocabulary_chunks": [
+    {
+      "id": "cnt_01J00000000000000000000101",
+      "japanese": "おはようございます",
+      "communicative_translation_id": "selamat_pagi"
+    },
+    {
+      "id": "cnt_01J00000000000000000000102",
+      "japanese": "こんにちは",
+      "communicative_translation_id": "selamat_siang"
+    },
+    {
+      "id": "cnt_01J00000000000000000000103",
+      "japanese": "こんばんは",
+      "communicative_translation_id": "selamat_malam"
+    },
+    {
+      "id": "cnt_01J00000000000000000000104",
+      "japanese": "さようなら",
+      "communicative_translation_id": "sampai_jumpa"
+    }
+  ],
+  "session_blueprints": [
+    { "id": "U01-L1-A", "order": 1, "purpose_id": "kenali_lima_vokal" },
+    { "id": "U01-L1-B", "order": 2, "purpose_id": "rasakan_irama_mora" },
+    {
+      "id": "U01-L1-C",
+      "order": 3,
+      "purpose_id": "pilih_sapaan_sesuai_konteks"
+    }
+  ],
+  "activities": [
+    {
+      "id": "cnt_01J00000000000000000000201",
+      "activity_type": "single_choice",
+      "family": "vowel_discrimination",
+      "primary_kc_id": "kc_01J00000000000000000000001",
+      "evidence_mode": "direct",
+      "prompt_id": "vowel_01"
+    },
+    {
+      "id": "cnt_01J00000000000000000000202",
+      "activity_type": "single_choice",
+      "family": "vowel_discrimination",
+      "primary_kc_id": "kc_01J00000000000000000000002",
+      "evidence_mode": "direct",
+      "prompt_id": "vowel_02"
+    },
+    {
+      "id": "cnt_01J00000000000000000000203",
+      "activity_type": "single_choice",
+      "family": "vowel_discrimination",
+      "primary_kc_id": "kc_01J00000000000000000000003",
+      "evidence_mode": "direct",
+      "prompt_id": "vowel_03"
+    },
+    {
+      "id": "cnt_01J00000000000000000000204",
+      "activity_type": "single_choice",
+      "family": "vowel_discrimination",
+      "primary_kc_id": "kc_01J00000000000000000000004",
+      "evidence_mode": "direct",
+      "prompt_id": "vowel_04"
+    },
+    {
+      "id": "cnt_01J00000000000000000000205",
+      "activity_type": "single_choice",
+      "family": "vowel_discrimination",
+      "primary_kc_id": "kc_01J00000000000000000000005",
+      "evidence_mode": "direct",
+      "prompt_id": "vowel_05"
+    },
+    {
+      "id": "cnt_01J00000000000000000000206",
+      "activity_type": "single_choice",
+      "family": "vowel_discrimination",
+      "primary_kc_id": "kc_01J00000000000000000000001",
+      "evidence_mode": "direct",
+      "prompt_id": "vowel_06"
+    },
+    {
+      "id": "cnt_01J00000000000000000000207",
+      "activity_type": "single_choice",
+      "family": "vowel_discrimination",
+      "primary_kc_id": "kc_01J00000000000000000000002",
+      "evidence_mode": "direct",
+      "prompt_id": "vowel_07"
+    },
+    {
+      "id": "cnt_01J00000000000000000000208",
+      "activity_type": "single_choice",
+      "family": "vowel_discrimination",
+      "primary_kc_id": "kc_01J00000000000000000000003",
+      "evidence_mode": "direct",
+      "prompt_id": "vowel_08"
+    },
+    {
+      "id": "cnt_01J00000000000000000000209",
+      "activity_type": "single_choice",
+      "family": "vowel_discrimination",
+      "primary_kc_id": "kc_01J00000000000000000000004",
+      "evidence_mode": "direct",
+      "prompt_id": "vowel_09"
+    },
+    {
+      "id": "cnt_01J00000000000000000000210",
+      "activity_type": "single_choice",
+      "family": "vowel_discrimination",
+      "primary_kc_id": "kc_01J00000000000000000000005",
+      "evidence_mode": "direct",
+      "prompt_id": "vowel_10"
+    },
+    {
+      "id": "cnt_01J00000000000000000000211",
+      "activity_type": "single_choice",
+      "family": "vowel_discrimination",
+      "primary_kc_id": "kc_01J00000000000000000000001",
+      "evidence_mode": "direct",
+      "prompt_id": "vowel_11"
+    },
+    {
+      "id": "cnt_01J00000000000000000000212",
+      "activity_type": "single_choice",
+      "family": "vowel_discrimination",
+      "primary_kc_id": "kc_01J00000000000000000000002",
+      "evidence_mode": "direct",
+      "prompt_id": "vowel_12"
+    },
+    {
+      "id": "cnt_01J00000000000000000000213",
+      "activity_type": "single_choice",
+      "family": "vowel_discrimination",
+      "primary_kc_id": "kc_01J00000000000000000000003",
+      "evidence_mode": "direct",
+      "prompt_id": "vowel_13"
+    },
+    {
+      "id": "cnt_01J00000000000000000000214",
+      "activity_type": "single_choice",
+      "family": "vowel_discrimination",
+      "primary_kc_id": "kc_01J00000000000000000000004",
+      "evidence_mode": "direct",
+      "prompt_id": "vowel_14"
+    },
+    {
+      "id": "cnt_01J00000000000000000000215",
+      "activity_type": "single_choice",
+      "family": "vowel_discrimination",
+      "primary_kc_id": "kc_01J00000000000000000000005",
+      "evidence_mode": "direct",
+      "prompt_id": "vowel_15"
+    },
+    {
+      "id": "cnt_01J00000000000000000000216",
+      "activity_type": "select_to_pair",
+      "family": "vowel_pair",
+      "primary_kc_id": "kc_01J00000000000000000000001",
+      "evidence_mode": "guided",
+      "prompt_id": "pair_01"
+    },
+    {
+      "id": "cnt_01J00000000000000000000217",
+      "activity_type": "select_to_pair",
+      "family": "vowel_pair",
+      "primary_kc_id": "kc_01J00000000000000000000002",
+      "evidence_mode": "guided",
+      "prompt_id": "pair_02"
+    },
+    {
+      "id": "cnt_01J00000000000000000000218",
+      "activity_type": "select_to_pair",
+      "family": "vowel_pair",
+      "primary_kc_id": "kc_01J00000000000000000000003",
+      "evidence_mode": "guided",
+      "prompt_id": "pair_03"
+    },
+    {
+      "id": "cnt_01J00000000000000000000219",
+      "activity_type": "select_to_pair",
+      "family": "vowel_pair",
+      "primary_kc_id": "kc_01J00000000000000000000004",
+      "evidence_mode": "guided",
+      "prompt_id": "pair_04"
+    },
+    {
+      "id": "cnt_01J00000000000000000000220",
+      "activity_type": "select_to_pair",
+      "family": "vowel_pair",
+      "primary_kc_id": "kc_01J00000000000000000000005",
+      "evidence_mode": "guided",
+      "prompt_id": "pair_05"
+    },
+    {
+      "id": "cnt_01J00000000000000000000221",
+      "activity_type": "single_choice",
+      "family": "mora_count",
+      "primary_kc_id": "kc_01J00000000000000000000006",
+      "evidence_mode": "direct",
+      "prompt_id": "mora_01"
+    },
+    {
+      "id": "cnt_01J00000000000000000000222",
+      "activity_type": "single_choice",
+      "family": "mora_count",
+      "primary_kc_id": "kc_01J00000000000000000000006",
+      "evidence_mode": "direct",
+      "prompt_id": "mora_02"
+    },
+    {
+      "id": "cnt_01J00000000000000000000223",
+      "activity_type": "single_choice",
+      "family": "mora_count",
+      "primary_kc_id": "kc_01J00000000000000000000006",
+      "evidence_mode": "direct",
+      "prompt_id": "mora_03"
+    },
+    {
+      "id": "cnt_01J00000000000000000000224",
+      "activity_type": "single_choice",
+      "family": "mora_count",
+      "primary_kc_id": "kc_01J00000000000000000000006",
+      "evidence_mode": "direct",
+      "prompt_id": "mora_04"
+    },
+    {
+      "id": "cnt_01J00000000000000000000225",
+      "activity_type": "single_choice",
+      "family": "mora_count",
+      "primary_kc_id": "kc_01J00000000000000000000006",
+      "evidence_mode": "direct",
+      "prompt_id": "mora_05"
+    },
+    {
+      "id": "cnt_01J00000000000000000000226",
+      "activity_type": "single_choice",
+      "family": "mora_count",
+      "primary_kc_id": "kc_01J00000000000000000000006",
+      "evidence_mode": "direct",
+      "prompt_id": "mora_06"
+    },
+    {
+      "id": "cnt_01J00000000000000000000227",
+      "activity_type": "single_choice",
+      "family": "greeting_context",
+      "primary_kc_id": "kc_01J00000000000000000000007",
+      "evidence_mode": "direct",
+      "prompt_id": "greeting_01"
+    },
+    {
+      "id": "cnt_01J00000000000000000000228",
+      "activity_type": "single_choice",
+      "family": "greeting_context",
+      "primary_kc_id": "kc_01J00000000000000000000007",
+      "evidence_mode": "direct",
+      "prompt_id": "greeting_02"
+    },
+    {
+      "id": "cnt_01J00000000000000000000229",
+      "activity_type": "single_choice",
+      "family": "greeting_context",
+      "primary_kc_id": "kc_01J00000000000000000000007",
+      "evidence_mode": "direct",
+      "prompt_id": "greeting_03"
+    },
+    {
+      "id": "cnt_01J00000000000000000000230",
+      "activity_type": "single_choice",
+      "family": "greeting_context",
+      "primary_kc_id": "kc_01J00000000000000000000007",
+      "evidence_mode": "direct",
+      "prompt_id": "greeting_04"
+    },
+    {
+      "id": "cnt_01J00000000000000000000231",
+      "activity_type": "single_choice",
+      "family": "greeting_context",
+      "primary_kc_id": "kc_01J00000000000000000000007",
+      "evidence_mode": "direct",
+      "prompt_id": "greeting_05"
+    },
+    {
+      "id": "cnt_01J00000000000000000000232",
+      "activity_type": "single_choice",
+      "family": "greeting_context",
+      "primary_kc_id": "kc_01J00000000000000000000007",
+      "evidence_mode": "direct",
+      "prompt_id": "greeting_06"
+    },
+    {
+      "id": "cnt_01J00000000000000000000233",
+      "activity_type": "single_choice",
+      "family": "greeting_context",
+      "primary_kc_id": "kc_01J00000000000000000000007",
+      "evidence_mode": "direct",
+      "prompt_id": "greeting_07"
+    },
+    {
+      "id": "cnt_01J00000000000000000000234",
+      "activity_type": "single_choice",
+      "family": "greeting_context",
+      "primary_kc_id": "kc_01J00000000000000000000007",
+      "evidence_mode": "direct",
+      "prompt_id": "greeting_08"
+    },
+    {
+      "id": "cnt_01J00000000000000000000235",
+      "activity_type": "single_choice",
+      "family": "greeting_context",
+      "primary_kc_id": "kc_01J00000000000000000000007",
+      "evidence_mode": "direct",
+      "prompt_id": "greeting_09"
+    },
+    {
+      "id": "cnt_01J00000000000000000000236",
+      "activity_type": "single_choice",
+      "family": "greeting_context",
+      "primary_kc_id": "kc_01J00000000000000000000007",
+      "evidence_mode": "direct",
+      "prompt_id": "greeting_10"
+    },
+    {
+      "id": "cnt_01J00000000000000000000237",
+      "activity_type": "single_choice",
+      "family": "greeting_context",
+      "primary_kc_id": "kc_01J00000000000000000000007",
+      "evidence_mode": "direct",
+      "prompt_id": "greeting_11"
+    },
+    {
+      "id": "cnt_01J00000000000000000000238",
+      "activity_type": "single_choice",
+      "family": "greeting_context",
+      "primary_kc_id": "kc_01J00000000000000000000007",
+      "evidence_mode": "direct",
+      "prompt_id": "greeting_12"
+    },
+    {
+      "id": "cnt_01J00000000000000000000239",
+      "activity_type": "select_to_pair",
+      "family": "greeting_pair",
+      "primary_kc_id": "kc_01J00000000000000000000007",
+      "evidence_mode": "guided",
+      "prompt_id": "greeting_pair_01"
+    },
+    {
+      "id": "cnt_01J00000000000000000000240",
+      "activity_type": "select_to_pair",
+      "family": "greeting_pair",
+      "primary_kc_id": "kc_01J00000000000000000000007",
+      "evidence_mode": "guided",
+      "prompt_id": "greeting_pair_02"
+    },
+    {
+      "id": "cnt_01J00000000000000000000241",
+      "activity_type": "select_to_pair",
+      "family": "greeting_pair",
+      "primary_kc_id": "kc_01J00000000000000000000007",
+      "evidence_mode": "guided",
+      "prompt_id": "greeting_pair_03"
+    },
+    {
+      "id": "cnt_01J00000000000000000000242",
+      "activity_type": "select_to_pair",
+      "family": "greeting_pair",
+      "primary_kc_id": "kc_01J00000000000000000000007",
+      "evidence_mode": "guided",
+      "prompt_id": "greeting_pair_04"
+    },
+    {
+      "id": "cnt_01J00000000000000000000243",
+      "activity_type": "single_choice",
+      "family": "script_awareness",
+      "primary_kc_id": "kc_01J00000000000000000000008",
+      "evidence_mode": "exposure",
+      "prompt_id": "script_01"
+    }
+  ],
+  "assets": [
+    {
+      "id": "ast_01J00000000000000000000001",
+      "kind": "audio",
+      "status": "pending",
+      "checksum": null,
+      "rights_receipt_id": null,
+      "speaker_variant": "a"
+    },
+    {
+      "id": "ast_01J00000000000000000000002",
+      "kind": "audio",
+      "status": "pending",
+      "checksum": null,
+      "rights_receipt_id": null,
+      "speaker_variant": "b"
+    },
+    {
+      "id": "ast_01J00000000000000000000003",
+      "kind": "audio",
+      "status": "pending",
+      "checksum": null,
+      "rights_receipt_id": null,
+      "speaker_variant": "a"
+    },
+    {
+      "id": "ast_01J00000000000000000000004",
+      "kind": "audio",
+      "status": "pending",
+      "checksum": null,
+      "rights_receipt_id": null,
+      "speaker_variant": "b"
+    },
+    {
+      "id": "ast_01J00000000000000000000005",
+      "kind": "audio",
+      "status": "pending",
+      "checksum": null,
+      "rights_receipt_id": null,
+      "speaker_variant": "a"
+    },
+    {
+      "id": "ast_01J00000000000000000000006",
+      "kind": "audio",
+      "status": "pending",
+      "checksum": null,
+      "rights_receipt_id": null,
+      "speaker_variant": "b"
+    },
+    {
+      "id": "ast_01J00000000000000000000007",
+      "kind": "audio",
+      "status": "pending",
+      "checksum": null,
+      "rights_receipt_id": null,
+      "speaker_variant": "a"
+    },
+    {
+      "id": "ast_01J00000000000000000000008",
+      "kind": "audio",
+      "status": "pending",
+      "checksum": null,
+      "rights_receipt_id": null,
+      "speaker_variant": "b"
+    },
+    {
+      "id": "ast_01J00000000000000000000009",
+      "kind": "audio",
+      "status": "pending",
+      "checksum": null,
+      "rights_receipt_id": null,
+      "speaker_variant": "a"
+    },
+    {
+      "id": "ast_01J00000000000000000000010",
+      "kind": "audio",
+      "status": "pending",
+      "checksum": null,
+      "rights_receipt_id": null,
+      "speaker_variant": "b"
+    },
+    {
+      "id": "ast_01J00000000000000000000011",
+      "kind": "audio",
+      "status": "pending",
+      "checksum": null,
+      "rights_receipt_id": null,
+      "speaker_variant": "a"
+    },
+    {
+      "id": "ast_01J00000000000000000000012",
+      "kind": "audio",
+      "status": "pending",
+      "checksum": null,
+      "rights_receipt_id": null,
+      "speaker_variant": "b"
+    },
+    {
+      "id": "ast_01J00000000000000000000013",
+      "kind": "audio",
+      "status": "pending",
+      "checksum": null,
+      "rights_receipt_id": null,
+      "speaker_variant": "a"
+    },
+    {
+      "id": "ast_01J00000000000000000000014",
+      "kind": "audio",
+      "status": "pending",
+      "checksum": null,
+      "rights_receipt_id": null,
+      "speaker_variant": "b"
+    },
+    {
+      "id": "ast_01J00000000000000000000015",
+      "kind": "audio",
+      "status": "pending",
+      "checksum": null,
+      "rights_receipt_id": null,
+      "speaker_variant": "a"
+    },
+    {
+      "id": "ast_01J00000000000000000000016",
+      "kind": "audio",
+      "status": "pending",
+      "checksum": null,
+      "rights_receipt_id": null,
+      "speaker_variant": "b"
+    },
+    {
+      "id": "ast_01J00000000000000000000017",
+      "kind": "audio",
+      "status": "pending",
+      "checksum": null,
+      "rights_receipt_id": null,
+      "speaker_variant": "a"
+    },
+    {
+      "id": "ast_01J00000000000000000000018",
+      "kind": "audio",
+      "status": "pending",
+      "checksum": null,
+      "rights_receipt_id": null,
+      "speaker_variant": "b"
+    },
+    {
+      "id": "ast_01J00000000000000000000019",
+      "kind": "audio",
+      "status": "pending",
+      "checksum": null,
+      "rights_receipt_id": null,
+      "speaker_variant": "a"
+    },
+    {
+      "id": "ast_01J00000000000000000000020",
+      "kind": "audio",
+      "status": "pending",
+      "checksum": null,
+      "rights_receipt_id": null,
+      "speaker_variant": "b"
+    },
+    {
+      "id": "ast_01J00000000000000000000021",
+      "kind": "audio",
+      "status": "pending",
+      "checksum": null,
+      "rights_receipt_id": null,
+      "speaker_variant": "a"
+    },
+    {
+      "id": "ast_01J00000000000000000000022",
+      "kind": "audio",
+      "status": "pending",
+      "checksum": null,
+      "rights_receipt_id": null,
+      "speaker_variant": "b"
+    },
+    {
+      "id": "ast_01J00000000000000000000023",
+      "kind": "audio",
+      "status": "pending",
+      "checksum": null,
+      "rights_receipt_id": null,
+      "speaker_variant": "a"
+    },
+    {
+      "id": "ast_01J00000000000000000000024",
+      "kind": "audio",
+      "status": "pending",
+      "checksum": null,
+      "rights_receipt_id": null,
+      "speaker_variant": "b"
+    },
+    {
+      "id": "ast_01J00000000000000000000025",
+      "kind": "audio",
+      "status": "pending",
+      "checksum": null,
+      "rights_receipt_id": null,
+      "speaker_variant": "a"
+    },
+    {
+      "id": "ast_01J00000000000000000000026",
+      "kind": "audio",
+      "status": "pending",
+      "checksum": null,
+      "rights_receipt_id": null,
+      "speaker_variant": "b"
+    }
+  ],
+  "approval_receipts": []
+}

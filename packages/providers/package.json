@@ -1,0 +1,23 @@
+{
+  "name": "@nekoru/providers",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/public.ts"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run --passWithNoTests",
+    "test:unit": "vitest run",
+    "test:contract": "vitest run --passWithNoTests",
+    "test:integration": "vitest run --passWithNoTests"
+  },
+  "dependencies": {
+    "@clerk/backend": "3.17.2",
+    "@nekoru/application": "workspace:*",
+    "@nekoru/domain": "workspace:*",
+    "@upstash/qstash": "2.11.3"
+  }
+}

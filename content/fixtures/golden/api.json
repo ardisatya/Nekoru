@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "cases": [
+    {
+      "id": "CONTRACT-API-HEALTH-001",
+      "method": "get",
+      "path": "/api/v1/health/live",
+      "expected_status": 200,
+      "response": {
+        "status": "ok",
+        "service": "nekoru-api",
+        "version": "0.0.0-phase0",
+        "environment": "local"
+      }
+    },
+    {
+      "id": "CONTRACT-API-PROBLEM-002",
+      "content_type": "application/problem+json",
+      "expected_status": 409,
+      "response": {
+        "type": "https://nekoru.invalid/problems/revision-conflict",
+        "title": "Perubahan tidak dapat disimpan",
+        "status": 409,
+        "detail": "Data sudah berubah. Muat ulang lalu coba lagi.",
+        "reason_code": "REVISION_CONFLICT",
+        "correlation_id": "cor_01J00000000000000000000000"
+      }
+    },
+    {
+      "id": "CONTRACT-API-SUBMISSION-003",
+      "method": "post",
+      "path": "/api/v1/practice-runs/{practice_run_id}/submissions",
+      "expected_status": 501,
+      "implementation_status": "contract_only"
+    }
+  ]
+}

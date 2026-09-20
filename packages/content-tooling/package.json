@@ -1,0 +1,22 @@
+{
+  "name": "@nekoru/content-tooling",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/public.ts"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run --passWithNoTests",
+    "test:unit": "vitest run --passWithNoTests",
+    "test:contract": "vitest run",
+    "test:integration": "vitest run --passWithNoTests",
+    "validate": "tsx src/cli.ts"
+  },
+  "dependencies": {
+    "@nekoru/contracts": "workspace:*",
+    "@nekoru/providers": "workspace:*"
+  }
+}

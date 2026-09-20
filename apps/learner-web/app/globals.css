@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  background: var(--color-canvas);
+  color: var(--color-ink);
+}
+body {
+  margin: 0;
+  min-width: 320px;
+  font-family: var(--font-ui), sans-serif;
+  line-height: 1.55;
+}
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+button {
+  min-height: 44px;
+}
+a {
+  color: var(--color-primary);
+  text-underline-offset: 0.2em;
+}
+::selection {
+  color: #fff;
+  background: var(--color-primary);
+}
+:focus-visible {
+  outline: var(--focus-ring);
+  outline-offset: 3px;
+}
+* {
+  scrollbar-color: var(--color-primary) var(--color-primary-soft);
+  scrollbar-width: thin;
+}
+.nk-button {
+  border: 0;
+  border-radius: var(--radius-md);
+  padding: 0.75rem 1rem;
+  font-weight: 750;
+  cursor: pointer;
+  transition:
+    background-color 160ms ease-out,
+    color 160ms ease-out,
+    box-shadow 160ms ease-out;
+}
+.nk-button--primary {
+  color: #fff;
+  background: var(--color-primary);
+  box-shadow: 0 0.35rem 1rem rgba(56, 47, 112, 0.22);
+}
+.nk-button--primary:hover {
+  background: var(--color-primary-strong);
+}
+.nk-button--secondary {
+  color: var(--color-primary-strong);
+  background: var(--color-primary-soft);
+}
+.nk-button--quiet {
+  color: var(--color-primary-strong);
+  background: transparent;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+.nk-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.62;
+  box-shadow: none;
+}
+.nk-status {
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+}
+.nk-status h2 {
+  margin: 0 0 var(--space-2);
+  font-size: 1rem;
+}
+.nk-status p {
+  margin: 0;
+}
+.nk-status--info {
+  background: var(--color-primary-soft);
+}
+.nk-status--success {
+  background: var(--color-success-soft);
+  color: #0f553c;
+}
+.nk-status--warning {
+  background: var(--color-warning-soft);
+  color: #70420b;
+}
+.nk-status--danger {
+  background: var(--color-danger-soft);
+  color: #7e2a34;
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
+@media (forced-colors: active) {
+  .nk-button {
+    border: 2px solid ButtonText;
+  }
+  :focus-visible {
+    outline-color: Highlight;
+  }
+}

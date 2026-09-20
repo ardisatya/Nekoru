@@ -1,0 +1,332 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Nekoru API",
+    "version": "0.0.0-phase0"
+  },
+  "components": {
+    "schemas": {
+      "Health": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string",
+            "enum": [
+              "ok",
+              "degraded"
+            ]
+          },
+          "service": {
+            "type": "string"
+          },
+          "version": {
+            "type": "string"
+          },
+          "environment": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "status",
+          "service",
+          "version",
+          "environment"
+        ],
+        "additionalProperties": false
+      },
+      "Problem": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "format": "uri"
+          },
+          "title": {
+            "type": "string"
+          },
+          "status": {
+            "type": "integer",
+            "minimum": 400,
+            "maximum": 599
+          },
+          "detail": {
+            "type": "string"
+          },
+          "instance": {
+            "type": "string"
+          },
+          "reason_code": {
+            "type": "string"
+          },
+          "correlation_id": {
+            "type": "string",
+            "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+          }
+        },
+        "required": [
+          "type",
+          "title",
+          "status",
+          "detail",
+          "reason_code"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "parameters": {}
+  },
+  "paths": {
+    "/api/v1/health/live": {
+      "get": {
+        "description": "live health probe",
+        "responses": {
+          "200": {
+            "description": "Service health",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string",
+                      "enum": [
+                        "ok",
+                        "degraded"
+                      ]
+                    },
+                    "service": {
+                      "type": "string"
+                    },
+                    "version": {
+                      "type": "string"
+                    },
+                    "environment": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "status",
+                    "service",
+                    "version",
+                    "environment"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/health/ready": {
+      "get": {
+        "description": "ready health probe",
+        "responses": {
+          "200": {
+            "description": "Service health",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string",
+                      "enum": [
+                        "ok",
+                        "degraded"
+                      ]
+                    },
+                    "service": {
+                      "type": "string"
+                    },
+                    "version": {
+                      "type": "string"
+                    },
+                    "environment": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "status",
+                    "service",
+                    "version",
+                    "environment"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/me": {
+      "get": {
+        "summary": "Identity dan profile bootstrap",
+        "responses": {
+          "501": {
+            "description": "Contract Phase 0; runtime belum diaktifkan"
+          }
+        },
+        "x-nekoru-implementation-status": "contract_only"
+      }
+    },
+    "/api/v1/profile": {
+      "patch": {
+        "summary": "Perbarui learner profile",
+        "responses": {
+          "501": {
+            "description": "Contract Phase 0; runtime belum diaktifkan"
+          }
+        },
+        "x-nekoru-implementation-status": "contract_only"
+      }
+    },
+    "/api/v1/onboarding/migrate-guest-draft": {
+      "post": {
+        "summary": "Migrasi draft tamu satu kali",
+        "responses": {
+          "501": {
+            "description": "Contract Phase 0; runtime belum diaktifkan"
+          }
+        },
+        "x-nekoru-implementation-status": "contract_only"
+      }
+    },
+    "/api/v1/learning-plans/current": {
+      "get": {
+        "summary": "Baca active learning plan",
+        "responses": {
+          "501": {
+            "description": "Contract Phase 0; runtime belum diaktifkan"
+          }
+        },
+        "x-nekoru-implementation-status": "contract_only"
+      }
+    },
+    "/api/v1/learning-plans/initial": {
+      "post": {
+        "summary": "Buat initial learning plan",
+        "responses": {
+          "501": {
+            "description": "Contract Phase 0; runtime belum diaktifkan"
+          }
+        },
+        "x-nekoru-implementation-status": "contract_only"
+      }
+    },
+    "/api/v1/session-plans": {
+      "post": {
+        "summary": "Bentuk next session plan",
+        "responses": {
+          "501": {
+            "description": "Contract Phase 0; runtime belum diaktifkan"
+          }
+        },
+        "x-nekoru-implementation-status": "contract_only"
+      }
+    },
+    "/api/v1/sessions/{session_plan_id}/start": {
+      "post": {
+        "summary": "Mulai atau ambil practice run",
+        "responses": {
+          "501": {
+            "description": "Contract Phase 0; runtime belum diaktifkan"
+          }
+        },
+        "x-nekoru-implementation-status": "contract_only"
+      }
+    },
+    "/api/v1/practice-runs/{practice_run_id}": {
+      "get": {
+        "summary": "Resume practice run",
+        "responses": {
+          "501": {
+            "description": "Contract Phase 0; runtime belum diaktifkan"
+          }
+        },
+        "x-nekoru-implementation-status": "contract_only"
+      }
+    },
+    "/api/v1/practice-runs/{practice_run_id}/activities/{activity_instance_id}/start": {
+      "post": {
+        "summary": "Catat activity start",
+        "responses": {
+          "501": {
+            "description": "Contract Phase 0; runtime belum diaktifkan"
+          }
+        },
+        "x-nekoru-implementation-status": "contract_only"
+      }
+    },
+    "/api/v1/practice-runs/{practice_run_id}/submissions": {
+      "post": {
+        "summary": "Submit dan evaluasi objektif",
+        "responses": {
+          "501": {
+            "description": "Contract Phase 0; runtime belum diaktifkan"
+          }
+        },
+        "x-nekoru-implementation-status": "contract_only"
+      }
+    },
+    "/api/v1/practice-runs/{practice_run_id}/activities/{activity_instance_id}/skip": {
+      "post": {
+        "summary": "Lewati activity sesuai policy",
+        "responses": {
+          "501": {
+            "description": "Contract Phase 0; runtime belum diaktifkan"
+          }
+        },
+        "x-nekoru-implementation-status": "contract_only"
+      }
+    },
+    "/api/v1/practice-runs/{practice_run_id}/complete": {
+      "post": {
+        "summary": "Finalisasi session",
+        "responses": {
+          "501": {
+            "description": "Contract Phase 0; runtime belum diaktifkan"
+          }
+        },
+        "x-nekoru-implementation-status": "contract_only"
+      }
+    },
+    "/api/v1/practice-runs/{practice_run_id}/summary": {
+      "get": {
+        "summary": "Baca authoritative summary",
+        "responses": {
+          "501": {
+            "description": "Contract Phase 0; runtime belum diaktifkan"
+          }
+        },
+        "x-nekoru-implementation-status": "contract_only"
+      }
+    },
+    "/api/v1/mastery": {
+      "get": {
+        "summary": "Baca learner-visible mastery",
+        "responses": {
+          "501": {
+            "description": "Contract Phase 0; runtime belum diaktifkan"
+          }
+        },
+        "x-nekoru-implementation-status": "contract_only"
+      }
+    },
+    "/api/v1/review/due": {
+      "get": {
+        "summary": "Baca review eligibility",
+        "responses": {
+          "501": {
+            "description": "Contract Phase 0; runtime belum diaktifkan"
+          }
+        },
+        "x-nekoru-implementation-status": "contract_only"
+      }
+    }
+  },
+  "webhooks": {},
+  "x-nekoru-phase": "phase_0",
+  "x-nekoru-implementation-status": "health_routes_only"
+}

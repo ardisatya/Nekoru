@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "evidence_id": "db-int-local-2026-09-14-001",
+  "artifact_version": "0.0.0-phase0",
+  "scope": ["P0.3", "P0.4", "DEP-P0-01"],
+  "recorded_at": "2026-09-14T18:22:22+07:00",
+  "environment": {
+    "kind": "local_ephemeral_docker_tmpfs",
+    "database_name": "nekoru",
+    "host_port": 5433,
+    "mount_type": "tmpfs",
+    "disposable_guard": "NEKORU_TEST_DATABASE_DISPOSABLE=true",
+    "shared_environment_modified": false
+  },
+  "database": {
+    "engine": "PostgreSQL",
+    "version": "18.6",
+    "image": "postgres:18-alpine",
+    "image_digest": "sha256:d3e1620b530c944afa6e887d22eb899824da68e19c52024bf98f5220c88a65b2"
+  },
+  "migration": {
+    "id": "0000_bizarre_warlock",
+    "file": "packages/persistence/migrations/0000_bizarre_warlock.sql",
+    "sha256": "593a63f43435d0162d078654a8cac07f44d8ed48d1a7052a0f0b94087e5d9bce",
+    "started_from_empty_database": true,
+    "result": "passed",
+    "applied_to_shared_environment": false
+  },
+  "integration_tests": {
+    "command": "pnpm test:integration",
+    "result": "passed",
+    "passed": 3,
+    "failed": 0,
+    "behaviors": [
+      "membuat schema ownership Phase 0 dari database kosong",
+      "mencegah effect idempotency ganda pada scope yang sama",
+      "menggulung balik seluruh perubahan transaksi saat constraint gagal"
+    ]
+  },
+  "pr_gate": {
+    "command": "pnpm check:pr",
+    "result": "passed",
+    "includes": [
+      "format, lint, architecture, security, generated-contract, and migration checks",
+      "typecheck, unit, contract, and content validation",
+      "dependency audit and build",
+      "PostgreSQL integration tests",
+      "critical E2E and accessibility automation"
+    ]
+  },
+  "hosted_ci": {
+    "result": "not_run",
+    "reason": "origin sudah terhubung, tetapi repository tujuan masih kosong dan belum memiliki commit/branch untuk memicu workflow."
+  },
+  "review": {
+    "status": "pending",
+    "approval_claimed": false
+  },
+  "limitations": [
+    "Bukti ini berlaku untuk migration, constraint, dan rollback pada database lokal disposable; bukan bukti objective submission Unit of Work Milestone 1.",
+    "Hasil gate lokal bukan hosted CI, formal approval, atau sign-off Phase 0."
+  ]
+}

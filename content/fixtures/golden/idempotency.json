@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "scope": "practice.submit",
+  "key_hash": "sha256:1111111111111111111111111111111111111111111111111111111111111111",
+  "same_fingerprint": {
+    "request_hash": "sha256:2222222222222222222222222222222222222222222222222222222222222222",
+    "expected_behavior": "return_canonical_receipt"
+  },
+  "different_fingerprint": {
+    "request_hash": "sha256:3333333333333333333333333333333333333333333333333333333333333333",
+    "expected_behavior": "IDEMPOTENCY_KEY_REUSED"
+  }
+}

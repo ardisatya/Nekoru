@@ -1,0 +1,25 @@
+{
+  "aggregate": {
+    "id": "prun_01J00000000000000000000000",
+    "revision": 4,
+    "sequence": 7,
+    "type": "practice_run"
+  },
+  "causation_id": null,
+  "correlation_id": "cor_01J00000000000000000000000",
+  "data": {},
+  "event_id": "evt_01J00000000000000000000000",
+  "event_type": "session_completed",
+  "event_version": 1,
+  "occurred_at": "2026-09-14T00:00:00.000Z",
+  "payload_hash": "sha256:0000000000000000000000000000000000000000000000000000000000000000",
+  "producer": "practice",
+  "schema_version": 1,
+  "subject": {
+    "id": "lrn_01J00000000000000000000000",
+    "type": "learner"
+  },
+  "trace_context": {
+    "trace_id": null
+  }
+}

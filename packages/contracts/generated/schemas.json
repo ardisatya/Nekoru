@@ -1,0 +1,2036 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "schema_version": 1,
+  "implementation_status": "phase_0_executable_contract",
+  "schemas": {
+    "content_seed": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "type": "string",
+          "const": "1.0.0"
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+        },
+        "version": {
+          "type": "string"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "draft",
+            "in_review",
+            "revision_required",
+            "approved",
+            "published",
+            "deprecated",
+            "quarantined"
+          ]
+        },
+        "unit_id": {
+          "type": "string",
+          "const": "U01"
+        },
+        "lesson_id": {
+          "type": "string",
+          "const": "U01-L1"
+        },
+        "runtime_eligible": {
+          "type": "boolean"
+        },
+        "fixture_only": {
+          "type": "boolean"
+        },
+        "knowledge_components": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+              },
+              "code": {
+                "type": "string"
+              },
+              "required": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "id",
+              "code",
+              "required"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "vocabulary_chunks": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+              },
+              "japanese": {
+                "type": "string"
+              },
+              "communicative_translation_id": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "japanese",
+              "communicative_translation_id"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "session_blueprints": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "order": {
+                "type": "integer",
+                "minimum": -9007199254740991,
+                "maximum": 9007199254740991
+              },
+              "purpose_id": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "order",
+              "purpose_id"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "activities": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+              },
+              "activity_type": {
+                "type": "string",
+                "enum": [
+                  "single_choice",
+                  "select_to_pair"
+                ]
+              },
+              "family": {
+                "type": "string"
+              },
+              "primary_kc_id": {
+                "type": "string",
+                "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+              },
+              "evidence_mode": {
+                "type": "string",
+                "enum": [
+                  "direct",
+                  "guided",
+                  "exposure"
+                ]
+              },
+              "prompt_id": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "activity_type",
+              "family",
+              "primary_kc_id",
+              "evidence_mode",
+              "prompt_id"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "assets": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+              },
+              "kind": {
+                "type": "string",
+                "const": "audio"
+              },
+              "status": {
+                "type": "string",
+                "enum": [
+                  "pending",
+                  "ready"
+                ]
+              },
+              "checksum": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^sha256:[0-9a-f]{64}$"
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "rights_receipt_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "speaker_variant": {
+                "type": "string",
+                "enum": [
+                  "a",
+                  "b"
+                ]
+              }
+            },
+            "required": [
+              "id",
+              "kind",
+              "status",
+              "checksum",
+              "rights_receipt_id",
+              "speaker_variant"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "approval_receipts": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "schema_version",
+        "id",
+        "version",
+        "status",
+        "unit_id",
+        "lesson_id",
+        "runtime_eligible",
+        "fixture_only",
+        "knowledge_components",
+        "vocabulary_chunks",
+        "session_blueprints",
+        "activities",
+        "assets",
+        "approval_receipts"
+      ],
+      "additionalProperties": false
+    },
+    "evaluation_result": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+        },
+        "submission_id": {
+          "type": "string",
+          "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "correct",
+            "partial",
+            "incorrect",
+            "pending",
+            "invalid",
+            "technical_failure"
+          ]
+        },
+        "score_micros": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1000000
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "parts": {
+          "type": "object",
+          "propertyNames": {
+            "type": "string"
+          },
+          "additionalProperties": {}
+        },
+        "reason_codes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "evaluator_ref": {
+          "type": "object",
+          "properties": {
+            "hash": {
+              "type": "string",
+              "pattern": "^sha256:[0-9a-f]{64}$"
+            },
+            "id": {
+              "type": "string",
+              "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+            },
+            "version": {
+              "type": "integer",
+              "exclusiveMinimum": 0,
+              "maximum": 9007199254740991
+            }
+          },
+          "required": [
+            "hash",
+            "id",
+            "version"
+          ],
+          "additionalProperties": false
+        },
+        "rubric_ref": {
+          "anyOf": [
+            {
+              "type": "object",
+              "properties": {
+                "hash": {
+                  "type": "string",
+                  "pattern": "^sha256:[0-9a-f]{64}$"
+                },
+                "id": {
+                  "type": "string",
+                  "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+                },
+                "version": {
+                  "type": "integer",
+                  "exclusiveMinimum": 0,
+                  "maximum": 9007199254740991
+                }
+              },
+              "required": [
+                "hash",
+                "id",
+                "version"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "feedback_release_ref": {
+          "anyOf": [
+            {
+              "type": "object",
+              "properties": {
+                "hash": {
+                  "type": "string",
+                  "pattern": "^sha256:[0-9a-f]{64}$"
+                },
+                "id": {
+                  "type": "string",
+                  "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+                },
+                "version": {
+                  "type": "integer",
+                  "exclusiveMinimum": 0,
+                  "maximum": 9007199254740991
+                }
+              },
+              "required": [
+                "hash",
+                "id",
+                "version"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "calculation_hash": {
+          "type": "string",
+          "pattern": "^sha256:[0-9a-f]{64}$"
+        },
+        "supersedes_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "submission_id",
+        "status",
+        "score_micros",
+        "parts",
+        "reason_codes",
+        "evaluator_ref",
+        "rubric_ref",
+        "feedback_release_ref",
+        "calculation_hash",
+        "supersedes_id"
+      ],
+      "additionalProperties": false
+    },
+    "event_envelope": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "type": "object",
+      "properties": {
+        "aggregate": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+            },
+            "revision": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 9007199254740991
+            },
+            "sequence": {
+              "type": "integer",
+              "exclusiveMinimum": 0,
+              "maximum": 9007199254740991
+            },
+            "type": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "id",
+            "revision",
+            "sequence",
+            "type"
+          ],
+          "additionalProperties": false
+        },
+        "causation_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "correlation_id": {
+          "type": "string",
+          "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+        },
+        "data": {
+          "type": "object",
+          "propertyNames": {
+            "type": "string"
+          },
+          "additionalProperties": {}
+        },
+        "event_id": {
+          "type": "string",
+          "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+        },
+        "event_type": {
+          "type": "string",
+          "pattern": "^[a-z][a-z0-9_.]*$"
+        },
+        "event_version": {
+          "type": "number",
+          "const": 1
+        },
+        "occurred_at": {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z|([+-](?:[01]\\d|2[0-3]):[0-5]\\d)))$"
+        },
+        "payload_hash": {
+          "type": "string",
+          "pattern": "^sha256:[0-9a-f]{64}$"
+        },
+        "producer": {
+          "type": "string",
+          "minLength": 1
+        },
+        "schema_version": {
+          "type": "number",
+          "const": 1
+        },
+        "subject": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+            },
+            "type": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "id",
+            "type"
+          ],
+          "additionalProperties": false
+        },
+        "trace_context": {
+          "type": "object",
+          "properties": {
+            "trace_id": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "minLength": 1
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "required": [
+            "trace_id"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "required": [
+        "aggregate",
+        "causation_id",
+        "correlation_id",
+        "data",
+        "event_id",
+        "event_type",
+        "event_version",
+        "occurred_at",
+        "payload_hash",
+        "producer",
+        "schema_version",
+        "trace_context"
+      ],
+      "additionalProperties": false
+    },
+    "evidence_event": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+        },
+        "learner_id": {
+          "type": "string",
+          "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+        },
+        "kc_id": {
+          "type": "string",
+          "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+        },
+        "evidence_type": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_ref": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string",
+              "minLength": 1
+            },
+            "id": {
+              "type": "string",
+              "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+            }
+          },
+          "required": [
+            "type",
+            "id"
+          ],
+          "additionalProperties": false
+        },
+        "encounter_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "signal": {
+          "type": "object",
+          "propertyNames": {
+            "type": "string"
+          },
+          "additionalProperties": {}
+        },
+        "eligibility": {
+          "type": "string",
+          "enum": [
+            "accepted",
+            "rejected",
+            "pending",
+            "superseded"
+          ]
+        },
+        "reason_codes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "version_set": {
+          "type": "object",
+          "properties": {
+            "schema_version": {
+              "type": "number",
+              "const": 1
+            },
+            "curriculum": {
+              "type": "object",
+              "properties": {
+                "hash": {
+                  "type": "string",
+                  "pattern": "^sha256:[0-9a-f]{64}$"
+                },
+                "id": {
+                  "type": "string",
+                  "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+                },
+                "version": {
+                  "type": "integer",
+                  "exclusiveMinimum": 0,
+                  "maximum": 9007199254740991
+                }
+              },
+              "required": [
+                "hash",
+                "id",
+                "version"
+              ],
+              "additionalProperties": false
+            },
+            "content_pack": {
+              "type": "object",
+              "properties": {
+                "hash": {
+                  "type": "string",
+                  "pattern": "^sha256:[0-9a-f]{64}$"
+                },
+                "id": {
+                  "type": "string",
+                  "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+                },
+                "version": {
+                  "type": "integer",
+                  "exclusiveMinimum": 0,
+                  "maximum": 9007199254740991
+                }
+              },
+              "required": [
+                "hash",
+                "id",
+                "version"
+              ],
+              "additionalProperties": false
+            },
+            "learning_policy": {
+              "type": "object",
+              "properties": {
+                "hash": {
+                  "type": "string",
+                  "pattern": "^sha256:[0-9a-f]{64}$"
+                },
+                "id": {
+                  "type": "string",
+                  "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+                },
+                "version": {
+                  "type": "integer",
+                  "exclusiveMinimum": 0,
+                  "maximum": 9007199254740991
+                }
+              },
+              "required": [
+                "hash",
+                "id",
+                "version"
+              ],
+              "additionalProperties": false
+            },
+            "mastery_policy": {
+              "type": "object",
+              "properties": {
+                "hash": {
+                  "type": "string",
+                  "pattern": "^sha256:[0-9a-f]{64}$"
+                },
+                "id": {
+                  "type": "string",
+                  "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+                },
+                "version": {
+                  "type": "integer",
+                  "exclusiveMinimum": 0,
+                  "maximum": 9007199254740991
+                }
+              },
+              "required": [
+                "hash",
+                "id",
+                "version"
+              ],
+              "additionalProperties": false
+            },
+            "practice_policy": {
+              "type": "object",
+              "properties": {
+                "hash": {
+                  "type": "string",
+                  "pattern": "^sha256:[0-9a-f]{64}$"
+                },
+                "id": {
+                  "type": "string",
+                  "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+                },
+                "version": {
+                  "type": "integer",
+                  "exclusiveMinimum": 0,
+                  "maximum": 9007199254740991
+                }
+              },
+              "required": [
+                "hash",
+                "id",
+                "version"
+              ],
+              "additionalProperties": false
+            },
+            "evaluator": {
+              "type": "object",
+              "properties": {
+                "hash": {
+                  "type": "string",
+                  "pattern": "^sha256:[0-9a-f]{64}$"
+                },
+                "id": {
+                  "type": "string",
+                  "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+                },
+                "version": {
+                  "type": "integer",
+                  "exclusiveMinimum": 0,
+                  "maximum": 9007199254740991
+                }
+              },
+              "required": [
+                "hash",
+                "id",
+                "version"
+              ],
+              "additionalProperties": false
+            },
+            "assessment_blueprint": {
+              "type": "null"
+            }
+          },
+          "required": [
+            "schema_version",
+            "curriculum",
+            "content_pack",
+            "learning_policy",
+            "mastery_policy",
+            "practice_policy",
+            "evaluator",
+            "assessment_blueprint"
+          ],
+          "additionalProperties": false
+        },
+        "occurred_at": {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z|([+-](?:[01]\\d|2[0-3]):[0-5]\\d)))$"
+        },
+        "supersedes_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "learner_id",
+        "kc_id",
+        "evidence_type",
+        "source_ref",
+        "encounter_id",
+        "signal",
+        "eligibility",
+        "reason_codes",
+        "version_set",
+        "occurred_at",
+        "supersedes_id"
+      ],
+      "additionalProperties": false
+    },
+    "guest_onboarding_draft": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "type": "number",
+          "const": 1
+        },
+        "draft_id": {
+          "type": "string",
+          "format": "uuid",
+          "pattern": "^([0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[1-8][0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}|00000000-0000-0000-0000-000000000000|ffffffff-ffff-ffff-ffff-ffffffffffff)$"
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z|([+-](?:[01]\\d|2[0-3]):[0-5]\\d)))$"
+        },
+        "expires_at": {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z|([+-](?:[01]\\d|2[0-3]):[0-5]\\d)))$"
+        },
+        "goal": {
+          "type": "object",
+          "propertyNames": {
+            "type": "string"
+          },
+          "additionalProperties": {}
+        },
+        "availability": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "propertyNames": {
+              "type": "string"
+            },
+            "additionalProperties": {}
+          }
+        },
+        "locale": {
+          "type": "string",
+          "const": "id-ID"
+        },
+        "timezone": {
+          "type": "string",
+          "minLength": 1
+        },
+        "migration_state": {
+          "type": "string",
+          "enum": [
+            "local",
+            "migrating",
+            "migrated",
+            "failed"
+          ]
+        }
+      },
+      "required": [
+        "schema_version",
+        "draft_id",
+        "created_at",
+        "expires_at",
+        "goal",
+        "availability",
+        "locale",
+        "timezone",
+        "migration_state"
+      ],
+      "additionalProperties": false
+    },
+    "learner_kc_state": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+        },
+        "learner_id": {
+          "type": "string",
+          "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+        },
+        "kc_id": {
+          "type": "string",
+          "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "not_started",
+            "learning",
+            "provisional",
+            "mastered",
+            "review_required"
+          ]
+        },
+        "mastery_score_micros": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1000000
+        },
+        "confidence_micros": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1000000
+        },
+        "evidence_sufficiency": {
+          "type": "object",
+          "propertyNames": {
+            "type": "string"
+          },
+          "additionalProperties": {}
+        },
+        "diagnostic_dimensions": {
+          "type": "object",
+          "propertyNames": {
+            "type": "string"
+          },
+          "additionalProperties": {}
+        },
+        "last_evidence_id": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "review_due_at": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time",
+              "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z|([+-](?:[01]\\d|2[0-3]):[0-5]\\d)))$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "policy_ref": {
+          "type": "object",
+          "properties": {
+            "hash": {
+              "type": "string",
+              "pattern": "^sha256:[0-9a-f]{64}$"
+            },
+            "id": {
+              "type": "string",
+              "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+            },
+            "version": {
+              "type": "integer",
+              "exclusiveMinimum": 0,
+              "maximum": 9007199254740991
+            }
+          },
+          "required": [
+            "hash",
+            "id",
+            "version"
+          ],
+          "additionalProperties": false
+        },
+        "calculation_hash": {
+          "type": "string",
+          "pattern": "^sha256:[0-9a-f]{64}$"
+        },
+        "revision": {
+          "type": "integer",
+          "exclusiveMinimum": 0,
+          "maximum": 9007199254740991
+        }
+      },
+      "required": [
+        "id",
+        "learner_id",
+        "kc_id",
+        "status",
+        "mastery_score_micros",
+        "confidence_micros",
+        "evidence_sufficiency",
+        "diagnostic_dimensions",
+        "last_evidence_id",
+        "review_due_at",
+        "policy_ref",
+        "calculation_hash",
+        "revision"
+      ],
+      "additionalProperties": false
+    },
+    "learner_profile": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+        },
+        "user_id": {
+          "type": "string",
+          "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+        },
+        "display_name": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 120
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "experience_path": {
+          "type": "string",
+          "enum": [
+            "absolute_beginner",
+            "placement"
+          ]
+        },
+        "locale": {
+          "type": "string",
+          "const": "id-ID"
+        },
+        "timezone": {
+          "type": "string",
+          "minLength": 1
+        },
+        "preference_refs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "accommodation_profile_ref": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "revision": {
+          "type": "integer",
+          "exclusiveMinimum": 0,
+          "maximum": 9007199254740991
+        }
+      },
+      "required": [
+        "id",
+        "user_id",
+        "display_name",
+        "experience_path",
+        "locale",
+        "timezone",
+        "preference_refs",
+        "accommodation_profile_ref",
+        "revision"
+      ],
+      "additionalProperties": false
+    },
+    "problem": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "type": "object",
+      "properties": {
+        "type": {
+          "type": "string",
+          "format": "uri"
+        },
+        "title": {
+          "type": "string"
+        },
+        "status": {
+          "type": "integer",
+          "minimum": 400,
+          "maximum": 599
+        },
+        "detail": {
+          "type": "string"
+        },
+        "instance": {
+          "type": "string"
+        },
+        "reason_code": {
+          "type": "string"
+        },
+        "correlation_id": {
+          "type": "string",
+          "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+        }
+      },
+      "required": [
+        "type",
+        "title",
+        "status",
+        "detail",
+        "reason_code"
+      ],
+      "additionalProperties": false
+    },
+    "practice_run": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+        },
+        "learner_id": {
+          "type": "string",
+          "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+        },
+        "session_plan_id": {
+          "type": "string",
+          "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+        },
+        "version_set": {
+          "type": "object",
+          "properties": {
+            "schema_version": {
+              "type": "number",
+              "const": 1
+            },
+            "curriculum": {
+              "type": "object",
+              "properties": {
+                "hash": {
+                  "type": "string",
+                  "pattern": "^sha256:[0-9a-f]{64}$"
+                },
+                "id": {
+                  "type": "string",
+                  "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+                },
+                "version": {
+                  "type": "integer",
+                  "exclusiveMinimum": 0,
+                  "maximum": 9007199254740991
+                }
+              },
+              "required": [
+                "hash",
+                "id",
+                "version"
+              ],
+              "additionalProperties": false
+            },
+            "content_pack": {
+              "type": "object",
+              "properties": {
+                "hash": {
+                  "type": "string",
+                  "pattern": "^sha256:[0-9a-f]{64}$"
+                },
+                "id": {
+                  "type": "string",
+                  "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+                },
+                "version": {
+                  "type": "integer",
+                  "exclusiveMinimum": 0,
+                  "maximum": 9007199254740991
+                }
+              },
+              "required": [
+                "hash",
+                "id",
+                "version"
+              ],
+              "additionalProperties": false
+            },
+            "learning_policy": {
+              "type": "object",
+              "properties": {
+                "hash": {
+                  "type": "string",
+                  "pattern": "^sha256:[0-9a-f]{64}$"
+                },
+                "id": {
+                  "type": "string",
+                  "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+                },
+                "version": {
+                  "type": "integer",
+                  "exclusiveMinimum": 0,
+                  "maximum": 9007199254740991
+                }
+              },
+              "required": [
+                "hash",
+                "id",
+                "version"
+              ],
+              "additionalProperties": false
+            },
+            "mastery_policy": {
+              "type": "object",
+              "properties": {
+                "hash": {
+                  "type": "string",
+                  "pattern": "^sha256:[0-9a-f]{64}$"
+                },
+                "id": {
+                  "type": "string",
+                  "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+                },
+                "version": {
+                  "type": "integer",
+                  "exclusiveMinimum": 0,
+                  "maximum": 9007199254740991
+                }
+              },
+              "required": [
+                "hash",
+                "id",
+                "version"
+              ],
+              "additionalProperties": false
+            },
+            "practice_policy": {
+              "type": "object",
+              "properties": {
+                "hash": {
+                  "type": "string",
+                  "pattern": "^sha256:[0-9a-f]{64}$"
+                },
+                "id": {
+                  "type": "string",
+                  "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+                },
+                "version": {
+                  "type": "integer",
+                  "exclusiveMinimum": 0,
+                  "maximum": 9007199254740991
+                }
+              },
+              "required": [
+                "hash",
+                "id",
+                "version"
+              ],
+              "additionalProperties": false
+            },
+            "evaluator": {
+              "type": "object",
+              "properties": {
+                "hash": {
+                  "type": "string",
+                  "pattern": "^sha256:[0-9a-f]{64}$"
+                },
+                "id": {
+                  "type": "string",
+                  "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+                },
+                "version": {
+                  "type": "integer",
+                  "exclusiveMinimum": 0,
+                  "maximum": 9007199254740991
+                }
+              },
+              "required": [
+                "hash",
+                "id",
+                "version"
+              ],
+              "additionalProperties": false
+            },
+            "assessment_blueprint": {
+              "type": "null"
+            }
+          },
+          "required": [
+            "schema_version",
+            "curriculum",
+            "content_pack",
+            "learning_policy",
+            "mastery_policy",
+            "practice_policy",
+            "evaluator",
+            "assessment_blueprint"
+          ],
+          "additionalProperties": false
+        },
+        "mode": {
+          "type": "string",
+          "enum": [
+            "guided",
+            "review",
+            "remedial"
+          ]
+        },
+        "state": {
+          "type": "string",
+          "enum": [
+            "created",
+            "active",
+            "paused",
+            "completed",
+            "abandoned",
+            "invalidated"
+          ]
+        },
+        "current_item_index": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "started_at": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time",
+              "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z|([+-](?:[01]\\d|2[0-3]):[0-5]\\d)))$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "completed_at": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time",
+              "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z|([+-](?:[01]\\d|2[0-3]):[0-5]\\d)))$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "resume_token_version": {
+          "type": "integer",
+          "exclusiveMinimum": 0,
+          "maximum": 9007199254740991
+        },
+        "completion_summary_ref": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "revision": {
+          "type": "integer",
+          "exclusiveMinimum": 0,
+          "maximum": 9007199254740991
+        }
+      },
+      "required": [
+        "id",
+        "learner_id",
+        "session_plan_id",
+        "version_set",
+        "mode",
+        "state",
+        "current_item_index",
+        "started_at",
+        "completed_at",
+        "resume_token_version",
+        "completion_summary_ref",
+        "revision"
+      ],
+      "additionalProperties": false
+    },
+    "session_plan": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+        },
+        "learner_id": {
+          "type": "string",
+          "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+        },
+        "source_learning_plan_revision": {
+          "type": "integer",
+          "exclusiveMinimum": 0,
+          "maximum": 9007199254740991
+        },
+        "version_set": {
+          "type": "object",
+          "properties": {
+            "schema_version": {
+              "type": "number",
+              "const": 1
+            },
+            "curriculum": {
+              "type": "object",
+              "properties": {
+                "hash": {
+                  "type": "string",
+                  "pattern": "^sha256:[0-9a-f]{64}$"
+                },
+                "id": {
+                  "type": "string",
+                  "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+                },
+                "version": {
+                  "type": "integer",
+                  "exclusiveMinimum": 0,
+                  "maximum": 9007199254740991
+                }
+              },
+              "required": [
+                "hash",
+                "id",
+                "version"
+              ],
+              "additionalProperties": false
+            },
+            "content_pack": {
+              "type": "object",
+              "properties": {
+                "hash": {
+                  "type": "string",
+                  "pattern": "^sha256:[0-9a-f]{64}$"
+                },
+                "id": {
+                  "type": "string",
+                  "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+                },
+                "version": {
+                  "type": "integer",
+                  "exclusiveMinimum": 0,
+                  "maximum": 9007199254740991
+                }
+              },
+              "required": [
+                "hash",
+                "id",
+                "version"
+              ],
+              "additionalProperties": false
+            },
+            "learning_policy": {
+              "type": "object",
+              "properties": {
+                "hash": {
+                  "type": "string",
+                  "pattern": "^sha256:[0-9a-f]{64}$"
+                },
+                "id": {
+                  "type": "string",
+                  "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+                },
+                "version": {
+                  "type": "integer",
+                  "exclusiveMinimum": 0,
+                  "maximum": 9007199254740991
+                }
+              },
+              "required": [
+                "hash",
+                "id",
+                "version"
+              ],
+              "additionalProperties": false
+            },
+            "mastery_policy": {
+              "type": "object",
+              "properties": {
+                "hash": {
+                  "type": "string",
+                  "pattern": "^sha256:[0-9a-f]{64}$"
+                },
+                "id": {
+                  "type": "string",
+                  "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+                },
+                "version": {
+                  "type": "integer",
+                  "exclusiveMinimum": 0,
+                  "maximum": 9007199254740991
+                }
+              },
+              "required": [
+                "hash",
+                "id",
+                "version"
+              ],
+              "additionalProperties": false
+            },
+            "practice_policy": {
+              "type": "object",
+              "properties": {
+                "hash": {
+                  "type": "string",
+                  "pattern": "^sha256:[0-9a-f]{64}$"
+                },
+                "id": {
+                  "type": "string",
+                  "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+                },
+                "version": {
+                  "type": "integer",
+                  "exclusiveMinimum": 0,
+                  "maximum": 9007199254740991
+                }
+              },
+              "required": [
+                "hash",
+                "id",
+                "version"
+              ],
+              "additionalProperties": false
+            },
+            "evaluator": {
+              "type": "object",
+              "properties": {
+                "hash": {
+                  "type": "string",
+                  "pattern": "^sha256:[0-9a-f]{64}$"
+                },
+                "id": {
+                  "type": "string",
+                  "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+                },
+                "version": {
+                  "type": "integer",
+                  "exclusiveMinimum": 0,
+                  "maximum": 9007199254740991
+                }
+              },
+              "required": [
+                "hash",
+                "id",
+                "version"
+              ],
+              "additionalProperties": false
+            },
+            "assessment_blueprint": {
+              "type": "null"
+            }
+          },
+          "required": [
+            "schema_version",
+            "curriculum",
+            "content_pack",
+            "learning_policy",
+            "mastery_policy",
+            "practice_policy",
+            "evaluator",
+            "assessment_blueprint"
+          ],
+          "additionalProperties": false
+        },
+        "mode": {
+          "type": "string",
+          "enum": [
+            "guided",
+            "review",
+            "remedial"
+          ]
+        },
+        "target_duration_minutes": {
+          "type": "integer",
+          "exclusiveMinimum": 0,
+          "maximum": 9007199254740991
+        },
+        "items": {
+          "minItems": 1,
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "order": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9007199254740991
+              },
+              "target_kc_id": {
+                "type": "string",
+                "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+              },
+              "content_ref": {
+                "type": "object",
+                "properties": {
+                  "hash": {
+                    "type": "string",
+                    "pattern": "^sha256:[0-9a-f]{64}$"
+                  },
+                  "id": {
+                    "type": "string",
+                    "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+                  },
+                  "version": {
+                    "type": "integer",
+                    "exclusiveMinimum": 0,
+                    "maximum": 9007199254740991
+                  }
+                },
+                "required": [
+                  "hash",
+                  "id",
+                  "version"
+                ],
+                "additionalProperties": false
+              },
+              "purpose": {
+                "type": "string",
+                "enum": [
+                  "new",
+                  "review",
+                  "remedial",
+                  "probe",
+                  "exit_check"
+                ]
+              },
+              "priority": {
+                "type": "integer",
+                "minimum": -9007199254740991,
+                "maximum": 9007199254740991
+              },
+              "estimated_duration_seconds": {
+                "type": "integer",
+                "exclusiveMinimum": 0,
+                "maximum": 9007199254740991
+              },
+              "support_policy_ref": {
+                "type": "object",
+                "properties": {
+                  "hash": {
+                    "type": "string",
+                    "pattern": "^sha256:[0-9a-f]{64}$"
+                  },
+                  "id": {
+                    "type": "string",
+                    "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+                  },
+                  "version": {
+                    "type": "integer",
+                    "exclusiveMinimum": 0,
+                    "maximum": 9007199254740991
+                  }
+                },
+                "required": [
+                  "hash",
+                  "id",
+                  "version"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "order",
+              "target_kc_id",
+              "content_ref",
+              "purpose",
+              "priority",
+              "estimated_duration_seconds",
+              "support_policy_ref"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "target_kc_ids": {
+          "minItems": 1,
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+          }
+        },
+        "reason_codes": {
+          "minItems": 1,
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "review_allocation_micros": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1000000
+        },
+        "new_content_allocation_micros": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1000000
+        },
+        "generated_at": {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z|([+-](?:[01]\\d|2[0-3]):[0-5]\\d)))$"
+        },
+        "expires_at": {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z|([+-](?:[01]\\d|2[0-3]):[0-5]\\d)))$"
+        },
+        "decision_hash": {
+          "type": "string",
+          "pattern": "^sha256:[0-9a-f]{64}$"
+        }
+      },
+      "required": [
+        "id",
+        "learner_id",
+        "source_learning_plan_revision",
+        "version_set",
+        "mode",
+        "target_duration_minutes",
+        "items",
+        "target_kc_ids",
+        "reason_codes",
+        "review_allocation_micros",
+        "new_content_allocation_micros",
+        "generated_at",
+        "expires_at",
+        "decision_hash"
+      ],
+      "additionalProperties": false
+    },
+    "submission": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+        },
+        "activity_instance_id": {
+          "type": "string",
+          "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+        },
+        "raw_response": {
+          "type": "object",
+          "propertyNames": {
+            "type": "string"
+          },
+          "additionalProperties": {}
+        },
+        "normalized_response": {
+          "type": "object",
+          "propertyNames": {
+            "type": "string"
+          },
+          "additionalProperties": {}
+        },
+        "response_schema_version": {
+          "type": "integer",
+          "exclusiveMinimum": 0,
+          "maximum": 9007199254740991
+        },
+        "attempt_number": {
+          "type": "integer",
+          "exclusiveMinimum": 0,
+          "maximum": 9007199254740991
+        },
+        "hint_state": {
+          "type": "object",
+          "propertyNames": {
+            "type": "string"
+          },
+          "additionalProperties": {}
+        },
+        "support_state": {
+          "type": "object",
+          "propertyNames": {
+            "type": "string"
+          },
+          "additionalProperties": {}
+        },
+        "replay_count": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 9007199254740991
+        },
+        "client_event_at": {
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "date-time",
+              "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z|([+-](?:[01]\\d|2[0-3]):[0-5]\\d)))$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "received_at": {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d(?:\\.\\d+)?(?:Z|([+-](?:[01]\\d|2[0-3]):[0-5]\\d)))$"
+        },
+        "idempotency_key": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "id",
+        "activity_instance_id",
+        "raw_response",
+        "normalized_response",
+        "response_schema_version",
+        "attempt_number",
+        "hint_state",
+        "support_state",
+        "replay_count",
+        "client_event_at",
+        "received_at",
+        "idempotency_key"
+      ],
+      "additionalProperties": false
+    },
+    "version_ref": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "type": "object",
+      "properties": {
+        "hash": {
+          "type": "string",
+          "pattern": "^sha256:[0-9a-f]{64}$"
+        },
+        "id": {
+          "type": "string",
+          "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+        },
+        "version": {
+          "type": "integer",
+          "exclusiveMinimum": 0,
+          "maximum": 9007199254740991
+        }
+      },
+      "required": [
+        "hash",
+        "id",
+        "version"
+      ],
+      "additionalProperties": false
+    },
+    "version_set": {
+      "$schema": "https://json-schema.org/draft/2020-12/schema",
+      "type": "object",
+      "properties": {
+        "schema_version": {
+          "type": "number",
+          "const": 1
+        },
+        "curriculum": {
+          "type": "object",
+          "properties": {
+            "hash": {
+              "type": "string",
+              "pattern": "^sha256:[0-9a-f]{64}$"
+            },
+            "id": {
+              "type": "string",
+              "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+            },
+            "version": {
+              "type": "integer",
+              "exclusiveMinimum": 0,
+              "maximum": 9007199254740991
+            }
+          },
+          "required": [
+            "hash",
+            "id",
+            "version"
+          ],
+          "additionalProperties": false
+        },
+        "content_pack": {
+          "type": "object",
+          "properties": {
+            "hash": {
+              "type": "string",
+              "pattern": "^sha256:[0-9a-f]{64}$"
+            },
+            "id": {
+              "type": "string",
+              "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+            },
+            "version": {
+              "type": "integer",
+              "exclusiveMinimum": 0,
+              "maximum": 9007199254740991
+            }
+          },
+          "required": [
+            "hash",
+            "id",
+            "version"
+          ],
+          "additionalProperties": false
+        },
+        "learning_policy": {
+          "type": "object",
+          "properties": {
+            "hash": {
+              "type": "string",
+              "pattern": "^sha256:[0-9a-f]{64}$"
+            },
+            "id": {
+              "type": "string",
+              "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+            },
+            "version": {
+              "type": "integer",
+              "exclusiveMinimum": 0,
+              "maximum": 9007199254740991
+            }
+          },
+          "required": [
+            "hash",
+            "id",
+            "version"
+          ],
+          "additionalProperties": false
+        },
+        "mastery_policy": {
+          "type": "object",
+          "properties": {
+            "hash": {
+              "type": "string",
+              "pattern": "^sha256:[0-9a-f]{64}$"
+            },
+            "id": {
+              "type": "string",
+              "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+            },
+            "version": {
+              "type": "integer",
+              "exclusiveMinimum": 0,
+              "maximum": 9007199254740991
+            }
+          },
+          "required": [
+            "hash",
+            "id",
+            "version"
+          ],
+          "additionalProperties": false
+        },
+        "practice_policy": {
+          "type": "object",
+          "properties": {
+            "hash": {
+              "type": "string",
+              "pattern": "^sha256:[0-9a-f]{64}$"
+            },
+            "id": {
+              "type": "string",
+              "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+            },
+            "version": {
+              "type": "integer",
+              "exclusiveMinimum": 0,
+              "maximum": 9007199254740991
+            }
+          },
+          "required": [
+            "hash",
+            "id",
+            "version"
+          ],
+          "additionalProperties": false
+        },
+        "evaluator": {
+          "type": "object",
+          "properties": {
+            "hash": {
+              "type": "string",
+              "pattern": "^sha256:[0-9a-f]{64}$"
+            },
+            "id": {
+              "type": "string",
+              "pattern": "^(usr|xid|lrn|gol|cur|kc|cnt|cnv|cpk|ast|pol|evr|sch|lpl|spl|prun|ain|sub|evl|evd|mty|dec|abp|afm|arun|rev|app|iss|idem|obx|ibx|evt|job|aud|cor)_[0-7][0-9A-HJKMNP-TV-Z]{25}$"
+            },
+            "version": {
+              "type": "integer",
+              "exclusiveMinimum": 0,
+              "maximum": 9007199254740991
+            }
+          },
+          "required": [
+            "hash",
+            "id",
+            "version"
+          ],
+          "additionalProperties": false
+        },
+        "assessment_blueprint": {
+          "type": "null"
+        }
+      },
+      "required": [
+        "schema_version",
+        "curriculum",
+        "content_pack",
+        "learning_policy",
+        "mastery_policy",
+        "practice_policy",
+        "evaluator",
+        "assessment_blueprint"
+      ],
+      "additionalProperties": false
+    }
+  }
+}

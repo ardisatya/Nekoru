@@ -1,0 +1,498 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-14T17:34:13.2652504+07:00",
+  "title": "Design System: Nekoru",
+  "extensions": {
+    "colorMeta": {
+      "canvas": {
+        "role": "neutral",
+        "displayName": "Warm Canvas",
+        "canonical": "#f7f4ef",
+        "tonalRamp": [
+          "oklch(15% 0.007 80.7)",
+          "oklch(27% 0.007 80.7)",
+          "oklch(39% 0.007 80.7)",
+          "oklch(51% 0.007 80.7)",
+          "oklch(63% 0.007 80.7)",
+          "oklch(75% 0.007 80.7)",
+          "oklch(87% 0.007 80.7)",
+          "oklch(95% 0.007 80.7)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "Study Paper",
+        "canonical": "#fffdf9",
+        "tonalRamp": [
+          "oklch(15% 0.006 84.6)",
+          "oklch(27% 0.006 84.6)",
+          "oklch(39% 0.006 84.6)",
+          "oklch(51% 0.006 84.6)",
+          "oklch(63% 0.006 84.6)",
+          "oklch(75% 0.006 84.6)",
+          "oklch(87% 0.006 84.6)",
+          "oklch(95% 0.006 84.6)"
+        ]
+      },
+      "surface-raised": {
+        "role": "neutral",
+        "displayName": "Raised Paper",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(27% 0 0)",
+          "oklch(39% 0 0)",
+          "oklch(51% 0 0)",
+          "oklch(63% 0 0)",
+          "oklch(75% 0 0)",
+          "oklch(87% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Deep Ink",
+        "canonical": "#25233a",
+        "tonalRamp": [
+          "oklch(15% 0.042 287.2)",
+          "oklch(27% 0.042 287.2)",
+          "oklch(39% 0.042 287.2)",
+          "oklch(51% 0.042 287.2)",
+          "oklch(63% 0.042 287.2)",
+          "oklch(75% 0.042 287.2)",
+          "oklch(87% 0.042 287.2)",
+          "oklch(95% 0.042 287.2)"
+        ]
+      },
+      "ink-muted": {
+        "role": "neutral",
+        "displayName": "Muted Ink",
+        "canonical": "#625f72",
+        "tonalRamp": [
+          "oklch(15% 0.03 292.5)",
+          "oklch(27% 0.03 292.5)",
+          "oklch(39% 0.03 292.5)",
+          "oklch(51% 0.03 292.5)",
+          "oklch(63% 0.03 292.5)",
+          "oklch(75% 0.03 292.5)",
+          "oklch(87% 0.03 292.5)",
+          "oklch(95% 0.03 292.5)"
+        ]
+      },
+      "primary": {
+        "role": "primary",
+        "displayName": "Guided Indigo",
+        "canonical": "#4f438f",
+        "tonalRamp": [
+          "oklch(15% 0.121 287.5)",
+          "oklch(27% 0.121 287.5)",
+          "oklch(39% 0.121 287.5)",
+          "oklch(51% 0.121 287.5)",
+          "oklch(63% 0.121 287.5)",
+          "oklch(75% 0.121 287.5)",
+          "oklch(87% 0.121 287.5)",
+          "oklch(95% 0.121 287.5)"
+        ]
+      },
+      "primary-strong": {
+        "role": "primary",
+        "displayName": "Deep Guided Indigo",
+        "canonical": "#382f70",
+        "tonalRamp": [
+          "oklch(15% 0.108 285.8)",
+          "oklch(27% 0.108 285.8)",
+          "oklch(39% 0.108 285.8)",
+          "oklch(51% 0.108 285.8)",
+          "oklch(63% 0.108 285.8)",
+          "oklch(75% 0.108 285.8)",
+          "oklch(87% 0.108 285.8)",
+          "oklch(95% 0.108 285.8)"
+        ]
+      },
+      "primary-soft": {
+        "role": "primary",
+        "displayName": "Lavender Study Wash",
+        "canonical": "#ece9ff",
+        "tonalRamp": [
+          "oklch(15% 0.03 292.1)",
+          "oklch(27% 0.03 292.1)",
+          "oklch(39% 0.03 292.1)",
+          "oklch(51% 0.03 292.1)",
+          "oklch(63% 0.03 292.1)",
+          "oklch(75% 0.03 292.1)",
+          "oklch(87% 0.03 292.1)",
+          "oklch(95% 0.03 292.1)"
+        ]
+      },
+      "accent": {
+        "role": "secondary",
+        "displayName": "Sakura Accent",
+        "canonical": "#cf567b",
+        "tonalRamp": [
+          "oklch(15% 0.157 3.8)",
+          "oklch(27% 0.157 3.8)",
+          "oklch(39% 0.157 3.8)",
+          "oklch(51% 0.157 3.8)",
+          "oklch(63% 0.157 3.8)",
+          "oklch(75% 0.157 3.8)",
+          "oklch(87% 0.157 3.8)",
+          "oklch(95% 0.157 3.8)"
+        ]
+      },
+      "accent-soft": {
+        "role": "secondary",
+        "displayName": "Sakura Wash",
+        "canonical": "#ffe5ed",
+        "tonalRamp": [
+          "oklch(15% 0.03 357.1)",
+          "oklch(27% 0.03 357.1)",
+          "oklch(39% 0.03 357.1)",
+          "oklch(51% 0.03 357.1)",
+          "oklch(63% 0.03 357.1)",
+          "oklch(75% 0.03 357.1)",
+          "oklch(87% 0.03 357.1)",
+          "oklch(95% 0.03 357.1)"
+        ]
+      },
+      "success": {
+        "role": "tertiary",
+        "displayName": "Evidence Green",
+        "canonical": "#176a4a",
+        "tonalRamp": [
+          "oklch(15% 0.093 162.2)",
+          "oklch(27% 0.093 162.2)",
+          "oklch(39% 0.093 162.2)",
+          "oklch(51% 0.093 162.2)",
+          "oklch(63% 0.093 162.2)",
+          "oklch(75% 0.093 162.2)",
+          "oklch(87% 0.093 162.2)",
+          "oklch(95% 0.093 162.2)"
+        ]
+      },
+      "success-soft": {
+        "role": "tertiary",
+        "displayName": "Evidence Green Wash",
+        "canonical": "#e4f4ed",
+        "tonalRamp": [
+          "oklch(15% 0.019 167.9)",
+          "oklch(27% 0.019 167.9)",
+          "oklch(39% 0.019 167.9)",
+          "oklch(51% 0.019 167.9)",
+          "oklch(63% 0.019 167.9)",
+          "oklch(75% 0.019 167.9)",
+          "oklch(87% 0.019 167.9)",
+          "oklch(95% 0.019 167.9)"
+        ]
+      },
+      "warning": {
+        "role": "tertiary",
+        "displayName": "Recovery Amber",
+        "canonical": "#8a5512",
+        "tonalRamp": [
+          "oklch(15% 0.103 65.9)",
+          "oklch(27% 0.103 65.9)",
+          "oklch(39% 0.103 65.9)",
+          "oklch(51% 0.103 65.9)",
+          "oklch(63% 0.103 65.9)",
+          "oklch(75% 0.103 65.9)",
+          "oklch(87% 0.103 65.9)",
+          "oklch(95% 0.103 65.9)"
+        ]
+      },
+      "warning-soft": {
+        "role": "tertiary",
+        "displayName": "Recovery Amber Wash",
+        "canonical": "#fff0d8",
+        "tonalRamp": [
+          "oklch(15% 0.035 79.7)",
+          "oklch(27% 0.035 79.7)",
+          "oklch(39% 0.035 79.7)",
+          "oklch(51% 0.035 79.7)",
+          "oklch(63% 0.035 79.7)",
+          "oklch(75% 0.035 79.7)",
+          "oklch(87% 0.035 79.7)",
+          "oklch(95% 0.035 79.7)"
+        ]
+      },
+      "danger": {
+        "role": "tertiary",
+        "displayName": "Careful Red",
+        "canonical": "#a33b45",
+        "tonalRamp": [
+          "oklch(15% 0.137 17.9)",
+          "oklch(27% 0.137 17.9)",
+          "oklch(39% 0.137 17.9)",
+          "oklch(51% 0.137 17.9)",
+          "oklch(63% 0.137 17.9)",
+          "oklch(75% 0.137 17.9)",
+          "oklch(87% 0.137 17.9)",
+          "oklch(95% 0.137 17.9)"
+        ]
+      },
+      "danger-soft": {
+        "role": "tertiary",
+        "displayName": "Careful Red Wash",
+        "canonical": "#ffe7e8",
+        "tonalRamp": [
+          "oklch(15% 0.026 14.7)",
+          "oklch(27% 0.026 14.7)",
+          "oklch(39% 0.026 14.7)",
+          "oklch(51% 0.026 14.7)",
+          "oklch(63% 0.026 14.7)",
+          "oklch(75% 0.026 14.7)",
+          "oklch(87% 0.026 14.7)",
+          "oklch(95% 0.026 14.7)"
+        ]
+      },
+      "border": {
+        "role": "neutral",
+        "displayName": "Warm Divider",
+        "canonical": "#dcd5ca",
+        "tonalRamp": [
+          "oklch(15% 0.017 79.3)",
+          "oklch(27% 0.017 79.3)",
+          "oklch(39% 0.017 79.3)",
+          "oklch(51% 0.017 79.3)",
+          "oklch(63% 0.017 79.3)",
+          "oklch(75% 0.017 79.3)",
+          "oklch(87% 0.017 79.3)",
+          "oklch(95% 0.017 79.3)"
+        ]
+      },
+      "focus": {
+        "role": "secondary",
+        "displayName": "Sakura Focus",
+        "canonical": "#d94d7a",
+        "tonalRamp": [
+          "oklch(15% 0.178 4.1)",
+          "oklch(27% 0.178 4.1)",
+          "oklch(39% 0.178 4.1)",
+          "oklch(51% 0.178 4.1)",
+          "oklch(63% 0.178 4.1)",
+          "oklch(75% 0.178 4.1)",
+          "oklch(87% 0.178 4.1)",
+          "oklch(95% 0.178 4.1)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Activity Display",
+        "purpose": "Single dominant activity title."
+      },
+      "headline": {
+        "displayName": "Prompt Headline",
+        "purpose": "Prominent activity prompt or legend."
+      },
+      "title": {
+        "displayName": "Surface Title",
+        "purpose": "Context and status headings."
+      },
+      "body": {
+        "displayName": "Interface Body",
+        "purpose": "Instructions and explanatory copy."
+      },
+      "control": {
+        "displayName": "Confident Control",
+        "purpose": "Button labels and primary interactive actions."
+      },
+      "supporting": {
+        "displayName": "Supporting UI",
+        "purpose": "Progress, context notes, and secondary controls."
+      },
+      "label": {
+        "displayName": "Compact Metadata",
+        "purpose": "Short metadata and definition terms."
+      },
+      "japanese": {
+        "displayName": "Japanese Learning Text",
+        "purpose": "Kana in answer and matching controls."
+      }
+    },
+    "shadows": [
+      {
+        "name": "raised-study-surface",
+        "value": "0 0.6rem 1.8rem rgba(48, 43, 99, 0.12)",
+        "purpose": "Ambient lift for the dominant activity canvas only."
+      },
+      {
+        "name": "primary-action-lift",
+        "value": "0 0.35rem 1rem rgba(56, 47, 112, 0.22)",
+        "purpose": "Compact tactile lift for an enabled primary action."
+      }
+    ],
+    "motion": [
+      {
+        "name": "state-transition",
+        "value": "160ms ease-out",
+        "purpose": "Background, color, and shadow transitions on buttons."
+      },
+      {
+        "name": "audio-pulse",
+        "value": "1.8s ease-in-out infinite alternate",
+        "purpose": "Decorative audio bars; suppressed by the reduced-motion fallback."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "0.01ms, 1 iteration",
+        "purpose": "Removes meaningful animation when prefers-reduced-motion is active."
+      }
+    ],
+    "breakpoints": [
+      { "name": "compact", "value": "720px" },
+      { "name": "narrow", "value": "360px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The single leading action for the current learning step.",
+      "html": "<button class=\"ds-btn-primary\" type=\"button\">Lanjutkan sesi</button>",
+      "css": ".ds-btn-primary { min-height: 44px; border: 0; border-radius: var(--radius-md); padding: 0.75rem 1rem; color: #fff; background: var(--color-primary); box-shadow: 0 0.35rem 1rem rgba(56,47,112,.22); font-family: var(--font-ui), sans-serif; font-weight: 750; cursor: pointer; transition: background-color 160ms ease-out, color 160ms ease-out, box-shadow 160ms ease-out; } .ds-btn-primary:hover { background: var(--color-primary-strong); } .ds-btn-primary:focus-visible { outline: 3px solid var(--color-focus); outline-offset: 3px; } .ds-btn-primary:active { box-shadow: none; } .ds-btn-primary:disabled { cursor: not-allowed; opacity: .62; box-shadow: none; } @media (forced-colors: active) { .ds-btn-primary { border: 2px solid ButtonText; } .ds-btn-primary:focus-visible { outline-color: Highlight; } }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "A clear alternative action that does not compete with the next step.",
+      "html": "<button class=\"ds-btn-secondary\" type=\"button\">Gunakan email</button>",
+      "css": ".ds-btn-secondary { min-height: 44px; border: 0; border-radius: var(--radius-md); padding: 0.75rem 1rem; color: var(--color-primary-strong); background: var(--color-primary-soft); font-family: var(--font-ui), sans-serif; font-weight: 750; cursor: pointer; transition: background-color 160ms ease-out, color 160ms ease-out; } .ds-btn-secondary:hover { background: var(--color-surface-raised); } .ds-btn-secondary:focus-visible { outline: 3px solid var(--color-focus); outline-offset: 3px; } .ds-btn-secondary:active { background: var(--color-primary-soft); } @media (forced-colors: active) { .ds-btn-secondary { border: 2px solid ButtonText; } .ds-btn-secondary:focus-visible { outline-color: Highlight; } }"
+    },
+    {
+      "name": "Quiet Button",
+      "kind": "button",
+      "refersTo": "button-quiet",
+      "description": "A low-emphasis reversible action such as returning to the previous step.",
+      "html": "<button class=\"ds-btn-quiet\" type=\"button\">Langkah sebelumnya</button>",
+      "css": ".ds-btn-quiet { min-height: 44px; border: 0; border-radius: var(--radius-md); padding: 0.75rem 1rem; color: var(--color-primary-strong); background: transparent; font-family: var(--font-ui), sans-serif; font-weight: 750; text-decoration: underline; text-underline-offset: .2em; cursor: pointer; transition: background-color 160ms ease-out, color 160ms ease-out; } .ds-btn-quiet:hover { background: var(--color-primary-soft); } .ds-btn-quiet:focus-visible { outline: 3px solid var(--color-focus); outline-offset: 3px; } .ds-btn-quiet:active { color: var(--color-primary); } @media (forced-colors: active) { .ds-btn-quiet { border: 2px solid ButtonText; } .ds-btn-quiet:focus-visible { outline-color: Highlight; } }"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "A high-clarity learner field with a persistent label and explicit supporting text.",
+      "html": "<div class=\"ds-field-group\"><label class=\"ds-field-label\" for=\"ds-report\">Apa yang bermasalah?</label><textarea class=\"ds-field\" id=\"ds-report\" placeholder=\"Contoh: audio tidak terdengar\"></textarea><p class=\"ds-field-help\">Jangan tulis email, token, atau jawaban.</p></div>",
+      "css": ".ds-field-group { display: grid; gap: var(--space-3); max-width: 44rem; color: var(--color-ink); font-family: var(--font-ui), sans-serif; } .ds-field-label { font-weight: 800; } .ds-field { width: 100%; min-height: 7rem; padding: .75rem; border: 2px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-surface-raised); color: var(--color-ink); font: inherit; resize: vertical; } .ds-field:hover { border-color: var(--color-primary); } .ds-field:focus-visible { outline: 3px solid var(--color-focus); outline-offset: 3px; } .ds-field-help { margin: 0; color: var(--color-ink-muted); font-size: .9rem; } @media (forced-colors: active) { .ds-field:focus-visible { outline-color: Highlight; } }"
+    },
+    {
+      "name": "State Chip",
+      "kind": "chip",
+      "refersTo": "state-chip",
+      "description": "A review-only state switch that keeps its selected state explicit.",
+      "html": "<div class=\"ds-chip-row\" role=\"group\" aria-label=\"Coba keadaan lain\"><button class=\"ds-state-chip\" type=\"button\" aria-pressed=\"true\">Siap memilih</button><button class=\"ds-state-chip\" type=\"button\" aria-pressed=\"false\">Belum memilih</button></div>",
+      "css": ".ds-chip-row { display: flex; flex-wrap: wrap; gap: var(--space-2); font-family: var(--font-ui), sans-serif; } .ds-state-chip { min-height: 44px; padding: .55rem .85rem; border: 1px solid var(--color-border); border-radius: var(--radius-sm); background: var(--color-surface-raised); color: var(--color-primary-strong); font: inherit; font-weight: 700; cursor: pointer; } .ds-state-chip:hover, .ds-state-chip[aria-pressed=\"true\"] { border-color: var(--color-primary); background: var(--color-primary-soft); } .ds-state-chip:focus-visible { outline: 3px solid var(--color-focus); outline-offset: 3px; } .ds-state-chip:active { color: var(--color-primary); }"
+    },
+    {
+      "name": "Answer Option",
+      "kind": "custom",
+      "refersTo": "answer-option",
+      "description": "A selectable learning answer with visible radio affordance and Japanese text support.",
+      "html": "<label class=\"ds-answer-option\"><input type=\"radio\" name=\"ds-answer\" checked><span lang=\"ja\">あ</span></label>",
+      "css": ".ds-answer-option { display: flex; align-items: center; gap: var(--space-3); min-height: 52px; padding: var(--space-3) var(--space-4); border: 2px solid var(--color-primary); border-radius: var(--radius-md); background: var(--color-primary-soft); color: var(--color-ink); font-family: var(--font-ui), sans-serif; cursor: pointer; } .ds-answer-option:hover { border-color: var(--color-primary-strong); } .ds-answer-option:focus-within { outline: 3px solid var(--color-focus); outline-offset: 3px; } .ds-answer-option input { width: 1.25rem; height: 1.25rem; accent-color: var(--color-primary); } .ds-answer-option span { font-family: var(--font-ja), sans-serif; font-size: 1.35rem; } .ds-answer-option:active { background: var(--color-surface-raised); } @media (forced-colors: active) { .ds-answer-option { border: 2px solid CanvasText; } }"
+    },
+    {
+      "name": "Status Message Set",
+      "kind": "custom",
+      "refersTo": "status-info",
+      "description": "The four implemented semantic surfaces, each pairing tone with explicit title and copy.",
+      "html": "<div class=\"ds-status-stack\"><section class=\"ds-status ds-status-info\"><h2>Jawaban sedang diperiksa</h2><p>Tunggu hasil sebelum melanjutkan.</p></section><section class=\"ds-status ds-status-success\"><h2>Pilihanmu tepat</h2><p>Lanjutkan tanpa klaim berlebihan.</p></section><section class=\"ds-status ds-status-warning\"><h2>Audio belum dapat dimuat</h2><p>Ini gangguan teknis, bukan learner error.</p></section><section class=\"ds-status ds-status-danger\"><h2>Perlu diperbaiki</h2><p>Periksa kembali informasi yang diminta.</p></section></div>",
+      "css": ".ds-status-stack { display: grid; gap: var(--space-3); max-width: 44rem; font-family: var(--font-ui), sans-serif; } .ds-status { border-radius: var(--radius-md); padding: var(--space-4); color: var(--color-ink); } .ds-status h2 { margin: 0 0 var(--space-2); font-size: 1rem; line-height: 1.4; } .ds-status p { margin: 0; } .ds-status-info { background: var(--color-primary-soft); } .ds-status-success { background: var(--color-success-soft); color: #0f553c; } .ds-status-warning { background: var(--color-warning-soft); color: #70420b; } .ds-status-danger { background: var(--color-danger-soft); color: #7e2a34; } .ds-status:hover { outline: 1px solid var(--color-border); } @media (forced-colors: active) { .ds-status { border: 2px solid CanvasText; } }"
+    },
+    {
+      "name": "Activity Canvas",
+      "kind": "card",
+      "refersTo": "activity-canvas",
+      "description": "The raised paper surface that holds one dominant learning task.",
+      "html": "<article class=\"ds-activity-canvas\"><small>Referensi QA: P-M1-12</small><h1>Dengarkan satu vokal</h1><p>Pilihan dapat diubah sampai tombol kirim ditekan.</p></article>",
+      "css": ".ds-activity-canvas { max-width: 44rem; padding: clamp(var(--space-6),5vw,var(--space-12)); border-radius: var(--radius-lg); background: var(--color-surface-raised); color: var(--color-ink); box-shadow: 0 .6rem 1.8rem rgba(48,43,99,.12); font-family: var(--font-ui), sans-serif; } .ds-activity-canvas:hover { box-shadow: 0 .6rem 1.8rem rgba(48,43,99,.12); } .ds-activity-canvas:focus-within { outline: 3px solid var(--color-focus); outline-offset: 3px; } .ds-activity-canvas small { display: block; color: var(--color-primary); font-size: .78rem; font-weight: 700; } .ds-activity-canvas h1 { margin: var(--space-3) 0; font-size: clamp(2rem,5vw,3.6rem); line-height: 1.08; letter-spacing: -.03em; } .ds-activity-canvas p { margin: 0; max-width: 62ch; color: var(--color-ink-muted); font-size: 1.08rem; } @media (forced-colors: active) { .ds-activity-canvas { border: 2px solid CanvasText; } }"
+    },
+    {
+      "name": "Session Progress Rail",
+      "kind": "nav",
+      "description": "A compact factual progress row positioned above the activity workspace.",
+      "html": "<div class=\"ds-progress-rail\"><span>Sesi U01-L1</span><progress aria-label=\"Kemajuan sesi: langkah 12 dari 20\" value=\"12\" max=\"20\">12 dari 20</progress><span>12/20</span></div>",
+      "css": ".ds-progress-rail { display: grid; grid-template-columns: max-content minmax(8rem,1fr) max-content; align-items: center; gap: var(--space-4); max-width: 76rem; padding: var(--space-4); color: var(--color-ink-muted); font-family: var(--font-ui), sans-serif; font-size: .88rem; font-weight: 700; } .ds-progress-rail progress { width: 100%; height: .65rem; accent-color: var(--color-accent); } .ds-progress-rail:focus-within { outline: 3px solid var(--color-focus); outline-offset: 3px; } @media (max-width: 720px) { .ds-progress-rail { grid-template-columns: 1fr max-content; } .ds-progress-rail > span:first-child { grid-column: 1 / -1; } }"
+    },
+    {
+      "name": "Nekoru Topbar",
+      "kind": "nav",
+      "description": "The calm identity bar for the internal learner prototype.",
+      "html": "<header class=\"ds-topbar\"><a class=\"ds-brand\" href=\"#\" aria-label=\"Nekoru Phase 0\"><span class=\"ds-brand-mark\" aria-hidden=\"true\"></span>Nekoru</a><span class=\"ds-prototype-label\">Prototipe internal · data sintetis</span></header>",
+      "css": ".ds-topbar { min-height: 4.5rem; display: flex; align-items: center; justify-content: space-between; gap: var(--space-4); padding: var(--space-4) clamp(var(--space-4),4vw,var(--space-10)); background: var(--color-primary-strong); color: #fff; font-family: var(--font-ui), sans-serif; } .ds-brand { display: inline-flex; align-items: center; gap: var(--space-3); color: inherit; text-decoration: none; font-size: 1.25rem; font-weight: 800; } .ds-brand:hover { text-decoration: underline; text-underline-offset: .2em; } .ds-brand:focus-visible { outline: 3px solid var(--color-focus); outline-offset: 3px; } .ds-brand-mark { position: relative; width: 2rem; height: 1.65rem; border-radius: 50% 50% 45% 45%; background: var(--color-accent-soft); } .ds-brand-mark::before, .ds-brand-mark::after { content: \"\"; position: absolute; top: -.38rem; width: .75rem; height: .75rem; border-radius: .12rem; background: var(--color-accent-soft); transform: rotate(45deg); } .ds-brand-mark::before { left: .15rem; } .ds-brand-mark::after { right: .15rem; } .ds-prototype-label { color: #f7dce5; font-size: .82rem; font-weight: 700; } @media (max-width: 720px) { .ds-topbar { align-items: flex-start; flex-direction: column; } }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Meja Belajar Terpandu",
+    "overview": "Nekoru terasa seperti meja belajar pribadi yang sudah menyiapkan satu langkah tepat sebelum learner datang. Suasananya tenang, hangat, suportif, dan terstruktur: paper-like surfaces memberi ruang bernapas, sementara indigo memegang orientasi dan tindakan tanpa membuat pengalaman terasa klinis.\n\nSistem ini lifted tetapi tertahan. Kedalaman ambient hanya mengangkat canvas aktivitas utama; komponen lain mengandalkan lapisan warna, border, dan hierarchy yang jelas. Komponen terasa tactile and confident, tetapi tidak ramai. Detail cat-ear adalah aksen identitas kecil, bukan bahasa dekoratif yang diulang di setiap permukaan.\n\nPrototype Phase 0 tetap jujur sebagai local/internal artifact. Visual hierarchy membantu learner membedakan tujuan, tindakan, technical state, completion, mastery, dan review tanpa menciptakan false academic certainty.",
+    "keyCharacteristics": [
+      "Satu keputusan belajar dominan pada setiap layar.",
+      "Warm neutral paper layers dengan orientasi indigo dan aksen sakura yang hemat.",
+      "Ambient depth hanya untuk permukaan yang benar-benar perlu terangkat.",
+      "Komponen rounded, tactile, dan percaya diri dengan state yang eksplisit.",
+      "Detail cat-ear dipakai sebagai tanda identitas yang tenang, bukan ornamen berulang."
+    ],
+    "rules": [
+      {
+        "name": "The Guided Accent Rule",
+        "body": "Indigo memegang tindakan dan orientasi; sakura hanya memberi emphasis singkat dan tidak mengambil alih seluruh layar.",
+        "section": "colors"
+      },
+      {
+        "name": "The Semantic Pair Rule",
+        "body": "Status memakai soft surface bersama judul dan penjelasan eksplisit; warna tidak pernah menjadi satu-satunya pembawa makna.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Workhorse Rule",
+        "body": "Plus Jakarta Sans mengerjakan seluruh hierarchy UI; Noto Sans JP masuk hanya saat konten Japanese membutuhkan bentuk glyph yang tepat.",
+        "section": "typography"
+      },
+      {
+        "name": "The Honest Label Rule",
+        "body": "Uppercase dan tracking lebar hanya untuk metadata pendek, bukan paragraf atau tindakan utama.",
+        "section": "typography"
+      },
+      {
+        "name": "The One Task Rule",
+        "body": "Satu activity canvas mendominasi layar; jangan pecah perjalanan belajar menjadi generic dashboard grid dengan kartu-kartu yang setara.",
+        "section": "layout"
+      },
+      {
+        "name": "The Normal Flow Rule",
+        "body": "Primary action tetap setelah response group dalam alur dokumen agar urutan visual, keyboard, dan screen reader sama.",
+        "section": "layout"
+      },
+      {
+        "name": "The Lift Only What Leads Rule",
+        "body": "Shadow menandai canvas atau tindakan yang memimpin langkah saat ini; status, field, chip, dan option tetap tonal atau bordered.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Quiet Mascot Rule",
+        "body": "Geometri cat-ear hanya menjadi signature brand mark; jangan menempelkan telinga, wajah, atau silhouette maskot pada kartu dan kontrol biasa.",
+        "section": "shapes"
+      },
+      {
+        "name": "The Explicit State Rule",
+        "body": "Selected, error, technical, success, dan disabled state selalu memiliki label atau penjelasan; visual treatment memperkuat makna, bukan menggantikannya.",
+        "section": "components"
+      }
+    ],
+    "dos": [
+      "**Do** let one activity canvas and one next action lead each screen.",
+      "**Do** use the warm-neutral, indigo, and sakura roles exactly as defined by the normative tokens.",
+      "**Do** preserve the 3px visible focus ring, 44px primary targets, forced-colors borders, and reduced-motion fallback.",
+      "**Do** render Japanese text with Noto Sans JP and semantic `lang=\"ja\"`; use semantic ruby when furigana is needed.",
+      "**Do** separate completion, mastery, review, progress, and technical state in both hierarchy and copy."
+    ],
+    "donts": [
+      "**Don't** turn the learning flow into a generic dashboard grid or a wall of decorative metrics.",
+      "**Don't** add excessive decoration, repeated mascot geometry, gradients, glass effects, or shadow to every surface.",
+      "**Don't** imply academic certainty through celebratory color, progress, or completion when evidence does not support it.",
+      "**Don't** use color, motion, shake, or emoji as the only semantic cue.",
+      "**Don't** autoplay audio or treat audio, provider, network, or other technical failure as learner error."
+    ]
+  }
+}

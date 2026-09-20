@@ -1,0 +1,43 @@
+name: Phase 0 checks
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:18-alpine
+        env:
+          POSTGRES_DB: nekoru
+          POSTGRES_USER: nekoru
+          POSTGRES_PASSWORD: nekoru
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U nekoru -d nekoru"
+          --health-interval 2s
+          --health-timeout 3s
+          --health-retries 20
+    env:
+      DATABASE_URL: postgresql://nekoru:nekoru@localhost:5432/nekoru
+      NEKORU_TEST_DATABASE_DISPOSABLE: "true"
+      NEKORU_ENVIRONMENT: ci
+      NEKORU_ENABLE_PROTOTYPE: "true"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: pnpm
+      - run: corepack enable
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm exec playwright install --with-deps chromium
+      - run: pnpm db:migrate
+      - run: pnpm check:pr

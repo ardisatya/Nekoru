@@ -1,0 +1,9 @@
+packages:
+  - "apps/*"
+  - "packages/*"
+allowBuilds:
+  esbuild: true
+overrides:
+  fastify: 5.12.4
+minimumReleaseAgeExclude:
+  - zod@4.6.5

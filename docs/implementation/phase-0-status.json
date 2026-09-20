@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0.0",
+  "phase_id": "P0",
+  "title": "Fondasi yang bisa dijalankan",
+  "overall_status": "internal_ready",
+  "plain_summary": "Fondasi teknis dan contoh alur belajar sudah siap diperiksa tim internal. Ini belum merupakan produk jadi atau approval Phase 0.",
+  "updated_at": "2026-09-20T14:46:44+07:00",
+  "milestones": [
+    {
+      "id": "P0.1",
+      "title": "Arah dan tanggung jawab jelas",
+      "status": "pending_review",
+      "result": "Sumber keputusan, dependency, blocker, owner, dan approval yang dibutuhkan tercatat.",
+      "evidence_refs": ["docs/implementation/governance.md"],
+      "blockers": ["Owner dan approver manusia belum memberikan sign-off."],
+      "next_step": "Owner memeriksa reconciliation dan ownership matrix."
+    },
+    {
+      "id": "P0.2",
+      "title": "Pilihan teknologi tercatat",
+      "status": "internal_ready",
+      "result": "Bootstrap stack mengikuti kontrak repository dan dipin melalui manifest serta lockfile.",
+      "evidence_refs": ["package.json", "pnpm-lock.yaml"],
+      "blockers": [],
+      "next_step": "Gunakan stack ini untuk pekerjaan local/internal; approval formal tetap pending."
+    },
+    {
+      "id": "P0.3",
+      "title": "Kerangka aplikasi dapat dijalankan",
+      "status": "internal_ready",
+      "result": "Monorepo dan pemeriksaan secret/dependency lulus; migration serta integration test berjalan pada PostgreSQL 18.6 lokal yang sementara.",
+      "evidence_refs": [
+        "apps",
+        "packages",
+        "turbo.json",
+        "tooling/security/check.ts",
+        "packages/persistence/migrations/manifest.json",
+        "docs/implementation/database-integration-evidence.json"
+      ],
+      "blockers": [
+        "Hosted CI belum berjalan; remote sudah terhubung tetapi repository tujuan belum memiliki branch/commit."
+      ],
+      "next_step": "Tetapkan Git author, buat commit awal, push ke origin/main, lalu periksa hasil hosted CI."
+    },
+    {
+      "id": "P0.4",
+      "title": "Aturan data dapat diuji otomatis",
+      "status": "pending_review",
+      "result": "Aturan schema, version, hash, event, API, dan content tervalidasi; migration kosong, constraint idempotency, dan rollback transaksi lulus pada PostgreSQL 18.6 lokal.",
+      "evidence_refs": [
+        "packages/contracts/generated",
+        "content/fixtures/golden/api.json",
+        "tooling/contracts/check-generated.ts",
+        "packages/domain",
+        "packages/content-tooling",
+        "packages/persistence/migrations",
+        "docs/implementation/database-integration-evidence.json"
+      ],
+      "blockers": [
+        "Reviewer data/teknis belum meninjau dan menyetujui contract serta evidence untuk versi artefak ini."
+      ],
+      "next_step": "Reviewer data/teknis memeriksa migration dan contract; hosted CI tetap perlu dijalankan setelah commit dikirim."
+    },
+    {
+      "id": "P0.5",
+      "title": "Contoh belajar siap diperiksa",
+      "status": "internal_ready",
+      "result": "Prototype 20 state, seed draft U01-L1, auth double, dan penjaga telemetry siap diuji tim internal.",
+      "evidence_refs": [
+        "apps/learner-web",
+        "content/source/u01-l1",
+        "DESIGN.md",
+        ".impeccable/design.json",
+        "docs/implementation/phase-0-handoff.md"
+      ],
+      "blockers": [
+        "Audio dua speaker, rights receipt, dan review akademik belum tersedia.",
+        "Usability research dan uji assistive technology pada perangkat fisik belum dilakukan.",
+        "Live Clerk environment smoke belum dapat dilakukan tanpa credentials."
+      ],
+      "next_step": "Uji internal lebih dulu lalu kumpulkan evidence dan approval eksternal."
+    }
+  ]
+}

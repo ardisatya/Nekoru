@@ -1,0 +1,22 @@
+node_modules/
+.pnpm-store/
+.turbo/
+.next/
+dist/
+coverage/
+playwright-report/
+test-results/
+.env
+.env.*
+!.env.example
+.impeccable/review/
+.impeccable/build/
+.impeccable/mocks/
+artifacts/
+*.tsbuildinfo
+
+# Local agent/editor hooks and consent settings
+.claude/settings.local.json
+.codex/hooks.json
+.cursor/hooks.json
+.impeccable/config.local.json
