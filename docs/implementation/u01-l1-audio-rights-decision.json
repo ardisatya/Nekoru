@@ -14,7 +14,7 @@
   "rationale": [
     "Owner memilih penggunaan pribadi/local-only untuk draft audio U01-L1.",
     "VOICEVOX Nemo Engine 0.24.0 dipakai melalui HTTP server lokal; dua style dan speaker ID dicatat dari endpoint /speakers.",
-    "VOICEVOX Nemo Terms menjadi source reference dan attribution wajib dicatat; receipt rights exact hash tetap harus direview sebelum approval."
+    "VOICEVOX Nemo Terms menjadi source reference dan attribution wajib dicatat; receipt rights exact hash telah diverifikasi sebagai verified_local_only, sementara approval publik/runtime tetap terpisah."
   ],
   "repository_handling": {
     "binary_policy": "ignore_and_keep_on_workstation",
@@ -23,10 +23,11 @@
     "public_history_note": "Commit sebelumnya masih dapat memuat binary audio; private repository atau history cleanup terpisah diperlukan bila exposure historis harus dihapus."
   },
   "receipt_template_ref": "docs/implementation/u01-l1-audio-rights-receipt.template.json",
+  "receipt_ref": "docs/implementation/u01-l1-audio-rights-receipt.json",
   "engine_evidence_ref": "docs/implementation/u01-l1-voicevox-engine-evidence.json",
   "rights": {
-    "status": "pending_verification",
-    "rights_receipt_id": null,
+    "status": "verified_local_only",
+    "rights_receipt_id": "rev_01M2ZBMH58BGWFMPYACVX6FDNS",
     "license_ref": "https://voicevox.hiroshiba.jp/nemo/term/",
     "consent_release_ref": null,
     "attribution": "VOICEVOX: Nemo",

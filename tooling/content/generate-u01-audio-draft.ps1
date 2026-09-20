@@ -139,6 +139,11 @@ if (((@($planRecords | ForEach-Object asset_id) | Sort-Object) -join "|") -ne ((
 if ([string]$plan.generation_profile.provider -ne "voicevox_nemo_engine") {
   throw "Audio plan harus memakai generation_profile.provider=voicevox_nemo_engine."
 }
+$rightsStatus = if ([string]::IsNullOrWhiteSpace([string]$plan.rights_status)) {
+  "pending_verification"
+} else {
+  [string]$plan.rights_status
+}
 
 $baseUrl = if (-not [string]::IsNullOrWhiteSpace($VoicevoxBaseUrl)) {
   $VoicevoxBaseUrl
@@ -196,6 +201,11 @@ try {
   foreach ($item in $planRecords) {
     $voice = $plan.voice_variants.([string]$item.speaker_variant)
     $voiceId = [int]$voice.voice_id
+    $receiptId = if ($null -ne $item.rights_receipt_id -and -not [string]::IsNullOrWhiteSpace([string]$item.rights_receipt_id)) {
+      [string]$item.rights_receipt_id
+    } else {
+      $null
+    }
     $fileStem = (($item.logical_id -replace "[^A-Za-z0-9._-]", "_").ToLowerInvariant())
     $rawPath = Join-Path $tempRoot "$fileStem.raw.wav"
     $masterPath = Join-Path $masterRoot "$fileStem.wav"
@@ -270,20 +280,24 @@ try {
           status = "not_tested"
         }
         rights = [ordered]@{
-          status = "pending_verification"
+          status = $rightsStatus
           allowed_use = "local_only"
           redistribution = "prohibited"
-          rights_receipt_id = $null
+          rights_receipt_id = $receiptId
           consent_release_ref = $null
           license_ref = [string]$voice.license_ref
           attribution = [string]$voice.attribution
-          evidence_note = "VOICEVOX Nemo Terms berlaku sebagai source reference; exact hash receipt dan review masih pending."
+          evidence_note = if ($rightsStatus -eq "verified_local_only") {
+            "VOICEVOX Nemo Terms, attribution, engine/speaker metadata, dan exact audio hashes telah diverifikasi melalui owner attestation."
+          } else {
+            "VOICEVOX Nemo Terms berlaku sebagai source reference; exact hash receipt dan review masih pending."
+          }
         }
         review = [ordered]@{
           academic = "pending"
           linguistic = "pending"
           audio = "pending"
-          rights = "pending"
+          rights = if ($rightsStatus -eq "verified_local_only") { "verified_local_only" } else { "pending" }
           accessibility = "pending"
           technical = "pending"
         }
@@ -309,10 +323,12 @@ try {
       voicevox_api_base_url = $baseUrl
     }
     records = @($records)
-    rights_status = "pending_verification"
+    rights_status = $rightsStatus
     approval_status = "pending"
     blockers = @(
-      "VOICEVOX Nemo dipilih; exact rights receipt dan review terms/attribution belum tersedia.",
+      if ($rightsStatus -ne "verified_local_only") {
+        "VOICEVOX Nemo dipilih; exact rights receipt dan review terms/attribution belum tersedia."
+      }
       "Binary audio tidak boleh masuk repository publik atau artifact redistribution.",
       "Loudness, clipping, noise, dan physical-device playback QA belum dilakukan.",
       "Japanese Linguistic/Academic review belum dilakukan.",

@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "evidence_type": "local_voice_engine_provenance",
-  "status": "evidence_pending_review",
+  "status": "reviewed_by_owner_attestation",
   "provider": "VOICEVOX Nemo",
   "engine_name": "VOICEVOX Nemo Engine",
   "engine_version": "0.24.0",
@@ -38,9 +38,11 @@
   },
   "terms": {
     "ref": "https://voicevox.hiroshiba.jp/nemo/term/",
+    "snapshot_ref": "docs/implementation/u01-l1-voicevox-nemo-terms-evidence.json",
     "attribution": "VOICEVOX: Nemo",
-    "rights_status": "pending_verification",
-    "review_required": "Owner rights/content reviewer must verify terms, attribution, local-only scope, and exact manifest hashes before any approval."
+    "rights_status": "verified_local_only",
+    "reviewed_by": "owner-attestation",
+    "reviewed_at": "2026-09-20T19:11:17+07:00"
   },
   "captured_at": "2026-09-20T18:57:42+07:00",
   "captured_by": "tooling/content/generate-u01-audio-draft.ps1"

@@ -38,8 +38,9 @@
 | U01-L1 seed                   | `content/source/u01-l1/seed.json`                               | `draft`, `runtime_eligible: false`                                                                                  |
 | Audio plan                    | `content/source/u01-l1/audio-plan.json`                         | 26 candidate recordings; VOICEVOX Nemo `0.24.0`, style `10005`/`10001`, terms/rights dan review tetap pending       |
 | Audio draft pack              | `content/manifests/u01-l1.audio-draft.json`                     | Metadata 26 master/delivery WAV dari VOICEVOX; binary hanya local-only, tidak dilacak Git, belum device-QA/approved |
-| Audio rights decision         | `docs/implementation/u01-l1-audio-rights-decision.json`         | Scope `local_only` proposed; VOICEVOX Nemo Terms, exact hash receipt dan approval masih pending                     |
-| Audio rights receipt template | `docs/implementation/u01-l1-audio-rights-receipt.template.json` | Template 26 asset untuk engine/speaker/terms/hash VOICEVOX; reviewer masih harus mengisi receipt final              |
+| Audio rights decision         | `docs/implementation/u01-l1-audio-rights-decision.json`         | Scope `local_only` proposed; VOICEVOX Nemo Terms dan exact hash receipt sudah diverifikasi, approval tetap pending  |
+| Audio rights receipt template | `docs/implementation/u01-l1-audio-rights-receipt.template.json` | Template 26 asset untuk engine/speaker/terms/hash VOICEVOX; dipertahankan sebagai template                          |
+| Audio rights receipt final    | `docs/implementation/u01-l1-audio-rights-receipt.json`          | Receipt `rev_01M2ZBMH58BGWFMPYACVX6FDNS`, `verified_local_only`, cakupan 26 asset dan exact hash                    |
 | VOICEVOX engine evidence      | `docs/implementation/u01-l1-voicevox-engine-evidence.json`      | Exact release URL, package SHA-256, engine API, speaker snapshot, attribution; review masih pending                 |
 | Design system                 | `DESIGN.md` dan `.impeccable/design.json`                       | Internal reference; bukan approval whole-surface                                                                    |
 | Milestone registry            | `docs/implementation/phase-0-status.json`                       | Source untuk indikator Markdown dan HTML                                                                            |
@@ -60,7 +61,7 @@ Untuk gate database, siapkan PostgreSQL 18 ephemeral melalui `docker compose up 
 
 - Individual approval receipts/nama reviewer belum dilampirkan; status scoped approval dicatat berdasarkan owner attestation.
 - Live Clerk development credentials dan smoke test.
-- Audio draft dua speaker VOICEVOX Nemo memiliki master/delivery checksum secara local-only; loudness, device playback QA, Terms/rights receipt, dan approval masih pending.
+- Audio draft dua speaker VOICEVOX Nemo memiliki master/delivery checksum secara local-only; rights receipt sudah `verified_local_only`, tetapi loudness, device playback QA, dan approval masih pending.
 - Binary audio dari commit publik sebelumnya belum dibersihkan dari Git history; jangan menganggap `.gitignore` menghapus exposure historis.
 - Review akademik/linguistik/content/accessibility, usability research, dan assistive-technology physical-device evidence.
 

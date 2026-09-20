@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0.0",
+  "evidence_type": "terms_snapshot_reference",
+  "status": "reviewed_by_owner_attestation",
+  "source_url": "https://voicevox.hiroshiba.jp/nemo/term/",
+  "retrieved_at": "2026-09-20T19:11:42+07:00",
+  "retrieval_representation": "UTF-8 response body",
+  "response_size_bytes": 30117,
+  "response_sha256": "sha256:f448c18efa38891613606a9a29d9bdd0346fd8ade4f09678ccad56c2f5008e6a",
+  "observed_terms": {
+    "generated_audio_use": "commercial_and_noncommercial_with_credit",
+    "required_credit": "VOICEVOX Nemo",
+    "relevant_restrictions": [
+      "no use without credit",
+      "no machine-learning use",
+      "no rights-infringing or materially reputation-damaging use"
+    ]
+  },
+  "scope_note": "Evidence supports the requested local-only use of the 26 U01-L1 draft assets. It does not authorize redistribution, production runtime, or any use outside the recorded scope.",
+  "review_ref": "rev_01M2ZBMH58BGWFMPYACVX6FDNS"
+}

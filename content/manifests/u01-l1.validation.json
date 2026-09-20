@@ -2,7 +2,7 @@
   "generated_at": "deterministic",
   "valid": true,
   "runtime_eligible": false,
-  "content_hash": "sha256:6605ed2b4988f753c26784ef36433e6f63d35f1a87a30d37e31bb3ca07745f52",
+  "content_hash": "sha256:d6023eff640ab890918162e9422ad09f157eda86e4a8e1db4434782fcce7ce40",
   "counts": {
     "activities": 43,
     "audio_assets": 26,
@@ -10,7 +10,6 @@
   },
   "blockers": [
     "Audio assets belum ready",
-    "Rights receipts belum tersedia",
     "Approval receipts belum tersedia"
   ],
   "errors": []

@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0.0",
+  "receipt_type": "audio_rights",
+  "status": "verified_local_only",
+  "receipt_id": "rev_01M2ZBMH58BGWFMPYACVX6FDNS",
+  "decision_ref": "DEC-P0-008",
+  "asset_scope": {
+    "manifest_ref": "content/manifests/u01-l1.audio-draft.json",
+    "manifest_sha256": "sha256:186abd26dcc6667f163804696c35a3498981c9da5ad4f9485b5087f8304e9ef6",
+    "manifest_generated_at": "2026-09-20T19:16:21.7558391+07:00",
+    "expected_asset_count": 26,
+    "asset_ids_must_match_manifest": true,
+    "sha256_must_match_manifest": true,
+    "master_hashes_verified": 26,
+    "delivery_hashes_verified": 26
+  },
+  "source": {
+    "source_type": "voicevox_generated_audio",
+    "provider": "VOICEVOX Nemo",
+    "engine_version": "0.24.0",
+    "engine_release_ref": "https://github.com/VOICEVOX/voicevox_nemo_engine/releases/tag/0.24.0",
+    "voice_library_terms_ref": "https://voicevox.hiroshiba.jp/nemo/term/",
+    "engine_evidence_ref": "docs/implementation/u01-l1-voicevox-engine-evidence.json",
+    "speaker_styles": {
+      "a": {
+        "speaker_id": 10005,
+        "speaker_uuid": "abccafa5-174f-44d8-b70c-c41eebb3061c",
+        "speaker_name": "女声1",
+        "style_name": "ノーマル"
+      },
+      "b": {
+        "speaker_id": 10001,
+        "speaker_uuid": "2171909e-d2d1-4bbb-aa45-442c12732665",
+        "speaker_name": "男声1",
+        "style_name": "ノーマル"
+      }
+    }
+  },
+  "use_scope": {
+    "allowed_use": "local_only",
+    "redistribution": false,
+    "repository_distribution": false,
+    "production_runtime": false,
+    "territory": "Indonesia; private/local workstation scope",
+    "expiry": null
+  },
+  "evidence": {
+    "license_or_release_ref": "https://voicevox.hiroshiba.jp/nemo/term/",
+    "terms_version_or_recording_date": "VOICEVOX Nemo Terms; checked 2026-09-20",
+    "evidence_snapshot_ref": "docs/implementation/u01-l1-voicevox-nemo-terms-evidence.json",
+    "terms_snapshot_sha256": "sha256:f448c18efa38891613606a9a29d9bdd0346fd8ade4f09678ccad56c2f5008e6a",
+    "attribution_text": "VOICEVOX: Nemo"
+  },
+  "review": {
+    "reviewer_id": "owner-attestation",
+    "reviewed_at": "2026-09-20T19:11:17+07:00",
+    "decision": "verified_local_only",
+    "confirmation_source": "explicit_owner_statement_in_current_task",
+    "notes": "Requester confirmed that the current VOICEVOX Nemo asset set is accepted for verified_local_only use after reviewing the recorded Terms reference, engine/speaker evidence, attribution requirement, local-only scope, and exact manifest/hash evidence. This receipt does not approve redistribution, production runtime, or Phase 0 completion."
+  },
+  "verification": {
+    "local_only_confirmed": true,
+    "redistribution_prohibited": true,
+    "credit_required": true,
+    "credit_text": "VOICEVOX: Nemo",
+    "binary_audio_git_tracked": false,
+    "asset_hashes_match_manifest": true
+  }
+}
