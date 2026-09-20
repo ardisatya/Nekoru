@@ -78,11 +78,11 @@ Perubahan yang melampaui selection bootstrap di atas memerlukan impact review; p
 
 ## Blocker ke Fase
 
-| Blocker                                                              | Memblokir                          | Safe behavior sekarang                            |
-| -------------------------------------------------------------------- | ---------------------------------- | ------------------------------------------------- |
-| Seed/audio/rights/approval U01-L1 belum lengkap                      | Phase 0 `done` dan Phase 1 runtime | Seed tetap `draft`; runtime selection menolak     |
-| Live Clerk config belum tersedia                                     | Auth provider gate                 | Hanya local identity double; tidak ada akun nyata |
-| Usability, screen-reader, dan physical-device evidence belum lengkap | Prototype approval                 | Hanya automated browser smoke yang diklaim        |
+| Blocker                                                              | Memblokir                          | Safe behavior sekarang                                                 |
+| -------------------------------------------------------------------- | ---------------------------------- | ---------------------------------------------------------------------- |
+| Seed/audio/rights/approval U01-L1 belum lengkap                      | Phase 0 `done` dan Phase 1 runtime | Draft audio tersedia; seed tetap `draft` dan runtime selection menolak |
+| Live Clerk config belum tersedia                                     | Auth provider gate                 | Hanya local identity double; tidak ada akun nyata                      |
+| Usability, screen-reader, dan physical-device evidence belum lengkap | Prototype approval                 | Hanya automated browser smoke yang diklaim                             |
 
 ## Owner dan Approval Matrix
 

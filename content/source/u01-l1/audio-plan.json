@@ -1,0 +1,326 @@
+{
+  "schema_version": 1,
+  "content_pack_id": "PACK.N5.S00.U01.L1.SEED",
+  "content_pack_version": "0.1.0",
+  "status": "draft",
+  "runtime_eligible": false,
+  "generation_profile": {
+    "provider": "windows_system_speech",
+    "culture": "ja-JP",
+    "sample_rate_hz": 48000,
+    "channels": 1,
+    "master_bits_per_sample": 24,
+    "delivery_bits_per_sample": 16,
+    "note": "Candidate audio only. Human linguistic, academic, rights, accessibility, and device QA remain required."
+  },
+  "voice_variants": {
+    "a": {
+      "voice_name": "Microsoft Ayumi",
+      "voice_id": "MSTTS_V110_jaJP_AyumiM",
+      "voice_type": "synthetic_tts",
+      "rights_status": "pending_verification"
+    },
+    "b": {
+      "voice_name": "Microsoft Ichiro",
+      "voice_id": "MSTTS_V110_jaJP_IchiroM",
+      "voice_type": "synthetic_tts",
+      "rights_status": "pending_verification"
+    }
+  },
+  "recordings": [
+    {
+      "asset_id": "ast_01J00000000000000000000001",
+      "logical_id": "AUDIO.N5.S0.U01.L1.VOWEL.A.001",
+      "group": "vowel",
+      "speaker_variant": "a",
+      "japanese_text": "あ",
+      "transcript_internal": "あ",
+      "evidence_policy": "direct",
+      "academic_review_status": "pending",
+      "rights_receipt_id": null
+    },
+    {
+      "asset_id": "ast_01J00000000000000000000002",
+      "logical_id": "AUDIO.N5.S0.U01.L1.VOWEL.A.002",
+      "group": "vowel",
+      "speaker_variant": "b",
+      "japanese_text": "あ",
+      "transcript_internal": "あ",
+      "evidence_policy": "direct",
+      "academic_review_status": "pending",
+      "rights_receipt_id": null
+    },
+    {
+      "asset_id": "ast_01J00000000000000000000003",
+      "logical_id": "AUDIO.N5.S0.U01.L1.VOWEL.I.001",
+      "group": "vowel",
+      "speaker_variant": "a",
+      "japanese_text": "い",
+      "transcript_internal": "い",
+      "evidence_policy": "direct",
+      "academic_review_status": "pending",
+      "rights_receipt_id": null
+    },
+    {
+      "asset_id": "ast_01J00000000000000000000004",
+      "logical_id": "AUDIO.N5.S0.U01.L1.VOWEL.I.002",
+      "group": "vowel",
+      "speaker_variant": "b",
+      "japanese_text": "い",
+      "transcript_internal": "い",
+      "evidence_policy": "direct",
+      "academic_review_status": "pending",
+      "rights_receipt_id": null
+    },
+    {
+      "asset_id": "ast_01J00000000000000000000005",
+      "logical_id": "AUDIO.N5.S0.U01.L1.VOWEL.U.001",
+      "group": "vowel",
+      "speaker_variant": "a",
+      "japanese_text": "う",
+      "transcript_internal": "う",
+      "evidence_policy": "direct",
+      "academic_review_status": "pending",
+      "rights_receipt_id": null
+    },
+    {
+      "asset_id": "ast_01J00000000000000000000006",
+      "logical_id": "AUDIO.N5.S0.U01.L1.VOWEL.U.002",
+      "group": "vowel",
+      "speaker_variant": "b",
+      "japanese_text": "う",
+      "transcript_internal": "う",
+      "evidence_policy": "direct",
+      "academic_review_status": "pending",
+      "rights_receipt_id": null
+    },
+    {
+      "asset_id": "ast_01J00000000000000000000007",
+      "logical_id": "AUDIO.N5.S0.U01.L1.VOWEL.E.001",
+      "group": "vowel",
+      "speaker_variant": "a",
+      "japanese_text": "え",
+      "transcript_internal": "え",
+      "evidence_policy": "direct",
+      "academic_review_status": "pending",
+      "rights_receipt_id": null
+    },
+    {
+      "asset_id": "ast_01J00000000000000000000008",
+      "logical_id": "AUDIO.N5.S0.U01.L1.VOWEL.E.002",
+      "group": "vowel",
+      "speaker_variant": "b",
+      "japanese_text": "え",
+      "transcript_internal": "え",
+      "evidence_policy": "direct",
+      "academic_review_status": "pending",
+      "rights_receipt_id": null
+    },
+    {
+      "asset_id": "ast_01J00000000000000000000009",
+      "logical_id": "AUDIO.N5.S0.U01.L1.VOWEL.O.001",
+      "group": "vowel",
+      "speaker_variant": "a",
+      "japanese_text": "お",
+      "transcript_internal": "お",
+      "evidence_policy": "direct",
+      "academic_review_status": "pending",
+      "rights_receipt_id": null
+    },
+    {
+      "asset_id": "ast_01J00000000000000000000010",
+      "logical_id": "AUDIO.N5.S0.U01.L1.VOWEL.O.002",
+      "group": "vowel",
+      "speaker_variant": "b",
+      "japanese_text": "お",
+      "transcript_internal": "お",
+      "evidence_policy": "direct",
+      "academic_review_status": "pending",
+      "rights_receipt_id": null
+    },
+    {
+      "asset_id": "ast_01J00000000000000000000011",
+      "logical_id": "AUDIO.N5.S0.U01.L1.GREETING.OHAYOU_GOZAIMASU.001",
+      "group": "greeting",
+      "speaker_variant": "a",
+      "japanese_text": "おはようございます",
+      "transcript_internal": "おはようございます",
+      "evidence_policy": "applied",
+      "academic_review_status": "pending",
+      "rights_receipt_id": null
+    },
+    {
+      "asset_id": "ast_01J00000000000000000000012",
+      "logical_id": "AUDIO.N5.S0.U01.L1.GREETING.OHAYOU_GOZAIMASU.002",
+      "group": "greeting",
+      "speaker_variant": "b",
+      "japanese_text": "おはようございます",
+      "transcript_internal": "おはようございます",
+      "evidence_policy": "applied",
+      "academic_review_status": "pending",
+      "rights_receipt_id": null
+    },
+    {
+      "asset_id": "ast_01J00000000000000000000013",
+      "logical_id": "AUDIO.N5.S0.U01.L1.GREETING.KONNICHIWA.001",
+      "group": "greeting",
+      "speaker_variant": "a",
+      "japanese_text": "こんにちは",
+      "transcript_internal": "こんにちは",
+      "evidence_policy": "applied",
+      "academic_review_status": "pending",
+      "rights_receipt_id": null
+    },
+    {
+      "asset_id": "ast_01J00000000000000000000014",
+      "logical_id": "AUDIO.N5.S0.U01.L1.GREETING.KONNICHIWA.002",
+      "group": "greeting",
+      "speaker_variant": "b",
+      "japanese_text": "こんにちは",
+      "transcript_internal": "こんにちは",
+      "evidence_policy": "applied",
+      "academic_review_status": "pending",
+      "rights_receipt_id": null
+    },
+    {
+      "asset_id": "ast_01J00000000000000000000015",
+      "logical_id": "AUDIO.N5.S0.U01.L1.GREETING.KONBANWA.001",
+      "group": "greeting",
+      "speaker_variant": "a",
+      "japanese_text": "こんばんは",
+      "transcript_internal": "こんばんは",
+      "evidence_policy": "applied",
+      "academic_review_status": "pending",
+      "rights_receipt_id": null
+    },
+    {
+      "asset_id": "ast_01J00000000000000000000016",
+      "logical_id": "AUDIO.N5.S0.U01.L1.GREETING.KONBANWA.002",
+      "group": "greeting",
+      "speaker_variant": "b",
+      "japanese_text": "こんばんは",
+      "transcript_internal": "こんばんは",
+      "evidence_policy": "applied",
+      "academic_review_status": "pending",
+      "rights_receipt_id": null
+    },
+    {
+      "asset_id": "ast_01J00000000000000000000017",
+      "logical_id": "AUDIO.N5.S0.U01.L1.GREETING.SAYOUNARA.001",
+      "group": "greeting",
+      "speaker_variant": "a",
+      "japanese_text": "さようなら",
+      "transcript_internal": "さようなら",
+      "evidence_policy": "applied",
+      "academic_review_status": "pending",
+      "rights_receipt_id": null
+    },
+    {
+      "asset_id": "ast_01J00000000000000000000018",
+      "logical_id": "AUDIO.N5.S0.U01.L1.GREETING.SAYOUNARA.002",
+      "group": "greeting",
+      "speaker_variant": "b",
+      "japanese_text": "さようなら",
+      "transcript_internal": "さようなら",
+      "evidence_policy": "applied",
+      "academic_review_status": "pending",
+      "rights_receipt_id": null
+    },
+    {
+      "asset_id": "ast_01J00000000000000000000019",
+      "logical_id": "AUDIO.N5.S0.U01.L1.MORA.ONE_KA.001",
+      "group": "mora",
+      "speaker_variant": "a",
+      "japanese_text": "か",
+      "transcript_internal": "か",
+      "evidence_policy": "applied",
+      "academic_review_status": "pending",
+      "rights_receipt_id": null
+    },
+    {
+      "asset_id": "ast_01J00000000000000000000020",
+      "logical_id": "AUDIO.N5.S0.U01.L1.MORA.ONE_KA.002",
+      "group": "mora",
+      "speaker_variant": "b",
+      "japanese_text": "か",
+      "transcript_internal": "か",
+      "evidence_policy": "applied",
+      "academic_review_status": "pending",
+      "rights_receipt_id": null
+    },
+    {
+      "asset_id": "ast_01J00000000000000000000021",
+      "logical_id": "AUDIO.N5.S0.U01.L1.MORA.TWO_SUSHI.001",
+      "group": "mora",
+      "speaker_variant": "a",
+      "japanese_text": "すし",
+      "transcript_internal": "すし",
+      "evidence_policy": "applied",
+      "academic_review_status": "pending",
+      "rights_receipt_id": null
+    },
+    {
+      "asset_id": "ast_01J00000000000000000000022",
+      "logical_id": "AUDIO.N5.S0.U01.L1.MORA.TWO_SUSHI.002",
+      "group": "mora",
+      "speaker_variant": "b",
+      "japanese_text": "すし",
+      "transcript_internal": "すし",
+      "evidence_policy": "applied",
+      "academic_review_status": "pending",
+      "rights_receipt_id": null
+    },
+    {
+      "asset_id": "ast_01J00000000000000000000023",
+      "logical_id": "AUDIO.N5.S0.U01.L1.MORA.THREE_SAKURA.001",
+      "group": "mora",
+      "speaker_variant": "a",
+      "japanese_text": "さくら",
+      "transcript_internal": "さくら",
+      "evidence_policy": "applied",
+      "academic_review_status": "pending",
+      "rights_receipt_id": null
+    },
+    {
+      "asset_id": "ast_01J00000000000000000000024",
+      "logical_id": "AUDIO.N5.S0.U01.L1.MORA.THREE_SAKURA.002",
+      "group": "mora",
+      "speaker_variant": "b",
+      "japanese_text": "さくら",
+      "transcript_internal": "さくら",
+      "evidence_policy": "applied",
+      "academic_review_status": "pending",
+      "rights_receipt_id": null
+    },
+    {
+      "asset_id": "ast_01J00000000000000000000025",
+      "logical_id": "AUDIO.N5.S0.U01.L1.INSTRUCTION.LISTEN.001",
+      "group": "instruction",
+      "speaker_variant": "a",
+      "japanese_text": "聞いてください",
+      "transcript_internal": "聞いてください",
+      "evidence_policy": "non_scored",
+      "academic_review_status": "pending",
+      "rights_receipt_id": null
+    },
+    {
+      "asset_id": "ast_01J00000000000000000000026",
+      "logical_id": "AUDIO.N5.S0.U01.L1.INSTRUCTION.CHOOSE.001",
+      "group": "instruction",
+      "speaker_variant": "b",
+      "japanese_text": "選んでください",
+      "transcript_internal": "選んでください",
+      "evidence_policy": "non_scored",
+      "academic_review_status": "pending",
+      "rights_receipt_id": null
+    }
+  ],
+  "rights_status": "pending_verification",
+  "approval_status": "pending",
+  "blockers": [
+    "System voice redistribution terms belum diverifikasi untuk penggunaan Nekoru.",
+    "Japanese Linguistic/Academic review belum dilakukan.",
+    "Physical-device playback dan accessibility QA belum dilakukan.",
+    "Rights receipt dan approval receipt belum tersedia."
+  ]
+}

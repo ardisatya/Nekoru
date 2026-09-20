@@ -5,7 +5,7 @@
 ## Hasil yang Bisa Diperiksa
 
 - Prototype learner memiliki 20 state `P-M1-01` sampai `P-M1-20` pada `/prototype/u01-l1`.
-- U01-L1 tersedia sebagai seed `draft`, tidak `runtime_eligible`, dengan 43 activity definition dan 26 placeholder audio.
+- U01-L1 tersedia sebagai seed `draft`, tidak `runtime_eligible`, dengan 43 activity definition dan 26 draft audio asset ber-checksum; metadata/rights/review tetap pending.
 - Health API berjalan; route Milestone 1 lain hanya tercatat sebagai `contract_only` dan belum mempunyai business behavior.
 - AI evaluation, assessment/readiness, offline runtime, optional product analytics, dan production exposure tetap disabled.
 - Prototype tidak menghitung correctness, evidence, mastery, review schedule, atau readiness di browser.
@@ -36,6 +36,8 @@
 | Database evidence  | `docs/implementation/database-integration-evidence.json` | Tiga integration test dan hosted gate lulus; approval scope dikonfirmasi owner            |
 | Approval record    | `docs/implementation/phase-0-approval-record.json`       | Owner attestation untuk scope P0.1–P0.4; individual receipts belum dilampirkan            |
 | U01-L1 seed        | `content/source/u01-l1/seed.json`                        | `draft`, `runtime_eligible: false`                                                        |
+| Audio plan         | `content/source/u01-l1/audio-plan.json`                  | 26 candidate recordings; TTS voice rights dan review tetap pending                        |
+| Audio draft pack   | `content/manifests/u01-l1.audio-draft.json`              | 26 master/delivery WAV, checksum dan automated measurement; belum device-QA/approved      |
 | Design system      | `DESIGN.md` dan `.impeccable/design.json`                | Internal reference; bukan approval whole-surface                                          |
 | Milestone registry | `docs/implementation/phase-0-status.json`                | Source untuk indikator Markdown dan HTML                                                  |
 
@@ -55,7 +57,7 @@ Untuk gate database, siapkan PostgreSQL 18 ephemeral melalui `docker compose up 
 
 - Individual approval receipts/nama reviewer belum dilampirkan; status scoped approval dicatat berdasarkan owner attestation.
 - Live Clerk development credentials dan smoke test.
-- Audio dua speaker yang memiliki checksum serta rights receipt.
+- Audio draft dua speaker memiliki master/delivery checksum; loudness, device playback QA, rights receipt, dan approval masih pending.
 - Review akademik/linguistik/content/accessibility, usability research, dan assistive-technology physical-device evidence.
 
 Selama item tersebut belum lengkap, jangan mengubah status seed menjadi `approved`/`published`, jangan mengaktifkan route akademik, dan jangan menyebut Phase 0 `done`.

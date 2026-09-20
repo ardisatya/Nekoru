@@ -1,0 +1,1795 @@
+{
+  "schema_version": 1,
+  "manifest_id": "MANIFEST.N5.S00.U01.L1.AUDIO.DRAFT",
+  "status": "draft",
+  "runtime_eligible": false,
+  "source_plan": "content/source/u01-l1/audio-plan.json",
+  "source_seed_version": "0.1.0",
+  "source_seed_commit": "aa5c85ace3423c00a6d61c5ad56216ee8318c238",
+  "generated_at": "2026-09-20T15:43:03.2797126+07:00",
+  "generation_environment": {
+    "os": "Microsoft Windows NT 10.0.22631.0",
+    "powershell": "7.6.5",
+    "ffmpeg": "9.0-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers"
+  },
+  "records": [
+    {
+      "asset_id": "ast_01J00000000000000000000001",
+      "logical_id": "AUDIO.N5.S0.U01.L1.VOWEL.A.001",
+      "group": "vowel",
+      "speaker_variant": "a",
+      "japanese_text": "あ",
+      "transcript_internal": "あ",
+      "evidence_policy": "direct",
+      "source_type": "local_system_tts",
+      "generation_tool": "System.Speech",
+      "voice_provider": "Microsoft Windows installed voice",
+      "voice_id": "MSTTS_V110_jaJP_AyumiM",
+      "voice_name": "Microsoft Ayumi",
+      "culture": "ja-JP",
+      "generated_at": "2026-09-20T15:43:03.2797126+07:00",
+      "master_file": {
+        "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.vowel.a.001.wav",
+        "sha256": "sha256:badad8b99cd3504d85d4df7fd10d1431a9029c3c9f04602df3970051769f909e",
+        "format": {
+          "codec": "pcm_s24le",
+          "sample_rate_hz": 48000,
+          "bits_per_sample": 24,
+          "channels": 1,
+          "duration_seconds": 1.014
+        }
+      },
+      "delivery_file": {
+        "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.vowel.a.001.wav",
+        "sha256": "sha256:c567805afc03ccba7738f3438c00d6d8aa4db143dae037261f3c931c3e8af9aa",
+        "format": {
+          "codec": "pcm_s16le",
+          "sample_rate_hz": 48000,
+          "bits_per_sample": 16,
+          "channels": 1,
+          "duration_seconds": 1.014
+        }
+      },
+      "audio_qa": {
+        "status": "automated_measurement_only",
+        "loudness_lufs": -29.5,
+        "true_peak_dbtp": -9.0,
+        "clipping_check": "not_tested",
+        "noise_check": "not_tested",
+        "device_playback_check": "not_tested"
+      },
+      "accessibility": {
+        "accessible_label": "Audio target U01-L1, speaker a, belum diputar",
+        "transcript_release": "after_submission_or_feedback",
+        "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
+        "alternative_classification": "support_adjusted",
+        "status": "not_tested"
+      },
+      "rights": {
+        "status": "pending_verification",
+        "rights_receipt_id": null,
+        "consent_release_ref": null,
+        "license_ref": null,
+        "attribution": "Microsoft Windows installed voice; redistribution terms pending review"
+      },
+      "review": {
+        "academic": "pending",
+        "linguistic": "pending",
+        "audio": "pending",
+        "rights": "pending",
+        "accessibility": "pending",
+        "technical": "pending"
+      }
+    },
+    {
+      "asset_id": "ast_01J00000000000000000000002",
+      "logical_id": "AUDIO.N5.S0.U01.L1.VOWEL.A.002",
+      "group": "vowel",
+      "speaker_variant": "b",
+      "japanese_text": "あ",
+      "transcript_internal": "あ",
+      "evidence_policy": "direct",
+      "source_type": "local_system_tts",
+      "generation_tool": "System.Speech",
+      "voice_provider": "Microsoft Windows installed voice",
+      "voice_id": "MSTTS_V110_jaJP_IchiroM",
+      "voice_name": "Microsoft Ichiro",
+      "culture": "ja-JP",
+      "generated_at": "2026-09-20T15:43:03.2797126+07:00",
+      "master_file": {
+        "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.vowel.a.002.wav",
+        "sha256": "sha256:09ebeb170d78bb56e825192fe86a9535681841e1e220db8bcb750f3c7a84986d",
+        "format": {
+          "codec": "pcm_s24le",
+          "sample_rate_hz": 48000,
+          "bits_per_sample": 24,
+          "channels": 1,
+          "duration_seconds": 1.094
+        }
+      },
+      "delivery_file": {
+        "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.vowel.a.002.wav",
+        "sha256": "sha256:456dd3499daf47d5bc7a3c1f278eb46dc13dd2e9263de724ffe42345fd6c3ce6",
+        "format": {
+          "codec": "pcm_s16le",
+          "sample_rate_hz": 48000,
+          "bits_per_sample": 16,
+          "channels": 1,
+          "duration_seconds": 1.094
+        }
+      },
+      "audio_qa": {
+        "status": "automated_measurement_only",
+        "loudness_lufs": -38.2,
+        "true_peak_dbtp": -14.4,
+        "clipping_check": "not_tested",
+        "noise_check": "not_tested",
+        "device_playback_check": "not_tested"
+      },
+      "accessibility": {
+        "accessible_label": "Audio target U01-L1, speaker b, belum diputar",
+        "transcript_release": "after_submission_or_feedback",
+        "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
+        "alternative_classification": "support_adjusted",
+        "status": "not_tested"
+      },
+      "rights": {
+        "status": "pending_verification",
+        "rights_receipt_id": null,
+        "consent_release_ref": null,
+        "license_ref": null,
+        "attribution": "Microsoft Windows installed voice; redistribution terms pending review"
+      },
+      "review": {
+        "academic": "pending",
+        "linguistic": "pending",
+        "audio": "pending",
+        "rights": "pending",
+        "accessibility": "pending",
+        "technical": "pending"
+      }
+    },
+    {
+      "asset_id": "ast_01J00000000000000000000003",
+      "logical_id": "AUDIO.N5.S0.U01.L1.VOWEL.I.001",
+      "group": "vowel",
+      "speaker_variant": "a",
+      "japanese_text": "い",
+      "transcript_internal": "い",
+      "evidence_policy": "direct",
+      "source_type": "local_system_tts",
+      "generation_tool": "System.Speech",
+      "voice_provider": "Microsoft Windows installed voice",
+      "voice_id": "MSTTS_V110_jaJP_AyumiM",
+      "voice_name": "Microsoft Ayumi",
+      "culture": "ja-JP",
+      "generated_at": "2026-09-20T15:43:03.2797126+07:00",
+      "master_file": {
+        "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.vowel.i.001.wav",
+        "sha256": "sha256:84972299dd5846ea999f29ad72ce43a6a2eaa51dceb3e3876c01b5df864d3b61",
+        "format": {
+          "codec": "pcm_s24le",
+          "sample_rate_hz": 48000,
+          "bits_per_sample": 24,
+          "channels": 1,
+          "duration_seconds": 1.02
+        }
+      },
+      "delivery_file": {
+        "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.vowel.i.001.wav",
+        "sha256": "sha256:4562e64f2d692495ec9979094a65bd551be0092903b7ad7c8e9880225ff13d0c",
+        "format": {
+          "codec": "pcm_s16le",
+          "sample_rate_hz": 48000,
+          "bits_per_sample": 16,
+          "channels": 1,
+          "duration_seconds": 1.02
+        }
+      },
+      "audio_qa": {
+        "status": "automated_measurement_only",
+        "loudness_lufs": -36.4,
+        "true_peak_dbtp": -20.1,
+        "clipping_check": "not_tested",
+        "noise_check": "not_tested",
+        "device_playback_check": "not_tested"
+      },
+      "accessibility": {
+        "accessible_label": "Audio target U01-L1, speaker a, belum diputar",
+        "transcript_release": "after_submission_or_feedback",
+        "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
+        "alternative_classification": "support_adjusted",
+        "status": "not_tested"
+      },
+      "rights": {
+        "status": "pending_verification",
+        "rights_receipt_id": null,
+        "consent_release_ref": null,
+        "license_ref": null,
+        "attribution": "Microsoft Windows installed voice; redistribution terms pending review"
+      },
+      "review": {
+        "academic": "pending",
+        "linguistic": "pending",
+        "audio": "pending",
+        "rights": "pending",
+        "accessibility": "pending",
+        "technical": "pending"
+      }
+    },
+    {
+      "asset_id": "ast_01J00000000000000000000004",
+      "logical_id": "AUDIO.N5.S0.U01.L1.VOWEL.I.002",
+      "group": "vowel",
+      "speaker_variant": "b",
+      "japanese_text": "い",
+      "transcript_internal": "い",
+      "evidence_policy": "direct",
+      "source_type": "local_system_tts",
+      "generation_tool": "System.Speech",
+      "voice_provider": "Microsoft Windows installed voice",
+      "voice_id": "MSTTS_V110_jaJP_IchiroM",
+      "voice_name": "Microsoft Ichiro",
+      "culture": "ja-JP",
+      "generated_at": "2026-09-20T15:43:03.2797126+07:00",
+      "master_file": {
+        "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.vowel.i.002.wav",
+        "sha256": "sha256:bdf32de58ef54ea01857e91910c30eb551112de24a02ba23f1446aa913a7e39f",
+        "format": {
+          "codec": "pcm_s24le",
+          "sample_rate_hz": 48000,
+          "bits_per_sample": 24,
+          "channels": 1,
+          "duration_seconds": 1.096
+        }
+      },
+      "delivery_file": {
+        "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.vowel.i.002.wav",
+        "sha256": "sha256:1553ebe1f8a01f60fdc159af880df4672a234dbe02dd74932e3bff726503fbe3",
+        "format": {
+          "codec": "pcm_s16le",
+          "sample_rate_hz": 48000,
+          "bits_per_sample": 16,
+          "channels": 1,
+          "duration_seconds": 1.096
+        }
+      },
+      "audio_qa": {
+        "status": "automated_measurement_only",
+        "loudness_lufs": -34.7,
+        "true_peak_dbtp": -14.6,
+        "clipping_check": "not_tested",
+        "noise_check": "not_tested",
+        "device_playback_check": "not_tested"
+      },
+      "accessibility": {
+        "accessible_label": "Audio target U01-L1, speaker b, belum diputar",
+        "transcript_release": "after_submission_or_feedback",
+        "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
+        "alternative_classification": "support_adjusted",
+        "status": "not_tested"
+      },
+      "rights": {
+        "status": "pending_verification",
+        "rights_receipt_id": null,
+        "consent_release_ref": null,
+        "license_ref": null,
+        "attribution": "Microsoft Windows installed voice; redistribution terms pending review"
+      },
+      "review": {
+        "academic": "pending",
+        "linguistic": "pending",
+        "audio": "pending",
+        "rights": "pending",
+        "accessibility": "pending",
+        "technical": "pending"
+      }
+    },
+    {
+      "asset_id": "ast_01J00000000000000000000005",
+      "logical_id": "AUDIO.N5.S0.U01.L1.VOWEL.U.001",
+      "group": "vowel",
+      "speaker_variant": "a",
+      "japanese_text": "う",
+      "transcript_internal": "う",
+      "evidence_policy": "direct",
+      "source_type": "local_system_tts",
+      "generation_tool": "System.Speech",
+      "voice_provider": "Microsoft Windows installed voice",
+      "voice_id": "MSTTS_V110_jaJP_AyumiM",
+      "voice_name": "Microsoft Ayumi",
+      "culture": "ja-JP",
+      "generated_at": "2026-09-20T15:43:03.2797126+07:00",
+      "master_file": {
+        "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.vowel.u.001.wav",
+        "sha256": "sha256:3c56e4ad8542a629678a18c865d763cab5ce23e7620820b9354cf2eb3d1f1742",
+        "format": {
+          "codec": "pcm_s24le",
+          "sample_rate_hz": 48000,
+          "bits_per_sample": 24,
+          "channels": 1,
+          "duration_seconds": 1.054
+        }
+      },
+      "delivery_file": {
+        "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.vowel.u.001.wav",
+        "sha256": "sha256:f0d2d0b7c13dbc5b35bdc4b8a2e47a0c0a2827b12ede62c04ccdedd92e3f2086",
+        "format": {
+          "codec": "pcm_s16le",
+          "sample_rate_hz": 48000,
+          "bits_per_sample": 16,
+          "channels": 1,
+          "duration_seconds": 1.054
+        }
+      },
+      "audio_qa": {
+        "status": "automated_measurement_only",
+        "loudness_lufs": -34.1,
+        "true_peak_dbtp": -14.8,
+        "clipping_check": "not_tested",
+        "noise_check": "not_tested",
+        "device_playback_check": "not_tested"
+      },
+      "accessibility": {
+        "accessible_label": "Audio target U01-L1, speaker a, belum diputar",
+        "transcript_release": "after_submission_or_feedback",
+        "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
+        "alternative_classification": "support_adjusted",
+        "status": "not_tested"
+      },
+      "rights": {
+        "status": "pending_verification",
+        "rights_receipt_id": null,
+        "consent_release_ref": null,
+        "license_ref": null,
+        "attribution": "Microsoft Windows installed voice; redistribution terms pending review"
+      },
+      "review": {
+        "academic": "pending",
+        "linguistic": "pending",
+        "audio": "pending",
+        "rights": "pending",
+        "accessibility": "pending",
+        "technical": "pending"
+      }
+    },
+    {
+      "asset_id": "ast_01J00000000000000000000006",
+      "logical_id": "AUDIO.N5.S0.U01.L1.VOWEL.U.002",
+      "group": "vowel",
+      "speaker_variant": "b",
+      "japanese_text": "う",
+      "transcript_internal": "う",
+      "evidence_policy": "direct",
+      "source_type": "local_system_tts",
+      "generation_tool": "System.Speech",
+      "voice_provider": "Microsoft Windows installed voice",
+      "voice_id": "MSTTS_V110_jaJP_IchiroM",
+      "voice_name": "Microsoft Ichiro",
+      "culture": "ja-JP",
+      "generated_at": "2026-09-20T15:43:03.2797126+07:00",
+      "master_file": {
+        "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.vowel.u.002.wav",
+        "sha256": "sha256:bfa6fb8046883d903f929bf192a69ef6dc915d4cb277d467ed84439c1d682ee3",
+        "format": {
+          "codec": "pcm_s24le",
+          "sample_rate_hz": 48000,
+          "bits_per_sample": 24,
+          "channels": 1,
+          "duration_seconds": 1.13
+        }
+      },
+      "delivery_file": {
+        "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.vowel.u.002.wav",
+        "sha256": "sha256:2760594d16be80495359f797e9a225034a9ca4da31517245919b9f94b1036505",
+        "format": {
+          "codec": "pcm_s16le",
+          "sample_rate_hz": 48000,
+          "bits_per_sample": 16,
+          "channels": 1,
+          "duration_seconds": 1.13
+        }
+      },
+      "audio_qa": {
+        "status": "automated_measurement_only",
+        "loudness_lufs": -35.3,
+        "true_peak_dbtp": -13.9,
+        "clipping_check": "not_tested",
+        "noise_check": "not_tested",
+        "device_playback_check": "not_tested"
+      },
+      "accessibility": {
+        "accessible_label": "Audio target U01-L1, speaker b, belum diputar",
+        "transcript_release": "after_submission_or_feedback",
+        "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
+        "alternative_classification": "support_adjusted",
+        "status": "not_tested"
+      },
+      "rights": {
+        "status": "pending_verification",
+        "rights_receipt_id": null,
+        "consent_release_ref": null,
+        "license_ref": null,
+        "attribution": "Microsoft Windows installed voice; redistribution terms pending review"
+      },
+      "review": {
+        "academic": "pending",
+        "linguistic": "pending",
+        "audio": "pending",
+        "rights": "pending",
+        "accessibility": "pending",
+        "technical": "pending"
+      }
+    },
+    {
+      "asset_id": "ast_01J00000000000000000000007",
+      "logical_id": "AUDIO.N5.S0.U01.L1.VOWEL.E.001",
+      "group": "vowel",
+      "speaker_variant": "a",
+      "japanese_text": "え",
+      "transcript_internal": "え",
+      "evidence_policy": "direct",
+      "source_type": "local_system_tts",
+      "generation_tool": "System.Speech",
+      "voice_provider": "Microsoft Windows installed voice",
+      "voice_id": "MSTTS_V110_jaJP_AyumiM",
+      "voice_name": "Microsoft Ayumi",
+      "culture": "ja-JP",
+      "generated_at": "2026-09-20T15:43:03.2797126+07:00",
+      "master_file": {
+        "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.vowel.e.001.wav",
+        "sha256": "sha256:33f1a9a4561673d51bc6de92b8591190799a1e8164fe017b2c17551133aa3631",
+        "format": {
+          "codec": "pcm_s24le",
+          "sample_rate_hz": 48000,
+          "bits_per_sample": 24,
+          "channels": 1,
+          "duration_seconds": 1.02
+        }
+      },
+      "delivery_file": {
+        "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.vowel.e.001.wav",
+        "sha256": "sha256:a42c1afbeaed87bacc76c8af839eef9d35e34c3597fe157e59910374be744c05",
+        "format": {
+          "codec": "pcm_s16le",
+          "sample_rate_hz": 48000,
+          "bits_per_sample": 16,
+          "channels": 1,
+          "duration_seconds": 1.02
+        }
+      },
+      "audio_qa": {
+        "status": "automated_measurement_only",
+        "loudness_lufs": -28.1,
+        "true_peak_dbtp": -8.5,
+        "clipping_check": "not_tested",
+        "noise_check": "not_tested",
+        "device_playback_check": "not_tested"
+      },
+      "accessibility": {
+        "accessible_label": "Audio target U01-L1, speaker a, belum diputar",
+        "transcript_release": "after_submission_or_feedback",
+        "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
+        "alternative_classification": "support_adjusted",
+        "status": "not_tested"
+      },
+      "rights": {
+        "status": "pending_verification",
+        "rights_receipt_id": null,
+        "consent_release_ref": null,
+        "license_ref": null,
+        "attribution": "Microsoft Windows installed voice; redistribution terms pending review"
+      },
+      "review": {
+        "academic": "pending",
+        "linguistic": "pending",
+        "audio": "pending",
+        "rights": "pending",
+        "accessibility": "pending",
+        "technical": "pending"
+      }
+    },
+    {
+      "asset_id": "ast_01J00000000000000000000008",
+      "logical_id": "AUDIO.N5.S0.U01.L1.VOWEL.E.002",
+      "group": "vowel",
+      "speaker_variant": "b",
+      "japanese_text": "え",
+      "transcript_internal": "え",
+      "evidence_policy": "direct",
+      "source_type": "local_system_tts",
+      "generation_tool": "System.Speech",
+      "voice_provider": "Microsoft Windows installed voice",
+      "voice_id": "MSTTS_V110_jaJP_IchiroM",
+      "voice_name": "Microsoft Ichiro",
+      "culture": "ja-JP",
+      "generated_at": "2026-09-20T15:43:03.2797126+07:00",
+      "master_file": {
+        "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.vowel.e.002.wav",
+        "sha256": "sha256:f5c502fe73caebec496f64a0912f3e737614e9e47bd385952b535e65625aa015",
+        "format": {
+          "codec": "pcm_s24le",
+          "sample_rate_hz": 48000,
+          "bits_per_sample": 24,
+          "channels": 1,
+          "duration_seconds": 1.092
+        }
+      },
+      "delivery_file": {
+        "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.vowel.e.002.wav",
+        "sha256": "sha256:b3459af357f43200b70d56324cf243b1578fd6ba6890e1acca6dab02a4d2c712",
+        "format": {
+          "codec": "pcm_s16le",
+          "sample_rate_hz": 48000,
+          "bits_per_sample": 16,
+          "channels": 1,
+          "duration_seconds": 1.092
+        }
+      },
+      "audio_qa": {
+        "status": "automated_measurement_only",
+        "loudness_lufs": -37.0,
+        "true_peak_dbtp": -15.6,
+        "clipping_check": "not_tested",
+        "noise_check": "not_tested",
+        "device_playback_check": "not_tested"
+      },
+      "accessibility": {
+        "accessible_label": "Audio target U01-L1, speaker b, belum diputar",
+        "transcript_release": "after_submission_or_feedback",
+        "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
+        "alternative_classification": "support_adjusted",
+        "status": "not_tested"
+      },
+      "rights": {
+        "status": "pending_verification",
+        "rights_receipt_id": null,
+        "consent_release_ref": null,
+        "license_ref": null,
+        "attribution": "Microsoft Windows installed voice; redistribution terms pending review"
+      },
+      "review": {
+        "academic": "pending",
+        "linguistic": "pending",
+        "audio": "pending",
+        "rights": "pending",
+        "accessibility": "pending",
+        "technical": "pending"
+      }
+    },
+    {
+      "asset_id": "ast_01J00000000000000000000009",
+      "logical_id": "AUDIO.N5.S0.U01.L1.VOWEL.O.001",
+      "group": "vowel",
+      "speaker_variant": "a",
+      "japanese_text": "お",
+      "transcript_internal": "お",
+      "evidence_policy": "direct",
+      "source_type": "local_system_tts",
+      "generation_tool": "System.Speech",
+      "voice_provider": "Microsoft Windows installed voice",
+      "voice_id": "MSTTS_V110_jaJP_AyumiM",
+      "voice_name": "Microsoft Ayumi",
+      "culture": "ja-JP",
+      "generated_at": "2026-09-20T15:43:03.2797126+07:00",
+      "master_file": {
+        "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.vowel.o.001.wav",
+        "sha256": "sha256:d23c154fc18db0c4a83cf4525a31ed6662b25bfdc2bf03dfe00bb2ee1312cf05",
+        "format": {
+          "codec": "pcm_s24le",
+          "sample_rate_hz": 48000,
+          "bits_per_sample": 24,
+          "channels": 1,
+          "duration_seconds": 1.014
+        }
+      },
+      "delivery_file": {
+        "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.vowel.o.001.wav",
+        "sha256": "sha256:f730aa08b79547c0733303f176c27ed9c92e64f3bbd6995a831b0ada4624b659",
+        "format": {
+          "codec": "pcm_s16le",
+          "sample_rate_hz": 48000,
+          "bits_per_sample": 16,
+          "channels": 1,
+          "duration_seconds": 1.014
+        }
+      },
+      "audio_qa": {
+        "status": "automated_measurement_only",
+        "loudness_lufs": -28.7,
+        "true_peak_dbtp": -9.3,
+        "clipping_check": "not_tested",
+        "noise_check": "not_tested",
+        "device_playback_check": "not_tested"
+      },
+      "accessibility": {
+        "accessible_label": "Audio target U01-L1, speaker a, belum diputar",
+        "transcript_release": "after_submission_or_feedback",
+        "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
+        "alternative_classification": "support_adjusted",
+        "status": "not_tested"
+      },
+      "rights": {
+        "status": "pending_verification",
+        "rights_receipt_id": null,
+        "consent_release_ref": null,
+        "license_ref": null,
+        "attribution": "Microsoft Windows installed voice; redistribution terms pending review"
+      },
+      "review": {
+        "academic": "pending",
+        "linguistic": "pending",
+        "audio": "pending",
+        "rights": "pending",
+        "accessibility": "pending",
+        "technical": "pending"
+      }
+    },
+    {
+      "asset_id": "ast_01J00000000000000000000010",
+      "logical_id": "AUDIO.N5.S0.U01.L1.VOWEL.O.002",
+      "group": "vowel",
+      "speaker_variant": "b",
+      "japanese_text": "お",
+      "transcript_internal": "お",
+      "evidence_policy": "direct",
+      "source_type": "local_system_tts",
+      "generation_tool": "System.Speech",
+      "voice_provider": "Microsoft Windows installed voice",
+      "voice_id": "MSTTS_V110_jaJP_IchiroM",
+      "voice_name": "Microsoft Ichiro",
+      "culture": "ja-JP",
+      "generated_at": "2026-09-20T15:43:03.2797126+07:00",
+      "master_file": {
+        "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.vowel.o.002.wav",
+        "sha256": "sha256:677e9ef92eba2a7b9d28a1aef358d6df0921892ecd83b6191a3b9418b99f2914",
+        "format": {
+          "codec": "pcm_s24le",
+          "sample_rate_hz": 48000,
+          "bits_per_sample": 24,
+          "channels": 1,
+          "duration_seconds": 1.094
+        }
+      },
+      "delivery_file": {
+        "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.vowel.o.002.wav",
+        "sha256": "sha256:8178fdba96c218ba684ec62156b066cf4e546bae21a6fb5d799470bcc7dcae32",
+        "format": {
+          "codec": "pcm_s16le",
+          "sample_rate_hz": 48000,
+          "bits_per_sample": 16,
+          "channels": 1,
+          "duration_seconds": 1.094
+        }
+      },
+      "audio_qa": {
+        "status": "automated_measurement_only",
+        "loudness_lufs": -29.5,
+        "true_peak_dbtp": -6.8,
+        "clipping_check": "not_tested",
+        "noise_check": "not_tested",
+        "device_playback_check": "not_tested"
+      },
+      "accessibility": {
+        "accessible_label": "Audio target U01-L1, speaker b, belum diputar",
+        "transcript_release": "after_submission_or_feedback",
+        "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
+        "alternative_classification": "support_adjusted",
+        "status": "not_tested"
+      },
+      "rights": {
+        "status": "pending_verification",
+        "rights_receipt_id": null,
+        "consent_release_ref": null,
+        "license_ref": null,
+        "attribution": "Microsoft Windows installed voice; redistribution terms pending review"
+      },
+      "review": {
+        "academic": "pending",
+        "linguistic": "pending",
+        "audio": "pending",
+        "rights": "pending",
+        "accessibility": "pending",
+        "technical": "pending"
+      }
+    },
+    {
+      "asset_id": "ast_01J00000000000000000000011",
+      "logical_id": "AUDIO.N5.S0.U01.L1.GREETING.OHAYOU_GOZAIMASU.001",
+      "group": "greeting",
+      "speaker_variant": "a",
+      "japanese_text": "おはようございます",
+      "transcript_internal": "おはようございます",
+      "evidence_policy": "applied",
+      "source_type": "local_system_tts",
+      "generation_tool": "System.Speech",
+      "voice_provider": "Microsoft Windows installed voice",
+      "voice_id": "MSTTS_V110_jaJP_AyumiM",
+      "voice_name": "Microsoft Ayumi",
+      "culture": "ja-JP",
+      "generated_at": "2026-09-20T15:43:03.2797126+07:00",
+      "master_file": {
+        "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.greeting.ohayou_gozaimasu.001.wav",
+        "sha256": "sha256:c9b3192d7e98961ae1b6e7108acfb4eef2201f51b3efcfe34deb1ab5b506ae20",
+        "format": {
+          "codec": "pcm_s24le",
+          "sample_rate_hz": 48000,
+          "bits_per_sample": 24,
+          "channels": 1,
+          "duration_seconds": 2.26
+        }
+      },
+      "delivery_file": {
+        "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.greeting.ohayou_gozaimasu.001.wav",
+        "sha256": "sha256:098596df1700ccfe58616e32619bd877c458cefa556bd3fc066b267737769a4b",
+        "format": {
+          "codec": "pcm_s16le",
+          "sample_rate_hz": 48000,
+          "bits_per_sample": 16,
+          "channels": 1,
+          "duration_seconds": 2.26
+        }
+      },
+      "audio_qa": {
+        "status": "automated_measurement_only",
+        "loudness_lufs": -19.4,
+        "true_peak_dbtp": -5.0,
+        "clipping_check": "not_tested",
+        "noise_check": "not_tested",
+        "device_playback_check": "not_tested"
+      },
+      "accessibility": {
+        "accessible_label": "Audio target U01-L1, speaker a, belum diputar",
+        "transcript_release": "after_submission_or_feedback",
+        "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
+        "alternative_classification": "support_adjusted",
+        "status": "not_tested"
+      },
+      "rights": {
+        "status": "pending_verification",
+        "rights_receipt_id": null,
+        "consent_release_ref": null,
+        "license_ref": null,
+        "attribution": "Microsoft Windows installed voice; redistribution terms pending review"
+      },
+      "review": {
+        "academic": "pending",
+        "linguistic": "pending",
+        "audio": "pending",
+        "rights": "pending",
+        "accessibility": "pending",
+        "technical": "pending"
+      }
+    },
+    {
+      "asset_id": "ast_01J00000000000000000000012",
+      "logical_id": "AUDIO.N5.S0.U01.L1.GREETING.OHAYOU_GOZAIMASU.002",
+      "group": "greeting",
+      "speaker_variant": "b",
+      "japanese_text": "おはようございます",
+      "transcript_internal": "おはようございます",
+      "evidence_policy": "applied",
+      "source_type": "local_system_tts",
+      "generation_tool": "System.Speech",
+      "voice_provider": "Microsoft Windows installed voice",
+      "voice_id": "MSTTS_V110_jaJP_IchiroM",
+      "voice_name": "Microsoft Ichiro",
+      "culture": "ja-JP",
+      "generated_at": "2026-09-20T15:43:03.2797126+07:00",
+      "master_file": {
+        "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.greeting.ohayou_gozaimasu.002.wav",
+        "sha256": "sha256:ea4c1996d630f11dae56f5a6b2b1ca8fcd7c7556080ff4454b3fc83fce2d3455",
+        "format": {
+          "codec": "pcm_s24le",
+          "sample_rate_hz": 48000,
+          "bits_per_sample": 24,
+          "channels": 1,
+          "duration_seconds": 2.252
+        }
+      },
+      "delivery_file": {
+        "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.greeting.ohayou_gozaimasu.002.wav",
+        "sha256": "sha256:48e0d8d2bdcd771a1e16ba81912783a3f7cb3acfcdfc875ac0b19bdc1a0a268e",
+        "format": {
+          "codec": "pcm_s16le",
+          "sample_rate_hz": 48000,
+          "bits_per_sample": 16,
+          "channels": 1,
+          "duration_seconds": 2.252
+        }
+      },
+      "audio_qa": {
+        "status": "automated_measurement_only",
+        "loudness_lufs": -21.3,
+        "true_peak_dbtp": -5.7,
+        "clipping_check": "not_tested",
+        "noise_check": "not_tested",
+        "device_playback_check": "not_tested"
+      },
+      "accessibility": {
+        "accessible_label": "Audio target U01-L1, speaker b, belum diputar",
+        "transcript_release": "after_submission_or_feedback",
+        "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
+        "alternative_classification": "support_adjusted",
+        "status": "not_tested"
+      },
+      "rights": {
+        "status": "pending_verification",
+        "rights_receipt_id": null,
+        "consent_release_ref": null,
+        "license_ref": null,
+        "attribution": "Microsoft Windows installed voice; redistribution terms pending review"
+      },
+      "review": {
+        "academic": "pending",
+        "linguistic": "pending",
+        "audio": "pending",
+        "rights": "pending",
+        "accessibility": "pending",
+        "technical": "pending"
+      }
+    },
+    {
+      "asset_id": "ast_01J00000000000000000000013",
+      "logical_id": "AUDIO.N5.S0.U01.L1.GREETING.KONNICHIWA.001",
+      "group": "greeting",
+      "speaker_variant": "a",
+      "japanese_text": "こんにちは",
+      "transcript_internal": "こんにちは",
+      "evidence_policy": "applied",
+      "source_type": "local_system_tts",
+      "generation_tool": "System.Speech",
+      "voice_provider": "Microsoft Windows installed voice",
+      "voice_id": "MSTTS_V110_jaJP_AyumiM",
+      "voice_name": "Microsoft Ayumi",
+      "culture": "ja-JP",
+      "generated_at": "2026-09-20T15:43:03.2797126+07:00",
+      "master_file": {
+        "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.greeting.konnichiwa.001.wav",
+        "sha256": "sha256:be3e82932de616282e786494d3eac8b44a6b35a9812f6d2e404ab485a408cb26",
+        "format": {
+          "codec": "pcm_s24le",
+          "sample_rate_hz": 48000,
+          "bits_per_sample": 24,
+          "channels": 1,
+          "duration_seconds": 1.62
+        }
+      },
+      "delivery_file": {
+        "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.greeting.konnichiwa.001.wav",
+        "sha256": "sha256:be5ea027fa508dc4da93eade52d6e000fcfea94763b5be806bdb54e3c22db8ec",
+        "format": {
+          "codec": "pcm_s16le",
+          "sample_rate_hz": 48000,
+          "bits_per_sample": 16,
+          "channels": 1,
+          "duration_seconds": 1.62
+        }
+      },
+      "audio_qa": {
+        "status": "automated_measurement_only",
+        "loudness_lufs": -21.4,
+        "true_peak_dbtp": -7.8,
+        "clipping_check": "not_tested",
+        "noise_check": "not_tested",
+        "device_playback_check": "not_tested"
+      },
+      "accessibility": {
+        "accessible_label": "Audio target U01-L1, speaker a, belum diputar",
+        "transcript_release": "after_submission_or_feedback",
+        "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
+        "alternative_classification": "support_adjusted",
+        "status": "not_tested"
+      },
+      "rights": {
+        "status": "pending_verification",
+        "rights_receipt_id": null,
+        "consent_release_ref": null,
+        "license_ref": null,
+        "attribution": "Microsoft Windows installed voice; redistribution terms pending review"
+      },
+      "review": {
+        "academic": "pending",
+        "linguistic": "pending",
+        "audio": "pending",
+        "rights": "pending",
+        "accessibility": "pending",
+        "technical": "pending"
+      }
+    },
+    {
+      "asset_id": "ast_01J00000000000000000000014",
+      "logical_id": "AUDIO.N5.S0.U01.L1.GREETING.KONNICHIWA.002",
+      "group": "greeting",
+      "speaker_variant": "b",
+      "japanese_text": "こんにちは",
+      "transcript_internal": "こんにちは",
+      "evidence_policy": "applied",
+      "source_type": "local_system_tts",
+      "generation_tool": "System.Speech",
+      "voice_provider": "Microsoft Windows installed voice",
+      "voice_id": "MSTTS_V110_jaJP_IchiroM",
+      "voice_name": "Microsoft Ichiro",
+      "culture": "ja-JP",
+      "generated_at": "2026-09-20T15:43:03.2797126+07:00",
+      "master_file": {
+        "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.greeting.konnichiwa.002.wav",
+        "sha256": "sha256:061fa63fafffc27f3860d495caf042f8ccb51ff5a6d18c5b78d155736d51ac53",
+        "format": {
+          "codec": "pcm_s24le",
+          "sample_rate_hz": 48000,
+          "bits_per_sample": 24,
+          "channels": 1,
+          "duration_seconds": 1.656
+        }
+      },
+      "delivery_file": {
+        "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.greeting.konnichiwa.002.wav",
+        "sha256": "sha256:fddb44b9601001566c7861777789310dbb0c6a0f4559727e1d132c9b8b283c0e",
+        "format": {
+          "codec": "pcm_s16le",
+          "sample_rate_hz": 48000,
+          "bits_per_sample": 16,
+          "channels": 1,
+          "duration_seconds": 1.656
+        }
+      },
+      "audio_qa": {
+        "status": "automated_measurement_only",
+        "loudness_lufs": -22.8,
+        "true_peak_dbtp": -5.1,
+        "clipping_check": "not_tested",
+        "noise_check": "not_tested",
+        "device_playback_check": "not_tested"
+      },
+      "accessibility": {
+        "accessible_label": "Audio target U01-L1, speaker b, belum diputar",
+        "transcript_release": "after_submission_or_feedback",
+        "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
+        "alternative_classification": "support_adjusted",
+        "status": "not_tested"
+      },
+      "rights": {
+        "status": "pending_verification",
+        "rights_receipt_id": null,
+        "consent_release_ref": null,
+        "license_ref": null,
+        "attribution": "Microsoft Windows installed voice; redistribution terms pending review"
+      },
+      "review": {
+        "academic": "pending",
+        "linguistic": "pending",
+        "audio": "pending",
+        "rights": "pending",
+        "accessibility": "pending",
+        "technical": "pending"
+      }
+    },
+    {
+      "asset_id": "ast_01J00000000000000000000015",
+      "logical_id": "AUDIO.N5.S0.U01.L1.GREETING.KONBANWA.001",
+      "group": "greeting",
+      "speaker_variant": "a",
+      "japanese_text": "こんばんは",
+      "transcript_internal": "こんばんは",
+      "evidence_policy": "applied",
+      "source_type": "local_system_tts",
+      "generation_tool": "System.Speech",
+      "voice_provider": "Microsoft Windows installed voice",
+      "voice_id": "MSTTS_V110_jaJP_AyumiM",
+      "voice_name": "Microsoft Ayumi",
+      "culture": "ja-JP",
+      "generated_at": "2026-09-20T15:43:03.2797126+07:00",
+      "master_file": {
+        "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.greeting.konbanwa.001.wav",
+        "sha256": "sha256:a7f66f3184f8abcc0024f2fb6a537a3b3980a4165b5792afe8774dbc441b7217",
+        "format": {
+          "codec": "pcm_s24le",
+          "sample_rate_hz": 48000,
+          "bits_per_sample": 24,
+          "channels": 1,
+          "duration_seconds": 1.604
+        }
+      },
+      "delivery_file": {
+        "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.greeting.konbanwa.001.wav",
+        "sha256": "sha256:0c82b48e0832dc5445370f0da4cffd919ce02eeafb64136b50664ad78ace01af",
+        "format": {
+          "codec": "pcm_s16le",
+          "sample_rate_hz": 48000,
+          "bits_per_sample": 16,
+          "channels": 1,
+          "duration_seconds": 1.604
+        }
+      },
+      "audio_qa": {
+        "status": "automated_measurement_only",
+        "loudness_lufs": -21.0,
+        "true_peak_dbtp": -7.2,
+        "clipping_check": "not_tested",
+        "noise_check": "not_tested",
+        "device_playback_check": "not_tested"
+      },
+      "accessibility": {
+        "accessible_label": "Audio target U01-L1, speaker a, belum diputar",
+        "transcript_release": "after_submission_or_feedback",
+        "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
+        "alternative_classification": "support_adjusted",
+        "status": "not_tested"
+      },
+      "rights": {
+        "status": "pending_verification",
+        "rights_receipt_id": null,
+        "consent_release_ref": null,
+        "license_ref": null,
+        "attribution": "Microsoft Windows installed voice; redistribution terms pending review"
+      },
+      "review": {
+        "academic": "pending",
+        "linguistic": "pending",
+        "audio": "pending",
+        "rights": "pending",
+        "accessibility": "pending",
+        "technical": "pending"
+      }
+    },
+    {
+      "asset_id": "ast_01J00000000000000000000016",
+      "logical_id": "AUDIO.N5.S0.U01.L1.GREETING.KONBANWA.002",
+      "group": "greeting",
+      "speaker_variant": "b",
+      "japanese_text": "こんばんは",
+      "transcript_internal": "こんばんは",
+      "evidence_policy": "applied",
+      "source_type": "local_system_tts",
+      "generation_tool": "System.Speech",
+      "voice_provider": "Microsoft Windows installed voice",
+      "voice_id": "MSTTS_V110_jaJP_IchiroM",
+      "voice_name": "Microsoft Ichiro",
+      "culture": "ja-JP",
+      "generated_at": "2026-09-20T15:43:03.2797126+07:00",
+      "master_file": {
+        "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.greeting.konbanwa.002.wav",
+        "sha256": "sha256:99b1d3642a252b27613f2fae4d1a397e93e9abe20f54f7be0d4bed7f83fb3911",
+        "format": {
+          "codec": "pcm_s24le",
+          "sample_rate_hz": 48000,
+          "bits_per_sample": 24,
+          "channels": 1,
+          "duration_seconds": 1.634
+        }
+      },
+      "delivery_file": {
+        "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.greeting.konbanwa.002.wav",
+        "sha256": "sha256:1511bb618477deedf37d86ea1869defb4466385af14a039d617f767e4341d1ce",
+        "format": {
+          "codec": "pcm_s16le",
+          "sample_rate_hz": 48000,
+          "bits_per_sample": 16,
+          "channels": 1,
+          "duration_seconds": 1.634
+        }
+      },
+      "audio_qa": {
+        "status": "automated_measurement_only",
+        "loudness_lufs": -21.8,
+        "true_peak_dbtp": -4.7,
+        "clipping_check": "not_tested",
+        "noise_check": "not_tested",
+        "device_playback_check": "not_tested"
+      },
+      "accessibility": {
+        "accessible_label": "Audio target U01-L1, speaker b, belum diputar",
+        "transcript_release": "after_submission_or_feedback",
+        "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
+        "alternative_classification": "support_adjusted",
+        "status": "not_tested"
+      },
+      "rights": {
+        "status": "pending_verification",
+        "rights_receipt_id": null,
+        "consent_release_ref": null,
+        "license_ref": null,
+        "attribution": "Microsoft Windows installed voice; redistribution terms pending review"
+      },
+      "review": {
+        "academic": "pending",
+        "linguistic": "pending",
+        "audio": "pending",
+        "rights": "pending",
+        "accessibility": "pending",
+        "technical": "pending"
+      }
+    },
+    {
+      "asset_id": "ast_01J00000000000000000000017",
+      "logical_id": "AUDIO.N5.S0.U01.L1.GREETING.SAYOUNARA.001",
+      "group": "greeting",
+      "speaker_variant": "a",
+      "japanese_text": "さようなら",
+      "transcript_internal": "さようなら",
+      "evidence_policy": "applied",
+      "source_type": "local_system_tts",
+      "generation_tool": "System.Speech",
+      "voice_provider": "Microsoft Windows installed voice",
+      "voice_id": "MSTTS_V110_jaJP_AyumiM",
+      "voice_name": "Microsoft Ayumi",
+      "culture": "ja-JP",
+      "generated_at": "2026-09-20T15:43:03.2797126+07:00",
+      "master_file": {
+        "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.greeting.sayounara.001.wav",
+        "sha256": "sha256:c916bafd65e4f0ebf46dad030de66e78df9d5b47d3328b7dc047c48824e73373",
+        "format": {
+          "codec": "pcm_s24le",
+          "sample_rate_hz": 48000,
+          "bits_per_sample": 24,
+          "channels": 1,
+          "duration_seconds": 1.644
+        }
+      },
+      "delivery_file": {
+        "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.greeting.sayounara.001.wav",
+        "sha256": "sha256:d58a26a678e3f655fba65169b007571140ae9f9439628bc47dfcd0b9b80eea2c",
+        "format": {
+          "codec": "pcm_s16le",
+          "sample_rate_hz": 48000,
+          "bits_per_sample": 16,
+          "channels": 1,
+          "duration_seconds": 1.644
+        }
+      },
+      "audio_qa": {
+        "status": "automated_measurement_only",
+        "loudness_lufs": -20.0,
+        "true_peak_dbtp": -7.0,
+        "clipping_check": "not_tested",
+        "noise_check": "not_tested",
+        "device_playback_check": "not_tested"
+      },
+      "accessibility": {
+        "accessible_label": "Audio target U01-L1, speaker a, belum diputar",
+        "transcript_release": "after_submission_or_feedback",
+        "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
+        "alternative_classification": "support_adjusted",
+        "status": "not_tested"
+      },
+      "rights": {
+        "status": "pending_verification",
+        "rights_receipt_id": null,
+        "consent_release_ref": null,
+        "license_ref": null,
+        "attribution": "Microsoft Windows installed voice; redistribution terms pending review"
+      },
+      "review": {
+        "academic": "pending",
+        "linguistic": "pending",
+        "audio": "pending",
+        "rights": "pending",
+        "accessibility": "pending",
+        "technical": "pending"
+      }
+    },
+    {
+      "asset_id": "ast_01J00000000000000000000018",
+      "logical_id": "AUDIO.N5.S0.U01.L1.GREETING.SAYOUNARA.002",
+      "group": "greeting",
+      "speaker_variant": "b",
+      "japanese_text": "さようなら",
+      "transcript_internal": "さようなら",
+      "evidence_policy": "applied",
+      "source_type": "local_system_tts",
+      "generation_tool": "System.Speech",
+      "voice_provider": "Microsoft Windows installed voice",
+      "voice_id": "MSTTS_V110_jaJP_IchiroM",
+      "voice_name": "Microsoft Ichiro",
+      "culture": "ja-JP",
+      "generated_at": "2026-09-20T15:43:03.2797126+07:00",
+      "master_file": {
+        "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.greeting.sayounara.002.wav",
+        "sha256": "sha256:c70cc9333863a8aad74e89af84e2fb87739e573b0f21ed90c3dd3ca54da008ef",
+        "format": {
+          "codec": "pcm_s24le",
+          "sample_rate_hz": 48000,
+          "bits_per_sample": 24,
+          "channels": 1,
+          "duration_seconds": 1.664
+        }
+      },
+      "delivery_file": {
+        "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.greeting.sayounara.002.wav",
+        "sha256": "sha256:d66d42a89bae26a44d9aa09aedbf4a912532480ff07758e783ae4fbfa7476fb2",
+        "format": {
+          "codec": "pcm_s16le",
+          "sample_rate_hz": 48000,
+          "bits_per_sample": 16,
+          "channels": 1,
+          "duration_seconds": 1.664
+        }
+      },
+      "audio_qa": {
+        "status": "automated_measurement_only",
+        "loudness_lufs": -21.5,
+        "true_peak_dbtp": -5.9,
+        "clipping_check": "not_tested",
+        "noise_check": "not_tested",
+        "device_playback_check": "not_tested"
+      },
+      "accessibility": {
+        "accessible_label": "Audio target U01-L1, speaker b, belum diputar",
+        "transcript_release": "after_submission_or_feedback",
+        "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
+        "alternative_classification": "support_adjusted",
+        "status": "not_tested"
+      },
+      "rights": {
+        "status": "pending_verification",
+        "rights_receipt_id": null,
+        "consent_release_ref": null,
+        "license_ref": null,
+        "attribution": "Microsoft Windows installed voice; redistribution terms pending review"
+      },
+      "review": {
+        "academic": "pending",
+        "linguistic": "pending",
+        "audio": "pending",
+        "rights": "pending",
+        "accessibility": "pending",
+        "technical": "pending"
+      }
+    },
+    {
+      "asset_id": "ast_01J00000000000000000000019",
+      "logical_id": "AUDIO.N5.S0.U01.L1.MORA.ONE_KA.001",
+      "group": "mora",
+      "speaker_variant": "a",
+      "japanese_text": "か",
+      "transcript_internal": "か",
+      "evidence_policy": "applied",
+      "source_type": "local_system_tts",
+      "generation_tool": "System.Speech",
+      "voice_provider": "Microsoft Windows installed voice",
+      "voice_id": "MSTTS_V110_jaJP_AyumiM",
+      "voice_name": "Microsoft Ayumi",
+      "culture": "ja-JP",
+      "generated_at": "2026-09-20T15:43:03.2797126+07:00",
+      "master_file": {
+        "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.mora.one_ka.001.wav",
+        "sha256": "sha256:df0f63c45c7df5b31d8700e06d6f108963f15577abe342777f0bcc919d7c9c48",
+        "format": {
+          "codec": "pcm_s24le",
+          "sample_rate_hz": 48000,
+          "bits_per_sample": 24,
+          "channels": 1,
+          "duration_seconds": 1.02
+        }
+      },
+      "delivery_file": {
+        "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.mora.one_ka.001.wav",
+        "sha256": "sha256:b0129b0c4a8102c3ada82bce185e7c39e2dfe4ac4693d9c9a2db7bca71615243",
+        "format": {
+          "codec": "pcm_s16le",
+          "sample_rate_hz": 48000,
+          "bits_per_sample": 16,
+          "channels": 1,
+          "duration_seconds": 1.02
+        }
+      },
+      "audio_qa": {
+        "status": "automated_measurement_only",
+        "loudness_lufs": -31.3,
+        "true_peak_dbtp": -11.5,
+        "clipping_check": "not_tested",
+        "noise_check": "not_tested",
+        "device_playback_check": "not_tested"
+      },
+      "accessibility": {
+        "accessible_label": "Audio target U01-L1, speaker a, belum diputar",
+        "transcript_release": "after_submission_or_feedback",
+        "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
+        "alternative_classification": "support_adjusted",
+        "status": "not_tested"
+      },
+      "rights": {
+        "status": "pending_verification",
+        "rights_receipt_id": null,
+        "consent_release_ref": null,
+        "license_ref": null,
+        "attribution": "Microsoft Windows installed voice; redistribution terms pending review"
+      },
+      "review": {
+        "academic": "pending",
+        "linguistic": "pending",
+        "audio": "pending",
+        "rights": "pending",
+        "accessibility": "pending",
+        "technical": "pending"
+      }
+    },
+    {
+      "asset_id": "ast_01J00000000000000000000020",
+      "logical_id": "AUDIO.N5.S0.U01.L1.MORA.ONE_KA.002",
+      "group": "mora",
+      "speaker_variant": "b",
+      "japanese_text": "か",
+      "transcript_internal": "か",
+      "evidence_policy": "applied",
+      "source_type": "local_system_tts",
+      "generation_tool": "System.Speech",
+      "voice_provider": "Microsoft Windows installed voice",
+      "voice_id": "MSTTS_V110_jaJP_IchiroM",
+      "voice_name": "Microsoft Ichiro",
+      "culture": "ja-JP",
+      "generated_at": "2026-09-20T15:43:03.2797126+07:00",
+      "master_file": {
+        "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.mora.one_ka.002.wav",
+        "sha256": "sha256:ebd2c43a8eb57b908bedf949338d380bf4569649a968d3fb94d1e0328b81b4e0",
+        "format": {
+          "codec": "pcm_s24le",
+          "sample_rate_hz": 48000,
+          "bits_per_sample": 24,
+          "channels": 1,
+          "duration_seconds": 1.096
+        }
+      },
+      "delivery_file": {
+        "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.mora.one_ka.002.wav",
+        "sha256": "sha256:e7126b122261f8ae8cc667e7d65d6e388b169668cd329c21d33bb26ceb4fadf6",
+        "format": {
+          "codec": "pcm_s16le",
+          "sample_rate_hz": 48000,
+          "bits_per_sample": 16,
+          "channels": 1,
+          "duration_seconds": 1.096
+        }
+      },
+      "audio_qa": {
+        "status": "automated_measurement_only",
+        "loudness_lufs": -37.8,
+        "true_peak_dbtp": -15.4,
+        "clipping_check": "not_tested",
+        "noise_check": "not_tested",
+        "device_playback_check": "not_tested"
+      },
+      "accessibility": {
+        "accessible_label": "Audio target U01-L1, speaker b, belum diputar",
+        "transcript_release": "after_submission_or_feedback",
+        "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
+        "alternative_classification": "support_adjusted",
+        "status": "not_tested"
+      },
+      "rights": {
+        "status": "pending_verification",
+        "rights_receipt_id": null,
+        "consent_release_ref": null,
+        "license_ref": null,
+        "attribution": "Microsoft Windows installed voice; redistribution terms pending review"
+      },
+      "review": {
+        "academic": "pending",
+        "linguistic": "pending",
+        "audio": "pending",
+        "rights": "pending",
+        "accessibility": "pending",
+        "technical": "pending"
+      }
+    },
+    {
+      "asset_id": "ast_01J00000000000000000000021",
+      "logical_id": "AUDIO.N5.S0.U01.L1.MORA.TWO_SUSHI.001",
+      "group": "mora",
+      "speaker_variant": "a",
+      "japanese_text": "すし",
+      "transcript_internal": "すし",
+      "evidence_policy": "applied",
+      "source_type": "local_system_tts",
+      "generation_tool": "System.Speech",
+      "voice_provider": "Microsoft Windows installed voice",
+      "voice_id": "MSTTS_V110_jaJP_AyumiM",
+      "voice_name": "Microsoft Ayumi",
+      "culture": "ja-JP",
+      "generated_at": "2026-09-20T15:43:03.2797126+07:00",
+      "master_file": {
+        "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.mora.two_sushi.001.wav",
+        "sha256": "sha256:405dd7dcd363f6bfabcc5b13b44b6b9418fca04f346586ab2a11f55a1340c746",
+        "format": {
+          "codec": "pcm_s24le",
+          "sample_rate_hz": 48000,
+          "bits_per_sample": 24,
+          "channels": 1,
+          "duration_seconds": 1.37
+        }
+      },
+      "delivery_file": {
+        "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.mora.two_sushi.001.wav",
+        "sha256": "sha256:5a768d77ddcbd37cb5c863a2ae680a7b9ca55692e7ae1d8317c6bbb85662fea7",
+        "format": {
+          "codec": "pcm_s16le",
+          "sample_rate_hz": 48000,
+          "bits_per_sample": 16,
+          "channels": 1,
+          "duration_seconds": 1.37
+        }
+      },
+      "audio_qa": {
+        "status": "automated_measurement_only",
+        "loudness_lufs": -30.0,
+        "true_peak_dbtp": -15.7,
+        "clipping_check": "not_tested",
+        "noise_check": "not_tested",
+        "device_playback_check": "not_tested"
+      },
+      "accessibility": {
+        "accessible_label": "Audio target U01-L1, speaker a, belum diputar",
+        "transcript_release": "after_submission_or_feedback",
+        "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
+        "alternative_classification": "support_adjusted",
+        "status": "not_tested"
+      },
+      "rights": {
+        "status": "pending_verification",
+        "rights_receipt_id": null,
+        "consent_release_ref": null,
+        "license_ref": null,
+        "attribution": "Microsoft Windows installed voice; redistribution terms pending review"
+      },
+      "review": {
+        "academic": "pending",
+        "linguistic": "pending",
+        "audio": "pending",
+        "rights": "pending",
+        "accessibility": "pending",
+        "technical": "pending"
+      }
+    },
+    {
+      "asset_id": "ast_01J00000000000000000000022",
+      "logical_id": "AUDIO.N5.S0.U01.L1.MORA.TWO_SUSHI.002",
+      "group": "mora",
+      "speaker_variant": "b",
+      "japanese_text": "すし",
+      "transcript_internal": "すし",
+      "evidence_policy": "applied",
+      "source_type": "local_system_tts",
+      "generation_tool": "System.Speech",
+      "voice_provider": "Microsoft Windows installed voice",
+      "voice_id": "MSTTS_V110_jaJP_IchiroM",
+      "voice_name": "Microsoft Ichiro",
+      "culture": "ja-JP",
+      "generated_at": "2026-09-20T15:43:03.2797126+07:00",
+      "master_file": {
+        "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.mora.two_sushi.002.wav",
+        "sha256": "sha256:8240d0af9d79ea0662a0eca72d1137ec1ac5ce6f2e0ce2b0d6c360f05b675dcf",
+        "format": {
+          "codec": "pcm_s24le",
+          "sample_rate_hz": 48000,
+          "bits_per_sample": 24,
+          "channels": 1,
+          "duration_seconds": 1.386
+        }
+      },
+      "delivery_file": {
+        "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.mora.two_sushi.002.wav",
+        "sha256": "sha256:5cd3b1a97cc79910d713d4a95c7598992f963daa083f2f9a6f3bb8f1f74a9dd2",
+        "format": {
+          "codec": "pcm_s16le",
+          "sample_rate_hz": 48000,
+          "bits_per_sample": 16,
+          "channels": 1,
+          "duration_seconds": 1.386
+        }
+      },
+      "audio_qa": {
+        "status": "automated_measurement_only",
+        "loudness_lufs": -29.8,
+        "true_peak_dbtp": -17.2,
+        "clipping_check": "not_tested",
+        "noise_check": "not_tested",
+        "device_playback_check": "not_tested"
+      },
+      "accessibility": {
+        "accessible_label": "Audio target U01-L1, speaker b, belum diputar",
+        "transcript_release": "after_submission_or_feedback",
+        "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
+        "alternative_classification": "support_adjusted",
+        "status": "not_tested"
+      },
+      "rights": {
+        "status": "pending_verification",
+        "rights_receipt_id": null,
+        "consent_release_ref": null,
+        "license_ref": null,
+        "attribution": "Microsoft Windows installed voice; redistribution terms pending review"
+      },
+      "review": {
+        "academic": "pending",
+        "linguistic": "pending",
+        "audio": "pending",
+        "rights": "pending",
+        "accessibility": "pending",
+        "technical": "pending"
+      }
+    },
+    {
+      "asset_id": "ast_01J00000000000000000000023",
+      "logical_id": "AUDIO.N5.S0.U01.L1.MORA.THREE_SAKURA.001",
+      "group": "mora",
+      "speaker_variant": "a",
+      "japanese_text": "さくら",
+      "transcript_internal": "さくら",
+      "evidence_policy": "applied",
+      "source_type": "local_system_tts",
+      "generation_tool": "System.Speech",
+      "voice_provider": "Microsoft Windows installed voice",
+      "voice_id": "MSTTS_V110_jaJP_AyumiM",
+      "voice_name": "Microsoft Ayumi",
+      "culture": "ja-JP",
+      "generated_at": "2026-09-20T15:43:03.2797126+07:00",
+      "master_file": {
+        "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.mora.three_sakura.001.wav",
+        "sha256": "sha256:cd610e037190c088dd6504bcf728c3f3412bb2b3865cc3d4dc9ec34310342b9a",
+        "format": {
+          "codec": "pcm_s24le",
+          "sample_rate_hz": 48000,
+          "bits_per_sample": 24,
+          "channels": 1,
+          "duration_seconds": 1.364
+        }
+      },
+      "delivery_file": {
+        "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.mora.three_sakura.001.wav",
+        "sha256": "sha256:df0d383e24c4e1d2a73ed500ec50888554c989df60e7f9318caf4900e82dfbbf",
+        "format": {
+          "codec": "pcm_s16le",
+          "sample_rate_hz": 48000,
+          "bits_per_sample": 16,
+          "channels": 1,
+          "duration_seconds": 1.364
+        }
+      },
+      "audio_qa": {
+        "status": "automated_measurement_only",
+        "loudness_lufs": -25.8,
+        "true_peak_dbtp": -7.0,
+        "clipping_check": "not_tested",
+        "noise_check": "not_tested",
+        "device_playback_check": "not_tested"
+      },
+      "accessibility": {
+        "accessible_label": "Audio target U01-L1, speaker a, belum diputar",
+        "transcript_release": "after_submission_or_feedback",
+        "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
+        "alternative_classification": "support_adjusted",
+        "status": "not_tested"
+      },
+      "rights": {
+        "status": "pending_verification",
+        "rights_receipt_id": null,
+        "consent_release_ref": null,
+        "license_ref": null,
+        "attribution": "Microsoft Windows installed voice; redistribution terms pending review"
+      },
+      "review": {
+        "academic": "pending",
+        "linguistic": "pending",
+        "audio": "pending",
+        "rights": "pending",
+        "accessibility": "pending",
+        "technical": "pending"
+      }
+    },
+    {
+      "asset_id": "ast_01J00000000000000000000024",
+      "logical_id": "AUDIO.N5.S0.U01.L1.MORA.THREE_SAKURA.002",
+      "group": "mora",
+      "speaker_variant": "b",
+      "japanese_text": "さくら",
+      "transcript_internal": "さくら",
+      "evidence_policy": "applied",
+      "source_type": "local_system_tts",
+      "generation_tool": "System.Speech",
+      "voice_provider": "Microsoft Windows installed voice",
+      "voice_id": "MSTTS_V110_jaJP_IchiroM",
+      "voice_name": "Microsoft Ichiro",
+      "culture": "ja-JP",
+      "generated_at": "2026-09-20T15:43:03.2797126+07:00",
+      "master_file": {
+        "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.mora.three_sakura.002.wav",
+        "sha256": "sha256:50d363a4808f7356e3215825c884d6a8ba060d5bec4463fe1b06288b1d3f0bbc",
+        "format": {
+          "codec": "pcm_s24le",
+          "sample_rate_hz": 48000,
+          "bits_per_sample": 24,
+          "channels": 1,
+          "duration_seconds": 1.414
+        }
+      },
+      "delivery_file": {
+        "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.mora.three_sakura.002.wav",
+        "sha256": "sha256:a3b1d3388cfb77705d68daf66dcd846ec9a24431dc54faa36607b8958dab0cc5",
+        "format": {
+          "codec": "pcm_s16le",
+          "sample_rate_hz": 48000,
+          "bits_per_sample": 16,
+          "channels": 1,
+          "duration_seconds": 1.414
+        }
+      },
+      "audio_qa": {
+        "status": "automated_measurement_only",
+        "loudness_lufs": -26.1,
+        "true_peak_dbtp": -5.7,
+        "clipping_check": "not_tested",
+        "noise_check": "not_tested",
+        "device_playback_check": "not_tested"
+      },
+      "accessibility": {
+        "accessible_label": "Audio target U01-L1, speaker b, belum diputar",
+        "transcript_release": "after_submission_or_feedback",
+        "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
+        "alternative_classification": "support_adjusted",
+        "status": "not_tested"
+      },
+      "rights": {
+        "status": "pending_verification",
+        "rights_receipt_id": null,
+        "consent_release_ref": null,
+        "license_ref": null,
+        "attribution": "Microsoft Windows installed voice; redistribution terms pending review"
+      },
+      "review": {
+        "academic": "pending",
+        "linguistic": "pending",
+        "audio": "pending",
+        "rights": "pending",
+        "accessibility": "pending",
+        "technical": "pending"
+      }
+    },
+    {
+      "asset_id": "ast_01J00000000000000000000025",
+      "logical_id": "AUDIO.N5.S0.U01.L1.INSTRUCTION.LISTEN.001",
+      "group": "instruction",
+      "speaker_variant": "a",
+      "japanese_text": "聞いてください",
+      "transcript_internal": "聞いてください",
+      "evidence_policy": "non_scored",
+      "source_type": "local_system_tts",
+      "generation_tool": "System.Speech",
+      "voice_provider": "Microsoft Windows installed voice",
+      "voice_id": "MSTTS_V110_jaJP_AyumiM",
+      "voice_name": "Microsoft Ayumi",
+      "culture": "ja-JP",
+      "generated_at": "2026-09-20T15:43:03.2797126+07:00",
+      "master_file": {
+        "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.instruction.listen.001.wav",
+        "sha256": "sha256:58ea7cfcf0b91928be85ca06831cd198a5b402151eae16cd1a86264e588b066c",
+        "format": {
+          "codec": "pcm_s24le",
+          "sample_rate_hz": 48000,
+          "bits_per_sample": 24,
+          "channels": 1,
+          "duration_seconds": 1.894
+        }
+      },
+      "delivery_file": {
+        "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.instruction.listen.001.wav",
+        "sha256": "sha256:2dda9faecdd39e69328da1ed1ee42b6486ac15321d6f0baa9eb514044a6359c0",
+        "format": {
+          "codec": "pcm_s16le",
+          "sample_rate_hz": 48000,
+          "bits_per_sample": 16,
+          "channels": 1,
+          "duration_seconds": 1.894
+        }
+      },
+      "audio_qa": {
+        "status": "automated_measurement_only",
+        "loudness_lufs": -22.2,
+        "true_peak_dbtp": -5.8,
+        "clipping_check": "not_tested",
+        "noise_check": "not_tested",
+        "device_playback_check": "not_tested"
+      },
+      "accessibility": {
+        "accessible_label": "Audio target U01-L1, speaker a, belum diputar",
+        "transcript_release": "immediate_instructional",
+        "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
+        "alternative_classification": "support_adjusted",
+        "status": "not_tested"
+      },
+      "rights": {
+        "status": "pending_verification",
+        "rights_receipt_id": null,
+        "consent_release_ref": null,
+        "license_ref": null,
+        "attribution": "Microsoft Windows installed voice; redistribution terms pending review"
+      },
+      "review": {
+        "academic": "pending",
+        "linguistic": "pending",
+        "audio": "pending",
+        "rights": "pending",
+        "accessibility": "pending",
+        "technical": "pending"
+      }
+    },
+    {
+      "asset_id": "ast_01J00000000000000000000026",
+      "logical_id": "AUDIO.N5.S0.U01.L1.INSTRUCTION.CHOOSE.001",
+      "group": "instruction",
+      "speaker_variant": "b",
+      "japanese_text": "選んでください",
+      "transcript_internal": "選んでください",
+      "evidence_policy": "non_scored",
+      "source_type": "local_system_tts",
+      "generation_tool": "System.Speech",
+      "voice_provider": "Microsoft Windows installed voice",
+      "voice_id": "MSTTS_V110_jaJP_IchiroM",
+      "voice_name": "Microsoft Ichiro",
+      "culture": "ja-JP",
+      "generated_at": "2026-09-20T15:43:03.2797126+07:00",
+      "master_file": {
+        "path": "content/assets/u01-l1/audio/master/audio.n5.s0.u01.l1.instruction.choose.001.wav",
+        "sha256": "sha256:28e3fb7623bfdd93e9c916418f6ebc9f9d0dbd79367d053a9cf03684a879549f",
+        "format": {
+          "codec": "pcm_s24le",
+          "sample_rate_hz": 48000,
+          "bits_per_sample": 24,
+          "channels": 1,
+          "duration_seconds": 2.034
+        }
+      },
+      "delivery_file": {
+        "path": "content/assets/u01-l1/audio/delivery/audio.n5.s0.u01.l1.instruction.choose.001.wav",
+        "sha256": "sha256:3322a43a622acf284c3c1a0e4a016d091e859cb776992b78212e6fca06b6444b",
+        "format": {
+          "codec": "pcm_s16le",
+          "sample_rate_hz": 48000,
+          "bits_per_sample": 16,
+          "channels": 1,
+          "duration_seconds": 2.034
+        }
+      },
+      "audio_qa": {
+        "status": "automated_measurement_only",
+        "loudness_lufs": -22.3,
+        "true_peak_dbtp": -5.7,
+        "clipping_check": "not_tested",
+        "noise_check": "not_tested",
+        "device_playback_check": "not_tested"
+      },
+      "accessibility": {
+        "accessible_label": "Audio target U01-L1, speaker b, belum diputar",
+        "transcript_release": "immediate_instructional",
+        "failure_behavior": "retry_or_approved_replacement_or_technical_skip",
+        "alternative_classification": "support_adjusted",
+        "status": "not_tested"
+      },
+      "rights": {
+        "status": "pending_verification",
+        "rights_receipt_id": null,
+        "consent_release_ref": null,
+        "license_ref": null,
+        "attribution": "Microsoft Windows installed voice; redistribution terms pending review"
+      },
+      "review": {
+        "academic": "pending",
+        "linguistic": "pending",
+        "audio": "pending",
+        "rights": "pending",
+        "accessibility": "pending",
+        "technical": "pending"
+      }
+    }
+  ],
+  "rights_status": "pending_verification",
+  "approval_status": "pending",
+  "blockers": [
+    "System voice redistribution terms belum diverifikasi untuk penggunaan Nekoru.",
+    "Loudness, clipping, noise, dan physical-device playback QA belum dilakukan.",
+    "Japanese Linguistic/Academic review belum dilakukan.",
+    "Accessibility review dan approved alternative belum dilakukan.",
+    "Rights receipt dan approval receipt belum tersedia."
+  ],
+  "publication_note": "Draft internal only. Jangan ubah seed menjadi approved atau runtime_eligible sebelum seluruh mandatory gate dan receipt menunjuk exact hash/version."
+}
