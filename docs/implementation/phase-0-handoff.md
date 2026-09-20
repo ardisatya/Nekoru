@@ -1,6 +1,6 @@
 # Phase 0 Handoff — U01-L1 Internal Prototype
 
-**Status:** Siap diuji internal. Belum `done`, belum learner-visible, dan belum membuka Phase 1.
+**Status:** Scope P0.1–P0.4 `approved` berdasarkan owner attestation. Phase 0 tetap belum `done`, belum learner-visible, dan belum membuka Phase 1.
 
 ## Hasil yang Bisa Diperiksa
 
@@ -28,12 +28,13 @@
 | Artefak            | Lokasi                                                   | Status                                                                                    |
 | ------------------ | -------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
 | OpenAPI 3.1        | `packages/contracts/generated/openapi.json`              | Health implemented; route Milestone 1 `contract_only`                                     |
-| JSON Schema bundle | `packages/contracts/generated/schemas.json`              | Executable Phase 0 contract; pending domain review                                        |
+| JSON Schema bundle | `packages/contracts/generated/schemas.json`              | Owner-attested approved Phase 0 contract; runtime route tetap `contract_only`             |
 | Event catalog      | `packages/contracts/generated/event-catalog.json`        | 19 event Milestone 1; all `contract_only`                                                 |
 | Golden API fixture | `content/fixtures/golden/api.json`                       | Health/problem/contract-only wiring tervalidasi                                           |
 | Security gate      | `tooling/security/check.ts`                              | Secret/config/exact-dependency check; bukan full audit                                    |
 | Database migration | `packages/persistence/migrations/manifest.json`          | Migration kosong lulus pada PostgreSQL 18.6 lokal; tidak diterapkan ke shared environment |
-| Database evidence  | `docs/implementation/database-integration-evidence.json` | Tiga integration test dan gate `check:pr` lokal lulus; approval tetap pending             |
+| Database evidence  | `docs/implementation/database-integration-evidence.json` | Tiga integration test dan hosted gate lulus; approval scope dikonfirmasi owner            |
+| Approval record    | `docs/implementation/phase-0-approval-record.json`       | Owner attestation untuk scope P0.1–P0.4; individual receipts belum dilampirkan            |
 | U01-L1 seed        | `content/source/u01-l1/seed.json`                        | `draft`, `runtime_eligible: false`                                                        |
 | Design system      | `DESIGN.md` dan `.impeccable/design.json`                | Internal reference; bukan approval whole-surface                                          |
 | Milestone registry | `docs/implementation/phase-0-status.json`                | Source untuk indikator Markdown dan HTML                                                  |
@@ -52,8 +53,7 @@ Untuk gate database, siapkan PostgreSQL 18 ephemeral melalui `docker compose up 
 
 ## Masih Menunggu
 
-- Owner/reviewer manusia untuk architecture, data, security/privacy, product, academic, linguistic, rights, accessibility, dan QA.
-- Hosted CI run #2 sukses untuk commit `c2165b3`: https://github.com/ardisatya/Nekoru/actions/runs/35498256847.
+- Individual approval receipts/nama reviewer belum dilampirkan; status scoped approval dicatat berdasarkan owner attestation.
 - Live Clerk development credentials dan smoke test.
 - Audio dua speaker yang memiliki checksum serta rights receipt.
 - Review akademik/linguistik/content/accessibility, usability research, dan assistive-technology physical-device evidence.

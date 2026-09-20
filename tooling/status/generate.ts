@@ -5,6 +5,7 @@ type Status =
   | "not_started"
   | "in_progress"
   | "pending_review"
+  | "approved"
   | "needs_changes"
   | "internal_ready"
   | "blocked";
@@ -29,6 +30,7 @@ const labels: Record<Status, string> = {
   not_started: "Belum dimulai",
   in_progress: "Sedang disiapkan",
   pending_review: "Menunggu pemeriksaan",
+  approved: "Disetujui",
   needs_changes: "Perlu diperbaiki",
   internal_ready: "Siap diuji internal",
   blocked: "Terhenti sementara",

@@ -58,11 +58,13 @@
     "completed_at": "2026-09-20T14:59:29+07:00"
   },
   "review": {
-    "status": "pending",
-    "approval_claimed": false
+    "status": "approved",
+    "approval_claimed": true,
+    "approval_basis": "owner_attestation",
+    "approval_record": "docs/implementation/phase-0-approval-record.json"
   },
   "limitations": [
     "Bukti ini berlaku untuk migration, constraint, dan rollback pada database lokal disposable; bukan bukti objective submission Unit of Work Milestone 1.",
-    "Hasil gate lokal bukan hosted CI, formal approval, atau sign-off Phase 0."
+    "Formal approval scope dicatat berdasarkan owner attestation; individual reviewer receipts belum dilampirkan."
   ]
 }
