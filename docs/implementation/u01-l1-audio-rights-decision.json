@@ -21,6 +21,7 @@
     "public_history_cleanup": "not_performed",
     "public_history_note": "Commit sebelumnya masih dapat memuat binary audio; private repository atau history cleanup terpisah diperlukan bila exposure historis harus dihapus."
   },
+  "receipt_template_ref": "docs/implementation/u01-l1-audio-rights-receipt.template.json",
   "rights": {
     "status": "pending_verification",
     "rights_receipt_id": null,

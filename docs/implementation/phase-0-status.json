@@ -79,6 +79,7 @@
         "content/manifests/u01-l1.audio-draft.json",
         ".gitignore",
         "docs/implementation/u01-l1-audio-rights-decision.json",
+        "docs/implementation/u01-l1-audio-rights-receipt.template.json",
         "tooling/content/generate-u01-audio-draft.ps1",
         "DESIGN.md",
         ".impeccable/design.json",

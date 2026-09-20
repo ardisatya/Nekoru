@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0.0",
+  "receipt_type": "audio_rights",
+  "status": "template",
+  "receipt_id": null,
+  "decision_ref": "DEC-P0-008",
+  "asset_scope": {
+    "manifest_ref": "content/manifests/u01-l1.audio-draft.json",
+    "expected_asset_count": 26,
+    "asset_ids_must_match_manifest": true,
+    "sha256_must_match_manifest": true
+  },
+  "source": {
+    "source_type": "human_owned_recording",
+    "performer_name": null,
+    "performer_is_rights_owner": null,
+    "ownership_statement_ref": null,
+    "consent_release_ref": null
+  },
+  "use_scope": {
+    "allowed_use": "local_only",
+    "redistribution": false,
+    "repository_distribution": false,
+    "production_runtime": false,
+    "territory": "unspecified_until_review",
+    "expiry": null
+  },
+  "evidence": {
+    "license_or_release_ref": null,
+    "terms_version_or_recording_date": null,
+    "evidence_snapshot_ref": null,
+    "attribution_text": null
+  },
+  "review": {
+    "reviewer_id": null,
+    "reviewed_at": null,
+    "decision": null,
+    "notes": null
+  },
+  "completion_instructions": [
+    "Ganti source_type hanya jika sumber nyata berbeda dan bukti lisensinya tersedia.",
+    "Isi receipt_id yang immutable; jangan memakai placeholder pada receipt final.",
+    "Lampirkan rekaman/release untuk performer serta bukti bahwa 26 asset tercakup.",
+    "Validasi semua asset_id dan SHA-256 terhadap audio manifest exact version.",
+    "Rights reviewer mengisi decision verified_local_only hanya setelah bukti diperiksa.",
+    "Jangan ubah seed menjadi approved atau runtime_eligible hanya karena receipt rights sudah verified."
+  ]
+}
