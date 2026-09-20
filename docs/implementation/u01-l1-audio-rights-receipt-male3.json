@@ -7,9 +7,9 @@
   "supersedes_receipt_id": "rev_01M2ZBMH58BGWFMPYACVX6FDNS",
   "asset_scope": {
     "manifest_ref": "content/manifests/u01-l1.audio-draft.json",
-    "manifest_sha256": "sha256:0e62a08d19a1cf8e3f86385c28194f000385561d40fe509a78987b218e6dcc05",
-    "manifest_generated_at": "2026-09-20T19:58:22.9874026+07:00",
-    "source_seed_commit": "24964e438d7b0dea10f178338ef4ea8608ef9a76",
+    "manifest_sha256": "sha256:0a52bab35d6932b427325c26c70f319de0f27c08279be40fe4f45dddd1a48091",
+    "manifest_generated_at": "2026-09-20T20:06:14.1134862+07:00",
+    "source_seed_commit": "2350862786e8e73bd40a415037a8760db7df88bb",
     "expected_asset_count": 26,
     "asset_ids_must_match_manifest": true,
     "sha256_must_match_manifest": true,
