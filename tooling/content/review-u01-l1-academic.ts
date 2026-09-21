@@ -138,9 +138,12 @@ const localOnlyDecisionBytes = await readFile(
 const localOnlyDecision = JSON.parse(
   localOnlyDecisionBytes.toString("utf8"),
 ) as { decision_id: string; status: string };
+const externalApprovalReported =
+  ownerAttestation && localOnlyDecision.status === "approved";
 const localOnlyContentException =
   ownerAttestation &&
-  localOnlyDecision.status === "approved_owner_attested_local_only";
+  (localOnlyDecision.status === "approved_owner_attested_local_only" ||
+    externalApprovalReported);
 const checks: CheckResult[] = [];
 
 const addCheck = (
@@ -358,14 +361,18 @@ const report = {
   review_id: "REVIEW.CONTENT.U01.L1.ACADEMIC.000001",
   status: decision,
   decision,
-  approval_basis: ownerAttestation
-    ? "owner_attestation"
-    : "automated_evidence_only",
-  formal_gate_status: localOnlyContentException
-    ? "waived_local_only_owner_attested"
-    : decision === "approved"
-      ? "pending_external_academic_lead"
-      : "pending",
+  approval_basis: externalApprovalReported
+    ? "external_reviewer_approval_reported_by_owner"
+    : ownerAttestation
+      ? "owner_attestation"
+      : "automated_evidence_only",
+  formal_gate_status: externalApprovalReported
+    ? "approved_external_reported_by_owner"
+    : localOnlyContentException
+      ? "waived_local_only_owner_attested"
+      : decision === "approved"
+        ? "pending_external_academic_lead"
+        : "pending",
   artifact: {
     seed_ref: seedPath,
     seed_id: seed.id,
@@ -377,6 +384,15 @@ const report = {
     local_only_decision_ref: localOnlyDecisionPath,
   },
   rubric_ref: "docs/product-specs/content-validation-rubric.md@0.1.0",
+  external_approval: {
+    status: externalApprovalReported ? "reported" : "not_reported",
+    reviewer_role: "Academic Lead",
+    reviewer_identity: "not_provided",
+    confirmation_source: externalApprovalReported
+      ? "explicit_owner_statement_in_current_task"
+      : "not_provided",
+    exact_receipt_ref: "not_provided",
+  },
   gate_results: {
     "UNI-ACA-001_scope_and_accuracy": checks.find(
       (check) => check.id === "ACA-001",
@@ -407,9 +423,11 @@ const report = {
           decision: "approved",
           reviewed_at: now,
           confirmation_source: "explicit_owner_statement_in_current_task",
-          notes: localOnlyContentException
-            ? "Scoped local-only owner attestation. Tidak mengklaim Academic Lead external sign-off dan tidak membuka publication/runtime."
-            : "Scoped owner attestation. Bukan pengganti Academic Lead formal dan tidak membuka publication/runtime.",
+          notes: externalApprovalReported
+            ? "External Academic Lead approval dilaporkan oleh owner; identitas/receipt exact belum dilampirkan. Publication/runtime tetap tidak dibuka."
+            : localOnlyContentException
+              ? "Scoped local-only owner attestation. Tidak mengklaim Academic Lead external sign-off dan tidak membuka publication/runtime."
+              : "Scoped owner attestation. Bukan pengganti Academic Lead formal dan tidak membuka publication/runtime.",
         },
       ]
     : [],
@@ -417,9 +435,11 @@ const report = {
   notes: [
     "Receipt terikat ke exact seed hash dan audio manifest hash; perubahan artefak memerlukan review baru.",
     "Seed saat ini menyimpan blueprint sesi tetapi belum menyimpan activity_refs per sesi. Mapping per sesi tetap menjadi pekerjaan content-pack binding sebelum runtime.",
-    localOnlyContentException
-      ? `Academic internal gate di-waive untuk local-only melalui ${localOnlyDecisionPath}; external/publication gate tetap tidak diklaim.`
-      : "Receipt ini hanya mencatat academic review scope. Linguistic, audio QA, accessibility, technical, rights, dan publication gate tetap terpisah.",
+    externalApprovalReported
+      ? `Academic approval external dilaporkan owner melalui ${localOnlyDecisionPath}; identitas/receipt exact belum dilampirkan dan publication/runtime tetap tidak dibuka.`
+      : localOnlyContentException
+        ? `Academic internal gate di-waive untuk local-only melalui ${localOnlyDecisionPath}; external/publication gate tetap tidak diklaim.`
+        : "Receipt ini hanya mencatat academic review scope. Linguistic, audio QA, accessibility, technical, rights, dan publication gate tetap terpisah.",
   ],
 };
 
@@ -438,9 +458,11 @@ if (automatedFailures.length > 0) {
   process.exitCode = 1;
 } else if (ownerAttestation) {
   process.stdout.write(
-    localOnlyContentException
-      ? `Academic review owner-attested: approved untuk local-only; external Academic Lead gate tidak diklaim.\nSeed: ${sha256(seedBytes)}\n`
-      : `Academic review owner-attested: approved pada receipt; formal Academic Lead gate tetap pending.\nSeed: ${sha256(seedBytes)}\n`,
+    externalApprovalReported
+      ? `Academic review: approved; external Academic Lead approval dilaporkan owner.\nSeed: ${sha256(seedBytes)}\n`
+      : localOnlyContentException
+        ? `Academic review owner-attested: approved untuk local-only; external Academic Lead gate tidak diklaim.\nSeed: ${sha256(seedBytes)}\n`
+        : `Academic review owner-attested: approved pada receipt; formal Academic Lead gate tetap pending.\nSeed: ${sha256(seedBytes)}\n`,
   );
 } else {
   process.stdout.write(

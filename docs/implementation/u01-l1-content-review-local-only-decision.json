@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "decision_type": "local_only_content_review_scope_exception",
   "decision_id": "DEC.P0.CONTENT.U01.L1.ACADEMIC_LINGUISTIC.LOCAL_ONLY.000001",
-  "status": "approved_owner_attested_local_only",
+  "status": "approved",
   "phase": "P0",
   "scope": {
     "content_seed_ref": "content/source/u01-l1/seed.json",
@@ -11,25 +11,27 @@
     "distribution_scope": "local_only",
     "runtime_eligible": false
   },
-  "decision": "Untuk penggunaan pribadi local-only pada Phase 0, owner menerima automated checks dan manual review yang telah dilakukan sebagai approval internal academic/linguistic. Tidak ada claim publication atau runtime eligibility.",
+  "decision": "Untuk penggunaan pribadi local-only pada Phase 0, owner melaporkan bahwa external Academic Lead dan Japanese Linguistic Reviewer telah menyetujui artefak exact-version yang direview. Automated checks dan manual review tetap tercatat; tidak ada claim publication atau runtime eligibility.",
   "receipt_refs": [
     "docs/implementation/u01-l1-academic-review.json",
     "docs/implementation/u01-l1-linguistic-review.json"
   ],
-  "formal_external_review_status": "not_provided",
-  "not_claimed": [
-    "Academic Lead external sign-off",
-    "Japanese Linguistic Reviewer external sign-off",
-    "publication approval",
-    "runtime eligibility"
-  ],
-  "compatibility_impact": "Content lifecycle tetap draft dan runtime_eligible=false. Exception hanya menutup blocker review internal local-only; gate formal external tetap terbuka bila scope berubah.",
+  "formal_external_review_status": "approved_reported_by_owner",
+  "external_approval_attestation": {
+    "status": "reported",
+    "confirmation_source": "explicit_owner_statement_in_current_task",
+    "reviewer_identity": "not_provided",
+    "exact_external_receipt": "not_provided",
+    "note": "Status approved mencerminkan konfirmasi owner. Identitas, timestamp, dan receipt external tidak diisi atau ditebak tanpa artefak yang dibagikan."
+  },
+  "not_claimed": ["publication approval", "runtime eligibility"],
+  "compatibility_impact": "Content lifecycle tetap draft dan runtime_eligible=false. Approval external dicatat sebagai reported-by-owner untuk scope ini; publication/runtime gate tetap tertutup.",
   "owner_attestation": {
     "reviewer_id": "owner-attestation",
     "role": "Product/Content Owner",
     "decision": "approved",
     "confirmation_source": "explicit_owner_statement_in_current_task",
     "reviewed_at": "2026-09-21",
-    "notes": "Owner menyatakan konten akademik dan linguistik sudah sesuai. Identitas atau sign-off external tidak diisi tanpa artefak exact-version."
+    "notes": "Owner menyatakan external Academic Lead dan Japanese Linguistic Reviewer sudah approve. Identitas, timestamp, dan receipt exact-version tidak diisi tanpa artefak yang dibagikan."
   }
 }

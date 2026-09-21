@@ -4,8 +4,8 @@
   "review_id": "REVIEW.CONTENT.U01.L1.LINGUISTIC.000001",
   "status": "approved",
   "decision": "approved",
-  "approval_basis": "owner_attestation",
-  "formal_gate_status": "waived_local_only_owner_attested",
+  "approval_basis": "external_reviewer_approval_reported_by_owner",
+  "formal_gate_status": "approved_external_reported_by_owner",
   "artifact": {
     "manifest_ref": "content/manifests/u01-l1.audio-draft.json",
     "manifest_id": "MANIFEST.N5.S00.U01.L1.AUDIO.DRAFT",
@@ -16,6 +16,13 @@
     "local_only_decision_ref": "docs/implementation/u01-l1-content-review-local-only-decision.json"
   },
   "rubric_ref": "docs/product-specs/content-validation-rubric.md@0.1.0",
+  "external_approval": {
+    "status": "reported",
+    "reviewer_role": "Japanese Linguistic Reviewer",
+    "reviewer_identity": "not_provided",
+    "confirmation_source": "explicit_owner_statement_in_current_task",
+    "exact_receipt_ref": "not_provided"
+  },
   "gate_results": {
     "LIS-002_transcript_identity": "pass",
     "LIS-003_pronunciation_naturalness": "owner_attested",
@@ -103,15 +110,15 @@
       "reviewer_id": "owner-attestation",
       "role": "Content Owner (attestation only)",
       "decision": "approved",
-      "reviewed_at": "2026-09-20T23:25:39.197Z",
+      "reviewed_at": "2026-09-21T00:56:04.965Z",
       "confirmation_source": "explicit_owner_statement_in_current_task",
-      "notes": "Scoped local-only owner attestation. Tidak mengklaim Japanese Linguistic Reviewer external sign-off dan tidak membuka publication/runtime."
+      "notes": "External Japanese Linguistic Reviewer approval dilaporkan oleh owner; identitas/receipt exact belum dilampirkan. Publication/runtime tetap tidak dibuka."
     }
   ],
-  "created_at": "2026-09-20T23:25:39.197Z",
+  "created_at": "2026-09-21T00:56:04.965Z",
   "notes": [
     "Receipt terikat ke exact manifest hash; perubahan manifest memerlukan review baru.",
-    "Linguistic internal gate di-waive untuk local-only melalui docs/implementation/u01-l1-content-review-local-only-decision.json; external/publication gate tetap tidak diklaim.",
+    "Linguistic approval external dilaporkan owner melalui docs/implementation/u01-l1-content-review-local-only-decision.json; identitas/receipt exact belum dilampirkan dan publication/runtime tetap tidak dibuka.",
     "Binary audio tidak didistribusikan; pemeriksaan hash hanya memverifikasi copy local-only yang tersedia di workstation."
   ]
 }

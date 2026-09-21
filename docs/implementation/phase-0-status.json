@@ -71,7 +71,7 @@
       "id": "P0.5",
       "title": "Contoh belajar siap diperiksa",
       "status": "internal_ready",
-      "result": "Prototype 20 state, seed draft U01-L1, 26 normalized audio asset dengan checksum dari VOICEVOX Nemo Engine 0.24.0, rights receipt verified_local_only, audio review owner-attested, academic/linguistic review owner-attested local-only, accessibility emulator exception local-only, dan technical waiver local-only siap diuji tim internal. History GitHub main sudah dibersihkan dari binary audio; emulator accessibility matrix lulus 14/15 test (1 skip untuk project desktop-only).",
+      "result": "Prototype 20 state, seed draft U01-L1, 26 normalized audio asset dengan checksum dari VOICEVOX Nemo Engine 0.24.0, rights receipt verified_local_only, audio review owner-attested, academic/linguistic review approved dengan external approval yang dilaporkan owner, accessibility emulator exception local-only, dan technical waiver local-only siap diuji tim internal. History GitHub main sudah dibersihkan dari binary audio; emulator accessibility matrix lulus 14/15 test (1 skip untuk project desktop-only).",
       "evidence_refs": [
         "apps/learner-web",
         "content/source/u01-l1",

@@ -53,14 +53,14 @@ Perubahan yang melampaui selection bootstrap di atas memerlukan impact review; p
 
 ## Dependency dan Blocker
 
-| ID        | Phase | Status         | Safe behavior                                                                                                                                                         | Owner/approval needed                       |
-| --------- | ----- | -------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- |
-| DEP-P0-01 | P0    | approved       | Node 24 tersedia; migration dan tiga integration test lulus pada PostgreSQL 18.6 lokal ephemeral; tidak diterapkan ke shared environment                              | Technical/Data review + environment owner   |
-| DEP-P0-02 | P0    | approved       | Bootstrap package versions dipin di lockfile                                                                                                                          | Architecture owner                          |
-| DEP-P0-03 | P0    | pending        | Clerk memakai local double                                                                                                                                            | Security/Privacy + Identity owner           |
-| DEP-P0-04 | P0    | internal_ready | U01-L1 tetap `draft` dan runtime menolak; audio, academic, linguistic, dan accessibility review owner-attested local-only; external/publication gate tidak diklaim    | Academic, Linguistic, Rights, Accessibility |
-| DEP-P0-05 | P0    | internal_ready | Prototype 20 state dan emulator matrix 14/15 test diterima melalui local-only exception; approved platform matrix dan formal public support claim tetap tidak berubah | Product, Research, Accessibility            |
-| DEP-P0-06 | P0    | approved       | CI contract dan hosted run #3 lulus untuk commit `627210f`; approval scope dikonfirmasi owner                                                                         | Repository owner                            |
+| ID        | Phase | Status         | Safe behavior                                                                                                                                                                                      | Owner/approval needed                       |
+| --------- | ----- | -------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- |
+| DEP-P0-01 | P0    | approved       | Node 24 tersedia; migration dan tiga integration test lulus pada PostgreSQL 18.6 lokal ephemeral; tidak diterapkan ke shared environment                                                           | Technical/Data review + environment owner   |
+| DEP-P0-02 | P0    | approved       | Bootstrap package versions dipin di lockfile                                                                                                                                                       | Architecture owner                          |
+| DEP-P0-03 | P0    | pending        | Clerk memakai local double                                                                                                                                                                         | Security/Privacy + Identity owner           |
+| DEP-P0-04 | P0    | internal_ready | U01-L1 tetap `draft` dan runtime menolak; audio/accessibility local-only serta academic/linguistic `approved` berdasarkan external approval yang dilaporkan owner; publication gate tetap tertutup | Academic, Linguistic, Rights, Accessibility |
+| DEP-P0-05 | P0    | internal_ready | Prototype 20 state dan emulator matrix 14/15 test diterima melalui local-only exception; approved platform matrix dan formal public support claim tetap tidak berubah                              | Product, Research, Accessibility            |
+| DEP-P0-06 | P0    | approved       | CI contract dan hosted run #3 lulus untuk commit `627210f`; approval scope dikonfirmasi owner                                                                                                      | Repository owner                            |
 
 ## Registry DEP-001–DEP-010
 
@@ -87,13 +87,13 @@ Perubahan yang melampaui selection bootstrap di atas memerlukan impact review; p
 
 ## Owner dan Approval Matrix
 
-| Artifact                                | Prepared by                | Required reviewer/approver                                 | Current state                        |
-| --------------------------------------- | -------------------------- | ---------------------------------------------------------- | ------------------------------------ |
-| Bootstrap decisions                     | Engineering                | Architecture/Technical owner                               | `approved`                           |
-| Executable contracts                    | Engineering                | Technical/Data + domain owners                             | `approved`                           |
-| U01-L1 seed                             | Content/Engineering        | Academic, Linguistic, Assessment, Rights, Accessibility    | `draft`                              |
-| Prototype report                        | Product/Design/Engineering | Product, Research, Accessibility                           | `approved_owner_attested_local_only` |
-| Academic/linguistic local-only decision | Content Owner              | Academic/Linguistic external reviewer bila scope diperluas | `approved_owner_attested_local_only` |
-| Auth environment                        | Engineering                | Security/Privacy + Identity owner                          | `local_double_only`                  |
+| Artifact                            | Prepared by                | Required reviewer/approver                              | Current state                                                                             |
+| ----------------------------------- | -------------------------- | ------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| Bootstrap decisions                 | Engineering                | Architecture/Technical owner                            | `approved`                                                                                |
+| Executable contracts                | Engineering                | Technical/Data + domain owners                          | `approved`                                                                                |
+| U01-L1 seed                         | Content/Engineering        | Academic, Linguistic, Assessment, Rights, Accessibility | `draft`; academic/linguistic receipt `approved`, exact external receipt belum dilampirkan |
+| Prototype report                    | Product/Design/Engineering | Product, Research, Accessibility                        | `approved_owner_attested_local_only`                                                      |
+| Academic/linguistic review decision | Content Owner              | Academic/Linguistic external reviewer                   | `approved_external_reported_by_owner`                                                     |
+| Auth environment                    | Engineering                | Security/Privacy + Identity owner                       | `local_double_only`                                                                       |
 
 Phase 1 tidak boleh dimulai hanya karena automated tests hijau. Gate resmi membutuhkan evidence terhadap exact artifact version dan sign-off pihak berwenang.

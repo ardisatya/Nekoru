@@ -133,9 +133,12 @@ const localOnlyDecisionBytes = await readFile(
 const localOnlyDecision = JSON.parse(
   localOnlyDecisionBytes.toString("utf8"),
 ) as { decision_id: string; status: string };
+const externalApprovalReported =
+  ownerAttestation && localOnlyDecision.status === "approved";
 const localOnlyContentException =
   ownerAttestation &&
-  localOnlyDecision.status === "approved_owner_attested_local_only";
+  (localOnlyDecision.status === "approved_owner_attested_local_only" ||
+    externalApprovalReported);
 const manifestSha256 = sha256(manifestBytes);
 const checks: CheckResult[] = [];
 
@@ -359,14 +362,18 @@ const report = {
   review_id: "REVIEW.CONTENT.U01.L1.LINGUISTIC.000001",
   status: decision,
   decision,
-  approval_basis: ownerAttestation
-    ? "owner_attestation"
-    : "automated_evidence_only",
-  formal_gate_status: localOnlyContentException
-    ? "waived_local_only_owner_attested"
-    : decision === "approved"
-      ? "pending_external_japanese_linguistic_reviewer"
-      : "pending",
+  approval_basis: externalApprovalReported
+    ? "external_reviewer_approval_reported_by_owner"
+    : ownerAttestation
+      ? "owner_attestation"
+      : "automated_evidence_only",
+  formal_gate_status: externalApprovalReported
+    ? "approved_external_reported_by_owner"
+    : localOnlyContentException
+      ? "waived_local_only_owner_attested"
+      : decision === "approved"
+        ? "pending_external_japanese_linguistic_reviewer"
+        : "pending",
   artifact: {
     manifest_ref: manifestPath,
     manifest_id: manifest.manifest_id,
@@ -377,6 +384,15 @@ const report = {
     local_only_decision_ref: localOnlyDecisionPath,
   },
   rubric_ref: "docs/product-specs/content-validation-rubric.md@0.1.0",
+  external_approval: {
+    status: externalApprovalReported ? "reported" : "not_reported",
+    reviewer_role: "Japanese Linguistic Reviewer",
+    reviewer_identity: "not_provided",
+    confirmation_source: externalApprovalReported
+      ? "explicit_owner_statement_in_current_task"
+      : "not_provided",
+    exact_receipt_ref: "not_provided",
+  },
   gate_results: {
     "LIS-002_transcript_identity": checks.find(
       (check) => check.id === "LNG-004",
@@ -404,18 +420,22 @@ const report = {
           decision: "approved",
           reviewed_at: now,
           confirmation_source: "explicit_owner_statement_in_current_task",
-          notes: localOnlyContentException
-            ? "Scoped local-only owner attestation. Tidak mengklaim Japanese Linguistic Reviewer external sign-off dan tidak membuka publication/runtime."
-            : "Ini adalah scoped owner attestation. Bukan pengganti Japanese Linguistic Reviewer formal dan tidak membuka publication/runtime.",
+          notes: externalApprovalReported
+            ? "External Japanese Linguistic Reviewer approval dilaporkan oleh owner; identitas/receipt exact belum dilampirkan. Publication/runtime tetap tidak dibuka."
+            : localOnlyContentException
+              ? "Scoped local-only owner attestation. Tidak mengklaim Japanese Linguistic Reviewer external sign-off dan tidak membuka publication/runtime."
+              : "Ini adalah scoped owner attestation. Bukan pengganti Japanese Linguistic Reviewer formal dan tidak membuka publication/runtime.",
         },
       ]
     : [],
   created_at: now,
   notes: [
     "Receipt terikat ke exact manifest hash; perubahan manifest memerlukan review baru.",
-    localOnlyContentException
-      ? `Linguistic internal gate di-waive untuk local-only melalui ${localOnlyDecisionPath}; external/publication gate tetap tidak diklaim.`
-      : "Receipt ini hanya mencatat linguistic review scope. Academic, audio QA, accessibility, technical, rights, dan publication gate tetap terpisah.",
+    externalApprovalReported
+      ? `Linguistic approval external dilaporkan owner melalui ${localOnlyDecisionPath}; identitas/receipt exact belum dilampirkan dan publication/runtime tetap tidak dibuka.`
+      : localOnlyContentException
+        ? `Linguistic internal gate di-waive untuk local-only melalui ${localOnlyDecisionPath}; external/publication gate tetap tidak diklaim.`
+        : "Receipt ini hanya mencatat linguistic review scope. Academic, audio QA, accessibility, technical, rights, dan publication gate tetap terpisah.",
     "Binary audio tidak didistribusikan; pemeriksaan hash hanya memverifikasi copy local-only yang tersedia di workstation.",
   ],
 };
@@ -435,9 +455,11 @@ if (automatedFailures.length > 0) {
   process.exitCode = 1;
 } else if (ownerAttestation) {
   process.stdout.write(
-    localOnlyContentException
-      ? `Linguistic review owner-attested: approved untuk local-only; external reviewer gate tidak diklaim.\nManifest: ${manifestSha256}\n`
-      : `Linguistic review owner-attested: approved pada receipt; formal reviewer gate tetap pending.\nManifest: ${manifestSha256}\n`,
+    externalApprovalReported
+      ? `Linguistic review: approved; external Japanese Linguistic Reviewer approval dilaporkan owner.\nManifest: ${manifestSha256}\n`
+      : localOnlyContentException
+        ? `Linguistic review owner-attested: approved untuk local-only; external reviewer gate tidak diklaim.\nManifest: ${manifestSha256}\n`
+        : `Linguistic review owner-attested: approved pada receipt; formal reviewer gate tetap pending.\nManifest: ${manifestSha256}\n`,
   );
 } else {
   process.stdout.write(
